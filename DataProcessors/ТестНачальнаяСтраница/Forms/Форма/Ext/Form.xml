@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.9">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<InputField name="Реквизит1" id="1">
+			<DataPath>Реквизит1</DataPath>
+			<ContextMenu name="Реквизит1КонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="Реквизит1РасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<Button name="Команда1" id="4">
+			<Type>UsualButton</Type>
+			<CommandName>Form.Command.Команда1</CommandName>
+			<ExtendedTooltip name="Команда1РасширеннаяПодсказка" id="5"/>
+		</Button>
+		<Button name="КомандаТестСозданиеДелФон" id="6">
+			<Type>UsualButton</Type>
+			<CommandName>Form.Command.КомандаТестСозданиеДелФон</CommandName>
+			<ExtendedTooltip name="КомандаТестСозданиеДелФонРасширеннаяПодсказка" id="7"/>
+		</Button>
+		<InputField name="ПутьНовыйТома" id="10">
+			<DataPath>ПутьНовыйТома</DataPath>
+			<ContextMenu name="ПутьНовыйТомаКонтекстноеМеню" id="11"/>
+			<ExtendedTooltip name="ПутьНовыйТомаРасширеннаяПодсказка" id="12"/>
+		</InputField>
+		<Button name="ПолучитьПутьТома" id="8">
+			<Type>UsualButton</Type>
+			<CommandName>Form.Command.ПолучитьПутьТома</CommandName>
+			<ExtendedTooltip name="ПолучитьПутьТомаРасширеннаяПодсказка" id="9"/>
+		</Button>
+		<Button name="ТестГАС" id="13">
+			<Type>UsualButton</Type>
+			<CommandName>Form.Command.ТестГАС</CommandName>
+			<ExtendedTooltip name="ТестГАСРасширеннаяПодсказка" id="14"/>
+		</Button>
+		<Button name="ТестПочтовыйКлиент" id="15">
+			<Type>UsualButton</Type>
+			<CommandName>Form.Command.ТестПочтовыйКлиент</CommandName>
+			<ExtendedTooltip name="ТестПочтовыйКлиентРасширеннаяПодсказка" id="16"/>
+		</Button>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.ТестНачальнаяСтраница</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="Реквизит1" id="2">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ПутьНовыйТома" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Путь новый тома</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="Команда1" id="1">
+			<Action>Команда1</Action>
+		</Command>
+		<Command name="КомандаТестСозданиеДелФон" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команда тест создание дел фон</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команда тест создание дел фон</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>КомандаТестСозданиеДелФон</Action>
+		</Command>
+		<Command name="ПолучитьПутьТома" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Получить путь тома</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Получить путь тома</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПолучитьПутьТома</Action>
+		</Command>
+		<Command name="ТестГАС" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Тест ГАС</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Тест ГАС</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ТестГАС</Action>
+		</Command>
+		<Command name="ТестПочтовыйКлиент" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Тест почтовый клиент</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Тест почтовый клиент</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ТестПочтовыйКлиент</Action>
+		</Command>
+	</Commands>
+</Form>

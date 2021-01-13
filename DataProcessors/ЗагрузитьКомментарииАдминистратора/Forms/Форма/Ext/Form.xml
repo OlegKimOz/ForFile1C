@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.9">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<ChildItems>
+		<InputField name="ИмяФайла" id="1">
+			<DataPath>Объект.ИмяФайла</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ChoiceButton>true</ChoiceButton>
+			<ContextMenu name="ИмяФайлаКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="ИмяФайлаРасширеннаяПодсказка" id="3"/>
+			<Events>
+				<Event name="StartChoice">ИмяФайлаНачалоВыбора</Event>
+			</Events>
+		</InputField>
+		<InputField name="ИмяШаблона" id="4">
+			<DataPath>Объект.ИмяШаблона</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ИмяШаблонаКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="ИмяШаблонаРасширеннаяПодсказка" id="6"/>
+		</InputField>
+		<Button name="ОбработатьФайл" id="32">
+			<Type>UsualButton</Type>
+			<CommandName>Form.Command.ОбработатьФайл</CommandName>
+			<ExtendedTooltip name="ОбработатьФайлРасширеннаяПодсказка" id="33"/>
+		</Button>
+		<CheckBoxField name="х2" id="36">
+			<DataPath>х2</DataPath>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="х2КонтекстноеМеню" id="37"/>
+			<ExtendedTooltip name="х2РасширеннаяПодсказка" id="38"/>
+		</CheckBoxField>
+		<Table name="ТЧ" id="7">
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>Объект.ТЧ</DataPath>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ТЧКонтекстноеМеню" id="8"/>
+			<AutoCommandBar name="ТЧКоманднаяПанель" id="9">
+				<Autofill>false</Autofill>
+			</AutoCommandBar>
+			<ExtendedTooltip name="ТЧРасширеннаяПодсказка" id="10"/>
+			<SearchStringAddition name="ТЧСтрокаПоиска" id="11">
+				<AdditionSource>
+					<Item>ТЧ</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ТЧСтрокаПоискаКонтекстноеМеню" id="12"/>
+				<ExtendedTooltip name="ТЧСтрокаПоискаРасширеннаяПодсказка" id="13"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ТЧСостояниеПросмотра" id="14">
+				<AdditionSource>
+					<Item>ТЧ</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ТЧСостояниеПросмотраКонтекстноеМеню" id="15"/>
+				<ExtendedTooltip name="ТЧСостояниеПросмотраРасширеннаяПодсказка" id="16"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ТЧУправлениеПоиском" id="17">
+				<AdditionSource>
+					<Item>ТЧ</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ТЧУправлениеПоискомКонтекстноеМеню" id="18"/>
+				<ExtendedTooltip name="ТЧУправлениеПоискомРасширеннаяПодсказка" id="19"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="ТЧНомерСтроки" id="20">
+					<DataPath>Объект.ТЧ.LineNumber</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТЧНомерСтрокиКонтекстноеМеню" id="21"/>
+					<ExtendedTooltip name="ТЧНомерСтрокиРасширеннаяПодсказка" id="22"/>
+				</LabelField>
+				<InputField name="ТЧДолжник" id="23">
+					<DataPath>Объект.ТЧ.Должник</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТЧДолжникКонтекстноеМеню" id="24"/>
+					<ExtendedTooltip name="ТЧДолжникРасширеннаяПодсказка" id="25"/>
+				</InputField>
+				<InputField name="ТЧНомерДоговора" id="26">
+					<DataPath>Объект.ТЧ.НомерДоговора</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТЧНомерДоговораКонтекстноеМеню" id="27"/>
+					<ExtendedTooltip name="ТЧНомерДоговораРасширеннаяПодсказка" id="28"/>
+				</InputField>
+				<InputField name="ТЧКомментарийАдмин" id="29">
+					<DataPath>Объект.ТЧ.КомментарийАдмин</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТЧКомментарийАдминКонтекстноеМеню" id="30"/>
+					<ExtendedTooltip name="ТЧКомментарийАдминРасширеннаяПодсказка" id="31"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+		<Button name="ЗаписатьВБазу" id="34">
+			<Type>UsualButton</Type>
+			<CommandName>Form.Command.ЗаписатьВБазу</CommandName>
+			<ExtendedTooltip name="ЗаписатьВБазуРасширеннаяПодсказка" id="35"/>
+		</Button>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.ЗагрузитьКомментарииАдминистратора</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="х2" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Х2</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ОбработатьФайл" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обработать файл</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обработать файл</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОбработатьФайл</Action>
+		</Command>
+		<Command name="ЗаписатьВБазу" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Записать в базу</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Записать в базу</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗаписатьВБазу</Action>
+		</Command>
+	</Commands>
+</Form>

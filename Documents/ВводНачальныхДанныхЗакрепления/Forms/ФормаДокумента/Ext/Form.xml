@@ -1,0 +1,245 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.9">
+	<AutoTime>CurrentOrLast</AutoTime>
+	<UsePostingMode>Auto</UsePostingMode>
+	<RepostOnWrite>true</RepostOnWrite>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<UsualGroup name="Группа1" id="38">
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="39"/>
+			<ChildItems>
+				<InputField name="Номер" id="1">
+					<DataPath>Объект.Number</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="НомерКонтекстноеМеню" id="2"/>
+					<ExtendedTooltip name="НомерРасширеннаяПодсказка" id="3"/>
+				</InputField>
+				<InputField name="Дата" id="4">
+					<DataPath>Объект.Date</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДатаКонтекстноеМеню" id="5"/>
+					<ExtendedTooltip name="ДатаРасширеннаяПодсказка" id="6"/>
+				</InputField>
+				<InputField name="Архив" id="40">
+					<DataPath>Архив</DataPath>
+					<ContextMenu name="АрхивКонтекстноеМеню" id="41"/>
+					<ExtendedTooltip name="АрхивРасширеннаяПодсказка" id="42"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<Table name="Должники" id="10">
+			<Representation>List</Representation>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<FileDragMode>AsFile</FileDragMode>
+			<DataPath>Объект.Должники</DataPath>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ДолжникиКонтекстноеМеню" id="11"/>
+			<AutoCommandBar name="ДолжникиКоманднаяПанель" id="12">
+				<ChildItems>
+					<Button name="ДолжникиСвернуть" id="45">
+						<Type>CommandBarButton</Type>
+						<Representation>PictureAndText</Representation>
+						<CommandName>Form.Command.Свернуть</CommandName>
+						<Picture>
+							<xr:Ref>StdPicture.CheckSyntax</xr:Ref>
+							<xr:LoadTransparent>true</xr:LoadTransparent>
+						</Picture>
+						<ExtendedTooltip name="ДолжникиСвернутьРасширеннаяПодсказка" id="46"/>
+					</Button>
+					<Button name="ДолжникиСвернутьПоДолжникам" id="43">
+						<Type>CommandBarButton</Type>
+						<Representation>PictureAndText</Representation>
+						<CommandName>Form.Command.СвернутьПоДолжникам</CommandName>
+						<Picture>
+							<xr:Ref>StdPicture.CheckSyntax</xr:Ref>
+							<xr:LoadTransparent>true</xr:LoadTransparent>
+						</Picture>
+						<ExtendedTooltip name="ДолжникиСвернутьПоДолжникамРасширеннаяПодсказка" id="44"/>
+					</Button>
+					<Button name="ДолжникиОбработка1" id="47">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.Обработка1</CommandName>
+						<ExtendedTooltip name="ДолжникиОбработка1РасширеннаяПодсказка" id="48"/>
+					</Button>
+					<Button name="ДолжникиПроставитьАрхив" id="49">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ПроставитьАрхив</CommandName>
+						<ExtendedTooltip name="ДолжникиПроставитьАрхивРасширеннаяПодсказка" id="50"/>
+					</Button>
+				</ChildItems>
+			</AutoCommandBar>
+			<ExtendedTooltip name="ДолжникиРасширеннаяПодсказка" id="13"/>
+			<SearchStringAddition name="ДолжникиСтрокаПоиска" id="14">
+				<AdditionSource>
+					<Item>Должники</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ДолжникиСтрокаПоискаКонтекстноеМеню" id="15"/>
+				<ExtendedTooltip name="ДолжникиСтрокаПоискаРасширеннаяПодсказка" id="16"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ДолжникиСостояниеПросмотра" id="17">
+				<AdditionSource>
+					<Item>Должники</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ДолжникиСостояниеПросмотраКонтекстноеМеню" id="18"/>
+				<ExtendedTooltip name="ДолжникиСостояниеПросмотраРасширеннаяПодсказка" id="19"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ДолжникиУправлениеПоиском" id="20">
+				<AdditionSource>
+					<Item>Должники</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ДолжникиУправлениеПоискомКонтекстноеМеню" id="21"/>
+				<ExtendedTooltip name="ДолжникиУправлениеПоискомРасширеннаяПодсказка" id="22"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="ДолжникиНомерСтроки" id="23">
+					<DataPath>Объект.Должники.LineNumber</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДолжникиНомерСтрокиКонтекстноеМеню" id="24"/>
+					<ExtendedTooltip name="ДолжникиНомерСтрокиРасширеннаяПодсказка" id="25"/>
+				</LabelField>
+				<InputField name="ДолжникиОтдел" id="29">
+					<DataPath>Объект.Должники.Отдел</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДолжникиОтделКонтекстноеМеню" id="30"/>
+					<ExtendedTooltip name="ДолжникиОтделРасширеннаяПодсказка" id="31"/>
+				</InputField>
+				<InputField name="ДолжникиСотрудник" id="32">
+					<DataPath>Объект.Должники.Сотрудник</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДолжникиСотрудникКонтекстноеМеню" id="33"/>
+					<ExtendedTooltip name="ДолжникиСотрудникРасширеннаяПодсказка" id="34"/>
+				</InputField>
+				<InputField name="ДолжникиДолжник" id="26">
+					<DataPath>Объект.Должники.Должник</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДолжникиДолжникКонтекстноеМеню" id="27"/>
+					<ExtendedTooltip name="ДолжникиДолжникРасширеннаяПодсказка" id="28"/>
+				</InputField>
+				<InputField name="ДолжникиКонтроль" id="35">
+					<DataPath>Объект.Должники.Контроль</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДолжникиКонтрольКонтекстноеМеню" id="36"/>
+					<ExtendedTooltip name="ДолжникиКонтрольРасширеннаяПодсказка" id="37"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+		<InputField name="Комментарий" id="7">
+			<DataPath>Объект.Комментарий</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="КомментарийКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="КомментарийРасширеннаяПодсказка" id="9"/>
+		</InputField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DocumentObject.ВводНачальныхДанныхЗакрепления</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+			<UseAlways>
+				<Field>Объект.RegisterRecords</Field>
+			</UseAlways>
+		</Attribute>
+		<Attribute name="Архив" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Архив</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Отделы</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="Свернуть" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Свернуть</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Свернуть</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОбработкаКомандыФормы</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="СвернутьПоДолжникам" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Свернуть по должникам</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Свернуть по должникам</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОбработкаКомандыФормы</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="Обработка1" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обработка1</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обработка1</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОбработкаКомандыФормы</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ПроставитьАрхив" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проставить архив</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проставить архив</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОбработкаКомандыФормы</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="УдалитьКонтроль1" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Удалить контроль1</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Удалить контроль1</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОбработкаКомандыФормы</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+	</Commands>
+</Form>

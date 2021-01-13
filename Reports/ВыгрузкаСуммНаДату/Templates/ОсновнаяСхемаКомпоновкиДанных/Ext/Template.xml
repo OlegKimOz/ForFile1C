@@ -1,0 +1,317 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>ИсточникДанных1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetQuery">
+		<name>НаборДанных1</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Регион</dataPath>
+			<field>Регион</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Договор</dataPath>
+			<field>Договор</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДоговорНомерДоговора</dataPath>
+			<field>ДоговорНомерДоговора</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ФИО</dataPath>
+			<field>ФИО</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ФИО</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПросроченныйОсновнойДолг</dataPath>
+			<field>ПросроченныйОсновнойДолг</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ТекущийОсновнойДолг</dataPath>
+			<field>ТекущийОсновнойДолг</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Госпошлина</dataPath>
+			<field>Госпошлина</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Неустойка</dataPath>
+			<field>Неустойка</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ТекущиеПроценты</dataPath>
+			<field>ТекущиеПроценты</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Прочее</dataPath>
+			<field>Прочее</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПросроченныеПроценты</dataPath>
+			<field>ПросроченныеПроценты</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ТекущаяЗадолженностьВсего</dataPath>
+			<field>ТекущаяЗадолженностьВсего</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Текущая задолженность всего</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВсегоЗадолженность</dataPath>
+			<field>ВсегоЗадолженность</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Всего задолженность</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПросроченнаяЗадолженностьВсего</dataPath>
+			<field>ПросроченнаяЗадолженностьВсего</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Просроченная задолженность всего</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>НомерСтрокиТаблицы</dataPath>
+			<field>НомерСтрокиТаблицы</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Наименование</dataPath>
+			<field>Наименование</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Банк</dataPath>
+			<field>Банк</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Банк</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Реестр</dataPath>
+			<field>Реестр</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Реестр</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ РАЗЛИЧНЫЕ
+	РеестрДолжники.Договор КАК Договор,
+	спрДолжники.Регион КАК Регион,
+	спрДолжники.Наименование КАК Наименование,
+	РеестрДолжники.Договор.НомерДоговора КАК ДоговорНомерДоговора,
+	спрДолжники.Наименование КАК ФИО,
+	РеестрДолжники.Ссылка КАК Ссылка
+ПОМЕСТИТЬ Должники
+ИЗ
+	Документ.Реестр.Должники КАК РеестрДолжники
+		ПОЛНОЕ СОЕДИНЕНИЕ Справочник.Должники КАК спрДолжники
+		ПО РеестрДолжники.Должник = спрДолжники.Ссылка
+
+СГРУППИРОВАТЬ ПО
+	РеестрДолжники.Договор,
+	спрДолжники.Регион,
+	спрДолжники.Наименование,
+	РеестрДолжники.Договор.НомерДоговора,
+	РеестрДолжники.Ссылка,
+	спрДолжники.Наименование
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ДанныеДоговоровСрезПоследних.ВсегоЗадолженность КАК ВсегоЗадолженность,
+	ДанныеДоговоровСрезПоследних.Договор КАК Договор,
+	ДанныеДоговоровСрезПоследних.Период КАК Период,
+	ДанныеДоговоровСрезПоследних.ТекущийОсновнойДолг КАК ТекущийОсновнойДолг,
+	ДанныеДоговоровСрезПоследних.ПросроченныеПроценты КАК ПросроченныеПроценты,
+	ДанныеДоговоровСрезПоследних.ПросроченныйОсновнойДолг КАК ПросроченныйОсновнойДолг,
+	ДанныеДоговоровСрезПоследних.Неустойка КАК Неустойка,
+	ДанныеДоговоровСрезПоследних.ТекущиеПроценты КАК ТекущиеПроценты,
+	ДанныеДоговоровСрезПоследних.Госпошлина КАК Госпошлина,
+	ДанныеДоговоровСрезПоследних.Прочее КАК Прочее,
+	ДанныеДоговоровСрезПоследних.ТекущийОсновнойДолг + ДанныеДоговоровСрезПоследних.ТекущиеПроценты КАК ТекущаяЗадолженностьВсего,
+	ДанныеДоговоровСрезПоследних.ПросроченныйОсновнойДолг + ДанныеДоговоровСрезПоследних.ПросроченныеПроценты + ДанныеДоговоровСрезПоследних.Госпошлина + ДанныеДоговоровСрезПоследних.Неустойка + ДанныеДоговоровСрезПоследних.Прочее КАК ПросроченнаяЗадолженностьВсего
+ПОМЕСТИТЬ СрезПоследних
+ИЗ
+	Должники КАК Должники
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ДанныеДоговоров.СрезПоследних(&amp;МоментВремени, ) КАК ДанныеДоговоровСрезПоследних
+		ПО Должники.Договор = ДанныеДоговоровСрезПоследних.Договор
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	Должники.Договор КАК Договор,
+	Должники.Регион КАК Регион,
+	Должники.Наименование КАК Наименование,
+	Должники.ДоговорНомерДоговора КАК ДоговорНомерДоговора,
+	Должники.ФИО КАК ФИО,
+	СрезПоследних.ВсегоЗадолженность КАК ВсегоЗадолженность,
+	СрезПоследних.ТекущийОсновнойДолг КАК ТекущийОсновнойДолг,
+	СрезПоследних.ПросроченныеПроценты КАК ПросроченныеПроценты,
+	СрезПоследних.ПросроченныйОсновнойДолг КАК ПросроченныйОсновнойДолг,
+	СрезПоследних.Неустойка КАК Неустойка,
+	СрезПоследних.ТекущиеПроценты КАК ТекущиеПроценты,
+	СрезПоследних.Госпошлина КАК Госпошлина,
+	СрезПоследних.Прочее КАК Прочее,
+	СрезПоследних.ТекущаяЗадолженностьВсего КАК ТекущаяЗадолженностьВсего,
+	СрезПоследних.ПросроченнаяЗадолженностьВсего КАК ПросроченнаяЗадолженностьВсего,
+	Должники.Договор.Банк КАК Банк,
+	Должники.Ссылка КАК Реестр
+ИЗ
+	Должники КАК Должники
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ СрезПоследних КАК СрезПоследних
+		ПО Должники.Договор = СрезПоследних.Договор
+ГДЕ
+	СрезПоследних.ВсегоЗадолженность В
+			(ВЫБРАТЬ ПЕРВЫЕ 1
+				СрезПоследних.ВсегоЗадолженность
+			ИЗ
+				СрезПоследних
+			ГДЕ
+				Должники.Договор = СрезПоследних.Договор
+			УПОРЯДОЧИТЬ ПО
+				СрезПоследних.Период УБЫВ)
+
+УПОРЯДОЧИТЬ ПО
+	ФИО</query>
+	</dataSet>
+	<parameter>
+		<name>Период</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Период</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>false</useRestriction>
+	</parameter>
+	<parameter>
+		<name>МоментВремени</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Дата</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>false</useRestriction>
+	</parameter>
+	<settingsVariant>
+		<dcsset:name>Основной</dcsset:name>
+		<dcsset:presentation xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Выгрузка сумм на дату</v8:content>
+			</v8:item>
+		</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:selection>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ФИО</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ДоговорНомерДоговора</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Регион</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Банк</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ВсегоЗадолженность</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ТекущаяЗадолженностьВсего</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ТекущиеПроценты</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ТекущийОсновнойДолг</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ПросроченнаяЗадолженностьВсего</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ПросроченныйОсновнойДолг</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ПросроченныеПроценты</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ПросроченоВсегоПроценты</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Госпошлина</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Неустойка</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Прочее</dcsset:field>
+				</dcsset:item>
+			</dcsset:selection>
+			<dcsset:filter>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:left xsi:type="dcscor:Field">Банк</dcsset:left>
+					<dcsset:comparisonType>Equal</dcsset:comparisonType>
+					<dcsset:userSettingID>630a21f3-b1db-4999-bf70-71d4bb7d3cec</dcsset:userSettingID>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:left xsi:type="dcscor:Field">Реестр</dcsset:left>
+					<dcsset:comparisonType>Equal</dcsset:comparisonType>
+					<dcsset:userSettingID>4e335816-9d6b-4ea4-b5d8-37f29c22ecf4</dcsset:userSettingID>
+				</dcsset:item>
+			</dcsset:filter>
+			<dcsset:dataParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>МоментВремени</dcscor:parameter>
+					<dcscor:value xsi:type="xs:dateTime">0001-01-01T00:00:00</dcscor:value>
+					<dcsset:userSettingID>d6d2278f-e7bb-4589-ac5b-5fbc1edc2f98</dcsset:userSettingID>
+				</dcscor:item>
+			</dcsset:dataParameters>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+				</dcsset:selection>
+			</dcsset:item>
+		</dcsset:settings>
+	</settingsVariant>
+</DataCompositionSchema>

@@ -1,0 +1,494 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.9">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+		<Event name="BeforeWriteAtServer">ПередЗаписьюНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<InputField name="Наименование" id="1">
+			<DataPath>Объект.Description</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="НаименованиеКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<InputField name="ДатаЗаписи" id="4">
+			<DataPath>Объект.ДатаЗаписи</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ДатаЗаписиКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="ДатаЗаписиРасширеннаяПодсказка" id="6"/>
+		</InputField>
+		<Pages name="Страницы" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Страницы</v8:content>
+				</v8:item>
+			</Title>
+			<ExtendedTooltip name="СтраницыРасширеннаяПодсказка" id="8"/>
+			<ChildItems>
+				<Page name="ГруппаУчредительныеДокументы" id="9">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Учредительные документы</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="ГруппаУчредительныеДокументыРасширеннаяПодсказка" id="10"/>
+					<ChildItems>
+						<Button name="ВыбратьФайлУчрДок" id="90">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.ВыбратьФайлУчрДок</CommandName>
+							<ExtendedTooltip name="ВыбратьФайлУчрДокРасширеннаяПодсказка" id="91"/>
+						</Button>
+						<Table name="УчредительныеДокументы" id="11">
+							<Representation>List</Representation>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>Объект.УчредительныеДокументы</DataPath>
+							<CommandSet>
+								<ExcludedCommand>Add</ExcludedCommand>
+								<ExcludedCommand>Change</ExcludedCommand>
+								<ExcludedCommand>Copy</ExcludedCommand>
+							</CommandSet>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="УчредительныеДокументыКонтекстноеМеню" id="12"/>
+							<AutoCommandBar name="УчредительныеДокументыКоманднаяПанель" id="13">
+								<Autofill>false</Autofill>
+							</AutoCommandBar>
+							<ExtendedTooltip name="УчредительныеДокументыРасширеннаяПодсказка" id="14"/>
+							<SearchStringAddition name="УчредительныеДокументыСтрокаПоиска" id="15">
+								<AdditionSource>
+									<Item>УчредительныеДокументы</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="УчредительныеДокументыСтрокаПоискаКонтекстноеМеню" id="16"/>
+								<ExtendedTooltip name="УчредительныеДокументыСтрокаПоискаРасширеннаяПодсказка" id="17"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="УчредительныеДокументыСостояниеПросмотра" id="18">
+								<AdditionSource>
+									<Item>УчредительныеДокументы</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="УчредительныеДокументыСостояниеПросмотраКонтекстноеМеню" id="19"/>
+								<ExtendedTooltip name="УчредительныеДокументыСостояниеПросмотраРасширеннаяПодсказка" id="20"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="УчредительныеДокументыУправлениеПоиском" id="21">
+								<AdditionSource>
+									<Item>УчредительныеДокументы</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="УчредительныеДокументыУправлениеПоискомКонтекстноеМеню" id="22"/>
+								<ExtendedTooltip name="УчредительныеДокументыУправлениеПоискомРасширеннаяПодсказка" id="23"/>
+							</SearchControlAddition>
+							<Events>
+								<Event name="Selection">УчредительныеДокументыВыбор</Event>
+							</Events>
+							<ChildItems>
+								<LabelField name="УчредительныеДокументыНомерСтроки" id="24">
+									<DataPath>Объект.УчредительныеДокументы.LineNumber</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="УчредительныеДокументыНомерСтрокиКонтекстноеМеню" id="25"/>
+									<ExtendedTooltip name="УчредительныеДокументыНомерСтрокиРасширеннаяПодсказка" id="26"/>
+								</LabelField>
+								<InputField name="УчредительныеДокументыИмяФайла" id="27">
+									<DataPath>Объект.УчредительныеДокументы.ИмяФайла</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="УчредительныеДокументыИмяФайлаКонтекстноеМеню" id="28"/>
+									<ExtendedTooltip name="УчредительныеДокументыИмяФайлаРасширеннаяПодсказка" id="29"/>
+								</InputField>
+								<InputField name="УчредительныеДокументыТипФайла" id="30">
+									<DataPath>Объект.УчредительныеДокументы.ТипФайла</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="УчредительныеДокументыТипФайлаКонтекстноеМеню" id="31"/>
+									<ExtendedTooltip name="УчредительныеДокументыТипФайлаРасширеннаяПодсказка" id="32"/>
+								</InputField>
+								<InputField name="УчредительныеДокументыАдресФайла" id="92">
+									<DataPath>Объект.УчредительныеДокументы.АдресФайла</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="УчредительныеДокументыАдресФайлаКонтекстноеМеню" id="93"/>
+									<ExtendedTooltip name="УчредительныеДокументыАдресФайлаРасширеннаяПодсказка" id="94"/>
+								</InputField>
+								<CheckBoxField name="УчредительныеДокументыЗаписан" id="95">
+									<DataPath>Объект.УчредительныеДокументы.Записан</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="УчредительныеДокументыЗаписанКонтекстноеМеню" id="96"/>
+									<ExtendedTooltip name="УчредительныеДокументыЗаписанРасширеннаяПодсказка" id="97"/>
+								</CheckBoxField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="ГруппаСвидетельствоОРегистрацииЮрЛица" id="36">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Свидетельство о регистрации юр лица</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="ГруппаСвидетельствоОРегистрацииЮрЛицаРасширеннаяПодсказка" id="37"/>
+					<ChildItems>
+						<Button name="ВыбратьФайлСвидетельствоОРегистрации" id="98">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.ВыбратьФайлСвидетельствоОРегистрации</CommandName>
+							<ExtendedTooltip name="ВыбратьФайлСвидетельствоОРегистрацииРасширеннаяПодсказка" id="99"/>
+						</Button>
+						<Table name="СвидетельствоОРегистрацииЮрЛица" id="38">
+							<Representation>List</Representation>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>Объект.СвидетельствоОРегистрацииЮрЛица</DataPath>
+							<CommandSet>
+								<ExcludedCommand>Add</ExcludedCommand>
+								<ExcludedCommand>Change</ExcludedCommand>
+								<ExcludedCommand>Copy</ExcludedCommand>
+							</CommandSet>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="СвидетельствоОРегистрацииЮрЛицаКонтекстноеМеню" id="39"/>
+							<AutoCommandBar name="СвидетельствоОРегистрацииЮрЛицаКоманднаяПанель" id="40">
+								<Autofill>false</Autofill>
+							</AutoCommandBar>
+							<ExtendedTooltip name="СвидетельствоОРегистрацииЮрЛицаРасширеннаяПодсказка" id="41"/>
+							<SearchStringAddition name="СвидетельствоОРегистрацииЮрЛицаСтрокаПоиска" id="42">
+								<AdditionSource>
+									<Item>СвидетельствоОРегистрацииЮрЛица</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="СвидетельствоОРегистрацииЮрЛицаСтрокаПоискаКонтекстноеМеню" id="43"/>
+								<ExtendedTooltip name="СвидетельствоОРегистрацииЮрЛицаСтрокаПоискаРасширеннаяПодсказка" id="44"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="СвидетельствоОРегистрацииЮрЛицаСостояниеПросмотра" id="45">
+								<AdditionSource>
+									<Item>СвидетельствоОРегистрацииЮрЛица</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="СвидетельствоОРегистрацииЮрЛицаСостояниеПросмотраКонтекстноеМеню" id="46"/>
+								<ExtendedTooltip name="СвидетельствоОРегистрацииЮрЛицаСостояниеПросмотраРасширеннаяПодсказка" id="47"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="СвидетельствоОРегистрацииЮрЛицаУправлениеПоиском" id="48">
+								<AdditionSource>
+									<Item>СвидетельствоОРегистрацииЮрЛица</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="СвидетельствоОРегистрацииЮрЛицаУправлениеПоискомКонтекстноеМеню" id="49"/>
+								<ExtendedTooltip name="СвидетельствоОРегистрацииЮрЛицаУправлениеПоискомРасширеннаяПодсказка" id="50"/>
+							</SearchControlAddition>
+							<Events>
+								<Event name="Selection">СвидетельствоОРегистрацииЮрЛицаВыбор</Event>
+							</Events>
+							<ChildItems>
+								<LabelField name="СвидетельствоОРегистрацииЮрЛицаНомерСтроки" id="51">
+									<DataPath>Объект.СвидетельствоОРегистрацииЮрЛица.LineNumber</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="СвидетельствоОРегистрацииЮрЛицаНомерСтрокиКонтекстноеМеню" id="52"/>
+									<ExtendedTooltip name="СвидетельствоОРегистрацииЮрЛицаНомерСтрокиРасширеннаяПодсказка" id="53"/>
+								</LabelField>
+								<InputField name="СвидетельствоОРегистрацииЮрЛицаИмяФайла" id="54">
+									<DataPath>Объект.СвидетельствоОРегистрацииЮрЛица.ИмяФайла</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="СвидетельствоОРегистрацииЮрЛицаИмяФайлаКонтекстноеМеню" id="55"/>
+									<ExtendedTooltip name="СвидетельствоОРегистрацииЮрЛицаИмяФайлаРасширеннаяПодсказка" id="56"/>
+								</InputField>
+								<InputField name="СвидетельствоОРегистрацииЮрЛицаТипФайла" id="57">
+									<DataPath>Объект.СвидетельствоОРегистрацииЮрЛица.ТипФайла</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="СвидетельствоОРегистрацииЮрЛицаТипФайлаКонтекстноеМеню" id="58"/>
+									<ExtendedTooltip name="СвидетельствоОРегистрацииЮрЛицаТипФайлаРасширеннаяПодсказка" id="59"/>
+								</InputField>
+								<InputField name="СвидетельствоОРегистрацииЮрЛицаАдресФайла" id="106">
+									<DataPath>Объект.СвидетельствоОРегистрацииЮрЛица.АдресФайла</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="СвидетельствоОРегистрацииЮрЛицаАдресФайлаКонтекстноеМеню" id="107"/>
+									<ExtendedTooltip name="СвидетельствоОРегистрацииЮрЛицаАдресФайлаРасширеннаяПодсказка" id="108"/>
+								</InputField>
+								<CheckBoxField name="СвидетельствоОРегистрацииЮрЛицаЗаписан" id="100">
+									<DataPath>Объект.СвидетельствоОРегистрацииЮрЛица.Записан</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="СвидетельствоОРегистрацииЮрЛицаЗаписанКонтекстноеМеню" id="101"/>
+									<ExtendedTooltip name="СвидетельствоОРегистрацииЮрЛицаЗаписанРасширеннаяПодсказка" id="102"/>
+								</CheckBoxField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="ГруппаДоверенностьПредставителя" id="63">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Доверенность представителя</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="ГруппаДоверенностьПредставителяРасширеннаяПодсказка" id="64"/>
+					<ChildItems>
+						<Button name="ВыбратьФайлДоверенностьПред" id="112">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.ВыбратьФайлДоверенностьПред</CommandName>
+							<ExtendedTooltip name="ВыбратьФайлДоверенностьПредРасширеннаяПодсказка" id="113"/>
+						</Button>
+						<Table name="ДоверенностьПредставителя" id="65">
+							<Representation>List</Representation>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>Объект.ДоверенностьПредставителя</DataPath>
+							<CommandSet>
+								<ExcludedCommand>Add</ExcludedCommand>
+								<ExcludedCommand>Change</ExcludedCommand>
+								<ExcludedCommand>Copy</ExcludedCommand>
+							</CommandSet>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ДоверенностьПредставителяКонтекстноеМеню" id="66"/>
+							<AutoCommandBar name="ДоверенностьПредставителяКоманднаяПанель" id="67">
+								<Autofill>false</Autofill>
+							</AutoCommandBar>
+							<ExtendedTooltip name="ДоверенностьПредставителяРасширеннаяПодсказка" id="68"/>
+							<SearchStringAddition name="ДоверенностьПредставителяСтрокаПоиска" id="69">
+								<AdditionSource>
+									<Item>ДоверенностьПредставителя</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ДоверенностьПредставителяСтрокаПоискаКонтекстноеМеню" id="70"/>
+								<ExtendedTooltip name="ДоверенностьПредставителяСтрокаПоискаРасширеннаяПодсказка" id="71"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ДоверенностьПредставителяСостояниеПросмотра" id="72">
+								<AdditionSource>
+									<Item>ДоверенностьПредставителя</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ДоверенностьПредставителяСостояниеПросмотраКонтекстноеМеню" id="73"/>
+								<ExtendedTooltip name="ДоверенностьПредставителяСостояниеПросмотраРасширеннаяПодсказка" id="74"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ДоверенностьПредставителяУправлениеПоиском" id="75">
+								<AdditionSource>
+									<Item>ДоверенностьПредставителя</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ДоверенностьПредставителяУправлениеПоискомКонтекстноеМеню" id="76"/>
+								<ExtendedTooltip name="ДоверенностьПредставителяУправлениеПоискомРасширеннаяПодсказка" id="77"/>
+							</SearchControlAddition>
+							<Events>
+								<Event name="Selection">ДоверенностьПредставителяВыбор</Event>
+							</Events>
+							<ChildItems>
+								<LabelField name="ДоверенностьПредставителяНомерСтроки" id="78">
+									<DataPath>Объект.ДоверенностьПредставителя.LineNumber</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ДоверенностьПредставителяНомерСтрокиКонтекстноеМеню" id="79"/>
+									<ExtendedTooltip name="ДоверенностьПредставителяНомерСтрокиРасширеннаяПодсказка" id="80"/>
+								</LabelField>
+								<InputField name="ДоверенностьПредставителяИмяФайла" id="81">
+									<DataPath>Объект.ДоверенностьПредставителя.ИмяФайла</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ДоверенностьПредставителяИмяФайлаКонтекстноеМеню" id="82"/>
+									<ExtendedTooltip name="ДоверенностьПредставителяИмяФайлаРасширеннаяПодсказка" id="83"/>
+								</InputField>
+								<InputField name="ДоверенностьПредставителяТипФайла" id="84">
+									<DataPath>Объект.ДоверенностьПредставителя.ТипФайла</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ДоверенностьПредставителяТипФайлаКонтекстноеМеню" id="85"/>
+									<ExtendedTooltip name="ДоверенностьПредставителяТипФайлаРасширеннаяПодсказка" id="86"/>
+								</InputField>
+								<InputField name="ДоверенностьПредставителяАдресФайла" id="109">
+									<DataPath>Объект.ДоверенностьПредставителя.АдресФайла</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ДоверенностьПредставителяАдресФайлаКонтекстноеМеню" id="110"/>
+									<ExtendedTooltip name="ДоверенностьПредставителяАдресФайлаРасширеннаяПодсказка" id="111"/>
+								</InputField>
+								<InputField name="ДоверенностьПредставителяИсполнитель" id="114">
+									<DataPath>Объект.ДоверенностьПредставителя.Исполнитель</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ДоверенностьПредставителяИсполнительКонтекстноеМеню" id="115"/>
+									<ExtendedTooltip name="ДоверенностьПредставителяИсполнительРасширеннаяПодсказка" id="116"/>
+								</InputField>
+								<CheckBoxField name="ДоверенностьПредставителяЗаписан" id="103">
+									<DataPath>Объект.ДоверенностьПредставителя.Записан</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ДоверенностьПредставителяЗаписанКонтекстноеМеню" id="104"/>
+									<ExtendedTooltip name="ДоверенностьПредставителяЗаписанРасширеннаяПодсказка" id="105"/>
+								</CheckBoxField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="ГруппаПодписьПредставителя" id="117">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Подпись представителя</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа подпись представителя</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаПодписьПредставителяРасширеннаяПодсказка" id="118"/>
+					<ChildItems>
+						<Button name="ВыбратьФайлПодписьПредставителя" id="150">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.ВыбратьФайлПодписьПредставителя</CommandName>
+							<ExtendedTooltip name="ВыбратьФайлПодписьПредставителяРасширеннаяПодсказка" id="151"/>
+						</Button>
+						<Table name="ПодписьПредставителя" id="119">
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>Объект.ПодписьПредставителя</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ПодписьПредставителяКонтекстноеМеню" id="120"/>
+							<AutoCommandBar name="ПодписьПредставителяКоманднаяПанель" id="121">
+								<Autofill>false</Autofill>
+							</AutoCommandBar>
+							<ExtendedTooltip name="ПодписьПредставителяРасширеннаяПодсказка" id="122"/>
+							<SearchStringAddition name="ПодписьПредставителяСтрокаПоиска" id="123">
+								<AdditionSource>
+									<Item>ПодписьПредставителя</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ПодписьПредставителяСтрокаПоискаКонтекстноеМеню" id="124"/>
+								<ExtendedTooltip name="ПодписьПредставителяСтрокаПоискаРасширеннаяПодсказка" id="125"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ПодписьПредставителяСостояниеПросмотра" id="126">
+								<AdditionSource>
+									<Item>ПодписьПредставителя</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ПодписьПредставителяСостояниеПросмотраКонтекстноеМеню" id="127"/>
+								<ExtendedTooltip name="ПодписьПредставителяСостояниеПросмотраРасширеннаяПодсказка" id="128"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ПодписьПредставителяУправлениеПоиском" id="129">
+								<AdditionSource>
+									<Item>ПодписьПредставителя</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ПодписьПредставителяУправлениеПоискомКонтекстноеМеню" id="130"/>
+								<ExtendedTooltip name="ПодписьПредставителяУправлениеПоискомРасширеннаяПодсказка" id="131"/>
+							</SearchControlAddition>
+							<Events>
+								<Event name="Selection">ПодписьПредставителяВыбор</Event>
+							</Events>
+							<ChildItems>
+								<LabelField name="ПодписьПредставителяНомерСтроки" id="132">
+									<DataPath>Объект.ПодписьПредставителя.LineNumber</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПодписьПредставителяНомерСтрокиКонтекстноеМеню" id="133"/>
+									<ExtendedTooltip name="ПодписьПредставителяНомерСтрокиРасширеннаяПодсказка" id="134"/>
+								</LabelField>
+								<InputField name="ПодписьПредставителяИмяФайла" id="135">
+									<DataPath>Объект.ПодписьПредставителя.ИмяФайла</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПодписьПредставителяИмяФайлаКонтекстноеМеню" id="136"/>
+									<ExtendedTooltip name="ПодписьПредставителяИмяФайлаРасширеннаяПодсказка" id="137"/>
+								</InputField>
+								<InputField name="ПодписьПредставителяТипФайла" id="138">
+									<DataPath>Объект.ПодписьПредставителя.ТипФайла</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПодписьПредставителяТипФайлаКонтекстноеМеню" id="139"/>
+									<ExtendedTooltip name="ПодписьПредставителяТипФайлаРасширеннаяПодсказка" id="140"/>
+								</InputField>
+								<InputField name="ПодписьПредставителяАдресФайла" id="141">
+									<DataPath>Объект.ПодписьПредставителя.АдресФайла</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПодписьПредставителяАдресФайлаКонтекстноеМеню" id="142"/>
+									<ExtendedTooltip name="ПодписьПредставителяАдресФайлаРасширеннаяПодсказка" id="143"/>
+								</InputField>
+								<CheckBoxField name="ПодписьПредставителяЗаписан" id="144">
+									<DataPath>Объект.ПодписьПредставителя.Записан</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ПодписьПредставителяЗаписанКонтекстноеМеню" id="145"/>
+									<ExtendedTooltip name="ПодписьПредставителяЗаписанРасширеннаяПодсказка" id="146"/>
+								</CheckBoxField>
+								<InputField name="ПодписьПредставителяИсполнитель" id="147">
+									<DataPath>Объект.ПодписьПредставителя.Исполнитель</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПодписьПредставителяИсполнительКонтекстноеМеню" id="148"/>
+									<ExtendedTooltip name="ПодписьПредставителяИсполнительРасширеннаяПодсказка" id="149"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.ДокументыФорвард</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ВыбратьФайлУчрДок" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выбрать файл</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выбрать файл учр док</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВыбратьФайлУчрДок</Action>
+		</Command>
+		<Command name="ВыбратьФайлСвидетельствоОРегистрации" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выбрать файл</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выбрать файл свидетельство о регистрации</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВыбратьФайлСвидетельствоОРегистрации</Action>
+		</Command>
+		<Command name="ВыбратьФайлДоверенностьПред" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выбрать файл</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выбрать файл доверенность пред</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВыбратьФайлДоверенностьПред</Action>
+		</Command>
+		<Command name="ВыбратьФайлПодписьПредставителя" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выбрать файл</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выбрать файл подпись представителя</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВыбратьФайлПодписьПредставителя</Action>
+		</Command>
+	</Commands>
+</Form>

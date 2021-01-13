@@ -1,0 +1,1572 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.9">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="Группа6" id="290">
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа6РасширеннаяПодсказка" id="291"/>
+			<ChildItems>
+				<Button name="ФормаОбновить" id="229">
+					<Type>UsualButton</Type>
+					<Representation>PictureAndText</Representation>
+					<CommandName>Form.Command.ОбновитьДанные</CommandName>
+					<Picture>
+						<xr:Ref>StdPicture.Refresh</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+					</Picture>
+					<ExtendedTooltip name="ФормаОбновитьРасширеннаяПодсказка" id="230"/>
+				</Button>
+				<Button name="ДеревоРешений" id="378">
+					<Type>UsualButton</Type>
+					<CommandName>Form.Command.ДеревоРешений</CommandName>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дерево решений</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="ДеревоРешенийРасширеннаяПодсказка" id="379"/>
+				</Button>
+				<InputField name="глДневнаяНорма" id="287">
+					<DataPath>глДневнаяНорма</DataPath>
+					<Visible>false</Visible>
+					<ReadOnly>true</ReadOnly>
+					<ContextMenu name="глДневнаяНормаКонтекстноеМеню" id="288"/>
+					<ExtendedTooltip name="глДневнаяНормаРасширеннаяПодсказка" id="289"/>
+				</InputField>
+				<CheckBoxField name="Х2" id="380">
+					<DataPath>Х2</DataPath>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="Х2КонтекстноеМеню" id="381"/>
+					<ExtendedTooltip name="Х2РасширеннаяПодсказка" id="382"/>
+				</CheckBoxField>
+			</ChildItems>
+		</UsualGroup>
+		<Pages name="Страницы" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Страницы</v8:content>
+				</v8:item>
+			</Title>
+			<ExtendedTooltip name="СтраницыРасширеннаяПодсказка" id="11"/>
+			<ChildItems>
+				<Page name="ГруппаЗадание" id="225">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Задание</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа задание</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаЗаданиеРасширеннаяПодсказка" id="226"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаКоманды" id="235">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа команды</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа команды</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаКомандыРасширеннаяПодсказка" id="236"/>
+							<ChildItems>
+								<UsualGroup name="ГруппаЛево" id="237">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа лево</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа лево</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Horizontal</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаЛевоРасширеннаяПодсказка" id="238"/>
+									<ChildItems>
+										<UsualGroup name="Группа2" id="269">
+											<Group>Vertical</Group>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="270"/>
+											<ChildItems>
+												<Button name="СменитьРежимРаботы" id="227">
+													<Type>UsualButton</Type>
+													<Representation>PictureAndText</Representation>
+													<CommandName>Form.Command.СменитьРежимРаботы</CommandName>
+													<Picture>
+														<xr:Ref>StdPicture.BusinessProcess</xr:Ref>
+														<xr:LoadTransparent>true</xr:LoadTransparent>
+													</Picture>
+													<ExtendedTooltip name="СменитьРежимРаботыРасширеннаяПодсказка" id="228"/>
+												</Button>
+												<Button name="ПечатьКарточки" id="231">
+													<Type>UsualButton</Type>
+													<CommandName>Form.Command.ПечатьКарточки</CommandName>
+													<ExtendedTooltip name="ПечатьКарточкиРасширеннаяПодсказка" id="232"/>
+												</Button>
+											</ChildItems>
+										</UsualGroup>
+										<UsualGroup name="ГруппаЛевоНиз" id="241">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа лево низ</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа лево верх</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Group>Vertical</Group>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="ГруппаЛевоНизРасширеннаяПодсказка" id="242"/>
+											<ChildItems>
+												<UsualGroup name="ГруппаЛевоВерх" id="233">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа лево верх</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа лево верх</v8:content>
+														</v8:item>
+													</ToolTip>
+													<Group>Horizontal</Group>
+													<Representation>None</Representation>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="ГруппаЛевоВерхРасширеннаяПодсказка" id="234"/>
+													<ChildItems>
+														<InputField name="СтрокаПоиска" id="243">
+															<DataPath>СтрокаПоиска</DataPath>
+															<ContextMenu name="СтрокаПоискаКонтекстноеМеню" id="244"/>
+															<ExtendedTooltip name="СтрокаПоискаРасширеннаяПодсказка" id="245"/>
+														</InputField>
+														<Button name="РасширенныйПоиск" id="246">
+															<Type>UsualButton</Type>
+															<CommandName>Form.Command.РасширенныйПоиск</CommandName>
+															<ExtendedTooltip name="РасширенныйПоискРасширеннаяПодсказка" id="247"/>
+														</Button>
+														<UsualGroup name="Группа1" id="267">
+															<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="268"/>
+														</UsualGroup>
+													</ChildItems>
+												</UsualGroup>
+												<LabelField name="НадписьСтатистика" id="7">
+													<DataPath>Объект.НадписьСтатистика</DataPath>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Статистика</v8:content>
+														</v8:item>
+													</Title>
+													<EditMode>EnterOnInput</EditMode>
+													<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+													<ContextMenu name="НадписьСтатистикаКонтекстноеМеню" id="8"/>
+													<ExtendedTooltip name="НадписьСтатистикаРасширеннаяПодсказка" id="9"/>
+												</LabelField>
+											</ChildItems>
+										</UsualGroup>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="ГруппаПраво" id="239">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа право</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа право</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаПравоРасширеннаяПодсказка" id="240"/>
+									<ChildItems>
+										<Table name="ДолжникиНаТекущийДень" id="248">
+											<Representation>List</Representation>
+											<Height>1</Height>
+											<AutoInsertNewRow>true</AutoInsertNewRow>
+											<EnableStartDrag>true</EnableStartDrag>
+											<EnableDrag>true</EnableDrag>
+											<FileDragMode>AsFile</FileDragMode>
+											<DataPath>ДолжникиНаТекущийДень</DataPath>
+											<RowFilter xsi:nil="true"/>
+											<ContextMenu name="ДолжникиНаТекущийДеньКонтекстноеМеню" id="249"/>
+											<AutoCommandBar name="ДолжникиНаТекущийДеньКоманднаяПанель" id="250">
+												<Autofill>false</Autofill>
+											</AutoCommandBar>
+											<ExtendedTooltip name="ДолжникиНаТекущийДеньРасширеннаяПодсказка" id="251"/>
+											<SearchStringAddition name="ДолжникиНаТекущийДеньСтрокаПоиска" id="252">
+												<AdditionSource>
+													<Item>ДолжникиНаТекущийДень</Item>
+													<Type>SearchStringRepresentation</Type>
+												</AdditionSource>
+												<ContextMenu name="ДолжникиНаТекущийДеньСтрокаПоискаКонтекстноеМеню" id="253"/>
+												<ExtendedTooltip name="ДолжникиНаТекущийДеньСтрокаПоискаРасширеннаяПодсказка" id="254"/>
+											</SearchStringAddition>
+											<ViewStatusAddition name="ДолжникиНаТекущийДеньСостояниеПросмотра" id="255">
+												<AdditionSource>
+													<Item>ДолжникиНаТекущийДень</Item>
+													<Type>ViewStatusRepresentation</Type>
+												</AdditionSource>
+												<ContextMenu name="ДолжникиНаТекущийДеньСостояниеПросмотраКонтекстноеМеню" id="256"/>
+												<ExtendedTooltip name="ДолжникиНаТекущийДеньСостояниеПросмотраРасширеннаяПодсказка" id="257"/>
+											</ViewStatusAddition>
+											<SearchControlAddition name="ДолжникиНаТекущийДеньУправлениеПоиском" id="258">
+												<AdditionSource>
+													<Item>ДолжникиНаТекущийДень</Item>
+													<Type>SearchControl</Type>
+												</AdditionSource>
+												<ContextMenu name="ДолжникиНаТекущийДеньУправлениеПоискомКонтекстноеМеню" id="259"/>
+												<ExtendedTooltip name="ДолжникиНаТекущийДеньУправлениеПоискомРасширеннаяПодсказка" id="260"/>
+											</SearchControlAddition>
+											<ChildItems>
+												<InputField name="ДолжникиНаТекущийДеньДолжник" id="261">
+													<DataPath>ДолжникиНаТекущийДень.Должник</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="ДолжникиНаТекущийДеньДолжникКонтекстноеМеню" id="262"/>
+													<ExtendedTooltip name="ДолжникиНаТекущийДеньДолжникРасширеннаяПодсказка" id="263"/>
+												</InputField>
+												<InputField name="ДолжникиНаТекущийДеньДата" id="264">
+													<DataPath>ДолжникиНаТекущийДень.Дата</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="ДолжникиНаТекущийДеньДатаКонтекстноеМеню" id="265"/>
+													<ExtendedTooltip name="ДолжникиНаТекущийДеньДатаРасширеннаяПодсказка" id="266"/>
+												</InputField>
+											</ChildItems>
+										</Table>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="Группа3" id="273">
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="274"/>
+							<ChildItems>
+								<CommandBar name="Группа4" id="281">
+									<CommandSource>Item.Должники</CommandSource>
+									<ExtendedTooltip name="Группа4РасширеннаяПодсказка" id="282"/>
+									<ChildItems>
+										<Button name="ДолжникиКнопка1" id="283">
+											<Type>CommandBarButton</Type>
+											<CommandName>47:2bbe4e12-06d2-409b-a972-eea585125d83</CommandName>
+											<ExtendedTooltip name="ДолжникиКнопка1РасширеннаяПодсказка" id="284"/>
+										</Button>
+									</ChildItems>
+								</CommandBar>
+								<Button name="ДолжникиДобавитьВЗадание" id="271">
+									<Type>UsualButton</Type>
+									<CommandName>Form.Command.ДобавитьВЗадание</CommandName>
+									<ExtendedTooltip name="ДолжникиДобавитьВЗаданиеРасширеннаяПодсказка" id="272"/>
+								</Button>
+								<InputField name="ПланироватьРежимРаботы" id="275">
+									<DataPath>ПланироватьРежимРаботы</DataPath>
+									<ContextMenu name="ПланироватьРежимРаботыКонтекстноеМеню" id="276"/>
+									<ExtendedTooltip name="ПланироватьРежимРаботыРасширеннаяПодсказка" id="277"/>
+								</InputField>
+								<InputField name="НаДату" id="278">
+									<DataPath>НаДату</DataPath>
+									<ContextMenu name="НаДатуКонтекстноеМеню" id="279"/>
+									<ExtendedTooltip name="НаДатуРасширеннаяПодсказка" id="280"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+						<Table name="Должники" id="47">
+							<Representation>List</Representation>
+							<CommandBarLocation>None</CommandBarLocation>
+							<ChangeRowSet>false</ChangeRowSet>
+							<ChangeRowOrder>false</ChangeRowOrder>
+							<RowSelectionMode>Row</RowSelectionMode>
+							<Footer>true</Footer>
+							<FileDragMode>AsFile</FileDragMode>
+							<DataPath>Объект.Должники</DataPath>
+							<CommandSet>
+								<ExcludedCommand>Add</ExcludedCommand>
+								<ExcludedCommand>CancelSearch</ExcludedCommand>
+								<ExcludedCommand>Change</ExcludedCommand>
+								<ExcludedCommand>Copy</ExcludedCommand>
+								<ExcludedCommand>CopyToClipboard</ExcludedCommand>
+								<ExcludedCommand>Delete</ExcludedCommand>
+								<ExcludedCommand>EndEdit</ExcludedCommand>
+								<ExcludedCommand>MoveDown</ExcludedCommand>
+								<ExcludedCommand>MoveUp</ExcludedCommand>
+								<ExcludedCommand>OutputList</ExcludedCommand>
+								<ExcludedCommand>SelectAll</ExcludedCommand>
+								<ExcludedCommand>ShowMultipleSelection</ExcludedCommand>
+								<ExcludedCommand>ShowRowRearrangement</ExcludedCommand>
+								<ExcludedCommand>SortListAsc</ExcludedCommand>
+								<ExcludedCommand>SortListDesc</ExcludedCommand>
+							</CommandSet>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ДолжникиКонтекстноеМеню" id="48"/>
+							<AutoCommandBar name="ДолжникиКоманднаяПанель" id="49"/>
+							<ExtendedTooltip name="ДолжникиРасширеннаяПодсказка" id="50"/>
+							<SearchStringAddition name="ДолжникиСтрокаПоиска" id="51">
+								<AdditionSource>
+									<Item>Должники</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ДолжникиСтрокаПоискаКонтекстноеМеню" id="52"/>
+								<ExtendedTooltip name="ДолжникиСтрокаПоискаРасширеннаяПодсказка" id="53"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ДолжникиСостояниеПросмотра" id="54">
+								<AdditionSource>
+									<Item>Должники</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ДолжникиСостояниеПросмотраКонтекстноеМеню" id="55"/>
+								<ExtendedTooltip name="ДолжникиСостояниеПросмотраРасширеннаяПодсказка" id="56"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ДолжникиУправлениеПоиском" id="57">
+								<AdditionSource>
+									<Item>Должники</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ДолжникиУправлениеПоискомКонтекстноеМеню" id="58"/>
+								<ExtendedTooltip name="ДолжникиУправлениеПоискомРасширеннаяПодсказка" id="59"/>
+							</SearchControlAddition>
+							<Events>
+								<Event name="Selection">ДолжникиВыбор</Event>
+							</Events>
+							<ChildItems>
+								<LabelField name="ДолжникиНомерСтроки" id="60">
+									<DataPath>Объект.Должники.LineNumber</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<EditMode>EnterOnInput</EditMode>
+									<Width>3</Width>
+									<ContextMenu name="ДолжникиНомерСтрокиКонтекстноеМеню" id="61"/>
+									<ExtendedTooltip name="ДолжникиНомерСтрокиРасширеннаяПодсказка" id="62"/>
+								</LabelField>
+								<CheckBoxField name="ДолжникиНовый" id="375">
+									<DataPath>Объект.Должники.Новый</DataPath>
+									<EditMode>Directly</EditMode>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ДолжникиНовыйКонтекстноеМеню" id="376"/>
+									<ExtendedTooltip name="ДолжникиНовыйРасширеннаяПодсказка" id="377"/>
+								</CheckBoxField>
+								<InputField name="ДолжникиДолжник" id="66">
+									<DataPath>Объект.Должники.Должник</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ДолжникиДолжникКонтекстноеМеню" id="67"/>
+									<ExtendedTooltip name="ДолжникиДолжникРасширеннаяПодсказка" id="68"/>
+								</InputField>
+								<InputField name="ДолжникиРегион" id="69">
+									<DataPath>Объект.Должники.Регион</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ДолжникиРегионКонтекстноеМеню" id="70"/>
+									<ExtendedTooltip name="ДолжникиРегионРасширеннаяПодсказка" id="71"/>
+								</InputField>
+								<InputField name="ДолжникиНаправление" id="72">
+									<DataPath>Объект.Должники.Направление</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ДолжникиНаправлениеКонтекстноеМеню" id="73"/>
+									<ExtendedTooltip name="ДолжникиНаправлениеРасширеннаяПодсказка" id="74"/>
+								</InputField>
+								<InputField name="ДолжникиРайон" id="75">
+									<DataPath>Объект.Должники.Район</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ДолжникиРайонКонтекстноеМеню" id="76"/>
+									<ExtendedTooltip name="ДолжникиРайонРасширеннаяПодсказка" id="77"/>
+								</InputField>
+								<InputField name="ДолжникиСтатус" id="78">
+									<DataPath>Объект.Должники.Статус</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ДолжникиСтатусКонтекстноеМеню" id="79"/>
+									<ExtendedTooltip name="ДолжникиСтатусРасширеннаяПодсказка" id="80"/>
+								</InputField>
+								<InputField name="ДолжникиВсегоЗадолженность" id="81">
+									<DataPath>Объект.Должники.ВсегоЗадолженность</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<EditMode>EnterOnInput</EditMode>
+									<FooterDataPath>Объект.Должники.TotalВсегоЗадолженность</FooterDataPath>
+									<ContextMenu name="ДолжникиВсегоЗадолженностьКонтекстноеМеню" id="82"/>
+									<ExtendedTooltip name="ДолжникиВсегоЗадолженностьРасширеннаяПодсказка" id="83"/>
+								</InputField>
+								<InputField name="ДолжникиСледующийКонтакт" id="84">
+									<DataPath>Объект.Должники.СледующийКонтакт</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ДолжникиСледующийКонтактКонтекстноеМеню" id="85"/>
+									<ExtendedTooltip name="ДолжникиСледующийКонтактРасширеннаяПодсказка" id="86"/>
+								</InputField>
+								<InputField name="ДолжникиОбещание" id="87">
+									<DataPath>Объект.Должники.Обещание</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ДолжникиОбещаниеКонтекстноеМеню" id="88"/>
+									<ExtendedTooltip name="ДолжникиОбещаниеРасширеннаяПодсказка" id="89"/>
+								</InputField>
+								<InputField name="ДолжникиСуммаОбещания" id="90">
+									<DataPath>Объект.Должники.СуммаОбещания</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<EditMode>EnterOnInput</EditMode>
+									<FooterDataPath>Объект.Должники.TotalСуммаОбещания</FooterDataPath>
+									<ContextMenu name="ДолжникиСуммаОбещанияКонтекстноеМеню" id="91"/>
+									<ExtendedTooltip name="ДолжникиСуммаОбещанияРасширеннаяПодсказка" id="92"/>
+								</InputField>
+								<InputField name="ДолжникиОплатилВсего" id="108">
+									<DataPath>Объект.Должники.ОплатилВсего</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<EditMode>EnterOnInput</EditMode>
+									<FooterDataPath>Объект.Должники.TotalОплатилВсего</FooterDataPath>
+									<ContextMenu name="ДолжникиОплатилВсегоКонтекстноеМеню" id="109"/>
+									<ExtendedTooltip name="ДолжникиОплатилВсегоРасширеннаяПодсказка" id="110"/>
+								</InputField>
+								<InputField name="ДолжникиТекущийОсновнойДолг" id="93">
+									<DataPath>Объект.Должники.ТекущийОсновнойДолг</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<EditMode>EnterOnInput</EditMode>
+									<FooterDataPath>Объект.Должники.TotalТекущийОсновнойДолг</FooterDataPath>
+									<ContextMenu name="ДолжникиТекущийОсновнойДолгКонтекстноеМеню" id="94"/>
+									<ExtendedTooltip name="ДолжникиТекущийОсновнойДолгРасширеннаяПодсказка" id="95"/>
+								</InputField>
+								<InputField name="ДолжникиДнейПросрочки" id="96">
+									<DataPath>Объект.Должники.ДнейПросрочки</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ДолжникиДнейПросрочкиКонтекстноеМеню" id="97"/>
+									<ExtendedTooltip name="ДолжникиДнейПросрочкиРасширеннаяПодсказка" id="98"/>
+								</InputField>
+								<InputField name="ДолжникиБанк" id="99">
+									<DataPath>Объект.Должники.Банк</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ДолжникиБанкКонтекстноеМеню" id="100"/>
+									<ExtendedTooltip name="ДолжникиБанкРасширеннаяПодсказка" id="101"/>
+								</InputField>
+								<InputField name="ДолжникиТипКредита" id="102">
+									<DataPath>Объект.Должники.ТипКредита</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ДолжникиТипКредитаКонтекстноеМеню" id="103"/>
+									<ExtendedTooltip name="ДолжникиТипКредитаРасширеннаяПодсказка" id="104"/>
+								</InputField>
+								<InputField name="ДолжникиКомментарий" id="105">
+									<DataPath>Объект.Должники.Комментарий</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ДолжникиКомментарийКонтекстноеМеню" id="106"/>
+									<ExtendedTooltip name="ДолжникиКомментарийРасширеннаяПодсказка" id="107"/>
+								</InputField>
+								<InputField name="ДолжникиОтдел" id="114">
+									<DataPath>Объект.Должники.Отдел</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ДолжникиОтделКонтекстноеМеню" id="115"/>
+									<ExtendedTooltip name="ДолжникиОтделРасширеннаяПодсказка" id="116"/>
+								</InputField>
+								<InputField name="ДолжникиСотрудник" id="111">
+									<DataPath>Объект.Должники.Сотрудник</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ДолжникиСотрудникКонтекстноеМеню" id="112"/>
+									<ExtendedTooltip name="ДолжникиСотрудникРасширеннаяПодсказка" id="113"/>
+								</InputField>
+								<InputField name="ДолжникиГруппа" id="117">
+									<DataPath>Объект.Должники.Группа</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ДолжникиГруппаКонтекстноеМеню" id="118"/>
+									<ExtendedTooltip name="ДолжникиГруппаРасширеннаяПодсказка" id="119"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+						<Table name="ДолжникиНаСегодня" id="155">
+							<Representation>List</Representation>
+							<Visible>false</Visible>
+							<TitleLocation>Top</TitleLocation>
+							<Height>1</Height>
+							<HeightControlVariant>UseContentHeight</HeightControlVariant>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<FileDragMode>AsFile</FileDragMode>
+							<DataPath>Объект.ДолжникиНаСегодня</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Должники на сегодня</v8:content>
+								</v8:item>
+							</Title>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ДолжникиНаСегодняКонтекстноеМеню" id="156"/>
+							<AutoCommandBar name="ДолжникиНаСегодняКоманднаяПанель" id="157">
+								<Autofill>false</Autofill>
+							</AutoCommandBar>
+							<ExtendedTooltip name="ДолжникиНаСегодняРасширеннаяПодсказка" id="158"/>
+							<SearchStringAddition name="ДолжникиНаСегодняСтрокаПоиска" id="159">
+								<AdditionSource>
+									<Item>ДолжникиНаСегодня</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ДолжникиНаСегодняСтрокаПоискаКонтекстноеМеню" id="160"/>
+								<ExtendedTooltip name="ДолжникиНаСегодняСтрокаПоискаРасширеннаяПодсказка" id="161"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ДолжникиНаСегодняСостояниеПросмотра" id="162">
+								<AdditionSource>
+									<Item>ДолжникиНаСегодня</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ДолжникиНаСегодняСостояниеПросмотраКонтекстноеМеню" id="163"/>
+								<ExtendedTooltip name="ДолжникиНаСегодняСостояниеПросмотраРасширеннаяПодсказка" id="164"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ДолжникиНаСегодняУправлениеПоиском" id="165">
+								<AdditionSource>
+									<Item>ДолжникиНаСегодня</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ДолжникиНаСегодняУправлениеПоискомКонтекстноеМеню" id="166"/>
+								<ExtendedTooltip name="ДолжникиНаСегодняУправлениеПоискомРасширеннаяПодсказка" id="167"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<LabelField name="ДолжникиНаСегодняНомерСтроки" id="168">
+									<DataPath>Объект.ДолжникиНаСегодня.LineNumber</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ДолжникиНаСегодняНомерСтрокиКонтекстноеМеню" id="169"/>
+									<ExtendedTooltip name="ДолжникиНаСегодняНомерСтрокиРасширеннаяПодсказка" id="170"/>
+								</LabelField>
+								<CheckBoxField name="ДолжникиНаСегодняНовый" id="171">
+									<DataPath>Объект.ДолжникиНаСегодня.Новый</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ДолжникиНаСегодняНовыйКонтекстноеМеню" id="172"/>
+									<ExtendedTooltip name="ДолжникиНаСегодняНовыйРасширеннаяПодсказка" id="173"/>
+								</CheckBoxField>
+								<InputField name="ДолжникиНаСегодняДолжник" id="174">
+									<DataPath>Объект.ДолжникиНаСегодня.Должник</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ДолжникиНаСегодняДолжникКонтекстноеМеню" id="175"/>
+									<ExtendedTooltip name="ДолжникиНаСегодняДолжникРасширеннаяПодсказка" id="176"/>
+								</InputField>
+								<InputField name="ДолжникиНаСегодняРегион" id="177">
+									<DataPath>Объект.ДолжникиНаСегодня.Регион</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ДолжникиНаСегодняРегионКонтекстноеМеню" id="178"/>
+									<ExtendedTooltip name="ДолжникиНаСегодняРегионРасширеннаяПодсказка" id="179"/>
+								</InputField>
+								<InputField name="ДолжникиНаСегодняНаправление" id="180">
+									<DataPath>Объект.ДолжникиНаСегодня.Направление</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ДолжникиНаСегодняНаправлениеКонтекстноеМеню" id="181"/>
+									<ExtendedTooltip name="ДолжникиНаСегодняНаправлениеРасширеннаяПодсказка" id="182"/>
+								</InputField>
+								<InputField name="ДолжникиНаСегодняРайон" id="183">
+									<DataPath>Объект.ДолжникиНаСегодня.Район</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ДолжникиНаСегодняРайонКонтекстноеМеню" id="184"/>
+									<ExtendedTooltip name="ДолжникиНаСегодняРайонРасширеннаяПодсказка" id="185"/>
+								</InputField>
+								<InputField name="ДолжникиНаСегодняСтатус" id="186">
+									<DataPath>Объект.ДолжникиНаСегодня.Статус</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ДолжникиНаСегодняСтатусКонтекстноеМеню" id="187"/>
+									<ExtendedTooltip name="ДолжникиНаСегодняСтатусРасширеннаяПодсказка" id="188"/>
+								</InputField>
+								<InputField name="ДолжникиНаСегодняВсегоЗадолженность" id="189">
+									<DataPath>Объект.ДолжникиНаСегодня.ВсегоЗадолженность</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ДолжникиНаСегодняВсегоЗадолженностьКонтекстноеМеню" id="190"/>
+									<ExtendedTooltip name="ДолжникиНаСегодняВсегоЗадолженностьРасширеннаяПодсказка" id="191"/>
+								</InputField>
+								<InputField name="ДолжникиНаСегодняСледующийКонтакт" id="192">
+									<DataPath>Объект.ДолжникиНаСегодня.СледующийКонтакт</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ДолжникиНаСегодняСледующийКонтактКонтекстноеМеню" id="193"/>
+									<ExtendedTooltip name="ДолжникиНаСегодняСледующийКонтактРасширеннаяПодсказка" id="194"/>
+								</InputField>
+								<InputField name="ДолжникиНаСегодняОбещание" id="195">
+									<DataPath>Объект.ДолжникиНаСегодня.Обещание</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ДолжникиНаСегодняОбещаниеКонтекстноеМеню" id="196"/>
+									<ExtendedTooltip name="ДолжникиНаСегодняОбещаниеРасширеннаяПодсказка" id="197"/>
+								</InputField>
+								<InputField name="ДолжникиНаСегодняСуммаОбещания" id="198">
+									<DataPath>Объект.ДолжникиНаСегодня.СуммаОбещания</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ДолжникиНаСегодняСуммаОбещанияКонтекстноеМеню" id="199"/>
+									<ExtendedTooltip name="ДолжникиНаСегодняСуммаОбещанияРасширеннаяПодсказка" id="200"/>
+								</InputField>
+								<InputField name="ДолжникиНаСегодняТекущийОсновнойДолг" id="201">
+									<DataPath>Объект.ДолжникиНаСегодня.ТекущийОсновнойДолг</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ДолжникиНаСегодняТекущийОсновнойДолгКонтекстноеМеню" id="202"/>
+									<ExtendedTooltip name="ДолжникиНаСегодняТекущийОсновнойДолгРасширеннаяПодсказка" id="203"/>
+								</InputField>
+								<InputField name="ДолжникиНаСегодняДнейПросрочки" id="204">
+									<DataPath>Объект.ДолжникиНаСегодня.ДнейПросрочки</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ДолжникиНаСегодняДнейПросрочкиКонтекстноеМеню" id="205"/>
+									<ExtendedTooltip name="ДолжникиНаСегодняДнейПросрочкиРасширеннаяПодсказка" id="206"/>
+								</InputField>
+								<InputField name="ДолжникиНаСегодняБанк" id="207">
+									<DataPath>Объект.ДолжникиНаСегодня.Банк</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ДолжникиНаСегодняБанкКонтекстноеМеню" id="208"/>
+									<ExtendedTooltip name="ДолжникиНаСегодняБанкРасширеннаяПодсказка" id="209"/>
+								</InputField>
+								<InputField name="ДолжникиНаСегодняТипКредита" id="210">
+									<DataPath>Объект.ДолжникиНаСегодня.ТипКредита</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ДолжникиНаСегодняТипКредитаКонтекстноеМеню" id="211"/>
+									<ExtendedTooltip name="ДолжникиНаСегодняТипКредитаРасширеннаяПодсказка" id="212"/>
+								</InputField>
+								<InputField name="ДолжникиНаСегодняКомментарий" id="213">
+									<DataPath>Объект.ДолжникиНаСегодня.Комментарий</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ДолжникиНаСегодняКомментарийКонтекстноеМеню" id="214"/>
+									<ExtendedTooltip name="ДолжникиНаСегодняКомментарийРасширеннаяПодсказка" id="215"/>
+								</InputField>
+								<InputField name="ДолжникиНаСегодняОплатилВсего" id="216">
+									<DataPath>Объект.ДолжникиНаСегодня.ОплатилВсего</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ДолжникиНаСегодняОплатилВсегоКонтекстноеМеню" id="217"/>
+									<ExtendedTooltip name="ДолжникиНаСегодняОплатилВсегоРасширеннаяПодсказка" id="218"/>
+								</InputField>
+								<InputField name="ДолжникиНаСегодняСотрудник" id="219">
+									<DataPath>Объект.ДолжникиНаСегодня.Сотрудник</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ДолжникиНаСегодняСотрудникКонтекстноеМеню" id="220"/>
+									<ExtendedTooltip name="ДолжникиНаСегодняСотрудникРасширеннаяПодсказка" id="221"/>
+								</InputField>
+								<InputField name="ДолжникиНаСегодняОтдел" id="222">
+									<DataPath>Объект.ДолжникиНаСегодня.Отдел</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ДолжникиНаСегодняОтделКонтекстноеМеню" id="223"/>
+									<ExtendedTooltip name="ДолжникиНаСегодняОтделРасширеннаяПодсказка" id="224"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="ГруппаСтатистика" id="292">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Статистика</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа статистика</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаСтатистикаРасширеннаяПодсказка" id="293"/>
+					<ChildItems>
+						<SpreadSheetDocumentField name="ТаблицаСтатистики" id="294">
+							<DataPath>ТаблицаСтатистики</DataPath>
+							<TitleLocation>None</TitleLocation>
+							<ContextMenu name="ТаблицаСтатистикиКонтекстноеМеню" id="295"/>
+							<ExtendedTooltip name="ТаблицаСтатистикиРасширеннаяПодсказка" id="296"/>
+						</SpreadSheetDocumentField>
+					</ChildItems>
+				</Page>
+				<Page name="ГруппаВыезд" id="12">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Выезд</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="ГруппаВыездРасширеннаяПодсказка" id="13"/>
+					<ChildItems>
+						<Table name="Выезд" id="14">
+							<Representation>List</Representation>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<FileDragMode>AsFile</FileDragMode>
+							<DataPath>Объект.Выезд</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ВыездКонтекстноеМеню" id="15"/>
+							<AutoCommandBar name="ВыездКоманднаяПанель" id="16"/>
+							<ExtendedTooltip name="ВыездРасширеннаяПодсказка" id="17"/>
+							<SearchStringAddition name="ВыездСтрокаПоиска" id="18">
+								<AdditionSource>
+									<Item>Выезд</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ВыездСтрокаПоискаКонтекстноеМеню" id="19"/>
+								<ExtendedTooltip name="ВыездСтрокаПоискаРасширеннаяПодсказка" id="20"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ВыездСостояниеПросмотра" id="21">
+								<AdditionSource>
+									<Item>Выезд</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ВыездСостояниеПросмотраКонтекстноеМеню" id="22"/>
+								<ExtendedTooltip name="ВыездСостояниеПросмотраРасширеннаяПодсказка" id="23"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ВыездУправлениеПоиском" id="24">
+								<AdditionSource>
+									<Item>Выезд</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ВыездУправлениеПоискомКонтекстноеМеню" id="25"/>
+								<ExtendedTooltip name="ВыездУправлениеПоискомРасширеннаяПодсказка" id="26"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<LabelField name="ВыездНомерСтроки" id="27">
+									<DataPath>Объект.Выезд.LineNumber</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ВыездНомерСтрокиКонтекстноеМеню" id="28"/>
+									<ExtendedTooltip name="ВыездНомерСтрокиРасширеннаяПодсказка" id="29"/>
+								</LabelField>
+								<InputField name="ВыездДолжник" id="30">
+									<DataPath>Объект.Выезд.Должник</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ВыездДолжникКонтекстноеМеню" id="31"/>
+									<ExtendedTooltip name="ВыездДолжникРасширеннаяПодсказка" id="32"/>
+								</InputField>
+								<InputField name="ВыездВсегоЗадолженность" id="33">
+									<DataPath>Объект.Выезд.ВсегоЗадолженность</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ВыездВсегоЗадолженностьКонтекстноеМеню" id="34"/>
+									<ExtendedTooltip name="ВыездВсегоЗадолженностьРасширеннаяПодсказка" id="35"/>
+								</InputField>
+								<InputField name="ВыездТекущийОсновнойДолг" id="36">
+									<DataPath>Объект.Выезд.ТекущийОсновнойДолг</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ВыездТекущийОсновнойДолгКонтекстноеМеню" id="37"/>
+									<ExtendedTooltip name="ВыездТекущийОсновнойДолгРасширеннаяПодсказка" id="38"/>
+								</InputField>
+								<InputField name="ВыездБанк" id="39">
+									<DataPath>Объект.Выезд.Банк</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ВыездБанкКонтекстноеМеню" id="40"/>
+									<ExtendedTooltip name="ВыездБанкРасширеннаяПодсказка" id="41"/>
+								</InputField>
+								<InputField name="ВыездДнейПросрочки" id="42">
+									<DataPath>Объект.Выезд.ДнейПросрочки</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ВыездДнейПросрочкиКонтекстноеМеню" id="43"/>
+									<ExtendedTooltip name="ВыездДнейПросрочкиРасширеннаяПодсказка" id="44"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="ГруппаМенеджер" id="297">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Менеджер</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа менеджер</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаМенеджерРасширеннаяПодсказка" id="298"/>
+					<ChildItems>
+						<InputField name="Сотрудник" id="1">
+							<DataPath>Объект.Сотрудник</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<QuickChoice>true</QuickChoice>
+							<ContextMenu name="СотрудникКонтекстноеМеню" id="2"/>
+							<ExtendedTooltip name="СотрудникРасширеннаяПодсказка" id="3"/>
+						</InputField>
+					</ChildItems>
+				</Page>
+				<Page name="ГруппаДолжники" id="45">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Должники</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="ГруппаДолжникиРасширеннаяПодсказка" id="46"/>
+				</Page>
+				<Page name="ГруппаПередачаДолжников" id="299">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Передача должников</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа передача должников</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаПередачаДолжниковРасширеннаяПодсказка" id="300"/>
+					<ChildItems>
+						<Table name="ПередачаДолжников" id="301">
+							<UseAlternationRowColor>true</UseAlternationRowColor>
+							<EnableStartDrag>true</EnableStartDrag>
+							<FileDragMode>AsFile</FileDragMode>
+							<DataPath>ПередачаДолжников</DataPath>
+							<RowPictureDataPath>ПередачаДолжников.DefaultPicture</RowPictureDataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Куда</v8:content>
+								</v8:item>
+							</Title>
+							<AutoRefresh>false</AutoRefresh>
+							<AutoRefreshPeriod>60</AutoRefreshPeriod>
+							<Period>
+								<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+								<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+								<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+							</Period>
+							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+							<RestoreCurrentRow>false</RestoreCurrentRow>
+							<TopLevelParent xsi:nil="true"/>
+							<ShowRoot>true</ShowRoot>
+							<AllowRootChoice>false</AllowRootChoice>
+							<UpdateOnDataChange>Auto</UpdateOnDataChange>
+							<ContextMenu name="ПередачаДолжниковКонтекстноеМеню" id="302"/>
+							<AutoCommandBar name="ПередачаДолжниковКоманднаяПанель" id="303">
+								<ChildItems>
+									<Button name="ПередачаДолжниковВыезд" id="359">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.Выезд</CommandName>
+										<ExtendedTooltip name="ПередачаДолжниковВыездРасширеннаяПодсказка" id="360"/>
+									</Button>
+									<Button name="ПередачаДолжниковУточнениеИнформации" id="361">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.УточнениеИнформации</CommandName>
+										<ExtendedTooltip name="ПередачаДолжниковУточнениеИнформацииРасширеннаяПодсказка" id="362"/>
+									</Button>
+									<Button name="ПередачаДолжниковПрекращениеРаботы" id="363">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.ПрекращениеРаботы</CommandName>
+										<ExtendedTooltip name="ПередачаДолжниковПрекращениеРаботыРасширеннаяПодсказка" id="364"/>
+									</Button>
+									<Button name="ПередачаДолжниковЗапросВБанк" id="365">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.ЗапросВБанк</CommandName>
+										<ExtendedTooltip name="ПередачаДолжниковЗапросВБанкРасширеннаяПодсказка" id="366"/>
+									</Button>
+									<Button name="ПередачаДолжниковПоказатьВсе" id="369">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.ПоказатьВсе</CommandName>
+										<ExtendedTooltip name="ПередачаДолжниковПоказатьВсеРасширеннаяПодсказка" id="370"/>
+									</Button>
+								</ChildItems>
+							</AutoCommandBar>
+							<ExtendedTooltip name="ПередачаДолжниковРасширеннаяПодсказка" id="304"/>
+							<SearchStringAddition name="ПередачаДолжниковСтрокаПоиска" id="305">
+								<AdditionSource>
+									<Item>ПередачаДолжников</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ПередачаДолжниковСтрокаПоискаКонтекстноеМеню" id="306"/>
+								<ExtendedTooltip name="ПередачаДолжниковСтрокаПоискаРасширеннаяПодсказка" id="307"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ПередачаДолжниковСостояниеПросмотра" id="308">
+								<AdditionSource>
+									<Item>ПередачаДолжников</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ПередачаДолжниковСостояниеПросмотраКонтекстноеМеню" id="309"/>
+								<ExtendedTooltip name="ПередачаДолжниковСостояниеПросмотраРасширеннаяПодсказка" id="310"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ПередачаДолжниковУправлениеПоиском" id="311">
+								<AdditionSource>
+									<Item>ПередачаДолжников</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ПередачаДолжниковУправлениеПоискомКонтекстноеМеню" id="312"/>
+								<ExtendedTooltip name="ПередачаДолжниковУправлениеПоискомРасширеннаяПодсказка" id="313"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<LabelField name="ПередачаДолжниковДата" id="314">
+									<DataPath>ПередачаДолжников.Date</DataPath>
+									<Width>1</Width>
+									<ContextMenu name="ПередачаДолжниковДатаКонтекстноеМеню" id="315"/>
+									<ExtendedTooltip name="ПередачаДолжниковДатаРасширеннаяПодсказка" id="316"/>
+								</LabelField>
+								<LabelField name="ПередачаДолжниковАвтор" id="341">
+									<DataPath>ПередачаДолжников.Автор</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>От кого</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="ПередачаДолжниковАвторКонтекстноеМеню" id="342"/>
+									<ExtendedTooltip name="ПередачаДолжниковАвторРасширеннаяПодсказка" id="343"/>
+								</LabelField>
+								<ColumnGroup name="ПередачаДолжниковГруппа1" id="371">
+									<ExtendedTooltip name="ПередачаДолжниковГруппа1РасширеннаяПодсказка" id="372"/>
+									<ChildItems>
+										<LabelField name="ПередачаДолжниковОтдел" id="323">
+											<DataPath>ПередачаДолжников.Отдел</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Куда</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="ПередачаДолжниковОтделКонтекстноеМеню" id="324"/>
+											<ExtendedTooltip name="ПередачаДолжниковОтделРасширеннаяПодсказка" id="325"/>
+										</LabelField>
+										<LabelField name="ПередачаДолжниковСотрудник" id="326">
+											<DataPath>ПередачаДолжников.Сотрудник</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Кому</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="ПередачаДолжниковСотрудникКонтекстноеМеню" id="327"/>
+											<ExtendedTooltip name="ПередачаДолжниковСотрудникРасширеннаяПодсказка" id="328"/>
+										</LabelField>
+									</ChildItems>
+								</ColumnGroup>
+								<LabelField name="ПередачаДолжниковКомментарий" id="320">
+									<DataPath>ПередачаДолжников.Комментарий</DataPath>
+									<ContextMenu name="ПередачаДолжниковКомментарийКонтекстноеМеню" id="321"/>
+									<ExtendedTooltip name="ПередачаДолжниковКомментарийРасширеннаяПодсказка" id="322"/>
+								</LabelField>
+								<ColumnGroup name="ПередачаДолжниковГруппа2" id="373">
+									<ExtendedTooltip name="ПередачаДолжниковГруппа2РасширеннаяПодсказка" id="374"/>
+									<ChildItems>
+										<CheckBoxField name="ПередачаДолжниковСнятиеОтветственного" id="329">
+											<DataPath>ПередачаДолжников.СнятиеОтветственного</DataPath>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="ПередачаДолжниковСнятиеОтветственногоКонтекстноеМеню" id="330"/>
+											<ExtendedTooltip name="ПередачаДолжниковСнятиеОтветственногоРасширеннаяПодсказка" id="331"/>
+										</CheckBoxField>
+										<CheckBoxField name="ПередачаДолжниковПередачаВСвободныйПул" id="332">
+											<DataPath>ПередачаДолжников.ПередачаВСвободныйПул</DataPath>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="ПередачаДолжниковПередачаВСвободныйПулКонтекстноеМеню" id="333"/>
+											<ExtendedTooltip name="ПередачаДолжниковПередачаВСвободныйПулРасширеннаяПодсказка" id="334"/>
+										</CheckBoxField>
+									</ChildItems>
+								</ColumnGroup>
+								<LabelField name="ПередачаДолжниковРольОтдела" id="344">
+									<DataPath>ПередачаДолжников.РольОтдела</DataPath>
+									<ContextMenu name="ПередачаДолжниковРольОтделаКонтекстноеМеню" id="345"/>
+									<ExtendedTooltip name="ПередачаДолжниковРольОтделаРасширеннаяПодсказка" id="346"/>
+								</LabelField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="ГруппаПоНаправлениям" id="120">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>По направлениям</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="ГруппаПоНаправлениямРасширеннаяПодсказка" id="121"/>
+					<ChildItems>
+						<Table name="ПоНаправлениям" id="122">
+							<Representation>List</Representation>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<FileDragMode>AsFile</FileDragMode>
+							<DataPath>Объект.ПоНаправлениям</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ПоНаправлениямКонтекстноеМеню" id="123"/>
+							<AutoCommandBar name="ПоНаправлениямКоманднаяПанель" id="124"/>
+							<ExtendedTooltip name="ПоНаправлениямРасширеннаяПодсказка" id="125"/>
+							<SearchStringAddition name="ПоНаправлениямСтрокаПоиска" id="126">
+								<AdditionSource>
+									<Item>ПоНаправлениям</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ПоНаправлениямСтрокаПоискаКонтекстноеМеню" id="127"/>
+								<ExtendedTooltip name="ПоНаправлениямСтрокаПоискаРасширеннаяПодсказка" id="128"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ПоНаправлениямСостояниеПросмотра" id="129">
+								<AdditionSource>
+									<Item>ПоНаправлениям</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ПоНаправлениямСостояниеПросмотраКонтекстноеМеню" id="130"/>
+								<ExtendedTooltip name="ПоНаправлениямСостояниеПросмотраРасширеннаяПодсказка" id="131"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ПоНаправлениямУправлениеПоиском" id="132">
+								<AdditionSource>
+									<Item>ПоНаправлениям</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ПоНаправлениямУправлениеПоискомКонтекстноеМеню" id="133"/>
+								<ExtendedTooltip name="ПоНаправлениямУправлениеПоискомРасширеннаяПодсказка" id="134"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<LabelField name="ПоНаправлениямНомерСтроки" id="135">
+									<DataPath>Объект.ПоНаправлениям.LineNumber</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПоНаправлениямНомерСтрокиКонтекстноеМеню" id="136"/>
+									<ExtendedTooltip name="ПоНаправлениямНомерСтрокиРасширеннаяПодсказка" id="137"/>
+								</LabelField>
+								<InputField name="ПоНаправлениямДолжник" id="138">
+									<DataPath>Объект.ПоНаправлениям.Должник</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПоНаправлениямДолжникКонтекстноеМеню" id="139"/>
+									<ExtendedTooltip name="ПоНаправлениямДолжникРасширеннаяПодсказка" id="140"/>
+								</InputField>
+								<InputField name="ПоНаправлениямВсегоЗадолженность" id="141">
+									<DataPath>Объект.ПоНаправлениям.ВсегоЗадолженность</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПоНаправлениямВсегоЗадолженностьКонтекстноеМеню" id="142"/>
+									<ExtendedTooltip name="ПоНаправлениямВсегоЗадолженностьРасширеннаяПодсказка" id="143"/>
+								</InputField>
+								<InputField name="ПоНаправлениямТекущийОсновнойДолг" id="144">
+									<DataPath>Объект.ПоНаправлениям.ТекущийОсновнойДолг</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПоНаправлениямТекущийОсновнойДолгКонтекстноеМеню" id="145"/>
+									<ExtendedTooltip name="ПоНаправлениямТекущийОсновнойДолгРасширеннаяПодсказка" id="146"/>
+								</InputField>
+								<InputField name="ПоНаправлениямБанк" id="147">
+									<DataPath>Объект.ПоНаправлениям.Банк</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПоНаправлениямБанкКонтекстноеМеню" id="148"/>
+									<ExtendedTooltip name="ПоНаправлениямБанкРасширеннаяПодсказка" id="149"/>
+								</InputField>
+								<InputField name="ПоНаправлениямДнейПросрочки" id="150">
+									<DataPath>Объект.ПоНаправлениям.ДнейПросрочки</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПоНаправлениямДнейПросрочкиКонтекстноеМеню" id="151"/>
+									<ExtendedTooltip name="ПоНаправлениямДнейПросрочкиРасширеннаяПодсказка" id="152"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="ГруппаДолжникиНаСегодня" id="153">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Должники на сегодня</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="ГруппаДолжникиНаСегодняРасширеннаяПодсказка" id="154"/>
+				</Page>
+				<Page name="ГруппаСводнаяТаблица" id="353">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Сводная таблица (выезд)</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа сводная таблица</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаСводнаяТаблицаРасширеннаяПодсказка" id="354"/>
+				</Page>
+			</ChildItems>
+		</Pages>
+		<UsualGroup name="Группа5" id="355">
+			<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа5РасширеннаяПодсказка" id="356"/>
+			<ChildItems>
+				<InputField name="Отдел" id="4">
+					<DataPath>Объект.Отдел</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ОтделКонтекстноеМеню" id="5"/>
+					<ExtendedTooltip name="ОтделРасширеннаяПодсказка" id="6"/>
+				</InputField>
+				<Button name="ВыйтиИзПрограммы" id="357">
+					<Type>UsualButton</Type>
+					<CommandName>Form.Command.ВыйтиИзПрограммы</CommandName>
+					<ExtendedTooltip name="ВыйтиИзПрограммыРасширеннаяПодсказка" id="358"/>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.РабочееМесто</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="СтрокаПоиска" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Поиск</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Должники</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ДолжникиНаТекущийДень" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Должники на текущий день</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Должник" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Должник</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Должники</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Дата" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Время</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>DateTime</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="ПланироватьРежимРаботы" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Планировать режим работы</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:EnumRef.РежимыРаботы</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="НаДату" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>На дату</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:dateTime</v8:Type>
+				<v8:DateQualifiers>
+					<v8:DateFractions>Date</v8:DateFractions>
+				</v8:DateQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="глДневнаяНорма" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Гл дневная норма</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>10</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ТаблицаСтатистики" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Таблица статистики</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type xmlns:mxl="http://v8.1c.ru/8.2/data/spreadsheet">mxl:SpreadsheetDocument</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ПередачаДолжников" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Передача должников</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>false</ManualQuery>
+				<DynamicDataRead>true</DynamicDataRead>
+				<MainTable>Document.ПередачаДолжников</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+		<Attribute name="ДолжникиСотрудника" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Должники сотрудника</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="КоллективнаяРабота" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Коллективная работа</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="НачалоТекущегоДня" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Начало текущего дня</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:dateTime</v8:Type>
+				<v8:DateQualifiers>
+					<v8:DateFractions>Date</v8:DateFractions>
+				</v8:DateQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ДопустимыйЧасовойПояс" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Допустимый часовой пояс</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>1</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="списокПозднихРегионов" id="13">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список поздних регионов</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="Х2" id="14">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Х2</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ОбновитьДанные" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить задание</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить данные</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОбработатьКомандуФормы</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="СменитьРежимРаботы" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сменить режим работы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сменить режим работы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОбработатьКомандуФормы</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ПечатьКарточки" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Печать карточки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Печать карточки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОбработатьКомандуФормы</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="РасширенныйПоиск" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Расширенный поиск</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Расширенный поиск</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОбработатьКомандуФормы</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ДобавитьВЗадание" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить в задание</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить в задание</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОбработатьКомандуФормы</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ВыйтиИзПрограммы" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выйти из программы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выйти из программы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.Stop</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ОбработатьКомандуФормы</Action>
+			<Representation>TextPicture</Representation>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ПолучитьНовогоДолжника" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Получить нового должника</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Получить нового должника</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОбработатьКомандуФормы</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ОбновитьСвободныйПул" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить свободный пул</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить свободный пул</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОбработатьКомандуФормы</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="Выезд" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выезд</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выезд</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОтфильроватьОтображение</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="УточнениеИнформации" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Уточнение информации</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Уточнение информации</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОтфильроватьОтображение</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ПрекращениеРаботы" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Прекращение работы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Прекращение работы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОтфильроватьОтображение</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ЗапросВБанк" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Запрос в банк</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Запрос в банк</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОтфильроватьОтображение</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ПоказатьВсе" id="13">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показать все</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показать все</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОтфильроватьОтображение</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="Команда1" id="14">
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ДеревоРешений" id="15">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дерево решений</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дерево решений</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ДеревоРешений</Action>
+		</Command>
+	</Commands>
+</Form>

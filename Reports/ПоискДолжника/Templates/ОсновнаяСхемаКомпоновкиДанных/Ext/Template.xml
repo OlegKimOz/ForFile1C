@@ -1,0 +1,167 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>ИсточникДанных1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetQuery">
+		<name>НаборДанных1</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Должник</dataPath>
+			<field>Должник</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Должник</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Телефон</dataPath>
+			<field>Телефон</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Телефон</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Договор</dataPath>
+			<field>Договор</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Договор</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ
+	Должники.Ссылка КАК Должник,
+	Должники.Представление КАК Представление,
+	Телефоны.Номер КАК Телефон,
+	Договоры.НомерДоговора КАК Договор
+ИЗ
+	Справочник.Телефоны КАК Телефоны
+		ЛЕВОЕ СОЕДИНЕНИЕ Справочник.Должники КАК Должники
+			ВНУТРЕННЕЕ СОЕДИНЕНИЕ Справочник.Договоры КАК Договоры
+			ПО (Договоры.Владелец = Должники.Ссылка)
+		ПО Телефоны.Владелец = Должники.Ссылка
+ГДЕ
+	Должники.Наименование ПОДОБНО &amp;СтрокаПоиска
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	Должники.Ссылка,
+	Должники.Представление,
+	Телефоны.Номер,
+	Договоры.НомерДоговора
+ИЗ
+	Справочник.Телефоны КАК Телефоны
+		ЛЕВОЕ СОЕДИНЕНИЕ Справочник.Должники КАК Должники
+			ВНУТРЕННЕЕ СОЕДИНЕНИЕ Справочник.Договоры КАК Договоры
+			ПО (Договоры.Владелец = Должники.Ссылка)
+		ПО Телефоны.Владелец = Должники.Ссылка
+ГДЕ
+	Телефоны.Номер ПОДОБНО &amp;СтрокаПоиска
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	Должники.Ссылка,
+	Должники.Представление,
+	Телефоны.Номер,
+	Договоры.НомерДоговора
+ИЗ
+	Справочник.Телефоны КАК Телефоны
+		ЛЕВОЕ СОЕДИНЕНИЕ Справочник.Должники КАК Должники
+			ВНУТРЕННЕЕ СОЕДИНЕНИЕ Справочник.Договоры КАК Договоры
+			ПО (Договоры.Владелец = Должники.Ссылка)
+		ПО Телефоны.Владелец = Должники.Ссылка
+ГДЕ
+	Договоры.НомерДоговора ПОДОБНО &amp;СтрокаПоиска</query>
+	</dataSet>
+	<parameter>
+		<name>СтрокаПоиска</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Строка поиска</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:string</v8:Type>
+			<v8:StringQualifiers>
+				<v8:Length>0</v8:Length>
+				<v8:AllowedLength>Variable</v8:AllowedLength>
+			</v8:StringQualifiers>
+		</valueType>
+		<value xsi:type="xs:string"/>
+		<useRestriction>true</useRestriction>
+		<expression>"%" + &amp;СтрокаДляПоиска + "%"</expression>
+	</parameter>
+	<parameter>
+		<name>СтрокаДляПоиска</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Строка для поиска</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:string</v8:Type>
+			<v8:StringQualifiers>
+				<v8:Length>0</v8:Length>
+				<v8:AllowedLength>Variable</v8:AllowedLength>
+			</v8:StringQualifiers>
+		</valueType>
+		<value xsi:type="xs:string"/>
+		<useRestriction>false</useRestriction>
+		<denyIncompleteValues>true</denyIncompleteValues>
+	</parameter>
+	<settingsVariant>
+		<dcsset:name>Основной</dcsset:name>
+		<dcsset:presentation xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Поиск должника</v8:content>
+			</v8:item>
+		</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:selection>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Должник</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Договор</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Телефон</dcsset:field>
+				</dcsset:item>
+			</dcsset:selection>
+			<dcsset:dataParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>СтрокаДляПоиска</dcscor:parameter>
+					<dcscor:value xsi:type="xs:string"/>
+					<dcsset:userSettingID>76ad2dee-43ce-41fd-bfd6-9f754449a2d5</dcsset:userSettingID>
+				</dcscor:item>
+			</dcsset:dataParameters>
+			<dcsset:order>
+				<dcsset:item xsi:type="dcsset:OrderItemField">
+					<dcsset:field>Должник.Наименование</dcsset:field>
+					<dcsset:orderType>Asc</dcsset:orderType>
+				</dcsset:item>
+			</dcsset:order>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+				</dcsset:selection>
+			</dcsset:item>
+		</dcsset:settings>
+	</settingsVariant>
+</DataCompositionSchema>

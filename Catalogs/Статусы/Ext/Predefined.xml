@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.9">
+	<Item id="f669ca5b-579e-425b-9cd8-c2c122560b62">
+		<Name>НетКонтакта</Name>
+		<Code>000000004</Code>
+		<Description>Нет контакта</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="a24c6d8c-e207-4345-a790-8ab008230d23">
+		<Name>ОбещаниеОплатить</Name>
+		<Code>000000003</Code>
+		<Description>Обещание оплатить</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="d975e74c-c1e0-478a-a768-3b9ad9f4bb12">
+		<Name>ОплатилПолностью</Name>
+		<Code>000000006</Code>
+		<Description>Оплатил полностью</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="8bf13ed7-3580-40ff-8a78-f11c1d5355cb">
+		<Name>ОплатилЧастично</Name>
+		<Code>000000001</Code>
+		<Description>Оплатил частично</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="1acd65e7-94c2-4246-b93f-ebf44389fab9">
+		<Name>ОставленаИнформация</Name>
+		<Code>000000005</Code>
+		<Description>Оставлена информация</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="9cd6ca1a-fb0f-402f-9081-1ed7a5934231">
+		<Name>Прогноз</Name>
+		<Code>000000002</Code>
+		<Description>Прогноз</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+</PredefinedData>

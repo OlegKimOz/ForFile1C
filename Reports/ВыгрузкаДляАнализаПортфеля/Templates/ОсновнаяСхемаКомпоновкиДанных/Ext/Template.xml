@@ -1,0 +1,4044 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>ИсточникДанных1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetQuery">
+		<name>НаборДанных1</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Банк</dataPath>
+			<field>Банк</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Реестр</dataPath>
+			<field>Реестр</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Реестр</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДоговорНомерДоговора</dataPath>
+			<field>ДоговорНомерДоговора</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДатаПередачи</dataPath>
+			<field>ДатаПередачи</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Договор</dataPath>
+			<field>Договор</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>РеестрНомер</dataPath>
+			<field>РеестрНомер</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Реестр номер</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Должник</dataPath>
+			<field>Должник</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Платежи2015.Февраль2015Сумма</dataPath>
+			<field>Февраль2015Сумма</field>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>ГоризонтальноеПоложение</dcscor:parameter>
+					<dcscor:value xsi:type="v8ui:HorizontalAlign">Center</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Платежи2015.Январь2015Сумма</dataPath>
+			<field>Январь2015Сумма</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Январь2015 сумма</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДолжникДатаРождения</dataPath>
+			<field>ДолжникДатаРождения</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДолжникРегион</dataPath>
+			<field>ДолжникРегион</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Регион</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДоговорТипКредита</dataPath>
+			<field>ДоговорТипКредита</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Платежи2015.Март2015Сумма</dataPath>
+			<field>Март2015Сумма</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Март2015 сумма</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Платежи2015.Апрель2015Сумма</dataPath>
+			<field>Апрель2015Сумма</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Апрель2015 сумма</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Платежи2015.Май2015Сумма</dataPath>
+			<field>Май2015Сумма</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Май2015 сумма</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Платежи2015.Июнь2015Сумма</dataPath>
+			<field>Июнь2015Сумма</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Июнь2015 сумма</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Платежи2015.Июль2015Сумма</dataPath>
+			<field>Июль2015Сумма</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Июль2015 сумма</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Платежи2015.Август2015Сумма</dataPath>
+			<field>Август2015Сумма</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Август2015 сумма</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Платежи2015.Сентябрь2015Сумма</dataPath>
+			<field>Сентябрь2015Сумма</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сентябрь2015 сумма</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Платежи2015.Октябрь2015Сумма</dataPath>
+			<field>Октябрь2015Сумма</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Октябрь2015 сумма</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Платежи2015.Ноябрь2015Сумма</dataPath>
+			<field>Ноябрь2015Сумма</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ноябрь2015 сумма</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Платежи2015.Декабрь2015Сумма</dataPath>
+			<field>Декабрь2015Сумма</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Декабрь2015 сумма</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Платежи2017.Декабрь2017Сумма</dataPath>
+			<field>Декабрь2017Сумма</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Декабрь2017 сумма</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Платежи2017.Июль2017Сумма</dataPath>
+			<field>Июль2017Сумма</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Июль2017 сумма</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Платежи2016.Октябрь2016Сумма</dataPath>
+			<field>Октябрь2016Сумма</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Октябрь2016 сумма</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Платежи2017.Ноябрь2017Сумма</dataPath>
+			<field>Ноябрь2017Сумма</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ноябрь2017 сумма</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Платежи2016.Июль2016Сумма</dataPath>
+			<field>Июль2016Сумма</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Июль2016 сумма</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Платежи2017.Май2017Сумма</dataPath>
+			<field>Май2017Сумма</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Май2017 сумма</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Платежи2016.Август2016Сумма</dataPath>
+			<field>Август2016Сумма</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Август2016 сумма</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Платежи2016.Январь2016Сумма</dataPath>
+			<field>Январь2016Сумма</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Январь2016 сумма</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Платежи2016.Февраль2016Сумма</dataPath>
+			<field>Февраль2016Сумма</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Февраль2016 сумма</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Платежи2016.Март2016Сумма</dataPath>
+			<field>Март2016Сумма</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Март2016 сумма</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Платежи2016.Апрель2016Сумма</dataPath>
+			<field>Апрель2016Сумма</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Апрель2016 сумма</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Платежи2016.Май2016Сумма</dataPath>
+			<field>Май2016Сумма</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Май2016 сумма</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Платежи2016.Июнь2016Сумма</dataPath>
+			<field>Июнь2016Сумма</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Июнь2016 сумма</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Платежи2016.Сентябрь2016Сумма</dataPath>
+			<field>Сентябрь2016Сумма</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сентябрь2016 сумма</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Платежи2016.Ноябрь2016Сумма</dataPath>
+			<field>Ноябрь2016Сумма</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ноябрь2016 сумма</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Платежи2017.Август2017Сумма</dataPath>
+			<field>Август2017Сумма</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Август2017 сумма</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Платежи2016.Декабрь2016Сумма</dataPath>
+			<field>Декабрь2016Сумма</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Декабрь2016 сумма</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Платежи2017.Январь2017Сумма</dataPath>
+			<field>Январь2017Сумма</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Январь2017 сумма</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Платежи2017.Февраль2017Сумма</dataPath>
+			<field>Февраль2017Сумма</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Февраль2017 сумма</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Платежи2017.Март2017Сумма</dataPath>
+			<field>Март2017Сумма</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Март2017 сумма</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Платежи2017.Апрель2017Сумма</dataPath>
+			<field>Апрель2017Сумма</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Апрель2017 сумма</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Платежи2017.Июнь2017Сумма</dataPath>
+			<field>Июнь2017Сумма</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Июнь2017 сумма</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Платежи2017.Сентябрь2017Сумма</dataPath>
+			<field>Сентябрь2017Сумма</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сентябрь2017 сумма</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Платежи2017.Октябрь2017Сумма</dataPath>
+			<field>Октябрь2017Сумма</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Октябрь2017 сумма</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Платежи2019.Июль2019Сумма</dataPath>
+			<field>Июль2019Сумма</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Июль2019 сумма</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Платежи2018.Октябрь2018Сумма</dataPath>
+			<field>Октябрь2018Сумма</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Октябрь2018 сумма</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Платежи2019.Январь2019Сумма</dataPath>
+			<field>Январь2019Сумма</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Январь2019 сумма</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Платежи2018.Август2018Сумма</dataPath>
+			<field>Август2018Сумма</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Август2018 сумма</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Платежи2018.Июнь2018Сумма</dataPath>
+			<field>Июнь2018Сумма</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Июнь2018 сумма</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Платежи2019.Август2019Сумма</dataPath>
+			<field>Август2019Сумма</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Август2019 сумма</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Платежи2018.Декабрь2018Сумма</dataPath>
+			<field>Декабрь2018Сумма</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Декабрь2018 сумма</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Платежи2018.Февраль2018Сумма</dataPath>
+			<field>Февраль2018Сумма</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Февраль2018 сумма</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Платежи2019.Май2019Сумма</dataPath>
+			<field>Май2019Сумма</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Май2019 сумма</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Платежи2018.Ноябрь2018Сумма</dataPath>
+			<field>Ноябрь2018Сумма</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ноябрь2018 сумма</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Платежи2019.Декабрь2019Сумма</dataPath>
+			<field>Декабрь2019Сумма</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Декабрь2019 сумма</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Платежи2019.Февраль2019Сумма</dataPath>
+			<field>Февраль2019Сумма</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Февраль2019 сумма</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Платежи2018.Май2018Сумма</dataPath>
+			<field>Май2018Сумма</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Май2018 сумма</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Платежи2018.Июль2018Сумма</dataPath>
+			<field>Июль2018Сумма</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Июль2018 сумма</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Платежи2018.Январь2018Сумма</dataPath>
+			<field>Январь2018Сумма</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Январь2018 сумма</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Платежи2018.Март2018Сумма</dataPath>
+			<field>Март2018Сумма</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Март2018 сумма</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Платежи2018.Апрель2018Сумма</dataPath>
+			<field>Апрель2018Сумма</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Апрель2018 сумма</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Платежи2018.Сентябрь2018Сумма</dataPath>
+			<field>Сентябрь2018Сумма</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сентябрь2018 сумма</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Платежи2019.Март2019Сумма</dataPath>
+			<field>Март2019Сумма</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Март2019 сумма</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Платежи2019.Апрель2019Сумма</dataPath>
+			<field>Апрель2019Сумма</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Апрель2019 сумма</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Платежи2019.Июнь2019Сумма</dataPath>
+			<field>Июнь2019Сумма</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Июнь2019 сумма</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Платежи2019.Сентябрь2019Сумма</dataPath>
+			<field>Сентябрь2019Сумма</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сентябрь2019 сумма</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Платежи2019.Октябрь2019Сумма</dataPath>
+			<field>Октябрь2019Сумма</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Октябрь2019 сумма</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Платежи2019.Ноябрь2019Сумма</dataPath>
+			<field>Ноябрь2019Сумма</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ноябрь2019 сумма</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Количество2015.Январь2015Колич</dataPath>
+			<field>Январь2015Колич</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество2015.Январь2015 колич</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Количество2015.Февраль2015Колич</dataPath>
+			<field>Февраль2015Колич</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество2015.Февраль2015 колич</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Количество2015.Март2015Колич</dataPath>
+			<field>Март2015Колич</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество2015.Март2015 колич</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Количество2015.Апрель2015Колич</dataPath>
+			<field>Апрель2015Колич</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество2015.Апрель2015 колич</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Количество2015.Май2015Колич</dataPath>
+			<field>Май2015Колич</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество2015.Май2015 колич</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Количество2015.Июнь2015Колич</dataPath>
+			<field>Июнь2015Колич</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество2015.Июнь2015 колич</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Количество2015.Июль2015Колич</dataPath>
+			<field>Июль2015Колич</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество2015.Июль2015 колич</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Количество2015.Август2015Колич</dataPath>
+			<field>Август2015Колич</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество2015.Август2015 колич</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Количество2015.Сентябрь2015Колич</dataPath>
+			<field>Сентябрь2015Колич</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество2015.Сентябрь2015 колич</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Количество2015.Октябрь2015Колич</dataPath>
+			<field>Октябрь2015Колич</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество2015.Октябрь2015 колич</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Количество2015.Ноябрь2015Колич</dataPath>
+			<field>Ноябрь2015Колич</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество2015.Ноябрь2015 колич</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Количество2015.Декабрь2015Колич</dataPath>
+			<field>Декабрь2015Колич</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество2015.Декабрь2015 колич</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Количество2016.Январь2016Колич</dataPath>
+			<field>Январь2016Колич</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество2016.Январь2016 колич</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Количество2016.Февраль2016Колич</dataPath>
+			<field>Февраль2016Колич</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество2016.Февраль2016 колич</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Количество2016.Март2016Колич</dataPath>
+			<field>Март2016Колич</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество2016.Март2016 колич</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Количество2016.Апрель2016Колич</dataPath>
+			<field>Апрель2016Колич</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество2016.Апрель2016 колич</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Количество2016.Май2016Колич</dataPath>
+			<field>Май2016Колич</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество2016.Май2016 колич</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Количество2016.Июнь2016Колич</dataPath>
+			<field>Июнь2016Колич</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество2016.Июнь2016 колич</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Количество2016.Июль2016Колич</dataPath>
+			<field>Июль2016Колич</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество2016.Июль2016 колич</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Количество2016.Август2016Колич</dataPath>
+			<field>Август2016Колич</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество2016.Август2016 колич</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Количество2016.Сентябрь2016Колич</dataPath>
+			<field>Сентябрь2016Колич</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество2016.Сентябрь2016 колич</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Количество2016.Октябрь2016Колич</dataPath>
+			<field>Октябрь2016Колич</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество2016.Октябрь2016 колич</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Количество2016.Ноябрь2016Колич</dataPath>
+			<field>Ноябрь2016Колич</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество2016.Ноябрь2016 колич</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Количество2016.Декабрь2016Колич</dataPath>
+			<field>Декабрь2016Колич</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество2016.Декабрь2016 колич</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Количество2017.Январь2017Колич</dataPath>
+			<field>Январь2017Колич</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество2017.Январь2017 колич</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Количество2017.Февраль2017Колич</dataPath>
+			<field>Февраль2017Колич</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество2017.Февраль2017 колич</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Количество2017.Март2017Колич</dataPath>
+			<field>Март2017Колич</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество2017.Март2017 колич</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Количество2017.Апрель2017Колич</dataPath>
+			<field>Апрель2017Колич</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество2017.Апрель2017 колич</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Количество2017.Май2017Колич</dataPath>
+			<field>Май2017Колич</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество2017.Май2017 колич</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Количество2017.Июнь2017Колич</dataPath>
+			<field>Июнь2017Колич</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество2017.Июнь2017 колич</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Количество2017.Июль2017Колич</dataPath>
+			<field>Июль2017Колич</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество2017.Июль2017 колич</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Количество2017.Август2017Колич</dataPath>
+			<field>Август2017Колич</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество2017.Август2017 колич</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Количество2017.Сентябрь2017Колич</dataPath>
+			<field>Сентябрь2017Колич</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество2017.Сентябрь2017 колич</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Количество2017.Октябрь2017Колич</dataPath>
+			<field>Октябрь2017Колич</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество2017.Октябрь2017 колич</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Количество2017.Ноябрь2017Колич</dataPath>
+			<field>Ноябрь2017Колич</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество2017.Ноябрь2017 колич</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Количество2017.Декабрь2017Колич</dataPath>
+			<field>Декабрь2017Колич</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество2017.Декабрь2017 колич</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Количество2019.Ноябрь2019Колич</dataPath>
+			<field>Ноябрь2019Колич</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество2019.Ноябрь2019 колич</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Количество2018.Октябрь2018Колич</dataPath>
+			<field>Октябрь2018Колич</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество2018.Октябрь2018 колич</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Количество2019.Октябрь2019Колич</dataPath>
+			<field>Октябрь2019Колич</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество2019.Октябрь2019 колич</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Количество2018.Декабрь2018Колич</dataPath>
+			<field>Декабрь2018Колич</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество2018.Декабрь2018 колич</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Количество2019.Май2019Колич</dataPath>
+			<field>Май2019Колич</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество2019.Май2019 колич</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Количество2019.Декабрь2019Колич</dataPath>
+			<field>Декабрь2019Колич</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество2019.Декабрь2019 колич</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Количество2018.Январь2018Колич</dataPath>
+			<field>Январь2018Колич</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество2018.Январь2018 колич</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Количество2018.Февраль2018Колич</dataPath>
+			<field>Февраль2018Колич</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество2018.Февраль2018 колич</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Количество2018.Март2018Колич</dataPath>
+			<field>Март2018Колич</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество2018.Март2018 колич</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Количество2018.Апрель2018Колич</dataPath>
+			<field>Апрель2018Колич</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество2018.Апрель2018 колич</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Количество2018.Май2018Колич</dataPath>
+			<field>Май2018Колич</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество2018.Май2018 колич</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Количество2018.Июнь2018Колич</dataPath>
+			<field>Июнь2018Колич</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество2018.Июнь2018 колич</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Количество2018.Июль2018Колич</dataPath>
+			<field>Июль2018Колич</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество2018.Июль2018 колич</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Количество2018.Август2018Колич</dataPath>
+			<field>Август2018Колич</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество2018.Август2018 колич</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Количество2018.Сентябрь2018Колич</dataPath>
+			<field>Сентябрь2018Колич</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество2018.Сентябрь2018 колич</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Количество2018.Ноябрь2018Колич</dataPath>
+			<field>Ноябрь2018Колич</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество2018.Ноябрь2018 колич</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Количество2019.Январь2019Колич</dataPath>
+			<field>Январь2019Колич</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество2019.Январь2019 колич</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Количество2019.Февраль2019Колич</dataPath>
+			<field>Февраль2019Колич</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество2019.Февраль2019 колич</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Количество2019.Март2019Колич</dataPath>
+			<field>Март2019Колич</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество2019.Март2019 колич</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Количество2019.Апрель2019Колич</dataPath>
+			<field>Апрель2019Колич</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество2019.Апрель2019 колич</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Количество2019.Июнь2019Колич</dataPath>
+			<field>Июнь2019Колич</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество2019.Июнь2019 колич</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Количество2019.Июль2019Колич</dataPath>
+			<field>Июль2019Колич</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество2019.Июль2019 колич</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Количество2019.Август2019Колич</dataPath>
+			<field>Август2019Колич</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество2019.Август2019 колич</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Количество2019.Сентябрь2019Колич</dataPath>
+			<field>Сентябрь2019Колич</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество2019.Сентябрь2019 колич</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldFolder">
+			<dataPath>Платежи2015</dataPath>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Платежи 2015 г.</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldFolder">
+			<dataPath>Платежи2016</dataPath>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Платежи 2016 г.</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldFolder">
+			<dataPath>Платежи2017</dataPath>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Платежи 2017 г.</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldFolder">
+			<dataPath>Платежи2018</dataPath>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Платежи 2018 г.</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldFolder">
+			<dataPath>Платежи2019</dataPath>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Платежи 2019 г.</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldFolder">
+			<dataPath>Количество2015</dataPath>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество платежей 2015 г.</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldFolder">
+			<dataPath>Количество2016</dataPath>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество платежей 2016 г.</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldFolder">
+			<dataPath>Количество2017</dataPath>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество платежей 2017 г.</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldFolder">
+			<dataPath>Количество2018</dataPath>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество платежей 2018 г.</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldFolder">
+			<dataPath>Количество2019</dataPath>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество платежей 2019 г.</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ
+	РеестрДолжники.Ссылка.Банк КАК Банк,
+	РеестрДолжники.Ссылка.НомерДляПечати КАК РеестрНомер,
+	РеестрДолжники.Договор.НомерДоговора КАК ДоговорНомерДоговора,
+	РеестрДолжники.Ссылка.ДатаПередачи КАК ДатаПередачи,
+	РеестрДолжники.Договор КАК Договор,
+	РеестрДолжники.Ссылка КАК Реестр,
+	РеестрДолжники.Должник КАК Должник,
+	ВЫБОР
+		КОГДА 1 = 1
+			ТОГДА 1
+	КОНЕЦ КАК Январь2015Сумма,
+	ВЫБОР
+		КОГДА 1 = 1
+			ТОГДА 1
+	КОНЕЦ КАК Февраль2015Сумма,
+	ВЫБОР
+		КОГДА 1 = 1
+			ТОГДА 1
+	КОНЕЦ КАК Март2015Сумма,
+	ВЫБОР
+		КОГДА 1 = 1
+			ТОГДА 1
+	КОНЕЦ КАК Апрель2015Сумма,
+	ВЫБОР
+		КОГДА 1 = 1
+			ТОГДА 1
+	КОНЕЦ КАК Май2015Сумма,
+	ВЫБОР
+		КОГДА 1 = 1
+			ТОГДА 1
+	КОНЕЦ КАК Июнь2015Сумма,
+	ВЫБОР
+		КОГДА 1 = 1
+			ТОГДА 1
+	КОНЕЦ КАК Июль2015Сумма,
+	ВЫБОР
+		КОГДА 1 = 1
+			ТОГДА 1
+	КОНЕЦ КАК Август2015Сумма,
+	ВЫБОР
+		КОГДА 1 = 1
+			ТОГДА 1
+	КОНЕЦ КАК Сентябрь2015Сумма,
+	ВЫБОР
+		КОГДА 1 = 1
+			ТОГДА 1
+	КОНЕЦ КАК Октябрь2015Сумма,
+	ВЫБОР
+		КОГДА 1 = 1
+			ТОГДА 1
+	КОНЕЦ КАК Ноябрь2015Сумма,
+	ВЫБОР
+		КОГДА 1 = 1
+			ТОГДА 1
+	КОНЕЦ КАК Декабрь2015Сумма,
+	ВЫБОР
+		КОГДА 1 = 1
+			ТОГДА 1
+	КОНЕЦ КАК Январь2016Сумма,
+	ВЫБОР
+		КОГДА 1 = 1
+			ТОГДА 1
+	КОНЕЦ КАК Февраль2016Сумма,
+	ВЫБОР
+		КОГДА 1 = 1
+			ТОГДА 1
+	КОНЕЦ КАК Март2016Сумма,
+	ВЫБОР
+		КОГДА 1 = 1
+			ТОГДА 1
+	КОНЕЦ КАК Апрель2016Сумма,
+	ВЫБОР
+		КОГДА 1 = 1
+			ТОГДА 1
+	КОНЕЦ КАК Май2016Сумма,
+	ВЫБОР
+		КОГДА 1 = 1
+			ТОГДА 1
+	КОНЕЦ КАК Июнь2016Сумма,
+	ВЫБОР
+		КОГДА 1 = 1
+			ТОГДА 1
+	КОНЕЦ КАК Июль2016Сумма,
+	ВЫБОР
+		КОГДА 1 = 1
+			ТОГДА 1
+	КОНЕЦ КАК Август2016Сумма,
+	ВЫБОР
+		КОГДА 1 = 1
+			ТОГДА 1
+	КОНЕЦ КАК Сентябрь2016Сумма,
+	ВЫБОР
+		КОГДА 1 = 1
+			ТОГДА 1
+	КОНЕЦ КАК Октябрь2016Сумма,
+	ВЫБОР
+		КОГДА 1 = 1
+			ТОГДА 1
+	КОНЕЦ КАК Ноябрь2016Сумма,
+	ВЫБОР
+		КОГДА 1 = 1
+			ТОГДА 1
+	КОНЕЦ КАК Декабрь2016Сумма,
+	ВЫБОР
+		КОГДА 1 = 1
+			ТОГДА 1
+	КОНЕЦ КАК Январь2017Сумма,
+	ВЫБОР
+		КОГДА 1 = 1
+			ТОГДА 1
+	КОНЕЦ КАК Февраль2017Сумма,
+	ВЫБОР
+		КОГДА 1 = 1
+			ТОГДА 1
+	КОНЕЦ КАК Март2017Сумма,
+	ВЫБОР
+		КОГДА 1 = 1
+			ТОГДА 1
+	КОНЕЦ КАК Апрель2017Сумма,
+	ВЫБОР
+		КОГДА 1 = 1
+			ТОГДА 1
+	КОНЕЦ КАК Май2017Сумма,
+	ВЫБОР
+		КОГДА 1 = 1
+			ТОГДА 1
+	КОНЕЦ КАК Июнь2017Сумма,
+	ВЫБОР
+		КОГДА 1 = 1
+			ТОГДА 1
+	КОНЕЦ КАК Июль2017Сумма,
+	ВЫБОР
+		КОГДА 1 = 1
+			ТОГДА 1
+	КОНЕЦ КАК Август2017Сумма,
+	ВЫБОР
+		КОГДА 1 = 1
+			ТОГДА 1
+	КОНЕЦ КАК Сентябрь2017Сумма,
+	ВЫБОР
+		КОГДА 1 = 1
+			ТОГДА 1
+	КОНЕЦ КАК Октябрь2017Сумма,
+	ВЫБОР
+		КОГДА 1 = 1
+			ТОГДА 1
+	КОНЕЦ КАК Ноябрь2017Сумма,
+	ВЫБОР
+		КОГДА 1 = 1
+			ТОГДА 1
+	КОНЕЦ КАК Декабрь2017Сумма,
+	ВЫБОР
+		КОГДА 1 = 1
+			ТОГДА 1
+	КОНЕЦ КАК Январь2018Сумма,
+	ВЫБОР
+		КОГДА 1 = 1
+			ТОГДА 1
+	КОНЕЦ КАК Февраль2018Сумма,
+	ВЫБОР
+		КОГДА 1 = 1
+			ТОГДА 1
+	КОНЕЦ КАК Март2018Сумма,
+	ВЫБОР
+		КОГДА 1 = 1
+			ТОГДА 1
+	КОНЕЦ КАК Апрель2018Сумма,
+	ВЫБОР
+		КОГДА 1 = 1
+			ТОГДА 1
+	КОНЕЦ КАК Май2018Сумма,
+	ВЫБОР
+		КОГДА 1 = 1
+			ТОГДА 1
+	КОНЕЦ КАК Июнь2018Сумма,
+	ВЫБОР
+		КОГДА 1 = 1
+			ТОГДА 1
+	КОНЕЦ КАК Июль2018Сумма,
+	ВЫБОР
+		КОГДА 1 = 1
+			ТОГДА 1
+	КОНЕЦ КАК Август2018Сумма,
+	ВЫБОР
+		КОГДА 1 = 1
+			ТОГДА 1
+	КОНЕЦ КАК Сентябрь2018Сумма,
+	ВЫБОР
+		КОГДА 1 = 1
+			ТОГДА 1
+	КОНЕЦ КАК Октябрь2018Сумма,
+	ВЫБОР
+		КОГДА 1 = 1
+			ТОГДА 1
+	КОНЕЦ КАК Ноябрь2018Сумма,
+	ВЫБОР
+		КОГДА 1 = 1
+			ТОГДА 1
+	КОНЕЦ КАК Декабрь2018Сумма,
+	ВЫБОР
+		КОГДА 1 = 1
+			ТОГДА 1
+	КОНЕЦ КАК Январь2019Сумма,
+	ВЫБОР
+		КОГДА 1 = 1
+			ТОГДА 1
+	КОНЕЦ КАК Февраль2019Сумма,
+	ВЫБОР
+		КОГДА 1 = 1
+			ТОГДА 1
+	КОНЕЦ КАК Март2019Сумма,
+	ВЫБОР
+		КОГДА 1 = 1
+			ТОГДА 1
+	КОНЕЦ КАК Апрель2019Сумма,
+	ВЫБОР
+		КОГДА 1 = 1
+			ТОГДА 1
+	КОНЕЦ КАК Май2019Сумма,
+	ВЫБОР
+		КОГДА 1 = 1
+			ТОГДА 1
+	КОНЕЦ КАК Июнь2019Сумма,
+	ВЫБОР
+		КОГДА 1 = 1
+			ТОГДА 1
+	КОНЕЦ КАК Июль2019Сумма,
+	ВЫБОР
+		КОГДА 1 = 1
+			ТОГДА 1
+	КОНЕЦ КАК Август2019Сумма,
+	ВЫБОР
+		КОГДА 1 = 1
+			ТОГДА 1
+	КОНЕЦ КАК Сентябрь2019Сумма,
+	ВЫБОР
+		КОГДА 1 = 1
+			ТОГДА 1
+	КОНЕЦ КАК Октябрь2019Сумма,
+	ВЫБОР
+		КОГДА 1 = 1
+			ТОГДА 1
+	КОНЕЦ КАК Ноябрь2019Сумма,
+	ВЫБОР
+		КОГДА 1 = 1
+			ТОГДА 1
+	КОНЕЦ КАК Декабрь2019Сумма,
+	ВЫБОР
+		КОГДА 1 = 1
+			ТОГДА 1
+	КОНЕЦ КАК Январь2015Колич,
+	ВЫБОР
+		КОГДА 1 = 1
+			ТОГДА 1
+	КОНЕЦ КАК Февраль2015Колич,
+	ВЫБОР
+		КОГДА 1 = 1
+			ТОГДА 1
+	КОНЕЦ КАК Март2015Колич,
+	ВЫБОР
+		КОГДА 1 = 1
+			ТОГДА 1
+	КОНЕЦ КАК Апрель2015Колич,
+	ВЫБОР
+		КОГДА 1 = 1
+			ТОГДА 1
+	КОНЕЦ КАК Май2015Колич,
+	ВЫБОР
+		КОГДА 1 = 1
+			ТОГДА 1
+	КОНЕЦ КАК Июнь2015Колич,
+	ВЫБОР
+		КОГДА 1 = 1
+			ТОГДА 1
+	КОНЕЦ КАК Июль2015Колич,
+	ВЫБОР
+		КОГДА 1 = 1
+			ТОГДА 1
+	КОНЕЦ КАК Август2015Колич,
+	ВЫБОР
+		КОГДА 1 = 1
+			ТОГДА 1
+	КОНЕЦ КАК Сентябрь2015Колич,
+	ВЫБОР
+		КОГДА 1 = 1
+			ТОГДА 1
+	КОНЕЦ КАК Октябрь2015Колич,
+	ВЫБОР
+		КОГДА 1 = 1
+			ТОГДА 1
+	КОНЕЦ КАК Ноябрь2015Колич,
+	ВЫБОР
+		КОГДА 1 = 1
+			ТОГДА 1
+	КОНЕЦ КАК Декабрь2015Колич,
+	ВЫБОР
+		КОГДА 1 = 1
+			ТОГДА 1
+	КОНЕЦ КАК Январь2016Колич,
+	ВЫБОР
+		КОГДА 1 = 1
+			ТОГДА 1
+	КОНЕЦ КАК Февраль2016Колич,
+	ВЫБОР
+		КОГДА 1 = 1
+			ТОГДА 1
+	КОНЕЦ КАК Март2016Колич,
+	ВЫБОР
+		КОГДА 1 = 1
+			ТОГДА 1
+	КОНЕЦ КАК Апрель2016Колич,
+	ВЫБОР
+		КОГДА 1 = 1
+			ТОГДА 1
+	КОНЕЦ КАК Май2016Колич,
+	ВЫБОР
+		КОГДА 1 = 1
+			ТОГДА 1
+	КОНЕЦ КАК Июнь2016Колич,
+	ВЫБОР
+		КОГДА 1 = 1
+			ТОГДА 1
+	КОНЕЦ КАК Июль2016Колич,
+	ВЫБОР
+		КОГДА 1 = 1
+			ТОГДА 1
+	КОНЕЦ КАК Август2016Колич,
+	ВЫБОР
+		КОГДА 1 = 1
+			ТОГДА 1
+	КОНЕЦ КАК Сентябрь2016Колич,
+	ВЫБОР
+		КОГДА 1 = 1
+			ТОГДА 1
+	КОНЕЦ КАК Октябрь2016Колич,
+	ВЫБОР
+		КОГДА 1 = 1
+			ТОГДА 1
+	КОНЕЦ КАК Ноябрь2016Колич,
+	ВЫБОР
+		КОГДА 1 = 1
+			ТОГДА 1
+	КОНЕЦ КАК Декабрь2016Колич,
+	ВЫБОР
+		КОГДА 1 = 1
+			ТОГДА 1
+	КОНЕЦ КАК Январь2017Колич,
+	ВЫБОР
+		КОГДА 1 = 1
+			ТОГДА 1
+	КОНЕЦ КАК Февраль2017Колич,
+	ВЫБОР
+		КОГДА 1 = 1
+			ТОГДА 1
+	КОНЕЦ КАК Март2017Колич,
+	ВЫБОР
+		КОГДА 1 = 1
+			ТОГДА 1
+	КОНЕЦ КАК Апрель2017Колич,
+	ВЫБОР
+		КОГДА 1 = 1
+			ТОГДА 1
+	КОНЕЦ КАК Май2017Колич,
+	ВЫБОР
+		КОГДА 1 = 1
+			ТОГДА 1
+	КОНЕЦ КАК Июнь2017Колич,
+	ВЫБОР
+		КОГДА 1 = 1
+			ТОГДА 1
+	КОНЕЦ КАК Июль2017Колич,
+	ВЫБОР
+		КОГДА 1 = 1
+			ТОГДА 1
+	КОНЕЦ КАК Август2017Колич,
+	ВЫБОР
+		КОГДА 1 = 1
+			ТОГДА 1
+	КОНЕЦ КАК Сентябрь2017Колич,
+	ВЫБОР
+		КОГДА 1 = 1
+			ТОГДА 1
+	КОНЕЦ КАК Октябрь2017Колич,
+	ВЫБОР
+		КОГДА 1 = 1
+			ТОГДА 1
+	КОНЕЦ КАК Ноябрь2017Колич,
+	ВЫБОР
+		КОГДА 1 = 1
+			ТОГДА 1
+	КОНЕЦ КАК Декабрь2017Колич,
+	ВЫБОР
+		КОГДА 1 = 1
+			ТОГДА 1
+	КОНЕЦ КАК Январь2018Колич,
+	ВЫБОР
+		КОГДА 1 = 1
+			ТОГДА 1
+	КОНЕЦ КАК Февраль2018Колич,
+	ВЫБОР
+		КОГДА 1 = 1
+			ТОГДА 1
+	КОНЕЦ КАК Март2018Колич,
+	ВЫБОР
+		КОГДА 1 = 1
+			ТОГДА 1
+	КОНЕЦ КАК Апрель2018Колич,
+	ВЫБОР
+		КОГДА 1 = 1
+			ТОГДА 1
+	КОНЕЦ КАК Май2018Колич,
+	ВЫБОР
+		КОГДА 1 = 1
+			ТОГДА 1
+	КОНЕЦ КАК Июнь2018Колич,
+	ВЫБОР
+		КОГДА 1 = 1
+			ТОГДА 1
+	КОНЕЦ КАК Июль2018Колич,
+	ВЫБОР
+		КОГДА 1 = 1
+			ТОГДА 1
+	КОНЕЦ КАК Август2018Колич,
+	ВЫБОР
+		КОГДА 1 = 1
+			ТОГДА 1
+	КОНЕЦ КАК Сентябрь2018Колич,
+	ВЫБОР
+		КОГДА 1 = 1
+			ТОГДА 1
+	КОНЕЦ КАК Октябрь2018Колич,
+	ВЫБОР
+		КОГДА 1 = 1
+			ТОГДА 1
+	КОНЕЦ КАК Ноябрь2018Колич,
+	ВЫБОР
+		КОГДА 1 = 1
+			ТОГДА 1
+	КОНЕЦ КАК Декабрь2018Колич,
+	ВЫБОР
+		КОГДА 1 = 1
+			ТОГДА 1
+	КОНЕЦ КАК Январь2019Колич,
+	ВЫБОР
+		КОГДА 1 = 1
+			ТОГДА 1
+	КОНЕЦ КАК Февраль2019Колич,
+	ВЫБОР
+		КОГДА 1 = 1
+			ТОГДА 1
+	КОНЕЦ КАК Март2019Колич,
+	ВЫБОР
+		КОГДА 1 = 1
+			ТОГДА 1
+	КОНЕЦ КАК Апрель2019Колич,
+	ВЫБОР
+		КОГДА 1 = 1
+			ТОГДА 1
+	КОНЕЦ КАК Май2019Колич,
+	ВЫБОР
+		КОГДА 1 = 1
+			ТОГДА 1
+	КОНЕЦ КАК Июнь2019Колич,
+	ВЫБОР
+		КОГДА 1 = 1
+			ТОГДА 1
+	КОНЕЦ КАК Июль2019Колич,
+	ВЫБОР
+		КОГДА 1 = 1
+			ТОГДА 1
+	КОНЕЦ КАК Август2019Колич,
+	ВЫБОР
+		КОГДА 1 = 1
+			ТОГДА 1
+	КОНЕЦ КАК Сентябрь2019Колич,
+	ВЫБОР
+		КОГДА 1 = 1
+			ТОГДА 1
+	КОНЕЦ КАК Октябрь2019Колич,
+	ВЫБОР
+		КОГДА 1 = 1
+			ТОГДА 1
+	КОНЕЦ КАК Ноябрь2019Колич,
+	ВЫБОР
+		КОГДА 1 = 1
+			ТОГДА 1
+	КОНЕЦ КАК Декабрь2019Колич,
+	РеестрДолжники.Должник.ДатаРождения КАК ДолжникДатаРождения,
+	РеестрДолжники.Должник.Регион КАК ДолжникРегион,
+	РеестрДолжники.Договор.ТипКредита КАК ДоговорТипКредита
+ИЗ
+	Документ.Реестр.Должники КАК РеестрДолжники</query>
+	</dataSet>
+	<calculatedField>
+		<dataPath>ВсегоЗадолженность</dataPath>
+		<expression>ЗапросыВФССП.ВсегоЗадолженностьНаДату(ДатаПередачи,Договор)</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Всего задолженность</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>Платежи2015.Январь2015Сумма</dataPath>
+		<expression>ЗапросыВФССП.СуммаПлатежейЗаМесяц(Должник,"20150101","20150131",Договор)</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Январь2015 сумма</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>решСуда</dataPath>
+		<expression>ЗапросыВФССП.решСуда(Должник)</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Решение суда</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>догЦессии</dataPath>
+		<expression>ЗапросыВФССП.догЦессии(Должник)</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Договор цессии</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>Платежи2016.Январь2016Сумма</dataPath>
+		<expression>ЗапросыВФССП.СуммаПлатежейЗаМесяц(Должник,"20160101","20160131",Договор)</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Январь2016 сумма</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>Платежи2017.Январь2017Сумма</dataPath>
+		<expression>ЗапросыВФССП.СуммаПлатежейЗаМесяц(Должник,"20170101","20170131",Договор)</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Январь2017 сумма</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>Платежи2018.Январь2018Сумма</dataPath>
+		<expression>ЗапросыВФССП.СуммаПлатежейЗаМесяц(Должник,"20180101","20180131",Договор)</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Январь2018 сумма</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>Платежи2019.Январь2019Сумма</dataPath>
+		<expression>ЗапросыВФССП.СуммаПлатежейЗаМесяц(Должник,"20190101","20190131",Договор)</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Январь2019 сумма</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>Платежи2015.Февраль2015Сумма</dataPath>
+		<expression>ЗапросыВФССП.СуммаПлатежейЗаМесяц(Должник,"20150201","20150228",Договор)</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Февраль2015 сумма</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>Платежи2016.Февраль2016Сумма</dataPath>
+		<expression>ЗапросыВФССП.СуммаПлатежейЗаМесяц(Должник,"20160201","20160229",Договор)</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Февраль2016 сумма</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>Платежи2017.Февраль2017Сумма</dataPath>
+		<expression>ЗапросыВФССП.СуммаПлатежейЗаМесяц(Должник,"20170201","20170228",Договор)</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Февраль2017 сумма</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>Платежи2018.Февраль2018Сумма</dataPath>
+		<expression>ЗапросыВФССП.СуммаПлатежейЗаМесяц(Должник,"20180201","20180228",Договор)</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Февраль2018 сумма</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>Платежи2019.Февраль2019Сумма</dataPath>
+		<expression>ЗапросыВФССП.СуммаПлатежейЗаМесяц(Должник,"20190201","20190228",Договор)</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Февраль2019 сумма</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>Платежи2015.Март2015Сумма</dataPath>
+		<expression>ЗапросыВФССП.СуммаПлатежейЗаМесяц(Должник,"20150301","20150331",Договор)</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Март2015 сумма</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>Платежи2016.Март2016Сумма</dataPath>
+		<expression>ЗапросыВФССП.СуммаПлатежейЗаМесяц(Должник,"20160301","20160331",Договор)</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Март2016 сумма</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>Платежи2017.Март2017Сумма</dataPath>
+		<expression>ЗапросыВФССП.СуммаПлатежейЗаМесяц(Должник,"20170301","20170331",Договор)</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Март2017 сумма</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>Платежи2018.Март2018Сумма</dataPath>
+		<expression>ЗапросыВФССП.СуммаПлатежейЗаМесяц(Должник,"20180301","20180331",Договор)</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Март2018 сумма</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>Платежи2019.Март2019Сумма</dataPath>
+		<expression>ЗапросыВФССП.СуммаПлатежейЗаМесяц(Должник,"20190301","20190331",Договор)</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Март2019 сумма</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>Платежи2015.Апрель2015Сумма</dataPath>
+		<expression>ЗапросыВФССП.СуммаПлатежейЗаМесяц(Должник,"20150401","20150430",Договор)</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Апрель2015 сумма</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>Платежи2016.Апрель2016Сумма</dataPath>
+		<expression>ЗапросыВФССП.СуммаПлатежейЗаМесяц(Должник,"20160401","20160430",Договор)</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Апрель2016 сумма</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>Платежи2017.Апрель2017Сумма</dataPath>
+		<expression>ЗапросыВФССП.СуммаПлатежейЗаМесяц(Должник,"20170401","20170430",Договор)</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Апрель2017 сумма</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>Платежи2018.Апрель2018Сумма</dataPath>
+		<expression>ЗапросыВФССП.СуммаПлатежейЗаМесяц(Должник,"20180401","20180430",Договор)</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Апрель2018 сумма</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>Платежи2019.Апрель2019Сумма</dataPath>
+		<expression>ЗапросыВФССП.СуммаПлатежейЗаМесяц(Должник,"20190401","20190430",Договор)</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Апрель2019 сумма</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>Платежи2015.Май2015Сумма</dataPath>
+		<expression>ЗапросыВФССП.СуммаПлатежейЗаМесяц(Должник,"20150501","20150531",Договор)</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Май2015 сумма</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>Платежи2016.Май2016Сумма</dataPath>
+		<expression>ЗапросыВФССП.СуммаПлатежейЗаМесяц(Должник,"20160501","20160531",Договор)</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Май2016 сумма</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>Платежи2017.Май2017Сумма</dataPath>
+		<expression>ЗапросыВФССП.СуммаПлатежейЗаМесяц(Должник,"20170501","20170531",Договор)</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Май2017 сумма</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>Платежи2018.Май2018Сумма</dataPath>
+		<expression>ЗапросыВФССП.СуммаПлатежейЗаМесяц(Должник,"20180501","20180531",Договор)</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Май2018 сумма</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>Платежи2019.Май2019Сумма</dataPath>
+		<expression>ЗапросыВФССП.СуммаПлатежейЗаМесяц(Должник,"20190501","20190531",Договор)</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Май2019 сумма</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>Платежи2015.Июнь2015Сумма</dataPath>
+		<expression>ЗапросыВФССП.СуммаПлатежейЗаМесяц(Должник,"20150601","20150630",Договор)</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Июнь2015 сумма</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>Платежи2016.Июнь2016Сумма</dataPath>
+		<expression>ЗапросыВФССП.СуммаПлатежейЗаМесяц(Должник,"20160601","20160630",Договор)</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Июнь2016 сумма</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>Платежи2017.Июнь2017Сумма</dataPath>
+		<expression>ЗапросыВФССП.СуммаПлатежейЗаМесяц(Должник,"20170601","20170630",Договор)</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Июнь2017 сумма</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>Платежи2018.Июнь2018Сумма</dataPath>
+		<expression>ЗапросыВФССП.СуммаПлатежейЗаМесяц(Должник,"20180601","20180630",Договор)</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Июнь2018 сумма</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>Платежи2019.Июнь2019Сумма</dataPath>
+		<expression>ЗапросыВФССП.СуммаПлатежейЗаМесяц(Должник,"20190601","20190630",Договор)</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Июнь2019 сумма</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>Платежи2015.Июль2015Сумма</dataPath>
+		<expression>ЗапросыВФССП.СуммаПлатежейЗаМесяц(Должник,"20150701","20150731",Договор)</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Июль2015 сумма</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>Платежи2016.Июль2016Сумма</dataPath>
+		<expression>ЗапросыВФССП.СуммаПлатежейЗаМесяц(Должник,"20160701","20160731",Договор)</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Июль2016 сумма</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>Платежи2017.Июль2017Сумма</dataPath>
+		<expression>ЗапросыВФССП.СуммаПлатежейЗаМесяц(Должник,"20170701","20170731",Договор)</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Июль2017 сумма</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>Платежи2018.Июль2018Сумма</dataPath>
+		<expression>ЗапросыВФССП.СуммаПлатежейЗаМесяц(Должник,"20180701","20180731",Договор)</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Июль2018 сумма</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>Платежи2019.Июль2019Сумма</dataPath>
+		<expression>ЗапросыВФССП.СуммаПлатежейЗаМесяц(Должник,"20190701","20190731",Договор)</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Июль2019 сумма</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>Платежи2015.Август2015Сумма</dataPath>
+		<expression>ЗапросыВФССП.СуммаПлатежейЗаМесяц(Должник,"20150801","20150831",Договор)</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Август2015 сумма</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>Платежи2016.Август2016Сумма</dataPath>
+		<expression>ЗапросыВФССП.СуммаПлатежейЗаМесяц(Должник,"20160801","20160831",Договор)</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Август2016 сумма</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>Платежи2017.Август2017Сумма</dataPath>
+		<expression>ЗапросыВФССП.СуммаПлатежейЗаМесяц(Должник,"20170801","20170831",Договор)</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Август2017 сумма</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>Платежи2018.Август2018Сумма</dataPath>
+		<expression>ЗапросыВФССП.СуммаПлатежейЗаМесяц(Должник,"20180801","20180831",Договор)</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Август2018 сумма</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>Платежи2019.Август2019Сумма</dataPath>
+		<expression>ЗапросыВФССП.СуммаПлатежейЗаМесяц(Должник,"20190801","20190831",Договор)</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Август2019 сумма</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>Платежи2015.Сентябрь2015Сумма</dataPath>
+		<expression>ЗапросыВФССП.СуммаПлатежейЗаМесяц(Должник,"20150901","20150930",Договор)</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Сентябрь2015 сумма</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>Платежи2016.Сентябрь2016Сумма</dataPath>
+		<expression>ЗапросыВФССП.СуммаПлатежейЗаМесяц(Должник,"20160901","20160930",Договор)</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Сентябрь2016 сумма</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>Платежи2017.Сентябрь2017Сумма</dataPath>
+		<expression>ЗапросыВФССП.СуммаПлатежейЗаМесяц(Должник,"20170901","20170930",Договор)</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Сентябрь2017 сумма</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>Платежи2018.Сентябрь2018Сумма</dataPath>
+		<expression>ЗапросыВФССП.СуммаПлатежейЗаМесяц(Должник,"20180901","20180930",Договор)</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Сентябрь2018 сумма</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>Платежи2019.Сентябрь2019Сумма</dataPath>
+		<expression>ЗапросыВФССП.СуммаПлатежейЗаМесяц(Должник,"20190901","20190930",Договор)</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Сентябрь2019 сумма</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>Платежи2015.Октябрь2015Сумма</dataPath>
+		<expression>ЗапросыВФССП.СуммаПлатежейЗаМесяц(Должник,"20151001","20151031",Договор)</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Октябрь2015 сумма</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>Платежи2016.Октябрь2016Сумма</dataPath>
+		<expression>ЗапросыВФССП.СуммаПлатежейЗаМесяц(Должник,"20161001","20161031",Договор)</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Октябрь2016 сумма</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>Платежи2017.Октябрь2017Сумма</dataPath>
+		<expression>ЗапросыВФССП.СуммаПлатежейЗаМесяц(Должник,"20171001","20171031",Договор)</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Октябрь2017 сумма</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>Платежи2018.Октябрь2018Сумма</dataPath>
+		<expression>ЗапросыВФССП.СуммаПлатежейЗаМесяц(Должник,"20181001","20181031",Договор)</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Октябрь2018 сумма</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>Платежи2019.Октябрь2019Сумма</dataPath>
+		<expression>ЗапросыВФССП.СуммаПлатежейЗаМесяц(Должник,"20191001","20191031",Договор)</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Октябрь2019 сумма</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>Платежи2015.Ноябрь2015Сумма</dataPath>
+		<expression>ЗапросыВФССП.СуммаПлатежейЗаМесяц(Должник,"20151101","20151130",Договор)</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Ноябрь2015 сумма</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>Платежи2016.Ноябрь2016Сумма</dataPath>
+		<expression>ЗапросыВФССП.СуммаПлатежейЗаМесяц(Должник,"20161101","20161130",Договор)</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Ноябрь2016 сумма</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>Платежи2017.Ноябрь2017Сумма</dataPath>
+		<expression>ЗапросыВФССП.СуммаПлатежейЗаМесяц(Должник,"20171101","20171130",Договор)</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Ноябрь2017 сумма</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>Платежи2018.Ноябрь2018Сумма</dataPath>
+		<expression>ЗапросыВФССП.СуммаПлатежейЗаМесяц(Должник,"20181101","20181130",Договор)</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Ноябрь2018 сумма</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>Платежи2019.Ноябрь2019Сумма</dataPath>
+		<expression>ЗапросыВФССП.СуммаПлатежейЗаМесяц(Должник,"20191101","20191130",Договор)</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Ноябрь2019 сумма</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>Платежи2015.Декабрь2015Сумма</dataPath>
+		<expression>ЗапросыВФССП.СуммаПлатежейЗаМесяц(Должник,"20151201","20151231",Договор)</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Декабрь2015 сумма</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>Платежи2016.Декабрь2016Сумма</dataPath>
+		<expression>ЗапросыВФССП.СуммаПлатежейЗаМесяц(Должник,"20161201","20161231",Договор)</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Декабрь2016 сумма</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>Платежи2017.Декабрь2017Сумма</dataPath>
+		<expression>ЗапросыВФССП.СуммаПлатежейЗаМесяц(Должник,"20171201","20171231",Договор)</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Декабрь2017 сумма</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>Платежи2018.Декабрь2018Сумма</dataPath>
+		<expression>ЗапросыВФССП.СуммаПлатежейЗаМесяц(Должник,"20181201","20181231",Договор)</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Декабрь2018 сумма</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>Платежи2019.Декабрь2019Сумма</dataPath>
+		<expression>ЗапросыВФССП.СуммаПлатежейЗаМесяц(Должник,"20191201","20191231",Договор)</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Декабрь2019 сумма</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>Количество2015.Январь2015Колич</dataPath>
+		<expression>ЗапросыВФССП.КоличествоПлатежейЗаМесяц(Должник,"20150101","20150131",Договор)</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Январь2015 количество</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>Количество2016.Январь2016Колич</dataPath>
+		<expression>ЗапросыВФССП.КоличествоПлатежейЗаМесяц(Должник,"20160101","20160131",Договор)</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Январь2016 количество</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>Количество2017.Январь2017Колич</dataPath>
+		<expression>ЗапросыВФССП.КоличествоПлатежейЗаМесяц(Должник,"20170101","20170131",Договор)</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Январь2017 количество</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>Количество2018.Январь2018Колич</dataPath>
+		<expression>ЗапросыВФССП.КоличествоПлатежейЗаМесяц(Должник,"20180101","20180131",Договор)</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Январь2018 колич</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>Количество2019.Январь2019Колич</dataPath>
+		<expression>ЗапросыВФССП.КоличествоПлатежейЗаМесяц(Должник,"20190101","20190131",Договор)</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Январь2019 колич</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>Количество2015.Февраль2015Колич</dataPath>
+		<expression>ЗапросыВФССП.КоличествоПлатежейЗаМесяц(Должник,"20150201","20150228",Договор)</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Февраль2015 колич</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>Количество2016.Февраль2016Колич</dataPath>
+		<expression>ЗапросыВФССП.КоличествоПлатежейЗаМесяц(Должник,"20160201","20160229",Договор)</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Февраль2016 колич</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>Количество2017.Февраль2017Колич</dataPath>
+		<expression>ЗапросыВФССП.КоличествоПлатежейЗаМесяц(Должник,"20170201","20170228",Договор)</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Февраль2017 колич</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>Количество2018.Февраль2018Колич</dataPath>
+		<expression>ЗапросыВФССП.КоличествоПлатежейЗаМесяц(Должник,"20180201","20180228",Договор)</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Февраль2018 колич</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>Количество2019.Февраль2019Колич</dataPath>
+		<expression>ЗапросыВФССП.КоличествоПлатежейЗаМесяц(Должник,"20190201","20190228",Договор)</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Февраль2019 колич</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>Количество2015.Март2015Колич</dataPath>
+		<expression>ЗапросыВФССП.КоличествоПлатежейЗаМесяц(Должник,"20150301","20150331",Договор)</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Март2015 колич</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>Количество2016.Март2016Колич</dataPath>
+		<expression>ЗапросыВФССП.КоличествоПлатежейЗаМесяц(Должник,"20160301","20160331",Договор)</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Март2016 колич</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>Количество2017.Март2017Колич</dataPath>
+		<expression>ЗапросыВФССП.КоличествоПлатежейЗаМесяц(Должник,"20170301","20170331",Договор)</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Март2017 колич</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>Количество2018.Март2018Колич</dataPath>
+		<expression>ЗапросыВФССП.КоличествоПлатежейЗаМесяц(Должник,"20180301","20180331",Договор)</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Март2018 колич</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>Количество2019.Март2019Колич</dataPath>
+		<expression>ЗапросыВФССП.КоличествоПлатежейЗаМесяц(Должник,"20190301","20190331",Договор)</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Март2019 колич</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>Количество2015.Апрель2015Колич</dataPath>
+		<expression>ЗапросыВФССП.КоличествоПлатежейЗаМесяц(Должник,"20150401","20150430",Договор)</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Апрель2015 колич</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>Количество2016.Апрель2016Колич</dataPath>
+		<expression>ЗапросыВФССП.КоличествоПлатежейЗаМесяц(Должник,"20160401","20160430",Договор)</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Апрель2016 колич</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>Количество2017.Апрель2017Колич</dataPath>
+		<expression>ЗапросыВФССП.КоличествоПлатежейЗаМесяц(Должник,"20170401","20170430",Договор)</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Апрель2017 колич</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>Количество2018.Апрель2018Колич</dataPath>
+		<expression>ЗапросыВФССП.КоличествоПлатежейЗаМесяц(Должник,"20180401","20180430",Договор)</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Апрель2018 колич</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>Количество2019.Апрель2019Колич</dataPath>
+		<expression>ЗапросыВФССП.КоличествоПлатежейЗаМесяц(Должник,"20190401","20190430",Договор)</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Апрель2019 колич</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>Количество2015.Май2015Колич</dataPath>
+		<expression>ЗапросыВФССП.КоличествоПлатежейЗаМесяц(Должник,"20150501","20150531",Договор)</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Май2015 колич</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>Количество2016.Май2016Колич</dataPath>
+		<expression>ЗапросыВФССП.КоличествоПлатежейЗаМесяц(Должник,"20160501","20160531",Договор)</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Май2016 колич</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>Количество2017.Май2017Колич</dataPath>
+		<expression>ЗапросыВФССП.КоличествоПлатежейЗаМесяц(Должник,"20170501","20170531",Договор)</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Май2017 колич</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>Количество2018.Май2018Колич</dataPath>
+		<expression>ЗапросыВФССП.КоличествоПлатежейЗаМесяц(Должник,"20180501","20180531",Договор)</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Май2018 колич</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>Количество2019.Май2019Колич</dataPath>
+		<expression>ЗапросыВФССП.КоличествоПлатежейЗаМесяц(Должник,"20190501","20190531",Договор)</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Май2019 колич</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>Количество2015.Июнь2015Колич</dataPath>
+		<expression>ЗапросыВФССП.КоличествоПлатежейЗаМесяц(Должник,"20150601","20150630",Договор)</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Июнь2015 колич</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>Количество2016.Июнь2016Колич</dataPath>
+		<expression>ЗапросыВФССП.КоличествоПлатежейЗаМесяц(Должник,"20160601","20160630",Договор)</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Июнь2016 колич</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>Количество2017.Июнь2017Колич</dataPath>
+		<expression>ЗапросыВФССП.КоличествоПлатежейЗаМесяц(Должник,"20170601","20170630",Договор)</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Июнь2017 колич</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>Количество2018.Июнь2018Колич</dataPath>
+		<expression>ЗапросыВФССП.КоличествоПлатежейЗаМесяц(Должник,"20180601","20180630",Договор)</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Июнь2018 колич</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>Количество2019.Июнь2019Колич</dataPath>
+		<expression>ЗапросыВФССП.КоличествоПлатежейЗаМесяц(Должник,"20190601","20190630",Договор)</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Июнь2019 колич</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>Количество2015.Июль2015Колич</dataPath>
+		<expression>ЗапросыВФССП.КоличествоПлатежейЗаМесяц(Должник,"20150701","20150731",Договор)</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Июль2015 колич</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>Количество2016.Июль2016Колич</dataPath>
+		<expression>ЗапросыВФССП.КоличествоПлатежейЗаМесяц(Должник,"20160701","20160731",Договор)</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Июль2016 колич</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>Количество2017.Июль2017Колич</dataPath>
+		<expression>ЗапросыВФССП.КоличествоПлатежейЗаМесяц(Должник,"20170701","20170731",Договор)</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Июль2017 колич</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>Количество2018.Июль2018Колич</dataPath>
+		<expression>ЗапросыВФССП.КоличествоПлатежейЗаМесяц(Должник,"20180701","20180731",Договор)</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Июль2018 колич</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>Количество2019.Июль2019Колич</dataPath>
+		<expression>ЗапросыВФССП.КоличествоПлатежейЗаМесяц(Должник,"20190701","20190731",Договор)</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Июль2019 колич</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>Количество2015.Август2015Колич</dataPath>
+		<expression>ЗапросыВФССП.КоличествоПлатежейЗаМесяц(Должник,"20150801","20150831",Договор)</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Август2015 колич</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>Количество2016.Август2016Колич</dataPath>
+		<expression>ЗапросыВФССП.КоличествоПлатежейЗаМесяц(Должник,"20160801","20160831",Договор)</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Август2016 колич</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>Количество2017.Август2017Колич</dataPath>
+		<expression>ЗапросыВФССП.КоличествоПлатежейЗаМесяц(Должник,"20170801","20170831",Договор)</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Август2017 колич</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>Количество2018.Август2018Колич</dataPath>
+		<expression>ЗапросыВФССП.КоличествоПлатежейЗаМесяц(Должник,"20180801","20180831",Договор)</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Август2018 колич</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>Количество2019.Август2019Колич</dataPath>
+		<expression>ЗапросыВФССП.КоличествоПлатежейЗаМесяц(Должник,"20190801","20190831",Договор)</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Август2019 колич</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>Количество2015.Сентябрь2015Колич</dataPath>
+		<expression>ЗапросыВФССП.КоличествоПлатежейЗаМесяц(Должник,"20150901","20150930",Договор)</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Сентябрь2015 колич</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>Количество2016.Сентябрь2016Колич</dataPath>
+		<expression>ЗапросыВФССП.КоличествоПлатежейЗаМесяц(Должник,"20160901","20160930",Договор)</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Сентябрь2016 колич</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>Количество2017.Сентябрь2017Колич</dataPath>
+		<expression>ЗапросыВФССП.КоличествоПлатежейЗаМесяц(Должник,"20170901","20170930",Договор)</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Сентябрь2017 колич</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>Количество2018.Сентябрь2018Колич</dataPath>
+		<expression>ЗапросыВФССП.КоличествоПлатежейЗаМесяц(Должник,"20180901","20180930",Договор)</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Сентябрь2018 колич</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>Количество2019.Сентябрь2019Колич</dataPath>
+		<expression>ЗапросыВФССП.КоличествоПлатежейЗаМесяц(Должник,"20190901","20190930",Договор)</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Сентябрь2019 колич</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>Количество2015.Октябрь2015Колич</dataPath>
+		<expression>ЗапросыВФССП.КоличествоПлатежейЗаМесяц(Должник,"20151001","20151031",Договор)</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Октябрь2015 колич</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>Количество2016.Октябрь2016Колич</dataPath>
+		<expression>ЗапросыВФССП.КоличествоПлатежейЗаМесяц(Должник,"20161001","20161031",Договор)</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Октябрь2016 колич</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>Количество2017.Октябрь2017Колич</dataPath>
+		<expression>ЗапросыВФССП.КоличествоПлатежейЗаМесяц(Должник,"20171001","20171031",Договор)</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Октябрь2017 колич</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>Количество2018.Октябрь2018Колич</dataPath>
+		<expression>ЗапросыВФССП.КоличествоПлатежейЗаМесяц(Должник,"20181001","20181031",Договор)</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Октябрь2018 колич</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>Количество2019.Октябрь2019Колич</dataPath>
+		<expression>ЗапросыВФССП.КоличествоПлатежейЗаМесяц(Должник,"20191001","20191031",Договор)</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Октябрь2019 колич</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>Количество2015.Ноябрь2015Колич</dataPath>
+		<expression>ЗапросыВФССП.КоличествоПлатежейЗаМесяц(Должник,"20151101","20151130",Договор)</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Ноябрь2015 колич</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>Количество2016.Ноябрь2016Колич</dataPath>
+		<expression>ЗапросыВФССП.КоличествоПлатежейЗаМесяц(Должник,"20161101","20161130",Договор)</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Ноябрь2016 колич</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>Количество2017.Ноябрь2017Колич</dataPath>
+		<expression>ЗапросыВФССП.КоличествоПлатежейЗаМесяц(Должник,"20171101","20171130",Договор)</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Ноябрь2017 колич</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>Количество2018.Ноябрь2018Колич</dataPath>
+		<expression>ЗапросыВФССП.КоличествоПлатежейЗаМесяц(Должник,"20181101","20181130",Договор)</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Ноябрь2018 колич</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>Количество2019.Ноябрь2019Колич</dataPath>
+		<expression>ЗапросыВФССП.КоличествоПлатежейЗаМесяц(Должник,"20191101","20191130",Договор)</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Ноябрь2019 колич</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>Количество2015.Декабрь2015Колич</dataPath>
+		<expression>ЗапросыВФССП.КоличествоПлатежейЗаМесяц(Должник,"20151201","20151231",Договор)</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Декабрь2015 колич</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>Количество2016.Декабрь2016Колич</dataPath>
+		<expression>ЗапросыВФССП.КоличествоПлатежейЗаМесяц(Должник,"20161201","20161231",Договор)</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Декабрь2016 колич</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>Количество2017.Декабрь2017Колич</dataPath>
+		<expression>ЗапросыВФССП.КоличествоПлатежейЗаМесяц(Должник,"20171201","20171231",Договор)</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Декабрь2017 колич</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>Количество2018.Декабрь2018Колич</dataPath>
+		<expression>ЗапросыВФССП.КоличествоПлатежейЗаМесяц(Должник,"20181201","20181231",Договор)</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Декабрь2018 колич</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>Количество2019.Декабрь2019Колич</dataPath>
+		<expression>ЗапросыВФССП.КоличествоПлатежейЗаМесяц(Должник,"20191201","20191231",Договор)</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Декабрь2019 колич</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>ГородДолж</dataPath>
+		<expression>ЗапросыВФССП.ГородДолж (Должник)</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Город</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<totalField>
+		<dataPath>Количество2015.Август2015Колич</dataPath>
+		<expression>Сумма(Количество2015.Август2015Колич)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>Количество2015.Апрель2015Колич</dataPath>
+		<expression>Сумма(Количество2015.Апрель2015Колич)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>Количество2015.Декабрь2015Колич</dataPath>
+		<expression>Сумма(Количество2015.Декабрь2015Колич)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>Количество2015.Июль2015Колич</dataPath>
+		<expression>Сумма(Количество2015.Июль2015Колич)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>Количество2015.Июнь2015Колич</dataPath>
+		<expression>Сумма(Количество2015.Июнь2015Колич)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>Количество2015.Май2015Колич</dataPath>
+		<expression>Сумма(Количество2015.Май2015Колич)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>Количество2015.Март2015Колич</dataPath>
+		<expression>Сумма(Количество2015.Март2015Колич)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>Количество2015.Ноябрь2015Колич</dataPath>
+		<expression>Сумма(Количество2015.Ноябрь2015Колич)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>Количество2015.Октябрь2015Колич</dataPath>
+		<expression>Сумма(Количество2015.Октябрь2015Колич)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>Количество2015.Сентябрь2015Колич</dataPath>
+		<expression>Сумма(Количество2015.Сентябрь2015Колич)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>Количество2015.Февраль2015Колич</dataPath>
+		<expression>Сумма(Количество2015.Февраль2015Колич)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>Количество2015.Январь2015Колич</dataPath>
+		<expression>Сумма(Количество2015.Январь2015Колич)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>Количество2016.Август2016Колич</dataPath>
+		<expression>Сумма(Количество2016.Август2016Колич)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>Количество2016.Апрель2016Колич</dataPath>
+		<expression>Сумма(Количество2016.Апрель2016Колич)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>Количество2016.Декабрь2016Колич</dataPath>
+		<expression>Сумма(Количество2016.Декабрь2016Колич)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>Количество2016.Июль2016Колич</dataPath>
+		<expression>Сумма(Количество2016.Июль2016Колич)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>Количество2016.Июнь2016Колич</dataPath>
+		<expression>Сумма(Количество2016.Июнь2016Колич)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>Количество2016.Май2016Колич</dataPath>
+		<expression>Сумма(Количество2016.Май2016Колич)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>Количество2016.Март2016Колич</dataPath>
+		<expression>Сумма(Количество2016.Март2016Колич)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>Количество2016.Ноябрь2016Колич</dataPath>
+		<expression>Сумма(Количество2016.Ноябрь2016Колич)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>Количество2016.Октябрь2016Колич</dataPath>
+		<expression>Сумма(Количество2016.Октябрь2016Колич)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>Количество2016.Сентябрь2016Колич</dataPath>
+		<expression>Сумма(Количество2016.Сентябрь2016Колич)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>Количество2016.Февраль2016Колич</dataPath>
+		<expression>Сумма(Количество2016.Февраль2016Колич)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>Количество2016.Январь2016Колич</dataPath>
+		<expression>Сумма(Количество2016.Январь2016Колич)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>Количество2017.Август2017Колич</dataPath>
+		<expression>Сумма(Количество2017.Август2017Колич)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>Количество2017.Апрель2017Колич</dataPath>
+		<expression>Сумма(Количество2017.Апрель2017Колич)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>Количество2017.Декабрь2017Колич</dataPath>
+		<expression>Сумма(Количество2017.Декабрь2017Колич)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>Количество2017.Июль2017Колич</dataPath>
+		<expression>Сумма(Количество2017.Июль2017Колич)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>Количество2017.Июнь2017Колич</dataPath>
+		<expression>Сумма(Количество2017.Июнь2017Колич)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>Количество2017.Май2017Колич</dataPath>
+		<expression>Сумма(Количество2017.Май2017Колич)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>Количество2017.Март2017Колич</dataPath>
+		<expression>Сумма(Количество2017.Март2017Колич)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>Количество2017.Ноябрь2017Колич</dataPath>
+		<expression>Сумма(Количество2017.Ноябрь2017Колич)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>Количество2017.Октябрь2017Колич</dataPath>
+		<expression>Сумма(Количество2017.Октябрь2017Колич)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>Количество2017.Сентябрь2017Колич</dataPath>
+		<expression>Сумма(Количество2017.Сентябрь2017Колич)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>Количество2017.Февраль2017Колич</dataPath>
+		<expression>Сумма(Количество2017.Февраль2017Колич)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>Количество2017.Январь2017Колич</dataPath>
+		<expression>Сумма(Количество2017.Январь2017Колич)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>Количество2018.Август2018Колич</dataPath>
+		<expression>Сумма(Количество2018.Август2018Колич)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>Количество2018.Апрель2018Колич</dataPath>
+		<expression>Сумма(Количество2018.Апрель2018Колич)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>Количество2018.Декабрь2018Колич</dataPath>
+		<expression>Сумма(Количество2018.Декабрь2018Колич)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>Количество2018.Июль2018Колич</dataPath>
+		<expression>Сумма(Количество2018.Июль2018Колич)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>Количество2018.Июнь2018Колич</dataPath>
+		<expression>Сумма(Количество2018.Июнь2018Колич)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>Количество2018.Май2018Колич</dataPath>
+		<expression>Сумма(Количество2018.Май2018Колич)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>Количество2018.Март2018Колич</dataPath>
+		<expression>Сумма(Количество2018.Март2018Колич)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>Количество2018.Ноябрь2018Колич</dataPath>
+		<expression>Сумма(Количество2018.Ноябрь2018Колич)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>Количество2018.Октябрь2018Колич</dataPath>
+		<expression>Сумма(Количество2018.Октябрь2018Колич)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>Количество2018.Сентябрь2018Колич</dataPath>
+		<expression>Сумма(Количество2018.Сентябрь2018Колич)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>Количество2018.Февраль2018Колич</dataPath>
+		<expression>Сумма(Количество2018.Февраль2018Колич)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>Количество2018.Январь2018Колич</dataPath>
+		<expression>Сумма(Количество2018.Январь2018Колич)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>Количество2019.Август2019Колич</dataPath>
+		<expression>Сумма(Количество2019.Август2019Колич)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>Количество2019.Апрель2019Колич</dataPath>
+		<expression>Сумма(Количество2019.Апрель2019Колич)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>Количество2019.Декабрь2019Колич</dataPath>
+		<expression>Сумма(Количество2019.Декабрь2019Колич)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>Количество2019.Июль2019Колич</dataPath>
+		<expression>Сумма(Количество2019.Июль2019Колич)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>Количество2019.Июнь2019Колич</dataPath>
+		<expression>Сумма(Количество2019.Июнь2019Колич)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>Количество2019.Май2019Колич</dataPath>
+		<expression>Сумма(Количество2019.Май2019Колич)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>Количество2019.Март2019Колич</dataPath>
+		<expression>Сумма(Количество2019.Март2019Колич)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>Количество2019.Ноябрь2019Колич</dataPath>
+		<expression>Сумма(Количество2019.Ноябрь2019Колич)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>Количество2019.Октябрь2019Колич</dataPath>
+		<expression>Сумма(Количество2019.Октябрь2019Колич)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>Количество2019.Сентябрь2019Колич</dataPath>
+		<expression>Сумма(Количество2019.Сентябрь2019Колич)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>Количество2019.Февраль2019Колич</dataPath>
+		<expression>Сумма(Количество2019.Февраль2019Колич)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>Количество2019.Январь2019Колич</dataPath>
+		<expression>Сумма(Количество2019.Январь2019Колич)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>Платежи2015.Август2015Сумма</dataPath>
+		<expression>Сумма(Платежи2015.Август2015Сумма)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>Платежи2015.Апрель2015Сумма</dataPath>
+		<expression>Сумма(Платежи2015.Апрель2015Сумма)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>Платежи2015.Декабрь2015Сумма</dataPath>
+		<expression>Сумма(Платежи2015.Декабрь2015Сумма)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>Платежи2015.Июль2015Сумма</dataPath>
+		<expression>Сумма(Платежи2015.Июль2015Сумма)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>Платежи2015.Июнь2015Сумма</dataPath>
+		<expression>Сумма(Платежи2015.Июнь2015Сумма)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>Платежи2015.Май2015Сумма</dataPath>
+		<expression>Сумма(Платежи2015.Май2015Сумма)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>Платежи2015.Март2015Сумма</dataPath>
+		<expression>Сумма(Платежи2015.Март2015Сумма)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>Платежи2015.Ноябрь2015Сумма</dataPath>
+		<expression>Сумма(Платежи2015.Ноябрь2015Сумма)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>Платежи2015.Октябрь2015Сумма</dataPath>
+		<expression>Сумма(Платежи2015.Октябрь2015Сумма)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>Платежи2015.Сентябрь2015Сумма</dataPath>
+		<expression>Сумма(Платежи2015.Сентябрь2015Сумма)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>Платежи2015.Февраль2015Сумма</dataPath>
+		<expression>Сумма(Платежи2015.Февраль2015Сумма)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>Платежи2015.Январь2015Сумма</dataPath>
+		<expression>Сумма(Платежи2015.Январь2015Сумма)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>Платежи2016.Август2016Сумма</dataPath>
+		<expression>Сумма(Платежи2016.Август2016Сумма)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>Платежи2016.Апрель2016Сумма</dataPath>
+		<expression>Сумма(Платежи2016.Апрель2016Сумма)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>Платежи2016.Декабрь2016Сумма</dataPath>
+		<expression>Сумма(Платежи2016.Декабрь2016Сумма)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>Платежи2016.Июль2016Сумма</dataPath>
+		<expression>Сумма(Платежи2016.Июль2016Сумма)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>Платежи2016.Июнь2016Сумма</dataPath>
+		<expression>Сумма(Платежи2016.Июнь2016Сумма)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>Платежи2016.Май2016Сумма</dataPath>
+		<expression>Сумма(Платежи2016.Май2016Сумма)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>Платежи2016.Март2016Сумма</dataPath>
+		<expression>Сумма(Платежи2016.Март2016Сумма)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>Платежи2016.Ноябрь2016Сумма</dataPath>
+		<expression>Сумма(Платежи2016.Ноябрь2016Сумма)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>Платежи2016.Октябрь2016Сумма</dataPath>
+		<expression>Сумма(Платежи2016.Октябрь2016Сумма)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>Платежи2016.Сентябрь2016Сумма</dataPath>
+		<expression>Сумма(Платежи2016.Сентябрь2016Сумма)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>Платежи2016.Февраль2016Сумма</dataPath>
+		<expression>Сумма(Платежи2016.Февраль2016Сумма)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>Платежи2016.Январь2016Сумма</dataPath>
+		<expression>Сумма(Платежи2016.Январь2016Сумма)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>Платежи2017.Август2017Сумма</dataPath>
+		<expression>Сумма(Платежи2017.Август2017Сумма)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>Платежи2017.Апрель2017Сумма</dataPath>
+		<expression>Сумма(Платежи2017.Апрель2017Сумма)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>Платежи2017.Декабрь2017Сумма</dataPath>
+		<expression>Сумма(Платежи2017.Декабрь2017Сумма)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>Платежи2017.Июль2017Сумма</dataPath>
+		<expression>Сумма(Платежи2017.Июль2017Сумма)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>Платежи2017.Июнь2017Сумма</dataPath>
+		<expression>Сумма(Платежи2017.Июнь2017Сумма)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>Платежи2017.Май2017Сумма</dataPath>
+		<expression>Сумма(Платежи2017.Май2017Сумма)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>Платежи2017.Март2017Сумма</dataPath>
+		<expression>Сумма(Платежи2017.Март2017Сумма)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>Платежи2017.Ноябрь2017Сумма</dataPath>
+		<expression>Сумма(Платежи2017.Ноябрь2017Сумма)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>Платежи2017.Октябрь2017Сумма</dataPath>
+		<expression>Сумма(Платежи2017.Октябрь2017Сумма)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>Платежи2017.Сентябрь2017Сумма</dataPath>
+		<expression>Сумма(Платежи2017.Сентябрь2017Сумма)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>Платежи2017.Февраль2017Сумма</dataPath>
+		<expression>Сумма(Платежи2017.Февраль2017Сумма)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>Платежи2017.Январь2017Сумма</dataPath>
+		<expression>Сумма(Платежи2017.Январь2017Сумма)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>Платежи2018.Август2018Сумма</dataPath>
+		<expression>Сумма(Платежи2018.Август2018Сумма)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>Платежи2018.Апрель2018Сумма</dataPath>
+		<expression>Сумма(Платежи2018.Апрель2018Сумма)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>Платежи2018.Декабрь2018Сумма</dataPath>
+		<expression>Сумма(Платежи2018.Декабрь2018Сумма)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>Платежи2018.Июль2018Сумма</dataPath>
+		<expression>Сумма(Платежи2018.Июль2018Сумма)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>Платежи2018.Июнь2018Сумма</dataPath>
+		<expression>Сумма(Платежи2018.Июнь2018Сумма)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>Платежи2018.Май2018Сумма</dataPath>
+		<expression>Сумма(Платежи2018.Май2018Сумма)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>Платежи2018.Март2018Сумма</dataPath>
+		<expression>Сумма(Платежи2018.Март2018Сумма)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>Платежи2018.Ноябрь2018Сумма</dataPath>
+		<expression>Сумма(Платежи2018.Ноябрь2018Сумма)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>Платежи2018.Октябрь2018Сумма</dataPath>
+		<expression>Сумма(Платежи2018.Октябрь2018Сумма)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>Платежи2018.Сентябрь2018Сумма</dataPath>
+		<expression>Сумма(Платежи2018.Сентябрь2018Сумма)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>Платежи2018.Февраль2018Сумма</dataPath>
+		<expression>Сумма(Платежи2018.Февраль2018Сумма)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>Платежи2018.Январь2018Сумма</dataPath>
+		<expression>Сумма(Платежи2018.Январь2018Сумма)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>Платежи2019.Август2019Сумма</dataPath>
+		<expression>Сумма(Платежи2019.Август2019Сумма)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>Платежи2019.Апрель2019Сумма</dataPath>
+		<expression>Сумма(Платежи2019.Апрель2019Сумма)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>Платежи2019.Декабрь2019Сумма</dataPath>
+		<expression>Сумма(Платежи2019.Декабрь2019Сумма)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>Платежи2019.Июль2019Сумма</dataPath>
+		<expression>Сумма(Платежи2019.Июль2019Сумма)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>Платежи2019.Июнь2019Сумма</dataPath>
+		<expression>Сумма(Платежи2019.Июнь2019Сумма)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>Платежи2019.Май2019Сумма</dataPath>
+		<expression>Сумма(Платежи2019.Май2019Сумма)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>Платежи2019.Март2019Сумма</dataPath>
+		<expression>Сумма(Платежи2019.Март2019Сумма)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>Платежи2019.Ноябрь2019Сумма</dataPath>
+		<expression>Сумма(Платежи2019.Ноябрь2019Сумма)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>Платежи2019.Октябрь2019Сумма</dataPath>
+		<expression>Сумма(Платежи2019.Октябрь2019Сумма)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>Платежи2019.Сентябрь2019Сумма</dataPath>
+		<expression>Сумма(Платежи2019.Сентябрь2019Сумма)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>Платежи2019.Февраль2019Сумма</dataPath>
+		<expression>Сумма(Платежи2019.Февраль2019Сумма)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>Платежи2019.Январь2019Сумма</dataPath>
+		<expression>Сумма(Платежи2019.Январь2019Сумма)</expression>
+	</totalField>
+	<settingsVariant>
+		<dcsset:name>Основной</dcsset:name>
+		<dcsset:presentation xsi:type="xs:string">Основной</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:selection>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Банк</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>РеестрНомер</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Должник</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>догЦессии</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ДоговорНомерДоговора</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ВсегоЗадолженность</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ДолжникДатаРождения</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ДолжникРегион</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ГородДолж</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>решСуда</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ДоговорТипКредита</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemFolder">
+					<dcsset:field>Платежи2015</dcsset:field>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Платежи2015.Январь2015Сумма</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Платежи2015.Февраль2015Сумма</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Платежи2015.Март2015Сумма</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Платежи2015.Апрель2015Сумма</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Платежи2015.Май2015Сумма</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Платежи2015.Июнь2015Сумма</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Платежи2015.Июль2015Сумма</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Платежи2015.Август2015Сумма</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Платежи2015.Сентябрь2015Сумма</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Платежи2015.Октябрь2015Сумма</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Платежи2015.Ноябрь2015Сумма</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Платежи2015.Декабрь2015Сумма</dcsset:field>
+					</dcsset:item>
+					<dcsset:placement>Auto</dcsset:placement>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemFolder">
+					<dcsset:field>Платежи2016</dcsset:field>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Платежи2016.Январь2016Сумма</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Платежи2016.Февраль2016Сумма</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Платежи2016.Март2016Сумма</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Платежи2016.Апрель2016Сумма</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Платежи2016.Май2016Сумма</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Платежи2016.Июнь2016Сумма</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Платежи2016.Июль2016Сумма</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Платежи2016.Август2016Сумма</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Платежи2016.Сентябрь2016Сумма</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Платежи2016.Октябрь2016Сумма</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Платежи2016.Ноябрь2016Сумма</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Платежи2016.Декабрь2016Сумма</dcsset:field>
+					</dcsset:item>
+					<dcsset:placement>Auto</dcsset:placement>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemFolder">
+					<dcsset:field>Платежи2017</dcsset:field>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Платежи2017.Январь2017Сумма</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Платежи2017.Февраль2017Сумма</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Платежи2017.Март2017Сумма</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Платежи2017.Апрель2017Сумма</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Платежи2017.Май2017Сумма</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Платежи2017.Июнь2017Сумма</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Платежи2017.Июль2017Сумма</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Платежи2017.Август2017Сумма</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Платежи2017.Сентябрь2017Сумма</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Платежи2017.Октябрь2017Сумма</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Платежи2017.Ноябрь2017Сумма</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Платежи2017.Декабрь2017Сумма</dcsset:field>
+					</dcsset:item>
+					<dcsset:placement>Auto</dcsset:placement>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemFolder">
+					<dcsset:field>Платежи2018</dcsset:field>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Платежи2018.Январь2018Сумма</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Платежи2018.Февраль2018Сумма</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Платежи2018.Март2018Сумма</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Платежи2018.Апрель2018Сумма</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Платежи2018.Май2018Сумма</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Платежи2018.Июнь2018Сумма</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Платежи2018.Июль2018Сумма</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Платежи2018.Август2018Сумма</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Платежи2018.Сентябрь2018Сумма</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Платежи2018.Октябрь2018Сумма</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Платежи2018.Ноябрь2018Сумма</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Платежи2018.Декабрь2018Сумма</dcsset:field>
+					</dcsset:item>
+					<dcsset:placement>Auto</dcsset:placement>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemFolder">
+					<dcsset:field>Платежи2019</dcsset:field>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Платежи2019.Январь2019Сумма</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Платежи2019.Февраль2019Сумма</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Платежи2019.Март2019Сумма</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Платежи2019.Апрель2019Сумма</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Платежи2019.Май2019Сумма</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Платежи2019.Июнь2019Сумма</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Платежи2019.Июль2019Сумма</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Платежи2019.Август2019Сумма</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Платежи2019.Сентябрь2019Сумма</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Платежи2019.Октябрь2019Сумма</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Платежи2019.Ноябрь2019Сумма</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Платежи2019.Декабрь2019Сумма</dcsset:field>
+					</dcsset:item>
+					<dcsset:placement>Auto</dcsset:placement>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemFolder">
+					<dcsset:field>Количество2015</dcsset:field>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Количество2015.Январь2015Колич</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Количество2015.Февраль2015Колич</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Количество2015.Март2015Колич</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Количество2015.Апрель2015Колич</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Количество2015.Май2015Колич</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Количество2015.Июнь2015Колич</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Количество2015.Июль2015Колич</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Количество2015.Август2015Колич</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Количество2015.Сентябрь2015Колич</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Количество2015.Октябрь2015Колич</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Количество2015.Ноябрь2015Колич</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Количество2015.Декабрь2015Колич</dcsset:field>
+					</dcsset:item>
+					<dcsset:placement>Auto</dcsset:placement>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemFolder">
+					<dcsset:field>Количество2016</dcsset:field>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Количество2016.Январь2016Колич</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Количество2016.Февраль2016Колич</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Количество2016.Март2016Колич</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Количество2016.Апрель2016Колич</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Количество2016.Май2016Колич</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Количество2016.Июнь2016Колич</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Количество2016.Июль2016Колич</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Количество2016.Август2016Колич</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Количество2016.Сентябрь2016Колич</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Количество2016.Октябрь2016Колич</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Количество2016.Ноябрь2016Колич</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Количество2016.Декабрь2016Колич</dcsset:field>
+					</dcsset:item>
+					<dcsset:placement>Auto</dcsset:placement>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemFolder">
+					<dcsset:field>Количество2017</dcsset:field>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Количество2017.Январь2017Колич</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Количество2017.Февраль2017Колич</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Количество2017.Март2017Колич</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Количество2017.Апрель2017Колич</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Количество2017.Май2017Колич</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Количество2017.Июнь2017Колич</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Количество2017.Июль2017Колич</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Количество2017.Август2017Колич</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Количество2017.Сентябрь2017Колич</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Количество2017.Октябрь2017Колич</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Количество2017.Ноябрь2017Колич</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Количество2017.Декабрь2017Колич</dcsset:field>
+					</dcsset:item>
+					<dcsset:placement>Auto</dcsset:placement>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemFolder">
+					<dcsset:field>Количество2018</dcsset:field>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Количество2018.Январь2018Колич</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Количество2018.Февраль2018Колич</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Количество2018.Март2018Колич</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Количество2018.Апрель2018Колич</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Количество2018.Май2018Колич</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Количество2018.Июнь2018Колич</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Количество2018.Июль2018Колич</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Количество2018.Август2018Колич</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Количество2018.Сентябрь2018Колич</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Количество2018.Октябрь2018Колич</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Количество2018.Ноябрь2018Колич</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Количество2018.Декабрь2018Колич</dcsset:field>
+					</dcsset:item>
+					<dcsset:placement>Auto</dcsset:placement>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemFolder">
+					<dcsset:field>Количество2019</dcsset:field>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Количество2019.Январь2019Колич</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Количество2019.Февраль2019Колич</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Количество2019.Март2019Колич</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Количество2019.Апрель2019Колич</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Количество2019.Май2019Колич</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Количество2019.Июнь2019Колич</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Количество2019.Июль2019Колич</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Количество2019.Август2019Колич</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Количество2019.Сентябрь2019Колич</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Количество2019.Октябрь2019Колич</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Количество2019.Ноябрь2019Колич</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Количество2019.Декабрь2019Колич</dcsset:field>
+					</dcsset:item>
+					<dcsset:placement>Auto</dcsset:placement>
+				</dcsset:item>
+			</dcsset:selection>
+			<dcsset:filter>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:left xsi:type="dcscor:Field">Банк</dcsset:left>
+					<dcsset:comparisonType>Equal</dcsset:comparisonType>
+					<dcsset:userSettingID>365f8b45-beeb-4224-9bda-13a6b180e5e3</dcsset:userSettingID>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:left xsi:type="dcscor:Field">Реестр</dcsset:left>
+					<dcsset:comparisonType>Equal</dcsset:comparisonType>
+					<dcsset:userSettingID>4e2a9787-5f41-4d35-9c67-4df371a90d99</dcsset:userSettingID>
+				</dcsset:item>
+			</dcsset:filter>
+			<dcsset:outputParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>МакетОформления</dcscor:parameter>
+					<dcscor:value xsi:type="xs:string">Античный</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ТипЗаголовкаПолей</dcscor:parameter>
+					<dcscor:value xsi:type="dcscor:DataCompositionFieldsTitleType">Short</dcscor:value>
+				</dcscor:item>
+			</dcsset:outputParameters>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+				</dcsset:selection>
+			</dcsset:item>
+		</dcsset:settings>
+	</settingsVariant>
+</DataCompositionSchema>

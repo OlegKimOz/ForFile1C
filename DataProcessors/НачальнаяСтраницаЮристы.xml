@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.9">
+	<DataProcessor uuid="34cb92bf-9af4-41ad-b3eb-202c09a29048">
+		<InternalInfo>
+			<xr:GeneratedType name="DataProcessorObject.НачальнаяСтраницаЮристы" category="Object">
+				<xr:TypeId>57062f55-4713-41f4-857d-70fa0c32ddda</xr:TypeId>
+				<xr:ValueId>57410a69-2d76-4085-8d1a-677ca07697b8</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DataProcessorManager.НачальнаяСтраницаЮристы" category="Manager">
+				<xr:TypeId>c348e31a-26a5-4748-bdc4-18c96fc373a4</xr:TypeId>
+				<xr:ValueId>2ae60f8e-47b9-4a27-ba20-a83b2c093d7a</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>НачальнаяСтраницаЮристы</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список кредитных договоров</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<UseStandardCommands>true</UseStandardCommands>
+			<DefaultForm>DataProcessor.НачальнаяСтраницаЮристы.Form.Форма</DefaultForm>
+			<AuxiliaryForm/>
+			<IncludeHelpInContents>false</IncludeHelpInContents>
+			<ExtendedPresentation/>
+			<Explanation/>
+		</Properties>
+		<ChildObjects>
+			<Form>Форма</Form>
+			<Form>ФормаКарточкаДолжника</Form>
+			<Form>ФормаПоиск</Form>
+			<Form>ФормаНастройкиПечати</Form>
+			<Form>ФормаСоздатьГруппу</Form>
+			<Form>ФормаДоговораГруппы</Form>
+			<Form>ФормаСоздатьГруппуИзПоиск</Form>
+			<Form>ФормаГенерацияДокументовГруппы</Form>
+			<Form>ФормаНаименованиеВходящиеДокументы</Form>
+			<Form>ФормаЗагрузитьИзФайла</Form>
+			<Form>ФормаНазваниеШаблона</Form>
+			<Template>МакетПакетПечать</Template>
+		</ChildObjects>
+	</DataProcessor>
+</MetaDataObject>

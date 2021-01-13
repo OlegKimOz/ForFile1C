@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.9">
+	<Item id="5238fdf1-c9ea-4097-9c03-0b88ac5b7b33">
+		<Name>Автомобиль</Name>
+		<Code>000000001</Code>
+		<Description>Автомобиль</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="17ca6810-d371-4948-8200-55cd96f815e6">
+		<Name>Паспорт</Name>
+		<Code>000000002</Code>
+		<Description>Паспорт</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+</PredefinedData>

@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.9">
+	<Subsystem uuid="9233322b-dfdb-4c66-91fe-1299292d40a5">
+		<Properties>
+			<Name>Администрирование</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Администрирование</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<IncludeHelpInContents>true</IncludeHelpInContents>
+			<IncludeInCommandInterface>true</IncludeInCommandInterface>
+			<Explanation>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Администрирование, настройка, сервисные функции</v8:content>
+				</v8:item>
+			</Explanation>
+			<Picture>
+				<xr:Ref>CommonPicture.Настройки</xr:Ref>
+				<xr:LoadTransparent>false</xr:LoadTransparent>
+			</Picture>
+			<Content>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.НастройкаСистемнойУчетнойЗаписиЭлектроннойПочты</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ЖурналРегистрации</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.РегламентныеИФоновыеЗадания</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.НастройкиПользователей</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Пользователи</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ГруппыДоступа</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ГруппыПользователей</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ВнешниеПользователи</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ГруппыВнешнихПользователей</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ТомаХраненияФайлов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ВидыКонтактнойИнформации</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ПользовательскиеМакетыПечати</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.УчетныеЗаписиЭлектроннойПочты</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ПрофилиГруппДоступа</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ДополнительныеОтчетыИОбработки</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.ОписаниеИзмененийПрограммы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ИсполнителиЗадач</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.АвтоматическоеИзвлечениеТекстов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ВариантыОтчетов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.РазделАдминистрирование48</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.РассылкиОтчетов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ПанельАдминистрированияБСП</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.ПараметрыПроксиСервера</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.НомераОтсканированныхФайлов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Валюты</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.КлассификаторБанков</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.РезультатыОбновленияПрограммы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.СведенияОПользователях</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.ПанельОтчетовАдминистрирование</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.ДополнительныеОбработкиАдминистрирование</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.ДополнительныеОтчетыАдминистрирование</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ПереносФайловВТома</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.ОбъемНенужныхФайлов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.ПрогрессОтложенногоОбновления</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.УниверсальныйОтчет</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.НастройкаКомандПечати</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.Расширения</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.НастройкиОчисткиФайлов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.ВремяТекущегоСеанса</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.НастройкиВходаПользователей</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.АдресныеОбъекты</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Регионы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ИсполнительныеДокументы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ТипыАдресов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.УстановитьНомерРегионаФССП</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.КодыРегионовФССП</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.ПоискИспДокумента</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ТестСебестоимость</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.УстановитьФСППВРегионы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ВРаботеДолжникиПоБанку</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ЗапросывФССПдляРеестра</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ТестЗапросяВФССП</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ФССП</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ЗагрузкаПроцентаПокупки</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.СудебныеСтатусы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ЗаявлениеОВозбужденииИП</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ШаблоныЮристы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ОбработкаСМСФИНАНС</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ЗаявленияОбращениеОХодеИП</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Суды</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ЗагрузкаСудыИзФайлаЕксель</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ЗугрузкаФайлаЗаявленияНаВыдачуСудебногоПриказа</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ВыборДолжниковДляПечати</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ЗаявленияЗаменаСтороныИП</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.ВыгрузкаНовыхТелефоновИАдресов2</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.ВыгрузкаТелефоновИзРеестра</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ЗагрузкаФайлаПоНомеруДоговора</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ЗагрузитьКомментарииАдминистратора</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.ВыгрузкаНовыхТелефоновИАдресов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.ВыгрузкаТелефоновПлатежи</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ЗагрузкаПлатежейСбербанка</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ПерепроведениеПлатежей</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.Установитьрегион89</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.ВыгрузкаСуммНаДату</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ЗагрузкаАдресовНБКИ</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ДоговорЦессии</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ОбработкаВыписки</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ЗагрузкаРеестра</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.ВыгрузкаДляАнализаПортфеля</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ТестЗапросаВФССПГрупповой</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ЗагрузитьДоговорЦессии</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.СколькоОбработаноФССП</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ОтделыОСП</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ЗагрузитьОИСП</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.РеестрФССППереПослать</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.ПлатежиПоДолжнику</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ТестНачальнаяСтраница</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.УдалитьЗадДолжников</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.ОтчетПоЗаявлениямОВозбужденииИП</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.УдалитьЗадвойВДополнительныхДанных</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ПортфелиСодержание</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ИсправитьРеестрСПустымиДолжниками</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.СобираемостьПоПортфелям</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ЗаполнениеСправочникаСобираемость</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.ДолжникВКакомРеестре</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.РасчетАВ</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ОбработкаФайлаСМС</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ПечатьКарточкиДолжниковПоРеестру</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ЗагрузкаПочтаШПИ</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ЗагрузкаДанныхОтВыездников</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ВыгрузкаПаспортныхДанныхДолжников</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ЗагрузитьБанкрот</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.Руководитель</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.Настройки</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ЗагрузкаТипыКредитов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ЗагрузитьСудебныеСтатусы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ФайлДляЗаявлениеОправопреемственности</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.ДолжникиСПрикрепленнымиФайлами</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ПередачаДоговоров</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.УдалитьДоговораПоРеестру</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ЗагрузкаДоговорЦессииИзДопДанных</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ЗавестиДолжникаИзФайлаExcel</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ОбработкаПривязатьДоговорКДолжнику</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ОбработкаПривязкаЮристовИзФайла</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ДокументыФорвард</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ДокументыЦессии</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.ДокументПовестка</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ОбработкаИсправитьАдресРазбивки</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ЗагрузкаПервоначальногоКредитора</xr:Item>
+			</Content>
+		</Properties>
+		<ChildObjects>
+			<Subsystem>Обработки</Subsystem>
+		</ChildObjects>
+	</Subsystem>
+</MetaDataObject>

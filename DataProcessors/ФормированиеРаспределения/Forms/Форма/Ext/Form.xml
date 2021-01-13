@@ -1,0 +1,454 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.9">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="Группа2" id="102">
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="103"/>
+			<ChildItems>
+				<InputField name="Приоритет" id="97">
+					<DataPath>Приоритет</DataPath>
+					<ClearButton>true</ClearButton>
+					<SpinButton>true</SpinButton>
+					<ContextMenu name="ПриоритетКонтекстноеМеню" id="98"/>
+					<ExtendedTooltip name="ПриоритетРасширеннаяПодсказка" id="99"/>
+				</InputField>
+				<Button name="Добавить" id="100">
+					<Type>UsualButton</Type>
+					<DefaultButton>true</DefaultButton>
+					<CommandName>Form.Command.Заполнить</CommandName>
+					<ExtendedTooltip name="ДобавитьРасширеннаяПодсказка" id="101"/>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
+		<Table name="ПараметрыРаспределения" id="1">
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<FileDragMode>AsFile</FileDragMode>
+			<DataPath>Объект.ПараметрыРаспределения</DataPath>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ПараметрыРаспределенияКонтекстноеМеню" id="2"/>
+			<AutoCommandBar name="ПараметрыРаспределенияКоманднаяПанель" id="3"/>
+			<ExtendedTooltip name="ПараметрыРаспределенияРасширеннаяПодсказка" id="4"/>
+			<SearchStringAddition name="ПараметрыРаспределенияСтрокаПоиска" id="5">
+				<AdditionSource>
+					<Item>ПараметрыРаспределения</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ПараметрыРаспределенияСтрокаПоискаКонтекстноеМеню" id="6"/>
+				<ExtendedTooltip name="ПараметрыРаспределенияСтрокаПоискаРасширеннаяПодсказка" id="7"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ПараметрыРаспределенияСостояниеПросмотра" id="8">
+				<AdditionSource>
+					<Item>ПараметрыРаспределения</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ПараметрыРаспределенияСостояниеПросмотраКонтекстноеМеню" id="9"/>
+				<ExtendedTooltip name="ПараметрыРаспределенияСостояниеПросмотраРасширеннаяПодсказка" id="10"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ПараметрыРаспределенияУправлениеПоиском" id="11">
+				<AdditionSource>
+					<Item>ПараметрыРаспределения</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ПараметрыРаспределенияУправлениеПоискомКонтекстноеМеню" id="12"/>
+				<ExtendedTooltip name="ПараметрыРаспределенияУправлениеПоискомРасширеннаяПодсказка" id="13"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="ПараметрыРаспределенияНомерСтроки" id="14">
+					<DataPath>Объект.ПараметрыРаспределения.LineNumber</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ПараметрыРаспределенияНомерСтрокиКонтекстноеМеню" id="15"/>
+					<ExtendedTooltip name="ПараметрыРаспределенияНомерСтрокиРасширеннаяПодсказка" id="16"/>
+				</LabelField>
+				<InputField name="ПараметрыРаспределенияРеестр" id="17">
+					<DataPath>Объект.ПараметрыРаспределения.Реестр</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ПараметрыРаспределенияРеестрКонтекстноеМеню" id="18"/>
+					<ExtendedTooltip name="ПараметрыРаспределенияРеестрРасширеннаяПодсказка" id="19"/>
+				</InputField>
+				<InputField name="ПараметрыРаспределенияСотрудник" id="23">
+					<DataPath>Объект.ПараметрыРаспределения.Сотрудник</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ПараметрыРаспределенияСотрудникКонтекстноеМеню" id="24"/>
+					<ExtendedTooltip name="ПараметрыРаспределенияСотрудникРасширеннаяПодсказка" id="25"/>
+				</InputField>
+				<InputField name="ПараметрыРаспределенияПриоритет" id="20">
+					<DataPath>Объект.ПараметрыРаспределения.Приоритет</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ПараметрыРаспределенияПриоритетКонтекстноеМеню" id="21"/>
+					<ExtendedTooltip name="ПараметрыРаспределенияПриоритетРасширеннаяПодсказка" id="22"/>
+				</InputField>
+				<InputField name="ПараметрыРаспределенияСтатус" id="26">
+					<DataPath>Объект.ПараметрыРаспределения.Статус</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ПараметрыРаспределенияСтатусКонтекстноеМеню" id="27"/>
+					<ExtendedTooltip name="ПараметрыРаспределенияСтатусРасширеннаяПодсказка" id="28"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+		<UsualGroup name="Группа1" id="29">
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="30"/>
+			<ChildItems>
+				<Table name="Банки" id="31">
+					<Representation>List</Representation>
+					<TitleLocation>Top</TitleLocation>
+					<Header>false</Header>
+					<HorizontalLines>false</HorizontalLines>
+					<VerticalLines>false</VerticalLines>
+					<AutoInsertNewRow>true</AutoInsertNewRow>
+					<FileDragMode>AsFile</FileDragMode>
+					<DataPath>Банки</DataPath>
+					<RowPictureDataPath>Банки.Picture</RowPictureDataPath>
+					<ContextMenu name="БанкиКонтекстноеМеню" id="32"/>
+					<AutoCommandBar name="БанкиКоманднаяПанель" id="33"/>
+					<ExtendedTooltip name="БанкиРасширеннаяПодсказка" id="34"/>
+					<SearchStringAddition name="БанкиСтрокаПоиска" id="35">
+						<AdditionSource>
+							<Item>Банки</Item>
+							<Type>SearchStringRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="БанкиСтрокаПоискаКонтекстноеМеню" id="36"/>
+						<ExtendedTooltip name="БанкиСтрокаПоискаРасширеннаяПодсказка" id="37"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="БанкиСостояниеПросмотра" id="38">
+						<AdditionSource>
+							<Item>Банки</Item>
+							<Type>ViewStatusRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="БанкиСостояниеПросмотраКонтекстноеМеню" id="39"/>
+						<ExtendedTooltip name="БанкиСостояниеПросмотраРасширеннаяПодсказка" id="40"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="БанкиУправлениеПоиском" id="41">
+						<AdditionSource>
+							<Item>Банки</Item>
+							<Type>SearchControl</Type>
+						</AdditionSource>
+						<ContextMenu name="БанкиУправлениеПоискомКонтекстноеМеню" id="42"/>
+						<ExtendedTooltip name="БанкиУправлениеПоискомРасширеннаяПодсказка" id="43"/>
+					</SearchControlAddition>
+					<ChildItems>
+						<InputField name="БанкиЗначение" id="44">
+							<DataPath>Банки.Value</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="БанкиЗначениеКонтекстноеМеню" id="45"/>
+							<ExtendedTooltip name="БанкиЗначениеРасширеннаяПодсказка" id="46"/>
+						</InputField>
+					</ChildItems>
+				</Table>
+				<Table name="Реестры" id="47">
+					<Representation>List</Representation>
+					<TitleLocation>Top</TitleLocation>
+					<AutoInsertNewRow>true</AutoInsertNewRow>
+					<EnableStartDrag>true</EnableStartDrag>
+					<EnableDrag>true</EnableDrag>
+					<FileDragMode>AsFile</FileDragMode>
+					<DataPath>Реестры</DataPath>
+					<RowFilter xsi:nil="true"/>
+					<ContextMenu name="РеестрыКонтекстноеМеню" id="48"/>
+					<AutoCommandBar name="РеестрыКоманднаяПанель" id="49"/>
+					<ExtendedTooltip name="РеестрыРасширеннаяПодсказка" id="50"/>
+					<SearchStringAddition name="РеестрыСтрокаПоиска" id="51">
+						<AdditionSource>
+							<Item>Реестры</Item>
+							<Type>SearchStringRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="РеестрыСтрокаПоискаКонтекстноеМеню" id="52"/>
+						<ExtendedTooltip name="РеестрыСтрокаПоискаРасширеннаяПодсказка" id="53"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="РеестрыСостояниеПросмотра" id="54">
+						<AdditionSource>
+							<Item>Реестры</Item>
+							<Type>ViewStatusRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="РеестрыСостояниеПросмотраКонтекстноеМеню" id="55"/>
+						<ExtendedTooltip name="РеестрыСостояниеПросмотраРасширеннаяПодсказка" id="56"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="РеестрыУправлениеПоиском" id="57">
+						<AdditionSource>
+							<Item>Реестры</Item>
+							<Type>SearchControl</Type>
+						</AdditionSource>
+						<ContextMenu name="РеестрыУправлениеПоискомКонтекстноеМеню" id="58"/>
+						<ExtendedTooltip name="РеестрыУправлениеПоискомРасширеннаяПодсказка" id="59"/>
+					</SearchControlAddition>
+					<ChildItems>
+						<InputField name="РеестрыРеестр" id="60">
+							<DataPath>Реестры.Реестр</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="РеестрыРеестрКонтекстноеМеню" id="61"/>
+							<ExtendedTooltip name="РеестрыРеестрРасширеннаяПодсказка" id="62"/>
+						</InputField>
+					</ChildItems>
+				</Table>
+				<Table name="Сотрудники" id="63">
+					<Representation>List</Representation>
+					<TitleLocation>Top</TitleLocation>
+					<AutoInsertNewRow>true</AutoInsertNewRow>
+					<EnableStartDrag>true</EnableStartDrag>
+					<EnableDrag>true</EnableDrag>
+					<FileDragMode>AsFile</FileDragMode>
+					<DataPath>Сотрудники</DataPath>
+					<RowFilter xsi:nil="true"/>
+					<ContextMenu name="СотрудникиКонтекстноеМеню" id="64"/>
+					<AutoCommandBar name="СотрудникиКоманднаяПанель" id="65"/>
+					<ExtendedTooltip name="СотрудникиРасширеннаяПодсказка" id="66"/>
+					<SearchStringAddition name="СотрудникиСтрокаПоиска" id="67">
+						<AdditionSource>
+							<Item>Сотрудники</Item>
+							<Type>SearchStringRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="СотрудникиСтрокаПоискаКонтекстноеМеню" id="68"/>
+						<ExtendedTooltip name="СотрудникиСтрокаПоискаРасширеннаяПодсказка" id="69"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="СотрудникиСостояниеПросмотра" id="70">
+						<AdditionSource>
+							<Item>Сотрудники</Item>
+							<Type>ViewStatusRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="СотрудникиСостояниеПросмотраКонтекстноеМеню" id="71"/>
+						<ExtendedTooltip name="СотрудникиСостояниеПросмотраРасширеннаяПодсказка" id="72"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="СотрудникиУправлениеПоиском" id="73">
+						<AdditionSource>
+							<Item>Сотрудники</Item>
+							<Type>SearchControl</Type>
+						</AdditionSource>
+						<ContextMenu name="СотрудникиУправлениеПоискомКонтекстноеМеню" id="74"/>
+						<ExtendedTooltip name="СотрудникиУправлениеПоискомРасширеннаяПодсказка" id="75"/>
+					</SearchControlAddition>
+					<ChildItems>
+						<InputField name="СотрудникиСотрудник" id="76">
+							<DataPath>Сотрудники.Сотрудник</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="СотрудникиСотрудникКонтекстноеМеню" id="77"/>
+							<ExtendedTooltip name="СотрудникиСотрудникРасширеннаяПодсказка" id="78"/>
+						</InputField>
+					</ChildItems>
+				</Table>
+				<Table name="Статусы" id="79">
+					<Representation>List</Representation>
+					<TitleLocation>Top</TitleLocation>
+					<AutoInsertNewRow>true</AutoInsertNewRow>
+					<EnableStartDrag>true</EnableStartDrag>
+					<EnableDrag>true</EnableDrag>
+					<FileDragMode>AsFile</FileDragMode>
+					<DataPath>Статусы</DataPath>
+					<RowFilter xsi:nil="true"/>
+					<ContextMenu name="СтатусыКонтекстноеМеню" id="80"/>
+					<AutoCommandBar name="СтатусыКоманднаяПанель" id="81"/>
+					<ExtendedTooltip name="СтатусыРасширеннаяПодсказка" id="82"/>
+					<SearchStringAddition name="СтатусыСтрокаПоиска" id="83">
+						<AdditionSource>
+							<Item>Статусы</Item>
+							<Type>SearchStringRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="СтатусыСтрокаПоискаКонтекстноеМеню" id="84"/>
+						<ExtendedTooltip name="СтатусыСтрокаПоискаРасширеннаяПодсказка" id="85"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="СтатусыСостояниеПросмотра" id="86">
+						<AdditionSource>
+							<Item>Статусы</Item>
+							<Type>ViewStatusRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="СтатусыСостояниеПросмотраКонтекстноеМеню" id="87"/>
+						<ExtendedTooltip name="СтатусыСостояниеПросмотраРасширеннаяПодсказка" id="88"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="СтатусыУправлениеПоиском" id="89">
+						<AdditionSource>
+							<Item>Статусы</Item>
+							<Type>SearchControl</Type>
+						</AdditionSource>
+						<ContextMenu name="СтатусыУправлениеПоискомКонтекстноеМеню" id="90"/>
+						<ExtendedTooltip name="СтатусыУправлениеПоискомРасширеннаяПодсказка" id="91"/>
+					</SearchControlAddition>
+					<ChildItems>
+						<InputField name="СтатусыСтатус" id="92">
+							<DataPath>Статусы.Статус</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="СтатусыСтатусКонтекстноеМеню" id="93"/>
+							<ExtendedTooltip name="СтатусыСтатусРасширеннаяПодсказка" id="94"/>
+						</InputField>
+					</ChildItems>
+				</Table>
+				<Button name="КнопкаДобавить" id="95">
+					<Type>UsualButton</Type>
+					<CommandName>0</CommandName>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Добавить</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="КнопкаДобавитьРасширеннаяПодсказка" id="96"/>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.ФормированиеРаспределения</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="Период" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Период</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:dateTime</v8:Type>
+				<v8:DateQualifiers>
+					<v8:DateFractions>Date</v8:DateFractions>
+				</v8:DateQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Реестры" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Реестры</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Реестр" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Реестр</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:DocumentRef.Реестр</v8:Type>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="Сотрудники" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сотрудники</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Сотрудник" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Сотрудник</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Сотрудники</v8:Type>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="Статусы" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Статусы</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Статус" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Статус</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Статусы</v8:Type>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="Банки" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Банки</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+			<Settings xsi:type="v8:TypeDescription">
+				<v8:Type>cfg:CatalogRef.Банки</v8:Type>
+			</Settings>
+		</Attribute>
+		<Attribute name="Приоритет" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Приоритет</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>2</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="Распределить" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Распределить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Распределить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Распределить</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="Заполнить" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Заполнить</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+	</Commands>
+</Form>

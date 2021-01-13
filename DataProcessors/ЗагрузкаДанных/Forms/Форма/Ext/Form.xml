@@ -1,0 +1,483 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.9">
+	<AutoSaveDataInSettings>Use</AutoSaveDataInSettings>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+	</Events>
+	<ChildItems>
+		<Pages name="СтраницыОбработки" id="60">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Страницы обработки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Страницы обработки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<PagesRepresentation>None</PagesRepresentation>
+			<ExtendedTooltip name="СтраницыОбработкиРасширеннаяПодсказка" id="61"/>
+			<ChildItems>
+				<Page name="Основная" id="62">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Основная</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Основная</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ОсновнаяРасширеннаяПодсказка" id="63"/>
+					<ChildItems>
+						<UsualGroup name="Группа2" id="138">
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="139"/>
+							<ChildItems>
+								<Button name="Выполнить" id="44">
+									<Type>UsualButton</Type>
+									<DefaultButton>true</DefaultButton>
+									<Width>10</Width>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<AutoMaxHeight>false</AutoMaxHeight>
+									<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+									<CommandName>Form.Command.ВыполнитьОбработку</CommandName>
+									<Font ref="style:TextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+									<ExtendedTooltip name="ВыполнитьРасширеннаяПодсказка" id="45"/>
+								</Button>
+								<PictureDecoration name="Декорация1" id="140">
+									<Height>1</Height>
+									<FileDragMode>AsFile</FileDragMode>
+									<ContextMenu name="Декорация1КонтекстноеМеню" id="141"/>
+									<ExtendedTooltip name="Декорация1РасширеннаяПодсказка" id="142"/>
+								</PictureDecoration>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="Группа1" id="46">
+							<HorizontalStretch>true</HorizontalStretch>
+							<Group>Horizontal</Group>
+							<ChildrenAlign>ItemsRightTitlesRight</ChildrenAlign>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="47"/>
+						</UsualGroup>
+						<InputField name="Реестр" id="38">
+							<DataPath>Объект.Реестр</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Обновляемый реестр</v8:content>
+								</v8:item>
+							</Title>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="РеестрКонтекстноеМеню" id="39"/>
+							<ExtendedTooltip name="РеестрРасширеннаяПодсказка" id="40"/>
+						</InputField>
+						<CheckBoxField name="ЗаменятьПаспортныеДанные" id="54">
+							<DataPath>Объект.ЗаменятьПаспортныеДанные</DataPath>
+							<TitleLocation>Right</TitleLocation>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ЗаменятьПаспортныеДанныеКонтекстноеМеню" id="55"/>
+							<ExtendedTooltip name="ЗаменятьПаспортныеДанныеРасширеннаяПодсказка" id="56"/>
+						</CheckBoxField>
+						<CheckBoxField name="ПродолжитьЕслиФИОНеСовпадает" id="57">
+							<DataPath>Объект.ПродолжитьЕслиФИОНеСовпадает</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Продолжить если ФИО не совпадает с паспортом</v8:content>
+								</v8:item>
+							</Title>
+							<TitleLocation>Right</TitleLocation>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ПродолжитьЕслиФИОНеСовпадаетКонтекстноеМеню" id="58"/>
+							<ExtendedTooltip name="ПродолжитьЕслиФИОНеСовпадаетРасширеннаяПодсказка" id="59"/>
+						</CheckBoxField>
+						<CheckBoxField name="ЗагрузкаДанныхПоНомеруДоговора" id="35">
+							<DataPath>Объект.ЗагрузкаДанныхПоНомеруДоговора</DataPath>
+							<TitleLocation>Right</TitleLocation>
+							<EditMode>EnterOnInput</EditMode>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ЗагрузкаДанныхПоНомеруДоговораКонтекстноеМеню" id="36"/>
+							<ExtendedTooltip name="ЗагрузкаДанныхПоНомеруДоговораРасширеннаяПодсказка" id="37"/>
+						</CheckBoxField>
+						<CheckBoxField name="НеЗагружатьВРеестрПриНаличииДоговора" id="41">
+							<DataPath>Объект.НеЗагружатьВРеестрПриНаличииДоговора</DataPath>
+							<TitleLocation>Right</TitleLocation>
+							<EditMode>EnterOnInput</EditMode>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="НеЗагружатьВРеестрПриНаличииДоговораКонтекстноеМеню" id="42"/>
+							<ExtendedTooltip name="НеЗагружатьВРеестрПриНаличииДоговораРасширеннаяПодсказка" id="43"/>
+						</CheckBoxField>
+						<CheckBoxField name="ПробоватьИсправитьНомерДоговора" id="29">
+							<DataPath>Объект.ПробоватьИсправитьНомерДоговора</DataPath>
+							<TitleLocation>Right</TitleLocation>
+							<EditMode>EnterOnInput</EditMode>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ПробоватьИсправитьНомерДоговораКонтекстноеМеню" id="30"/>
+							<ExtendedTooltip name="ПробоватьИсправитьНомерДоговораРасширеннаяПодсказка" id="31"/>
+						</CheckBoxField>
+						<InputField name="Ответственный" id="32">
+							<DataPath>Объект.Ответственный</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ОтветственныйКонтекстноеМеню" id="33"/>
+							<ExtendedTooltip name="ОтветственныйРасширеннаяПодсказка" id="34"/>
+						</InputField>
+						<Table name="ТаблицаЗначенийЗагрузки" id="16">
+							<Representation>List</Representation>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<FileDragMode>AsFile</FileDragMode>
+							<DataPath>Объект.ТаблицаЗначенийЗагрузки</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ТаблицаЗначенийЗагрузкиКонтекстноеМеню" id="17"/>
+							<AutoCommandBar name="ТаблицаЗначенийЗагрузкиКоманднаяПанель" id="18"/>
+							<ExtendedTooltip name="ТаблицаЗначенийЗагрузкиРасширеннаяПодсказка" id="19"/>
+							<SearchStringAddition name="ТаблицаЗначенийЗагрузкиСтрокаПоиска" id="20">
+								<AdditionSource>
+									<Item>ТаблицаЗначенийЗагрузки</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ТаблицаЗначенийЗагрузкиСтрокаПоискаКонтекстноеМеню" id="21"/>
+								<ExtendedTooltip name="ТаблицаЗначенийЗагрузкиСтрокаПоискаРасширеннаяПодсказка" id="22"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ТаблицаЗначенийЗагрузкиСостояниеПросмотра" id="23">
+								<AdditionSource>
+									<Item>ТаблицаЗначенийЗагрузки</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ТаблицаЗначенийЗагрузкиСостояниеПросмотраКонтекстноеМеню" id="24"/>
+								<ExtendedTooltip name="ТаблицаЗначенийЗагрузкиСостояниеПросмотраРасширеннаяПодсказка" id="25"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ТаблицаЗначенийЗагрузкиУправлениеПоиском" id="26">
+								<AdditionSource>
+									<Item>ТаблицаЗначенийЗагрузки</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ТаблицаЗначенийЗагрузкиУправлениеПоискомКонтекстноеМеню" id="27"/>
+								<ExtendedTooltip name="ТаблицаЗначенийЗагрузкиУправлениеПоискомРасширеннаяПодсказка" id="28"/>
+							</SearchControlAddition>
+						</Table>
+						<InputField name="ДатаЗагрузки" id="10">
+							<DataPath>Объект.ДатаЗагрузки</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ДатаЗагрузкиКонтекстноеМеню" id="11"/>
+							<ExtendedTooltip name="ДатаЗагрузкиРасширеннаяПодсказка" id="12"/>
+						</InputField>
+						<InputField name="Банк" id="7">
+							<DataPath>Объект.Банк</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="БанкКонтекстноеМеню" id="8"/>
+							<ExtendedTooltip name="БанкРасширеннаяПодсказка" id="9"/>
+						</InputField>
+						<InputField name="ИмяФайла" id="1">
+							<DataPath>Объект.ИмяФайла</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ChoiceButton>true</ChoiceButton>
+							<ContextMenu name="ИмяФайлаКонтекстноеМеню" id="2"/>
+							<ExtendedTooltip name="ИмяФайлаРасширеннаяПодсказка" id="3"/>
+							<Events>
+								<Event name="StartChoice">ИмяФайлаНачалоВыбора</Event>
+							</Events>
+						</InputField>
+						<InputField name="Шаблон" id="4">
+							<DataPath>Объект.Шаблон</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ШаблонКонтекстноеМеню" id="5"/>
+							<ExtendedTooltip name="ШаблонРасширеннаяПодсказка" id="6"/>
+						</InputField>
+					</ChildItems>
+				</Page>
+				<Page name="ДопПроверка" id="64">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Доп проверка</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Доп проверка</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ДопПроверкаРасширеннаяПодсказка" id="65"/>
+					<ChildItems>
+						<Table name="ТаблицаДопПроверки" id="66">
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<FileDragMode>AsFile</FileDragMode>
+							<DataPath>Объект.ТаблицаДопПроверки</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ТаблицаДопПроверкиКонтекстноеМеню" id="67"/>
+							<AutoCommandBar name="ТаблицаДопПроверкиКоманднаяПанель" id="68">
+								<Autofill>false</Autofill>
+								<ChildItems>
+									<Button name="ТаблицаДопПроверкиКнопка1" id="134">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.УстановитьФлажки</CommandName>
+										<Picture>
+											<xr:Ref>StdPicture.CheckAll</xr:Ref>
+											<xr:LoadTransparent>true</xr:LoadTransparent>
+										</Picture>
+										<ExtendedTooltip name="ТаблицаДопПроверкиКнопка1РасширеннаяПодсказка" id="135"/>
+									</Button>
+									<Button name="ТаблицаДопПроверкиКнопка2" id="136">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.СнятьФлажки</CommandName>
+										<Picture>
+											<xr:Ref>StdPicture.UncheckAll</xr:Ref>
+											<xr:LoadTransparent>true</xr:LoadTransparent>
+										</Picture>
+										<ExtendedTooltip name="ТаблицаДопПроверкиКнопка2РасширеннаяПодсказка" id="137"/>
+									</Button>
+									<Button name="ПрименитьСоответствия" id="132">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.ПрименитьСоответствия</CommandName>
+										<ExtendedTooltip name="ПрименитьСоответствияРасширеннаяПодсказка" id="133"/>
+									</Button>
+								</ChildItems>
+							</AutoCommandBar>
+							<ExtendedTooltip name="ТаблицаДопПроверкиРасширеннаяПодсказка" id="69"/>
+							<SearchStringAddition name="ТаблицаДопПроверкиСтрокаПоиска" id="70">
+								<AdditionSource>
+									<Item>ТаблицаДопПроверки</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ТаблицаДопПроверкиСтрокаПоискаКонтекстноеМеню" id="71"/>
+								<ExtendedTooltip name="ТаблицаДопПроверкиСтрокаПоискаРасширеннаяПодсказка" id="72"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ТаблицаДопПроверкиСостояниеПросмотра" id="73">
+								<AdditionSource>
+									<Item>ТаблицаДопПроверки</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ТаблицаДопПроверкиСостояниеПросмотраКонтекстноеМеню" id="74"/>
+								<ExtendedTooltip name="ТаблицаДопПроверкиСостояниеПросмотраРасширеннаяПодсказка" id="75"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ТаблицаДопПроверкиУправлениеПоиском" id="76">
+								<AdditionSource>
+									<Item>ТаблицаДопПроверки</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ТаблицаДопПроверкиУправлениеПоискомКонтекстноеМеню" id="77"/>
+								<ExtendedTooltip name="ТаблицаДопПроверкиУправлениеПоискомРасширеннаяПодсказка" id="78"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<CheckBoxField name="ТаблицаДопПроверкиСоответствие" id="121">
+									<DataPath>Объект.ТаблицаДопПроверки.Соответствие</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ТаблицаДопПроверкиСоответствиеКонтекстноеМеню" id="122"/>
+									<ExtendedTooltip name="ТаблицаДопПроверкиСоответствиеРасширеннаяПодсказка" id="123"/>
+								</CheckBoxField>
+								<ColumnGroup name="ТаблицаДопПроверкиГруппа1" id="124">
+									<ExtendedTooltip name="ТаблицаДопПроверкиГруппа1РасширеннаяПодсказка" id="125"/>
+									<ChildItems>
+										<InputField name="ТаблицаДопПроверкиАдреса" id="82">
+											<DataPath>Объект.ТаблицаДопПроверки.Адреса</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ТаблицаДопПроверкиАдресаКонтекстноеМеню" id="83"/>
+											<ExtendedTooltip name="ТаблицаДопПроверкиАдресаРасширеннаяПодсказка" id="84"/>
+										</InputField>
+										<ColumnGroup name="ТаблицаДопПроверкиГруппа2" id="126">
+											<Group>Horizontal</Group>
+											<ExtendedTooltip name="ТаблицаДопПроверкиГруппа2РасширеннаяПодсказка" id="127"/>
+											<ChildItems>
+												<InputField name="ТаблицаДопПроверкиСсылка" id="112">
+													<DataPath>Объект.ТаблицаДопПроверки.Ссылка</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="ТаблицаДопПроверкиСсылкаКонтекстноеМеню" id="113"/>
+													<ExtendedTooltip name="ТаблицаДопПроверкиСсылкаРасширеннаяПодсказка" id="114"/>
+												</InputField>
+												<InputField name="ТаблицаДопПроверкиФамилия" id="115">
+													<DataPath>Объект.ТаблицаДопПроверки.Фамилия</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="ТаблицаДопПроверкиФамилияКонтекстноеМеню" id="116"/>
+													<ExtendedTooltip name="ТаблицаДопПроверкиФамилияРасширеннаяПодсказка" id="117"/>
+												</InputField>
+												<InputField name="ТаблицаДопПроверкиИмя" id="94">
+													<DataPath>Объект.ТаблицаДопПроверки.Имя</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="ТаблицаДопПроверкиИмяКонтекстноеМеню" id="95"/>
+													<ExtendedTooltip name="ТаблицаДопПроверкиИмяРасширеннаяПодсказка" id="96"/>
+												</InputField>
+												<InputField name="ТаблицаДопПроверкиОтчество" id="109">
+													<DataPath>Объект.ТаблицаДопПроверки.Отчество</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="ТаблицаДопПроверкиОтчествоКонтекстноеМеню" id="110"/>
+													<ExtendedTooltip name="ТаблицаДопПроверкиОтчествоРасширеннаяПодсказка" id="111"/>
+												</InputField>
+												<InputField name="ТаблицаДопПроверкиДатаРождения" id="88">
+													<DataPath>Объект.ТаблицаДопПроверки.ДатаРождения</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="ТаблицаДопПроверкиДатаРожденияКонтекстноеМеню" id="89"/>
+													<ExtendedTooltip name="ТаблицаДопПроверкиДатаРожденияРасширеннаяПодсказка" id="90"/>
+												</InputField>
+												<InputField name="ТаблицаДопПроверкиНомерПаспорта" id="100">
+													<DataPath>Объект.ТаблицаДопПроверки.НомерПаспорта</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="ТаблицаДопПроверкиНомерПаспортаКонтекстноеМеню" id="101"/>
+													<ExtendedTooltip name="ТаблицаДопПроверкиНомерПаспортаРасширеннаяПодсказка" id="102"/>
+												</InputField>
+											</ChildItems>
+										</ColumnGroup>
+									</ChildItems>
+								</ColumnGroup>
+								<ColumnGroup name="ТаблицаДопПроверкиГруппа3" id="128">
+									<ExtendedTooltip name="ТаблицаДопПроверкиГруппа3РасширеннаяПодсказка" id="129"/>
+									<ChildItems>
+										<InputField name="ТаблицаДопПроверкиАдресаФайл" id="85">
+											<DataPath>Объект.ТаблицаДопПроверки.АдресаФайл</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ТаблицаДопПроверкиАдресаФайлКонтекстноеМеню" id="86"/>
+											<ExtendedTooltip name="ТаблицаДопПроверкиАдресаФайлРасширеннаяПодсказка" id="87"/>
+										</InputField>
+										<ColumnGroup name="ТаблицаДопПроверкиГруппа4" id="130">
+											<Group>Horizontal</Group>
+											<ExtendedTooltip name="ТаблицаДопПроверкиГруппа4РасширеннаяПодсказка" id="131"/>
+											<ChildItems>
+												<InputField name="ТаблицаДопПроверкиФамилияФайл" id="118">
+													<DataPath>Объект.ТаблицаДопПроверки.ФамилияФайл</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="ТаблицаДопПроверкиФамилияФайлКонтекстноеМеню" id="119"/>
+													<ExtendedTooltip name="ТаблицаДопПроверкиФамилияФайлРасширеннаяПодсказка" id="120"/>
+												</InputField>
+												<InputField name="ТаблицаДопПроверкиИмяФайл" id="97">
+													<DataPath>Объект.ТаблицаДопПроверки.ИмяФайл</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="ТаблицаДопПроверкиИмяФайлКонтекстноеМеню" id="98"/>
+													<ExtendedTooltip name="ТаблицаДопПроверкиИмяФайлРасширеннаяПодсказка" id="99"/>
+												</InputField>
+												<InputField name="ТаблицаДопПроверкиОтчествоФайл" id="106">
+													<DataPath>Объект.ТаблицаДопПроверки.ОтчествоФайл</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="ТаблицаДопПроверкиОтчествоФайлКонтекстноеМеню" id="107"/>
+													<ExtendedTooltip name="ТаблицаДопПроверкиОтчествоФайлРасширеннаяПодсказка" id="108"/>
+												</InputField>
+												<CheckBoxField name="ТаблицаДопПроверкиДатаРожденияФайл" id="91">
+													<DataPath>Объект.ТаблицаДопПроверки.ДатаРожденияФайл</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<CheckBoxType>Auto</CheckBoxType>
+													<ContextMenu name="ТаблицаДопПроверкиДатаРожденияФайлКонтекстноеМеню" id="92"/>
+													<ExtendedTooltip name="ТаблицаДопПроверкиДатаРожденияФайлРасширеннаяПодсказка" id="93"/>
+												</CheckBoxField>
+												<InputField name="ТаблицаДопПроверкиНомерПаспортаФайл" id="103">
+													<DataPath>Объект.ТаблицаДопПроверки.НомерПаспортаФайл</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="ТаблицаДопПроверкиНомерПаспортаФайлКонтекстноеМеню" id="104"/>
+													<ExtendedTooltip name="ТаблицаДопПроверкиНомерПаспортаФайлРасширеннаяПодсказка" id="105"/>
+												</InputField>
+											</ChildItems>
+										</ColumnGroup>
+									</ChildItems>
+								</ColumnGroup>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.ЗагрузкаДанных</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<Save>
+				<Field>Объект.Банк</Field>
+				<Field>Объект.ДатаЗагрузки</Field>
+				<Field>Объект.ЗагрузкаВФильтр</Field>
+				<Field>Объект.ЗагрузкаДанныхПоНомеруДоговора</Field>
+				<Field>Объект.ЗаменятьПаспортныеДанные</Field>
+				<Field>Объект.ИмяФайла</Field>
+				<Field>Объект.НеЗагружатьВРеестрПриНаличииДоговора</Field>
+				<Field>Объект.Ответственный</Field>
+				<Field>Объект.ПробоватьИсправитьНомерДоговора</Field>
+				<Field>Объект.ПродолжитьЕслиФИОНеСовпадает</Field>
+				<Field>Объект.Реестр</Field>
+				<Field>Объект.Шаблон</Field>
+			</Save>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ВыполнитьОбработку" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выполнить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выполнить обработку</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВыполнитьОбработку</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ПрименитьСоответствия" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Применить соответствия</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Применить соответствия</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПрименитьСоответствия</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="УстановитьФлажки" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Установить флажки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Установить флажки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>УстановитьФлажки</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="СнятьФлажки" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Снять флажки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Снять флажки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СнятьФлажки</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+	</Commands>
+</Form>

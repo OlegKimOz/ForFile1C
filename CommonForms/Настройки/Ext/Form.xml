@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.9">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<AutoCommandBar name="" id="-1"/>
+	<ChildItems>
+		<InputField name="Менеджер" id="1">
+			<DataPath>НаборКонстант.Менеджер</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="МенеджерКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="МенеджерРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<InputField name="ОтветственныйЗаПередачуВБанк" id="4">
+			<DataPath>НаборКонстант.ОтветственныйЗаПередачуВБанк</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ОтветственныйЗаПередачуВБанкКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="ОтветственныйЗаПередачуВБанкРасширеннаяПодсказка" id="6"/>
+		</InputField>
+		<InputField name="Архив" id="7">
+			<DataPath>НаборКонстант.Архив</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="АрхивКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="АрхивРасширеннаяПодсказка" id="9"/>
+		</InputField>
+		<InputField name="СтавкаНДС" id="10">
+			<DataPath>НаборКонстант.СтавкаНДС</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="СтавкаНДСКонтекстноеМеню" id="11"/>
+			<ExtendedTooltip name="СтавкаНДСРасширеннаяПодсказка" id="12"/>
+		</InputField>
+		<InputField name="Штраф" id="13">
+			<DataPath>НаборКонстант.Штраф</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ШтрафКонтекстноеМеню" id="14"/>
+			<ExtendedTooltip name="ШтрафРасширеннаяПодсказка" id="15"/>
+		</InputField>
+		<CheckBoxField name="КоллективнаяРабота" id="16">
+			<DataPath>НаборКонстант.КоллективнаяРабота</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="КоллективнаяРаботаКонтекстноеМеню" id="17"/>
+			<ExtendedTooltip name="КоллективнаяРаботаРасширеннаяПодсказка" id="18"/>
+		</CheckBoxField>
+		<InputField name="ДатаЗапретаИзменения" id="19">
+			<DataPath>НаборКонстант.ДатаЗапретаИзменения</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ДатаЗапретаИзмененияКонтекстноеМеню" id="20"/>
+			<ExtendedTooltip name="ДатаЗапретаИзмененияРасширеннаяПодсказка" id="21"/>
+		</InputField>
+		<InputField name="Процент" id="22">
+			<DataPath>НаборКонстант.Процент</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ПроцентКонтекстноеМеню" id="23"/>
+			<ExtendedTooltip name="ПроцентРасширеннаяПодсказка" id="24"/>
+		</InputField>
+		<InputField name="ТипКомментария" id="25">
+			<DataPath>НаборКонстант.ТипКомментария</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ТипКомментарияКонтекстноеМеню" id="26"/>
+			<ExtendedTooltip name="ТипКомментарияРасширеннаяПодсказка" id="27"/>
+		</InputField>
+		<CheckBoxField name="ЭтоАвтономноеРабочееМесто" id="28">
+			<DataPath>НаборКонстант.ЭтоАвтономноеРабочееМесто</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="ЭтоАвтономноеРабочееМестоКонтекстноеМеню" id="29"/>
+			<ExtendedTooltip name="ЭтоАвтономноеРабочееМестоРасширеннаяПодсказка" id="30"/>
+		</CheckBoxField>
+		<InputField name="Руководитель" id="31">
+			<DataPath>НаборКонстант.Руководитель</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="РуководительКонтекстноеМеню" id="32"/>
+			<ExtendedTooltip name="РуководительРасширеннаяПодсказка" id="33"/>
+		</InputField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="НаборКонстант" id="1">
+			<Type>
+				<v8:Type>cfg:ConstantsSet</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>

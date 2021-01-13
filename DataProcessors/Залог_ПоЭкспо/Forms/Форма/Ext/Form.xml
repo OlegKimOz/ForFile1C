@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.9">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<ChildItems>
+		<Button name="Сформировать" id="42">
+			<Type>UsualButton</Type>
+			<CommandName>Form.Command.Сформировать</CommandName>
+			<ExtendedTooltip name="СформироватьРасширеннаяПодсказка" id="43"/>
+		</Button>
+		<Table name="ТЧ1" id="14">
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>Объект.ТЧ</DataPath>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ТЧ1КонтекстноеМеню" id="15"/>
+			<AutoCommandBar name="ТЧ1КоманднаяПанель" id="16">
+				<Autofill>false</Autofill>
+			</AutoCommandBar>
+			<ExtendedTooltip name="ТЧ1РасширеннаяПодсказка" id="17"/>
+			<SearchStringAddition name="ТЧ1СтрокаПоиска" id="18">
+				<AdditionSource>
+					<Item>ТЧ1</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ТЧ1СтрокаПоискаКонтекстноеМеню" id="19"/>
+				<ExtendedTooltip name="ТЧ1СтрокаПоискаРасширеннаяПодсказка" id="20"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ТЧ1СостояниеПросмотра" id="21">
+				<AdditionSource>
+					<Item>ТЧ1</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ТЧ1СостояниеПросмотраКонтекстноеМеню" id="22"/>
+				<ExtendedTooltip name="ТЧ1СостояниеПросмотраРасширеннаяПодсказка" id="23"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ТЧ1УправлениеПоиском" id="24">
+				<AdditionSource>
+					<Item>ТЧ1</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ТЧ1УправлениеПоискомКонтекстноеМеню" id="25"/>
+				<ExtendedTooltip name="ТЧ1УправлениеПоискомРасширеннаяПодсказка" id="26"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="ТЧ1НомерСтроки" id="27">
+					<DataPath>Объект.ТЧ.LineNumber</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТЧ1НомерСтрокиКонтекстноеМеню" id="28"/>
+					<ExtendedTooltip name="ТЧ1НомерСтрокиРасширеннаяПодсказка" id="29"/>
+				</LabelField>
+				<InputField name="ТЧ1ФИО" id="30">
+					<DataPath>Объект.ТЧ.ФИО</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТЧ1ФИОКонтекстноеМеню" id="31"/>
+					<ExtendedTooltip name="ТЧ1ФИОРасширеннаяПодсказка" id="32"/>
+				</InputField>
+				<InputField name="ТЧ1Договор" id="33">
+					<DataPath>Объект.ТЧ.Договор</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТЧ1ДоговорКонтекстноеМеню" id="34"/>
+					<ExtendedTooltip name="ТЧ1ДоговорРасширеннаяПодсказка" id="35"/>
+				</InputField>
+				<InputField name="ТЧ1Залог" id="36">
+					<DataPath>Объект.ТЧ.Залог</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТЧ1ЗалогКонтекстноеМеню" id="37"/>
+					<ExtendedTooltip name="ТЧ1ЗалогРасширеннаяПодсказка" id="38"/>
+				</InputField>
+				<InputField name="ТЧ1ДатаПередачи" id="39">
+					<DataPath>Объект.ТЧ.ДатаПередачи</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТЧ1ДатаПередачиКонтекстноеМеню" id="40"/>
+					<ExtendedTooltip name="ТЧ1ДатаПередачиРасширеннаяПодсказка" id="41"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+		<Button name="Печать" id="44">
+			<Type>UsualButton</Type>
+			<CommandName>Form.Command.Печать</CommandName>
+			<ExtendedTooltip name="ПечатьРасширеннаяПодсказка" id="45"/>
+		</Button>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.Залог_ПоЭкспо</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="Сформировать" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сформировать</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сформировать</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Сформировать</Action>
+		</Command>
+		<Command name="Печать" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Печать</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Печать</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Печать</Action>
+		</Command>
+	</Commands>
+</Form>

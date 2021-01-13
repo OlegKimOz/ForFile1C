@@ -1,0 +1,190 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.9">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="BeforeWrite">ПередЗаписью</Event>
+	</Events>
+	<ChildItems>
+		<InputField name="Код" id="1">
+			<DataPath>Объект.Code</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="КодКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="КодРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<InputField name="Наименование" id="4">
+			<DataPath>Объект.Description</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="НаименованиеКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="6"/>
+		</InputField>
+		<InputField name="Владелец" id="7">
+			<DataPath>Объект.Owner</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ВладелецКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="ВладелецРасширеннаяПодсказка" id="9"/>
+		</InputField>
+		<InputField name="Тип" id="10">
+			<DataPath>Объект.Тип</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ТипКонтекстноеМеню" id="11"/>
+			<ExtendedTooltip name="ТипРасширеннаяПодсказка" id="12"/>
+		</InputField>
+		<InputField name="Индекс" id="13">
+			<DataPath>Объект.Индекс</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ИндексКонтекстноеМеню" id="14"/>
+			<ExtendedTooltip name="ИндексРасширеннаяПодсказка" id="15"/>
+			<Events>
+				<Event name="OnChange">ПриИзмененииЭлементовАдреса</Event>
+			</Events>
+		</InputField>
+		<InputField name="Адрес" id="16">
+			<DataPath>Объект.Адрес</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="АдресКонтекстноеМеню" id="17"/>
+			<ExtendedTooltip name="АдресРасширеннаяПодсказка" id="18"/>
+			<Events>
+				<Event name="OnChange">ПриИзмененииЭлементовАдреса</Event>
+			</Events>
+		</InputField>
+		<InputField name="Регион" id="19">
+			<DataPath>Объект.Регион</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="РегионКонтекстноеМеню" id="20"/>
+			<ExtendedTooltip name="РегионРасширеннаяПодсказка" id="21"/>
+			<Events>
+				<Event name="OnChange">РегионПриИзменении</Event>
+			</Events>
+		</InputField>
+		<InputField name="Подтверждение" id="22">
+			<DataPath>Объект.Подтверждение</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ПодтверждениеКонтекстноеМеню" id="23"/>
+			<ExtendedTooltip name="ПодтверждениеРасширеннаяПодсказка" id="24"/>
+		</InputField>
+		<CheckBoxField name="ЭтоНовый" id="25">
+			<DataPath>Объект.ЭтоНовый</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="ЭтоНовыйКонтекстноеМеню" id="26"/>
+			<ExtendedTooltip name="ЭтоНовыйРасширеннаяПодсказка" id="27"/>
+		</CheckBoxField>
+		<UsualGroup name="АдресНБКИ" id="28">
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Адрес НБКИ</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ExtendedTooltip name="АдресНБКИРасширеннаяПодсказка" id="29"/>
+			<ChildItems>
+				<InputField name="ТипРегиона" id="30">
+					<DataPath>Объект.ТипРегиона</DataPath>
+					<ContextMenu name="ТипРегионаКонтекстноеМеню" id="31"/>
+					<ExtendedTooltip name="ТипРегионаРасширеннаяПодсказка" id="32"/>
+				</InputField>
+				<InputField name="РегионТекст" id="33">
+					<DataPath>Объект.РегионТекст</DataPath>
+					<ContextMenu name="РегионТекстКонтекстноеМеню" id="34"/>
+					<ExtendedTooltip name="РегионТекстРасширеннаяПодсказка" id="35"/>
+				</InputField>
+				<InputField name="Страна" id="36">
+					<DataPath>Объект.Страна</DataPath>
+					<ContextMenu name="СтранаКонтекстноеМеню" id="37"/>
+					<ExtendedTooltip name="СтранаРасширеннаяПодсказка" id="38"/>
+				</InputField>
+				<InputField name="ТипРайона" id="39">
+					<DataPath>Объект.ТипРайона</DataPath>
+					<ContextMenu name="ТипРайонаКонтекстноеМеню" id="40"/>
+					<ExtendedTooltip name="ТипРайонаРасширеннаяПодсказка" id="41"/>
+				</InputField>
+				<InputField name="Район" id="42">
+					<DataPath>Объект.Район</DataPath>
+					<ContextMenu name="РайонКонтекстноеМеню" id="43"/>
+					<ExtendedTooltip name="РайонРасширеннаяПодсказка" id="44"/>
+				</InputField>
+				<InputField name="РайонГорода" id="84">
+					<DataPath>Объект.РайонГорода</DataPath>
+					<ContextMenu name="РайонГородаКонтекстноеМеню" id="85"/>
+					<ExtendedTooltip name="РайонГородаРасширеннаяПодсказка" id="86"/>
+				</InputField>
+				<InputField name="ТипГорода" id="45">
+					<DataPath>Объект.ТипГорода</DataPath>
+					<ContextMenu name="ТипГородаКонтекстноеМеню" id="46"/>
+					<ExtendedTooltip name="ТипГородаРасширеннаяПодсказка" id="47"/>
+				</InputField>
+				<InputField name="Город" id="48">
+					<DataPath>Объект.Город</DataPath>
+					<ContextMenu name="ГородКонтекстноеМеню" id="49"/>
+					<ExtendedTooltip name="ГородРасширеннаяПодсказка" id="50"/>
+				</InputField>
+				<InputField name="ТипНаселенногоПункта" id="51">
+					<DataPath>Объект.ТипНаселенногоПункта</DataPath>
+					<ContextMenu name="ТипНаселенногоПунктаКонтекстноеМеню" id="52"/>
+					<ExtendedTooltip name="ТипНаселенногоПунктаРасширеннаяПодсказка" id="53"/>
+				</InputField>
+				<InputField name="НаселенныйПункт" id="54">
+					<DataPath>Объект.НаселенныйПункт</DataPath>
+					<ContextMenu name="НаселенныйПунктКонтекстноеМеню" id="55"/>
+					<ExtendedTooltip name="НаселенныйПунктРасширеннаяПодсказка" id="56"/>
+				</InputField>
+				<InputField name="ТипУлицы" id="57">
+					<DataPath>Объект.ТипУлицы</DataPath>
+					<ContextMenu name="ТипУлицыКонтекстноеМеню" id="58"/>
+					<ExtendedTooltip name="ТипУлицыРасширеннаяПодсказка" id="59"/>
+				</InputField>
+				<InputField name="Улица" id="60">
+					<DataPath>Объект.Улица</DataPath>
+					<ContextMenu name="УлицаКонтекстноеМеню" id="61"/>
+					<ExtendedTooltip name="УлицаРасширеннаяПодсказка" id="62"/>
+				</InputField>
+				<InputField name="ТипДома" id="63">
+					<DataPath>Объект.ТипДома</DataPath>
+					<ContextMenu name="ТипДомаКонтекстноеМеню" id="64"/>
+					<ExtendedTooltip name="ТипДомаРасширеннаяПодсказка" id="65"/>
+				</InputField>
+				<InputField name="Дом" id="66">
+					<DataPath>Объект.Дом</DataPath>
+					<ContextMenu name="ДомКонтекстноеМеню" id="67"/>
+					<ExtendedTooltip name="ДомРасширеннаяПодсказка" id="68"/>
+				</InputField>
+				<InputField name="ТипКорпусаСтроения" id="69">
+					<DataPath>Объект.ТипКорпусаСтроения</DataPath>
+					<ContextMenu name="ТипКорпусаСтроенияКонтекстноеМеню" id="70"/>
+					<ExtendedTooltip name="ТипКорпусаСтроенияРасширеннаяПодсказка" id="71"/>
+				</InputField>
+				<InputField name="КорпусСтроение" id="72">
+					<DataPath>Объект.КорпусСтроение</DataPath>
+					<ContextMenu name="КорпусСтроениеКонтекстноеМеню" id="73"/>
+					<ExtendedTooltip name="КорпусСтроениеРасширеннаяПодсказка" id="74"/>
+				</InputField>
+				<InputField name="ТипКвартиры" id="75">
+					<DataPath>Объект.ТипКвартиры</DataPath>
+					<ContextMenu name="ТипКвартирыКонтекстноеМеню" id="76"/>
+					<ExtendedTooltip name="ТипКвартирыРасширеннаяПодсказка" id="77"/>
+				</InputField>
+				<InputField name="Квартира" id="78">
+					<DataPath>Объект.Квартира</DataPath>
+					<ContextMenu name="КвартираКонтекстноеМеню" id="79"/>
+					<ExtendedTooltip name="КвартираРасширеннаяПодсказка" id="80"/>
+				</InputField>
+				<InputField name="АдмОкруг" id="81">
+					<DataPath>Объект.АдмОкруг</DataPath>
+					<ContextMenu name="АдмОкругКонтекстноеМеню" id="82"/>
+					<ExtendedTooltip name="АдмОкругРасширеннаяПодсказка" id="83"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.Адреса</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>

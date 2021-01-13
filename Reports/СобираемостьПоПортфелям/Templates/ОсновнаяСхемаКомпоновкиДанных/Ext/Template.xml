@@ -1,0 +1,2301 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>ИсточникДанных1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetQuery">
+		<name>НаборДанных1</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Наименование</dataPath>
+			<field>Наименование</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Ссылка</dataPath>
+			<field>Ссылка</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>[2015].Ноябрь2015СобирОбщ</dataPath>
+			<field>Ноябрь2015СобирОбщ</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ноябрь2015 собир общ</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>[2015].Август2015СобирОбщ</dataPath>
+			<field>Август2015СобирОбщ</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Август2015 собир общ</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>[2015].Март2015СобирМес</dataPath>
+			<field>Март2015СобирМес</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Март2015 собир мес</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>[2015].Март2015СобирОбщ</dataPath>
+			<field>Март2015СобирОбщ</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Март2015 собир общ</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>[2015].Июль2015СобирМес</dataPath>
+			<field>Июль2015СобирМес</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Июль2015 собир мес</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>[2015].Июль2015СобирОбщ</dataPath>
+			<field>Июль2015СобирОбщ</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Июль2015 собир общ</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>[2015].Август2015СобирМес</dataPath>
+			<field>Август2015СобирМес</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Август2015 собир мес</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>[2015].Январь2015СобирМес</dataPath>
+			<field>Январь2015СобирМес</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Январь2015 собир мес</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>[2015].Январь2015СобирОбщ</dataPath>
+			<field>Январь2015СобирОбщ</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Январь2015 собир общ</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>[2015].Декабрь2015СобирОбщ</dataPath>
+			<field>Декабрь2015СобирОбщ</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Декабрь2015 собир общ</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>[2015].Февраль2015СобирМес</dataPath>
+			<field>Февраль2015СобирМес</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Февраль2015 собир мес</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>[2015].Февраль2015СобирОбщ</dataPath>
+			<field>Февраль2015СобирОбщ</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Февраль2015 собир общ</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>[2015].Апрель2015СобирМес</dataPath>
+			<field>Апрель2015СобирМес</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Апрель2015 собир мес</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>[2015].Май2015СобирМес</dataPath>
+			<field>Май2015СобирМес</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Май2015 собир мес</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>[2015].Апрель2015СобирОбщ</dataPath>
+			<field>Апрель2015СобирОбщ</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Апрель2015 собир общ</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>[2015].Май2015СобирОбщ</dataPath>
+			<field>Май2015СобирОбщ</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Май2015 собир общ</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>[2015].Июнь2015СобирМес</dataPath>
+			<field>Июнь2015СобирМес</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Июнь2015 собир мес</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>[2015].Июнь2015СобирОбщ</dataPath>
+			<field>Июнь2015СобирОбщ</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Июнь2015 собир общ</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>[2015].Сентябрь2015СобирМес</dataPath>
+			<field>Сентябрь2015СобирМес</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сентябрь2015 собир мес</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>[2015].Сентябрь2015СобирОбщ</dataPath>
+			<field>Сентябрь2015СобирОбщ</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сентябрь2015 собир общ</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>[2015].Октябрь2015СобирМес</dataPath>
+			<field>Октябрь2015СобирМес</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Октябрь2015 собир мес</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>[2015].Октябрь2015СобирОбщ</dataPath>
+			<field>Октябрь2015СобирОбщ</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Октябрь2015 собир общ</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>[2015].Ноябрь2015СобирМес</dataPath>
+			<field>Ноябрь2015СобирМес</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ноябрь2015 собир мес</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>[2015].Декабрь2015СобирМес</dataPath>
+			<field>Декабрь2015СобирМес</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Декабрь2015 собир мес</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldFolder">
+			<dataPath>[2015]</dataPath>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>[2015]</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ
+	ПортфелиСодержание.Наименование КАК Наименование,
+	
+	ВЫБОР
+		КОГДА 1 = 1
+			ТОГДА 1
+	КОНЕЦ КАК Январь2015СобирМес,
+	ВЫБОР
+		КОГДА 1 = 1
+			ТОГДА 1
+	КОНЕЦ КАК Январь2015СобирОбщ,
+	ВЫБОР
+		КОГДА 1 = 1
+			ТОГДА 1
+	КОНЕЦ КАК Февраль2015СобирМес,
+	ВЫБОР
+		КОГДА 1 = 1
+			ТОГДА 1
+	КОНЕЦ КАК Февраль2015СобирОбщ,
+    ВЫБОР
+		КОГДА 1 = 1
+			ТОГДА 1
+	КОНЕЦ КАК Март2015СобирМес,
+	ВЫБОР
+		КОГДА 1 = 1
+			ТОГДА 1
+	КОНЕЦ КАК Март2015СобирОбщ,
+	
+	ВЫБОР
+		КОГДА 1 = 1
+			ТОГДА 1
+	КОНЕЦ КАК Апрель2015СобирМес,
+	ВЫБОР
+		КОГДА 1 = 1
+			ТОГДА 1
+	КОНЕЦ КАК Апрель2015СобирОбщ,
+
+    ВЫБОР
+		КОГДА 1 = 1
+			ТОГДА 1
+	КОНЕЦ КАК Май2015СобирМес,
+	ВЫБОР
+		КОГДА 1 = 1
+			ТОГДА 1
+	КОНЕЦ КАК Май2015СобирОбщ,
+  
+	ВЫБОР
+		КОГДА 1 = 1
+			ТОГДА 1
+	КОНЕЦ КАК Июнь2015СобирМес,
+	ВЫБОР
+		КОГДА 1 = 1
+			ТОГДА 1
+	КОНЕЦ КАК Июнь2015СобирОбщ,
+  
+    ВЫБОР
+		КОГДА 1 = 1
+			ТОГДА 1
+	КОНЕЦ КАК Июль2015СобирМес,
+	ВЫБОР
+		КОГДА 1 = 1
+			ТОГДА 1
+	КОНЕЦ КАК Июль2015СобирОбщ,
+  
+
+    ВЫБОР
+		КОГДА 1 = 1
+			ТОГДА 1
+	КОНЕЦ КАК Август2015СобирМес,
+	ВЫБОР
+		КОГДА 1 = 1
+			ТОГДА 1
+	КОНЕЦ КАК Август2015СобирОбщ,
+  
+    ВЫБОР
+		КОГДА 1 = 1
+			ТОГДА 1
+	КОНЕЦ КАК Сентябрь2015СобирМес,
+	ВЫБОР
+		КОГДА 1 = 1
+			ТОГДА 1
+	КОНЕЦ КАК Сентябрь2015СобирОбщ,
+  
+	ВЫБОР
+		КОГДА 1 = 1
+			ТОГДА 1
+	КОНЕЦ КАК Октябрь2015СобирМес,
+	ВЫБОР
+		КОГДА 1 = 1
+			ТОГДА 1
+	КОНЕЦ КАК Октябрь2015СобирОбщ,
+  
+	
+	ВЫБОР
+		КОГДА 1 = 1
+			ТОГДА 1
+	КОНЕЦ КАК Ноябрь2015СобирМес,
+	ВЫБОР
+		КОГДА 1 = 1
+			ТОГДА 1
+	КОНЕЦ КАК Ноябрь2015СобирОбщ,
+  
+	
+	ВЫБОР
+		КОГДА 1 = 1
+			ТОГДА 1
+	КОНЕЦ КАК Декабрь2015СобирМес,
+	ВЫБОР
+		КОГДА 1 = 1
+			ТОГДА 1
+	КОНЕЦ КАК Декабрь2015СобирОбщ,
+  
+	    
+
+
+	ПортфелиСодержание.Ссылка КАК Ссылка
+ИЗ
+	Справочник.ПортфелиСодержание КАК ПортфелиСодержание</query>
+	</dataSet>
+	<calculatedField>
+		<dataPath>[2015].Январь2015СобирМес</dataPath>
+		<expression>ФункцииДляОтчетов.СуммаСобираемаяМесяцСправочник(Ссылка,"2015","Январь")</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Январь2015 собир мес</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>[2015].Январь2015СобирОбщ</dataPath>
+		<expression>ФункцииДляОтчетов.СуммаСобираемаяОбщаяСправочник(Ссылка,"2015","Январь")</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Январь2015 собир общ</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>[2015].Февраль2015СобирМес</dataPath>
+		<expression>ФункцииДляОтчетов.СуммаСобираемаяМесяцСправочник(Ссылка,"2015","Февраль")</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Февраль2015 собир мес</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>[2015].Февраль2015СобирОбщ</dataPath>
+		<expression>ФункцииДляОтчетов.СуммаСобираемаяОбщаяСправочник(Ссылка,"2015","Февраль")</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Февраль2015 собир общ</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>[2015].Март2015СобирМес</dataPath>
+		<expression>ФункцииДляОтчетов.СуммаСобираемаяМесяцСправочник(Ссылка,"2015","Март")</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Март2015 собир мес</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>[2015].Март2015СобирОбщ</dataPath>
+		<expression>ФункцииДляОтчетов.СуммаСобираемаяОбщаяСправочник(Ссылка,"2015","Март")</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Март2015 собир общ</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>[2015].Апрель2015СобирМес</dataPath>
+		<expression>ФункцииДляОтчетов.СуммаСобираемаяМесяцСправочник(Ссылка,"2015","Апрель")</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Апрель2015 собир мес</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>[2015].Апрель2015СобирОбщ</dataPath>
+		<expression>ФункцииДляОтчетов.СуммаСобираемаяОбщаяСправочник(Ссылка,"2015","Апрель")</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Апрель2015 собир общ</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>[2015].Май2015СобирМес</dataPath>
+		<expression>ФункцииДляОтчетов.СуммаСобираемаяМесяцСправочник(Ссылка,"2015","Май")</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Май2015 собир мес</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>[2015].Май2015СобирОбщ</dataPath>
+		<expression>ФункцииДляОтчетов.СуммаСобираемаяОбщаяСправочник(Ссылка,"2015","Май")</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Май2015 собир общ</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>[2015].Июнь2015СобирМес</dataPath>
+		<expression>ФункцииДляОтчетов.СуммаСобираемаяМесяцСправочник(Ссылка,"2015","Июнь")</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Июнь2015 собир мес</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>[2015].Июнь2015СобирОбщ</dataPath>
+		<expression>ФункцииДляОтчетов.СуммаСобираемаяОбщаяСправочник(Ссылка,"2015","Июнь")</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Июнь2015 собир общ</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>[2015].Июль2015СобирМес</dataPath>
+		<expression>ФункцииДляОтчетов.СуммаСобираемаяМесяцСправочник(Ссылка,"2015","Июль")</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Июль2015 собир мес</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>[2015].Июль2015СобирОбщ</dataPath>
+		<expression>ФункцииДляОтчетов.СуммаСобираемаяОбщаяСправочник(Ссылка,"2015","Июль")</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Июль2015 собир общ</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>[2015].Август2015СобирМес</dataPath>
+		<expression>ФункцииДляОтчетов.СуммаСобираемаяМесяцСправочник(Ссылка,"2015","Август")</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Август2015 собир мес</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>[2015].Август2015СобирОбщ</dataPath>
+		<expression>ФункцииДляОтчетов.СуммаСобираемаяОбщаяСправочник(Ссылка,"2015","Август")</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Август2015 собир общ</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>[2015].Сентябрь2015СобирМес</dataPath>
+		<expression>ФункцииДляОтчетов.СуммаСобираемаяМесяцСправочник(Ссылка,"2015","Сентябрь")</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Сентябрь2015 собир мес</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>[2015].Сентябрь2015СобирОбщ</dataPath>
+		<expression>ФункцииДляОтчетов.СуммаСобираемаяОбщаяСправочник(Ссылка,"2015","Сентябрь")</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Сентябрь2015 собир общ</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>[2015].Октябрь2015СобирМес</dataPath>
+		<expression>ФункцииДляОтчетов.СуммаСобираемаяМесяцСправочник(Ссылка,"2015","Октябрь")</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Октябрь2015 собир мес</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>[2015].Октябрь2015СобирОбщ</dataPath>
+		<expression>ФункцииДляОтчетов.СуммаСобираемаяОбщаяСправочник(Ссылка,"2015","Октябрь")</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Октябрь2015 собир общ</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>[2015].Ноябрь2015СобирМес</dataPath>
+		<expression>ФункцииДляОтчетов.СуммаСобираемаяМесяцСправочник(Ссылка,"2015","Ноябрь")</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Ноябрь2015 собир мес</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>[2015].Ноябрь2015СобирОбщ</dataPath>
+		<expression>ФункцииДляОтчетов.СуммаСобираемаяОбщаяСправочник(Ссылка,"2015","Ноябрь")</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Ноябрь2015 собир общ</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>[2015].Декабрь2015СобирМес</dataPath>
+		<expression>ФункцииДляОтчетов.СуммаСобираемаяМесяцСправочник(Ссылка,"2015","Декабрь")</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Декабрь2015 собир мес</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>[2015].Декабрь2015СобирОбщ</dataPath>
+		<expression>ФункцииДляОтчетов.СуммаСобираемаяОбщаяСправочник(Ссылка,"2015","Декабрь")</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Декабрь2015 собир общ</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>[2016].Январь2016СобирМес</dataPath>
+		<expression>ФункцииДляОтчетов.СуммаСобираемаяМесяцСправочник(Ссылка,"2016","Январь")</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Январь2016 собир мес</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>[2016].Январь2016СобирОбщ</dataPath>
+		<expression>ФункцииДляОтчетов.СуммаСобираемаяОбщаяСправочник(Ссылка,"2016","Январь")</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Январь2016 собир общ</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>[2016].Февраль2016СобирМес</dataPath>
+		<expression>ФункцииДляОтчетов.СуммаСобираемаяМесяцСправочник(Ссылка,"2016","Февраль")</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Февраль2016 собир мес</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>[2016].Февраль2016СобирОбщ</dataPath>
+		<expression>ФункцииДляОтчетов.СуммаСобираемаяОбщаяСправочник(Ссылка,"2016","Февраль")</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Февраль2016 собир общ</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>[2016].Март2016СобирМес</dataPath>
+		<expression>ФункцииДляОтчетов.СуммаСобираемаяМесяцСправочник(Ссылка,"2016","Март")</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Март2016 собир мес</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>[2016].Март2016СобирОбщ</dataPath>
+		<expression>ФункцииДляОтчетов.СуммаСобираемаяОбщаяСправочник(Ссылка,"2016","Март")</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Март2016 собир общ</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>[2016].Апрель2016СобирМес</dataPath>
+		<expression>ФункцииДляОтчетов.СуммаСобираемаяМесяцСправочник(Ссылка,"2016","Апрель")</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Апрель2016 собир мес</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>[2016].Апрель2016СобирОбщ</dataPath>
+		<expression>ФункцииДляОтчетов.СуммаСобираемаяОбщаяСправочник(Ссылка,"2016","Апрель")</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Апрель2016 собир общ</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>[2016].Май2016СобирМес</dataPath>
+		<expression>ФункцииДляОтчетов.СуммаСобираемаяМесяцСправочник(Ссылка,"2016","Май")</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Май2016 собир мес</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>[2016].Май2016СобирОбщ</dataPath>
+		<expression>ФункцииДляОтчетов.СуммаСобираемаяОбщаяСправочник(Ссылка,"2016","Май")</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Май2016 собир общ</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>[2016].Июнь2016СобирМес</dataPath>
+		<expression>ФункцииДляОтчетов.СуммаСобираемаяМесяцСправочник(Ссылка,"2016","Июнь")</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Июнь2016 собир мес</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>[2016].Июнь2016СобирОбщ</dataPath>
+		<expression>ФункцииДляОтчетов.СуммаСобираемаяОбщаяСправочник(Ссылка,"2016","Июнь")</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Июнь2016 собир общ</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>[2016].Июль2016СобирМес</dataPath>
+		<expression>ФункцииДляОтчетов.СуммаСобираемаяМесяцСправочник(Ссылка,"2016","Июль")</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Июль2016 собир мес</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>[2016].Июль2016СобирОбщ</dataPath>
+		<expression>ФункцииДляОтчетов.СуммаСобираемаяОбщаяСправочник(Ссылка,"2016","Июль")</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Июль2016 собир общ</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>[2016].Август2016СобирМес</dataPath>
+		<expression>ФункцииДляОтчетов.СуммаСобираемаяМесяцСправочник(Ссылка,"2016","Август")</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Август2016 собир мес</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>[2016].Август2016СобирОбщ</dataPath>
+		<expression>ФункцииДляОтчетов.СуммаСобираемаяОбщаяСправочник(Ссылка,"2016","Август")</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Август2016 собир общ</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>[2016].Сентябрь2016СобирМес</dataPath>
+		<expression>ФункцииДляОтчетов.СуммаСобираемаяМесяцСправочник(Ссылка,"2016","Сентябрь")</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Сентябрь2016 собир мес</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>[2016].Сентябрь2016СобирОбщ</dataPath>
+		<expression>ФункцииДляОтчетов.СуммаСобираемаяОбщаяСправочник(Ссылка,"2016","Сентябрь")</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Сентярь2016 собир общ</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>[2016].Октябрь2016СобирМес</dataPath>
+		<expression>ФункцииДляОтчетов.СуммаСобираемаяМесяцСправочник(Ссылка,"2016","Октябрь")</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Октябрь2016 собир мес</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>[2016].Октябрь2016СобирОбщ</dataPath>
+		<expression>ФункцииДляОтчетов.СуммаСобираемаяОбщаяСправочник(Ссылка,"2016","Октябрь")</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Октябрь2016 собир общ</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>[2016].Ноябрь2016СобирМес</dataPath>
+		<expression>ФункцииДляОтчетов.СуммаСобираемаяМесяцСправочник(Ссылка,"2016","Ноябрь")</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Ноябрь2016 собир мес</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>[2016].Ноябрь2016СобирОбщ</dataPath>
+		<expression>ФункцииДляОтчетов.СуммаСобираемаяОбщаяСправочник(Ссылка,"2016","Ноябрь")</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Ноябрь2016 собир общ</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>[2016].Декабрь2016СобирМес</dataPath>
+		<expression>ФункцииДляОтчетов.СуммаСобираемаяМесяцСправочник(Ссылка,"2016","Декабрь")</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Декабрь2016 собир мес</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>[2016].Декабрь2016СобирОбщ</dataPath>
+		<expression>ФункцииДляОтчетов.СуммаСобираемаяОбщаяСправочник(Ссылка,"2016","Декабрь")</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Дкабрь2016собир общ</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>[2017].Январь2017СобирМес</dataPath>
+		<expression>ФункцииДляОтчетов.СуммаСобираемаяМесяцСправочник(Ссылка,"2017","Январь")</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Январь2017 собир мес</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>[2017].Январь2017СобирОбщ</dataPath>
+		<expression>ФункцииДляОтчетов.СуммаСобираемаяОбщаяСправочник(Ссылка,"2017","Январь")</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Январь2017 собир общ</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>[2017].Февраль2017СобирМес</dataPath>
+		<expression>ФункцииДляОтчетов.СуммаСобираемаяМесяцСправочник(Ссылка,"2017","Февраль")</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Февраль2017 собир мес</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>[2017].Февраль2017СобирОбщ</dataPath>
+		<expression>ФункцииДляОтчетов.СуммаСобираемаяОбщаяСправочник(Ссылка,"2017","Февраль")</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Февраль2017 собир общ</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>[2017].Март2017СобирМес</dataPath>
+		<expression>ФункцииДляОтчетов.СуммаСобираемаяМесяцСправочник(Ссылка,"2017","Март")</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Март2017 собир мес</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>[2017].Март2017СобирОбщ</dataPath>
+		<expression>ФункцииДляОтчетов.СуммаСобираемаяОбщаяСправочник(Ссылка,"2017","Март")</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Март2017 собир общ</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>[2017].Апрель2017СобирМес</dataPath>
+		<expression>ФункцииДляОтчетов.СуммаСобираемаяМесяцСправочник(Ссылка,"2017","Апрель")</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Апрель2017 собир мес</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>[2017].Апрель2017СобирОбщ</dataPath>
+		<expression>ФункцииДляОтчетов.СуммаСобираемаяОбщаяСправочник(Ссылка,"2017","Апрель")</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Апрель2017 собир общ</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>[2017].Май2017СобирМес</dataPath>
+		<expression>ФункцииДляОтчетов.СуммаСобираемаяМесяцСправочник(Ссылка,"2017","Май")</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Май2017 собир мес</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>[2017].Май2017СобирОбщ</dataPath>
+		<expression>ФункцииДляОтчетов.СуммаСобираемаяОбщаяСправочник(Ссылка,"2017","Май")</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Май2017 собир общ</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>[2017].Июнь2017СобирМес</dataPath>
+		<expression>ФункцииДляОтчетов.СуммаСобираемаяМесяцСправочник(Ссылка,"2017","Июнь")</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Июнь2017 собир мес</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>[2017].Июнь2017СобирОбщ</dataPath>
+		<expression>ФункцииДляОтчетов.СуммаСобираемаяОбщаяСправочник(Ссылка,"2017","Июнь")</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Июнь2017 собир общ</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>[2017].Июль2017СобирМес</dataPath>
+		<expression>ФункцииДляОтчетов.СуммаСобираемаяМесяцСправочник(Ссылка,"2017","Июль")</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Июль2017 собир мес</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>[2017].Июль2017СобирОбщ</dataPath>
+		<expression>ФункцииДляОтчетов.СуммаСобираемаяОбщаяСправочник(Ссылка,"2017","Июль")</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Июль2017 собир общ</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>[2017].Август2017СобирМес</dataPath>
+		<expression>ФункцииДляОтчетов.СуммаСобираемаяМесяцСправочник(Ссылка,"2017","Август")</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Август2017 собир мес</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>[2017].Август2017СобирОбщ</dataPath>
+		<expression>ФункцииДляОтчетов.СуммаСобираемаяОбщаяСправочник(Ссылка,"2017","Август")</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Август2017 собир общ</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>[2017].Сентябрь2017СобирМес</dataPath>
+		<expression>ФункцииДляОтчетов.СуммаСобираемаяМесяцСправочник(Ссылка,"2017","Сентябрь")</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Cентябрь2017 собир мес</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>[2017].Сентябрь2017СобирОбщ</dataPath>
+		<expression>ФункцииДляОтчетов.СуммаСобираемаяОбщаяСправочник(Ссылка,"2017","Сентябрь")</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Cентябрь2017 собир общ</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>[2017].Октябрь2017СобирМес</dataPath>
+		<expression>ФункцииДляОтчетов.СуммаСобираемаяМесяцСправочник(Ссылка,"2017","Октябрь")</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Октябрь2017 собир мес</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>[2017].Октябрь2017СобирОбщ</dataPath>
+		<expression>ФункцииДляОтчетов.СуммаСобираемаяОбщаяСправочник(Ссылка,"2017","Октябрь")</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Октябрь2017 собир общ</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>[2017].Ноябрь2017СобирМес</dataPath>
+		<expression>ФункцииДляОтчетов.СуммаСобираемаяМесяцСправочник(Ссылка,"2017","Ноябрь")</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Ноябрь2017 собир мес</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>[2017].Ноябрь2017СобирОбщ</dataPath>
+		<expression>ФункцииДляОтчетов.СуммаСобираемаяОбщаяСправочник(Ссылка,"2017","Ноябрь")</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Ноябрь2017 собир общ</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>[2017].Декабрь2017СобирМес</dataPath>
+		<expression>ФункцииДляОтчетов.СуммаСобираемаяМесяцСправочник(Ссылка,"2017","Декабрь")</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Декабрь2017 собир мес</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>[2017].Декабрь2017СобирОбщ</dataPath>
+		<expression>ФункцииДляОтчетов.СуммаСобираемаяОбщаяСправочник(Ссылка,"2017","Декабрь")</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Декабрь2017 собир общ</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>[2018].Январь2018СобирМес</dataPath>
+		<expression>ФункцииДляОтчетов.СуммаСобираемаяМесяцСправочник(Ссылка,"2018","Январь")</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Январь2018 собир мес</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>[2018].Январь2018СобирОбщ</dataPath>
+		<expression>ФункцииДляОтчетов.СуммаСобираемаяОбщаяСправочник(Ссылка,"2018","Январь")</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Январь2018 собир общ</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>[2018].Февраль2018СобирМес</dataPath>
+		<expression>ФункцииДляОтчетов.СуммаСобираемаяМесяцСправочник(Ссылка,"2018","Февраль")</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Февраль2018 собир мес</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>[2018].Февраль2018СобирОбщ</dataPath>
+		<expression>ФункцииДляОтчетов.СуммаСобираемаяОбщаяСправочник(Ссылка,"2018","Февраль")</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Февраль2018 собир общ</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>[2018].Март2018СобирМес</dataPath>
+		<expression>ФункцииДляОтчетов.СуммаСобираемаяМесяцСправочник(Ссылка,"2018","Март")</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Март2018 собир мес</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>[2018].Март2018СобирОбщ</dataPath>
+		<expression>ФункцииДляОтчетов.СуммаСобираемаяОбщаяСправочник(Ссылка,"2018","Март")</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Март2018 собир общ</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>[2018].Апрель2018СобирМес</dataPath>
+		<expression>ФункцииДляОтчетов.СуммаСобираемаяМесяцСправочник(Ссылка,"2018","Апрель")</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Апрель2018 собир мес</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>[2018].Апрель2018СобирОбщ</dataPath>
+		<expression>ФункцииДляОтчетов.СуммаСобираемаяОбщаяСправочник(Ссылка,"2018","Апрель")</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Апрель2018 собир общ</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>[2018].Май2018СобирМес</dataPath>
+		<expression>ФункцииДляОтчетов.СуммаСобираемаяМесяцСправочник(Ссылка,"2018","Май")</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Май2018 собир мес</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>[2018].Май2018СобирОбщ</dataPath>
+		<expression>ФункцииДляОтчетов.СуммаСобираемаяОбщаяСправочник(Ссылка,"2018","Май")</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Май2018 собир общ</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>[2018].Июнь2018СобирМес</dataPath>
+		<expression>ФункцииДляОтчетов.СуммаСобираемаяМесяцСправочник(Ссылка,"2018","Июнь")</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Июнь2018 собир мес</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>[2018].Июнь2018СобирОбщ</dataPath>
+		<expression>ФункцииДляОтчетов.СуммаСобираемаяОбщаяСправочник(Ссылка,"2018","Июнь")</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Июнь2018 собир общ</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>[2018].Июль2018СобирМес</dataPath>
+		<expression>ФункцииДляОтчетов.СуммаСобираемаяМесяцСправочник(Ссылка,"2018","Июль")</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Июль2018 собир мес</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>[2018].Август2018СобирМес</dataPath>
+		<expression>ФункцииДляОтчетов.СуммаСобираемаяМесяцСправочник(Ссылка,"2018","Август")</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Август2018 собир мес</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>[2018].Август2018СобирОбщ</dataPath>
+		<expression>ФункцииДляОтчетов.СуммаСобираемаяОбщаяСправочник(Ссылка,"2018","Август")</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Август2018 собир общ</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>[2018].Сентябрь2018СобирМес</dataPath>
+		<expression>ФункцииДляОтчетов.СуммаСобираемаяМесяцСправочник(Ссылка,"2018","Сентябрь")</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Сентябрь2018 собир мес</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>[2018].Сентябрь2018СобирОбщ</dataPath>
+		<expression>ФункцииДляОтчетов.СуммаСобираемаяОбщаяСправочник(Ссылка,"2018","Сентябрь")</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Сентябрь2018 собир общ</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>[2018].Октябрь2018СобирМес</dataPath>
+		<expression>ФункцииДляОтчетов.СуммаСобираемаяМесяцСправочник(Ссылка,"2018","Октябрь")</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Октябрь2018 собир мес</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>[2018].Октябрь2018СобирОбщ</dataPath>
+		<expression>ФункцииДляОтчетов.СуммаСобираемаяОбщаяСправочник(Ссылка,"2018","Октябрь")</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Октябрь2018 собир общ</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>[2018].Ноябрь2018СобирМес</dataPath>
+		<expression>ФункцииДляОтчетов.СуммаСобираемаяМесяцСправочник(Ссылка,"2018","Ноябрь")</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Ноябрь2018 собир мес</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>[2018].Ноябрь2018СобирОбщ</dataPath>
+		<expression>ФункцииДляОтчетов.СуммаСобираемаяОбщаяСправочник(Ссылка,"2018","Ноябрь")</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Ноябрь2018 собир общ</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>[2018].Декабрь2018СобирМес</dataPath>
+		<expression>ФункцииДляОтчетов.СуммаСобираемаяМесяцСправочник(Ссылка,"2018","Декабрь")</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Декабрь2018 собир мес</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>[2018].Декабрь2018СобирОбщ</dataPath>
+		<expression>ФункцииДляОтчетов.СуммаСобираемаяОбщаяСправочник(Ссылка,"2018","Декабрь")</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Декабрь2018 собир общ</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>[2019].Январь2019СобирМес</dataPath>
+		<expression>ФункцииДляОтчетов.СуммаСобираемаяМесяцСправочник(Ссылка,"2019","Январь")</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Январь2019 собир мес</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>[2019].Январь2019СобирОбщ</dataPath>
+		<expression>ФункцииДляОтчетов.СуммаСобираемаяОбщаяСправочник(Ссылка,"2019","Январь")</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Январь2019 собир общ</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>[2019].Февраль2019СобирМес</dataPath>
+		<expression>ФункцииДляОтчетов.СуммаСобираемаяМесяцСправочник(Ссылка,"2019","Февраль")</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Февраль2019 собир мес</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>[2019].Февраль2019СобирОбщ</dataPath>
+		<expression>ФункцииДляОтчетов.СуммаСобираемаяОбщаяСправочник(Ссылка,"2019","Февраль")</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Февраль2019 собир общ</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>[2019].Март2019СобирМес</dataPath>
+		<expression>ФункцииДляОтчетов.СуммаСобираемаяМесяцСправочник(Ссылка,"2019","Март")</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Март2019 собир мес</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>[2019].Март2019СобирОбщ</dataPath>
+		<expression>ФункцииДляОтчетов.СуммаСобираемаяОбщаяСправочник(Ссылка,"2019","Март")</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Март2019 собир общ</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>[2019].Апрель2019СобирМес</dataPath>
+		<expression>ФункцииДляОтчетов.СуммаСобираемаяМесяцСправочник(Ссылка,"2019","Апрель")</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Апрель2019 собир мес</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>[2019].Апрель2019СобирОбщ</dataPath>
+		<expression>ФункцииДляОтчетов.СуммаСобираемаяОбщаяСправочник(Ссылка,"2019","Апрель")</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Апрель2019 собир общ</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>[2019].Май2019СобирМес</dataPath>
+		<expression>ФункцииДляОтчетов.СуммаСобираемаяМесяцСправочник(Ссылка,"2019","Май")</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Май2019 собир мес</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>[2019].Май2019СобирОбщ</dataPath>
+		<expression>ФункцииДляОтчетов.СуммаСобираемаяОбщаяСправочник(Ссылка,"2019","Май")</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Май2019 собир общ</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>[2019].Июнь2019СобирМес</dataPath>
+		<expression>ФункцииДляОтчетов.СуммаСобираемаяМесяцСправочник(Ссылка,"2019","Июнь")</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Июнь2019 собир мес</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>[2019].Июнь2019СобирОбщ</dataPath>
+		<expression>ФункцииДляОтчетов.СуммаСобираемаяОбщаяСправочник(Ссылка,"2019","Июнь")</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Июнь2019 собир общ</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>[2018].Июль2018СобирОбщ</dataPath>
+		<expression>ФункцииДляОтчетов.СуммаСобираемаяОбщаяСправочник(Ссылка,"2018","Июль")</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Июль2018 собир общ</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>[2019].Июль2019СобирОбщ</dataPath>
+		<expression>ФункцииДляОтчетов.СуммаСобираемаяОбщаяСправочник(Ссылка,"2019","Июль")</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Июль2019 собир общ</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>[2019].Август2019СобирМес</dataPath>
+		<expression>ФункцииДляОтчетов.СуммаСобираемаяМесяцСправочник(Ссылка,"2019","Август")</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Август2019 собир мес</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>[2019].Август2019СобирОбщ</dataPath>
+		<expression>ФункцииДляОтчетов.СуммаСобираемаяОбщаяСправочник(Ссылка,"2019","Август")</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Август2019 собир общ</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>[2019].Сентябрь2019СобирМес</dataPath>
+		<expression>ФункцииДляОтчетов.СуммаСобираемаяМесяцСправочник(Ссылка,"2019","Сентябрь")</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Сентябрь2019 собир мес</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>[2019].Сентябрь2019СобирОбщ</dataPath>
+		<expression>ФункцииДляОтчетов.СуммаСобираемаяОбщаяСправочник(Ссылка,"2019","Сентябрь")</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Сентябрь2019 собир общ</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>[2019].Октябрь2019СобирМес</dataPath>
+		<expression>ФункцииДляОтчетов.СуммаСобираемаяМесяцСправочник(Ссылка,"2019","Октябрь")</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Октябрь2019 собир мес</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>[2019].Октябрь2019СобирОбщ</dataPath>
+		<expression>ФункцииДляОтчетов.СуммаСобираемаяОбщаяСправочник(Ссылка,"2019","Октябрь")</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Октябрь2019 собир общ</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>[2019].Ноябрь2019СобирМес</dataPath>
+		<expression>ФункцииДляОтчетов.СуммаСобираемаяМесяцСправочник(Ссылка,"2019","Ноябрь")</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Ноябрь2019 собир мес</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>[2019].Ноябрь2019СобирОбщ</dataPath>
+		<expression>ФункцииДляОтчетов.СуммаСобираемаяОбщаяСправочник(Ссылка,"2019","Ноябрь")</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Ноябрь2019 собир общ</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>[2019].Декабрь2019СобирМес</dataPath>
+		<expression>ФункцииДляОтчетов.СуммаСобираемаяМесяцСправочник(Ссылка,"2019","Декабрь")</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Декабрь2019 собир мес</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>[2019].Декабрь2019СобирОбщ</dataPath>
+		<expression>ФункцииДляОтчетов.СуммаСобираемаяОбщаяСправочник(Ссылка,"2019","Декабрь")</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Декабрь2019 собир общ</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>[2019].Июль2019СобирМес</dataPath>
+		<expression>ФункцииДляОтчетов.СуммаСобираемаяМесяцСправочник(Ссылка,"2019","Июль")</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Июль2019 собир мес</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>[2020].Январь2020СобирОбщ</dataPath>
+		<expression>ФункцииДляОтчетов.СуммаСобираемаяОбщаяСправочник(Ссылка,"2020","Январь")</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Январь2020 собир общ</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>[2020].Январь2020СобирМес</dataPath>
+		<expression>ФункцииДляОтчетов.СуммаСобираемаяМесяцСправочник(Ссылка,"2020","Январь")</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Январь2020 собир мес</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>[2020].Февраль2020СобирМес</dataPath>
+		<expression>ФункцииДляОтчетов.СуммаСобираемаяМесяцСправочник(Ссылка,"2020","Февраль")</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Февраль2020 собир мес</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>[2020].Февраль2020СобирОбщ</dataPath>
+		<expression>ФункцииДляОтчетов.СуммаСобираемаяОбщаяСправочник(Ссылка,"2020","Февраль")</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Февраль2020 собир общ</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>[2020].Март2020СобирМес</dataPath>
+		<expression>ФункцииДляОтчетов.СуммаСобираемаяМесяцСправочник(Ссылка,"2020","Март")</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Март2020 собир мес</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>[2020].Март2020СобирОбщ</dataPath>
+		<expression>ФункцииДляОтчетов.СуммаСобираемаяОбщаяСправочник(Ссылка,"2020","Март")</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Март2020 собир общ</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>[2020].Апрель2020СобирМес</dataPath>
+		<expression>ФункцииДляОтчетов.СуммаСобираемаяМесяцСправочник(Ссылка,"2020","Апрель")</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Апрель2020 собир мес</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>[2020].Апрель2020СобирОбщ</dataPath>
+		<expression>ФункцииДляОтчетов.СуммаСобираемаяОбщаяСправочник(Ссылка,"2020","Апрель")</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Апрель2020 собир общ</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>[2020].Май2020СобирМес</dataPath>
+		<expression>ФункцииДляОтчетов.СуммаСобираемаяМесяцСправочник(Ссылка,"2020","Май")</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Май2020 собир мес</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>[2020].Май2020СобирОбщ</dataPath>
+		<expression>ФункцииДляОтчетов.СуммаСобираемаяОбщаяСправочник(Ссылка,"2020","Май")</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Май2020 собир общ</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>[2020].Июнь2020СобирМес</dataPath>
+		<expression>ФункцииДляОтчетов.СуммаСобираемаяМесяцСправочник(Ссылка,"2020","Июнь")</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Июнь2020 собир мес</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>[2020].Июнь2020СобирОбщ</dataPath>
+		<expression>ФункцииДляОтчетов.СуммаСобираемаяОбщаяСправочник(Ссылка,"2020","Июнь")</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Июнь2020 собир общ</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>[2020].Июль2020СобирМес</dataPath>
+		<expression>ФункцииДляОтчетов.СуммаСобираемаяМесяцСправочник(Ссылка,"2020","Июль")</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Июль2020 собир мес</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>[2020].Июль2020СобирОбщ</dataPath>
+		<expression>ФункцииДляОтчетов.СуммаСобираемаяОбщаяСправочник(Ссылка,"2020","Июль")</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Июль2020 собир общ</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>[2020].Август2020СобирМес</dataPath>
+		<expression>ФункцииДляОтчетов.СуммаСобираемаяМесяцСправочник(Ссылка,"2020","Август")</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Август2020 собир мес</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>[2020].Август2020СобирОбщ</dataPath>
+		<expression>ФункцииДляОтчетов.СуммаСобираемаяОбщаяСправочник(Ссылка,"2020","Август")</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Август2020 собир общ</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>[2020].Сентябрь2020СобирМес</dataPath>
+		<expression>ФункцииДляОтчетов.СуммаСобираемаяМесяцСправочник(Ссылка,"2020","Сентябрь")</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Сентябрь2020 собир мес</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>[2020].Сентябрь2020СобирОбщ</dataPath>
+		<expression>ФункцииДляОтчетов.СуммаСобираемаяОбщаяСправочник(Ссылка,"2020","Сентябрь")</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Сентябрь2020 собир общ</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>[2020].Октябрь2020СобирМес</dataPath>
+		<expression>ФункцииДляОтчетов.СуммаСобираемаяМесяцСправочник(Ссылка,"2020","Октябрь")</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Октябрь2020 собир мес</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>[2020].Октябрь2020СобирОбщ</dataPath>
+		<expression>ФункцииДляОтчетов.СуммаСобираемаяОбщаяСправочник(Ссылка,"2020","Октябрь")</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Октябрь2020 собир общ</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>[2020].Ноябрь2020СобирМес</dataPath>
+		<expression>ФункцииДляОтчетов.СуммаСобираемаяМесяцСправочник(Ссылка,"2020","Ноябрь")</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Ноябрь2020 собир мес</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>[2020].Ноябрь2020СобирОбщ</dataPath>
+		<expression>ФункцииДляОтчетов.СуммаСобираемаяОбщаяСправочник(Ссылка,"2020","Ноябрь")</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Ноябрь2020 собир общ</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>[2020].Декабрь2020СобирМес</dataPath>
+		<expression>ФункцииДляОтчетов.СуммаСобираемаяМесяцСправочник(Ссылка,"2020","Декабрь")</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Декабрь2020 собир мес</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>[2020].Декабрь2020СобирОбщ</dataPath>
+		<expression>ФункцииДляОтчетов.СуммаСобираемаяОбщаяСправочник(Ссылка,"2020","Декабрь")</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Декабрь2020 собир общ</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<settingsVariant>
+		<dcsset:name>Основной</dcsset:name>
+		<dcsset:presentation xsi:type="xs:string">Основной</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:selection>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Наименование</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemFolder">
+					<dcsset:field>[2015]</dcsset:field>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>[2015].Январь2015СобирМес</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>[2015].Январь2015СобирОбщ</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>[2015].Февраль2015СобирМес</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>[2015].Февраль2015СобирОбщ</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>[2015].Март2015СобирМес</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>[2015].Март2015СобирОбщ</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>[2015].Май2015СобирМес</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>[2015].Май2015СобирОбщ</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>[2015].Апрель2015СобирМес</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>[2015].Апрель2015СобирОбщ</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>[2015].Август2015СобирМес</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>[2015].Август2015СобирОбщ</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>[2015].Декабрь2015СобирМес</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>[2015].Декабрь2015СобирОбщ</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>[2015].Июль2015СобирМес</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>[2015].Июль2015СобирОбщ</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>[2015].Июнь2015СобирМес</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>[2015].Июнь2015СобирОбщ</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>[2015].Ноябрь2015СобирМес</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>[2015].Ноябрь2015СобирОбщ</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>[2015].Октябрь2015СобирМес</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>[2015].Октябрь2015СобирОбщ</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>[2015].Сентябрь2015СобирМес</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>[2015].Сентябрь2015СобирОбщ</dcsset:field>
+					</dcsset:item>
+					<dcsset:placement>Auto</dcsset:placement>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemFolder">
+					<dcsset:field>[2016]</dcsset:field>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>[2016].Январь2016СобирМес</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>[2016].Январь2016СобирОбщ</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>[2016].Февраль2016СобирМес</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>[2016].Февраль2016СобирОбщ</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>[2016].Март2016СобирМес</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>[2016].Март2016СобирОбщ</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>[2016].Апрель2016СобирМес</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>[2016].Апрель2016СобирОбщ</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>[2016].Май2016СобирМес</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>[2016].Май2016СобирОбщ</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>[2016].Июнь2016СобирМес</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>[2016].Июнь2016СобирОбщ</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>[2016].Июль2016СобирМес</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>[2016].Июль2016СобирОбщ</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>[2016].Август2016СобирМес</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>[2016].Август2016СобирОбщ</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>[2016].Сентябрь2016СобирМес</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>[2016].Сентябрь2016СобирОбщ</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>[2016].Октябрь2016СобирМес</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>[2016].Октябрь2016СобирОбщ</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>[2016].Ноябрь2016СобирОбщ</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>[2016].Ноябрь2016СобирМес</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>[2016].Декабрь2016СобирМес</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>[2016].Декабрь2016СобирОбщ</dcsset:field>
+					</dcsset:item>
+					<dcsset:placement>Auto</dcsset:placement>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemFolder">
+					<dcsset:field>[2017]</dcsset:field>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>[2017].Январь2017СобирМес</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>[2017].Январь2017СобирОбщ</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>[2017].Февраль2017СобирМес</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>[2017].Февраль2017СобирОбщ</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>[2017].Март2017СобирМес</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>[2017].Март2017СобирОбщ</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>[2017].Апрель2017СобирМес</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>[2017].Апрель2017СобирОбщ</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>[2017].Май2017СобирМес</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>[2017].Май2017СобирОбщ</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>[2017].Июнь2017СобирМес</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>[2017].Июнь2017СобирОбщ</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>[2017].Июль2017СобирМес</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>[2017].Июль2017СобирОбщ</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>[2017].Август2017СобирМес</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>[2017].Август2017СобирОбщ</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>[2017].Сентябрь2017СобирМес</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>[2017].Сентябрь2017СобирОбщ</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>[2017].Октябрь2017СобирМес</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>[2017].Октябрь2017СобирОбщ</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>[2017].Ноябрь2017СобирМес</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>[2017].Ноябрь2017СобирОбщ</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>[2017].Декабрь2017СобирМес</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>[2017].Декабрь2017СобирОбщ</dcsset:field>
+					</dcsset:item>
+					<dcsset:placement>Auto</dcsset:placement>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemFolder">
+					<dcsset:field>[2018]</dcsset:field>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>[2018].Январь2018СобирМес</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>[2018].Январь2018СобирОбщ</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>[2018].Февраль2018СобирМес</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>[2018].Февраль2018СобирОбщ</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>[2018].Март2018СобирМес</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>[2018].Март2018СобирОбщ</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>[2018].Апрель2018СобирМес</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>[2018].Апрель2018СобирОбщ</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>[2018].Май2018СобирМес</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>[2018].Май2018СобирОбщ</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>[2018].Июнь2018СобирМес</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>[2018].Июнь2018СобирОбщ</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>[2018].Июль2018СобирМес</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>[2018].Июль2018СобирОбщ</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>[2018].Август2018СобирМес</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>[2018].Август2018СобирОбщ</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>[2018].Сентябрь2018СобирМес</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>[2018].Сентябрь2018СобирОбщ</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>[2018].Октябрь2018СобирМес</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>[2018].Октябрь2018СобирОбщ</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>[2018].Ноябрь2018СобирМес</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>[2018].Ноябрь2018СобирОбщ</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>[2018].Декабрь2018СобирМес</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>[2018].Декабрь2018СобирОбщ</dcsset:field>
+					</dcsset:item>
+					<dcsset:placement>Auto</dcsset:placement>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemFolder">
+					<dcsset:field>[2019]</dcsset:field>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>[2019].Январь2019СобирМес</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>[2019].Январь2019СобирОбщ</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>[2019].Февраль2019СобирМес</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>[2019].Февраль2019СобирОбщ</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>[2019].Март2019СобирМес</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>[2019].Март2019СобирОбщ</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>[2019].Апрель2019СобирМес</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>[2019].Апрель2019СобирОбщ</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>[2019].Май2019СобирМес</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>[2019].Май2019СобирОбщ</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>[2019].Июнь2019СобирМес</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>[2019].Июнь2019СобирОбщ</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>[2019].Июль2019СобирМес</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>[2019].Июль2019СобирОбщ</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>[2019].Август2019СобирМес</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>[2019].Август2019СобирОбщ</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>[2019].Сентябрь2019СобирМес</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>[2019].Сентябрь2019СобирОбщ</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>[2019].Октябрь2019СобирМес</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>[2019].Октябрь2019СобирОбщ</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>[2019].Ноябрь2019СобирМес</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>[2019].Ноябрь2019СобирОбщ</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>[2019].Декабрь2019СобирМес</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>[2019].Декабрь2019СобирОбщ</dcsset:field>
+					</dcsset:item>
+					<dcsset:placement>Auto</dcsset:placement>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemFolder">
+					<dcsset:field>[2020]</dcsset:field>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>[2020].Январь2020СобирМес</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>[2020].Январь2020СобирОбщ</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>[2020].Февраль2020СобирМес</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>[2020].Февраль2020СобирОбщ</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>[2020].Март2020СобирОбщ</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>[2020].Март2020СобирМес</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>[2020].Апрель2020СобирМес</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>[2020].Апрель2020СобирОбщ</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>[2020].Май2020СобирМес</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>[2020].Май2020СобирОбщ</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>[2020].Июнь2020СобирМес</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>[2020].Июнь2020СобирОбщ</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>[2020].Июль2020СобирМес</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>[2020].Июль2020СобирОбщ</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>[2020].Август2020СобирМес</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>[2020].Август2020СобирОбщ</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>[2020].Сентябрь2020СобирМес</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>[2020].Сентябрь2020СобирОбщ</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>[2020].Октябрь2020СобирМес</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>[2020].Октябрь2020СобирОбщ</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>[2020].Ноябрь2020СобирОбщ</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>[2020].Ноябрь2020СобирМес</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>[2020].Декабрь2020СобирМес</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>[2020].Декабрь2020СобирОбщ</dcsset:field>
+					</dcsset:item>
+					<dcsset:placement>Auto</dcsset:placement>
+				</dcsset:item>
+			</dcsset:selection>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+				</dcsset:selection>
+			</dcsset:item>
+		</dcsset:settings>
+	</settingsVariant>
+</DataCompositionSchema>

@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.9">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<InputField name="Наименование" id="1">
+			<DataPath>Объект.Description</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="НаименованиеКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<Button name="Добавить" id="26">
+			<Type>UsualButton</Type>
+			<CommandName>Form.Command.Добавить</CommandName>
+			<ExtendedTooltip name="ДобавитьРасширеннаяПодсказка" id="27"/>
+		</Button>
+		<Table name="РеестрыПортфеля" id="4">
+			<Representation>List</Representation>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>Объект.РеестрыПортфеля</DataPath>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="РеестрыПортфеляКонтекстноеМеню" id="5"/>
+			<AutoCommandBar name="РеестрыПортфеляКоманднаяПанель" id="6">
+				<Autofill>false</Autofill>
+			</AutoCommandBar>
+			<ExtendedTooltip name="РеестрыПортфеляРасширеннаяПодсказка" id="7"/>
+			<SearchStringAddition name="РеестрыПортфеляСтрокаПоиска" id="8">
+				<AdditionSource>
+					<Item>РеестрыПортфеля</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="РеестрыПортфеляСтрокаПоискаКонтекстноеМеню" id="9"/>
+				<ExtendedTooltip name="РеестрыПортфеляСтрокаПоискаРасширеннаяПодсказка" id="10"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="РеестрыПортфеляСостояниеПросмотра" id="11">
+				<AdditionSource>
+					<Item>РеестрыПортфеля</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="РеестрыПортфеляСостояниеПросмотраКонтекстноеМеню" id="12"/>
+				<ExtendedTooltip name="РеестрыПортфеляСостояниеПросмотраРасширеннаяПодсказка" id="13"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="РеестрыПортфеляУправлениеПоиском" id="14">
+				<AdditionSource>
+					<Item>РеестрыПортфеля</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="РеестрыПортфеляУправлениеПоискомКонтекстноеМеню" id="15"/>
+				<ExtendedTooltip name="РеестрыПортфеляУправлениеПоискомРасширеннаяПодсказка" id="16"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="РеестрыПортфеляНомерСтроки" id="17">
+					<DataPath>Объект.РеестрыПортфеля.LineNumber</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="РеестрыПортфеляНомерСтрокиКонтекстноеМеню" id="18"/>
+					<ExtendedTooltip name="РеестрыПортфеляНомерСтрокиРасширеннаяПодсказка" id="19"/>
+				</LabelField>
+				<InputField name="РеестрыПортфеляРеестр" id="20">
+					<DataPath>Объект.РеестрыПортфеля.Реестр</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="РеестрыПортфеляРеестрКонтекстноеМеню" id="21"/>
+					<ExtendedTooltip name="РеестрыПортфеляРеестрРасширеннаяПодсказка" id="22"/>
+					<Events>
+						<Event name="OnChange">РеестрыПортфеляРеестрПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="РеестрыПортфеляНомерРеестра" id="23">
+					<DataPath>Объект.РеестрыПортфеля.НомерРеестра</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="РеестрыПортфеляНомерРеестраКонтекстноеМеню" id="24"/>
+					<ExtendedTooltip name="РеестрыПортфеляНомерРеестраРасширеннаяПодсказка" id="25"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.ПортфелиСодержание</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="Добавить" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Добавить</Action>
+		</Command>
+	</Commands>
+</Form>

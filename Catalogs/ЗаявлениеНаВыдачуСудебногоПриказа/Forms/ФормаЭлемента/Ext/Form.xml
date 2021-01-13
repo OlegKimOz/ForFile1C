@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.9">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+	</Events>
+	<ChildItems>
+		<InputField name="НаименованиеСуда" id="4">
+			<DataPath>Объект.НаименованиеСуда</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="НаименованиеСудаКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="НаименованиеСудаРасширеннаяПодсказка" id="6"/>
+			<Events>
+				<Event name="ChoiceProcessing">НаименованиеСудаОбработкаВыбора</Event>
+			</Events>
+		</InputField>
+		<InputField name="АдресСуда" id="7">
+			<DataPath>Объект.АдресСуда</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="АдресСудаКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="АдресСудаРасширеннаяПодсказка" id="9"/>
+		</InputField>
+		<InputField name="НомерКредитногоДоговора" id="10">
+			<DataPath>Объект.НомерКредитногоДоговора</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ChoiceButton>true</ChoiceButton>
+			<ChoiceHistoryOnInput>DontUse</ChoiceHistoryOnInput>
+			<ContextMenu name="НомерКредитногоДоговораКонтекстноеМеню" id="11"/>
+			<ExtendedTooltip name="НомерКредитногоДоговораРасширеннаяПодсказка" id="12"/>
+			<Events>
+				<Event name="StartChoice">НомерКредитногоДоговораНачалоВыбора</Event>
+				<Event name="ChoiceProcessing">НомерКредитногоДоговораОбработкаВыбора</Event>
+			</Events>
+		</InputField>
+		<InputField name="ДатаКредитногоДоговора" id="13">
+			<DataPath>Объект.ДатаКредитногоДоговора</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ДатаКредитногоДоговораКонтекстноеМеню" id="14"/>
+			<ExtendedTooltip name="ДатаКредитногоДоговораРасширеннаяПодсказка" id="15"/>
+		</InputField>
+		<InputField name="АдресРегистрацииДолжника" id="16">
+			<DataPath>Объект.АдресРегистрацииДолжника</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="АдресРегистрацииДолжникаКонтекстноеМеню" id="17"/>
+			<ExtendedTooltip name="АдресРегистрацииДолжникаРасширеннаяПодсказка" id="18"/>
+		</InputField>
+		<InputField name="МестоРожденияДолж" id="19">
+			<DataPath>Объект.МестоРожденияДолж</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="МестоРожденияДолжКонтекстноеМеню" id="20"/>
+			<ExtendedTooltip name="МестоРожденияДолжРасширеннаяПодсказка" id="21"/>
+		</InputField>
+		<InputField name="СуммаКредита" id="22">
+			<DataPath>Объект.СуммаКредита</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="СуммаКредитаКонтекстноеМеню" id="23"/>
+			<ExtendedTooltip name="СуммаКредитаРасширеннаяПодсказка" id="24"/>
+		</InputField>
+		<InputField name="СуммаГосПошлины" id="25">
+			<DataPath>Объект.СуммаГосПошлины</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="СуммаГосПошлиныКонтекстноеМеню" id="26"/>
+			<ExtendedTooltip name="СуммаГосПошлиныРасширеннаяПодсказка" id="27"/>
+		</InputField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.ЗаявлениеНаВыдачуСудебногоПриказа</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>

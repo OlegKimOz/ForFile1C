@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.9">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<InputField name="Код" id="1">
+			<DataPath>Объект.Code</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="КодКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="КодРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<InputField name="Наименование" id="4">
+			<DataPath>Объект.Description</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="НаименованиеКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="6"/>
+		</InputField>
+		<InputField name="ПолноеНазвание" id="31">
+			<DataPath>Объект.ПолноеНазвание</DataPath>
+			<ContextMenu name="ПолноеНазваниеКонтекстноеМеню" id="32"/>
+			<ExtendedTooltip name="ПолноеНазваниеРасширеннаяПодсказка" id="33"/>
+		</InputField>
+		<InputField name="Адрес" id="34">
+			<DataPath>Объект.Адрес</DataPath>
+			<ContextMenu name="АдресКонтекстноеМеню" id="35"/>
+			<ExtendedTooltip name="АдресРасширеннаяПодсказка" id="36"/>
+		</InputField>
+		<InputField name="Договор" id="7">
+			<DataPath>Объект.Договор</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ДоговорКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="ДоговорРасширеннаяПодсказка" id="9"/>
+		</InputField>
+		<Table name="ПорядокПогашенияЗадолженности" id="10">
+			<Representation>List</Representation>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<FileDragMode>AsFile</FileDragMode>
+			<DataPath>Объект.ПорядокПогашенияЗадолженности</DataPath>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ПорядокПогашенияЗадолженностиКонтекстноеМеню" id="11"/>
+			<AutoCommandBar name="ПорядокПогашенияЗадолженностиКоманднаяПанель" id="12">
+				<ChildItems>
+					<Button name="ПорядокПогашенияЗадолженностиЗаполнитьОчередь" id="29">
+						<Type>CommandBarButton</Type>
+						<Representation>PictureAndText</Representation>
+						<CommandName>Form.Command.ЗаполнитьОчередностьПогашенияДолга</CommandName>
+						<Picture>
+							<xr:Ref>StdPicture.DataProcessor</xr:Ref>
+							<xr:LoadTransparent>true</xr:LoadTransparent>
+						</Picture>
+						<ExtendedTooltip name="ПорядокПогашенияЗадолженностиЗаполнитьОчередьРасширеннаяПодсказка" id="30"/>
+					</Button>
+				</ChildItems>
+			</AutoCommandBar>
+			<ExtendedTooltip name="ПорядокПогашенияЗадолженностиРасширеннаяПодсказка" id="13"/>
+			<SearchStringAddition name="ПорядокПогашенияЗадолженностиСтрокаПоиска" id="14">
+				<AdditionSource>
+					<Item>ПорядокПогашенияЗадолженности</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ПорядокПогашенияЗадолженностиСтрокаПоискаКонтекстноеМеню" id="15"/>
+				<ExtendedTooltip name="ПорядокПогашенияЗадолженностиСтрокаПоискаРасширеннаяПодсказка" id="16"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ПорядокПогашенияЗадолженностиСостояниеПросмотра" id="17">
+				<AdditionSource>
+					<Item>ПорядокПогашенияЗадолженности</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ПорядокПогашенияЗадолженностиСостояниеПросмотраКонтекстноеМеню" id="18"/>
+				<ExtendedTooltip name="ПорядокПогашенияЗадолженностиСостояниеПросмотраРасширеннаяПодсказка" id="19"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ПорядокПогашенияЗадолженностиУправлениеПоиском" id="20">
+				<AdditionSource>
+					<Item>ПорядокПогашенияЗадолженности</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ПорядокПогашенияЗадолженностиУправлениеПоискомКонтекстноеМеню" id="21"/>
+				<ExtendedTooltip name="ПорядокПогашенияЗадолженностиУправлениеПоискомРасширеннаяПодсказка" id="22"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="ПорядокПогашенияЗадолженностиНомерСтроки" id="23">
+					<DataPath>Объект.ПорядокПогашенияЗадолженности.LineNumber</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ПорядокПогашенияЗадолженностиНомерСтрокиКонтекстноеМеню" id="24"/>
+					<ExtendedTooltip name="ПорядокПогашенияЗадолженностиНомерСтрокиРасширеннаяПодсказка" id="25"/>
+				</LabelField>
+				<InputField name="ПорядокПогашенияЗадолженностиЗадолженность" id="26">
+					<DataPath>Объект.ПорядокПогашенияЗадолженности.Задолженность</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ПорядокПогашенияЗадолженностиЗадолженностьКонтекстноеМеню" id="27"/>
+					<ExtendedTooltip name="ПорядокПогашенияЗадолженностиЗадолженностьРасширеннаяПодсказка" id="28"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.Банки</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ЗаполнитьОчередностьПогашенияДолга" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить очередность погашения долга</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить очередность погашения долга</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗаполнитьОчередностьПогашенияДолга</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+	</Commands>
+</Form>

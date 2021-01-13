@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.9">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="" id="-1"/>
+	<ChildItems>
+		<InputField name="Наименование" id="1">
+			<DataPath>Объект.Description</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="НаименованиеКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<Table name="ТЧ" id="4">
+			<Representation>List</Representation>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>Объект.ТЧ</DataPath>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ТЧКонтекстноеМеню" id="5"/>
+			<AutoCommandBar name="ТЧКоманднаяПанель" id="6"/>
+			<ExtendedTooltip name="ТЧРасширеннаяПодсказка" id="7"/>
+			<SearchStringAddition name="ТЧСтрокаПоиска" id="8">
+				<AdditionSource>
+					<Item>ТЧ</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ТЧСтрокаПоискаКонтекстноеМеню" id="9"/>
+				<ExtendedTooltip name="ТЧСтрокаПоискаРасширеннаяПодсказка" id="10"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ТЧСостояниеПросмотра" id="11">
+				<AdditionSource>
+					<Item>ТЧ</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ТЧСостояниеПросмотраКонтекстноеМеню" id="12"/>
+				<ExtendedTooltip name="ТЧСостояниеПросмотраРасширеннаяПодсказка" id="13"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ТЧУправлениеПоиском" id="14">
+				<AdditionSource>
+					<Item>ТЧ</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ТЧУправлениеПоискомКонтекстноеМеню" id="15"/>
+				<ExtendedTooltip name="ТЧУправлениеПоискомРасширеннаяПодсказка" id="16"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="ТЧНомерСтроки" id="17">
+					<DataPath>Объект.ТЧ.LineNumber</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТЧНомерСтрокиКонтекстноеМеню" id="18"/>
+					<ExtendedTooltip name="ТЧНомерСтрокиРасширеннаяПодсказка" id="19"/>
+				</LabelField>
+				<InputField name="ТЧДатаЗагрузки" id="20">
+					<DataPath>Объект.ТЧ.ДатаЗагрузки</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТЧДатаЗагрузкиКонтекстноеМеню" id="21"/>
+					<ExtendedTooltip name="ТЧДатаЗагрузкиРасширеннаяПодсказка" id="22"/>
+				</InputField>
+				<InputField name="ТЧЦедент" id="23">
+					<DataPath>Объект.ТЧ.Цедент</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТЧЦедентКонтекстноеМеню" id="24"/>
+					<ExtendedTooltip name="ТЧЦедентРасширеннаяПодсказка" id="25"/>
+				</InputField>
+				<InputField name="ТЧНомерДоговораЦессии" id="26">
+					<DataPath>Объект.ТЧ.НомерДоговораЦессии</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТЧНомерДоговораЦессииКонтекстноеМеню" id="27"/>
+					<ExtendedTooltip name="ТЧНомерДоговораЦессииРасширеннаяПодсказка" id="28"/>
+				</InputField>
+				<InputField name="ТЧДатаЦессии" id="29">
+					<DataPath>Объект.ТЧ.ДатаЦессии</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТЧДатаЦессииКонтекстноеМеню" id="30"/>
+					<ExtendedTooltip name="ТЧДатаЦессииРасширеннаяПодсказка" id="31"/>
+				</InputField>
+				<InputField name="ТЧВидПродукта" id="32">
+					<DataPath>Объект.ТЧ.ВидПродукта</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТЧВидПродуктаКонтекстноеМеню" id="33"/>
+					<ExtendedTooltip name="ТЧВидПродуктаРасширеннаяПодсказка" id="34"/>
+				</InputField>
+				<InputField name="ТЧФИОДолжника" id="35">
+					<DataPath>Объект.ТЧ.ФИОДолжника</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТЧФИОДолжникаКонтекстноеМеню" id="36"/>
+					<ExtendedTooltip name="ТЧФИОДолжникаРасширеннаяПодсказка" id="37"/>
+				</InputField>
+				<InputField name="ТЧКрДоговор" id="38">
+					<DataPath>Объект.ТЧ.КрДоговор</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТЧКрДоговорКонтекстноеМеню" id="39"/>
+					<ExtendedTooltip name="ТЧКрДоговорРасширеннаяПодсказка" id="40"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.ГруппыДоговоровЮрист</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>

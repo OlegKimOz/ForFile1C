@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.9">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<InputField name="НаименованиеСуда" id="10">
+			<DataPath>Объект.НаименованиеСуда</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="НаименованиеСудаКонтекстноеМеню" id="11"/>
+			<ExtendedTooltip name="НаименованиеСудаРасширеннаяПодсказка" id="12"/>
+		</InputField>
+		<InputField name="АдресСуда" id="13">
+			<DataPath>Объект.АдресСуда</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="АдресСудаКонтекстноеМеню" id="14"/>
+			<ExtendedTooltip name="АдресСудаРасширеннаяПодсказка" id="15"/>
+		</InputField>
+		<InputField name="НомерКредитногоДоговора" id="16">
+			<DataPath>Объект.НомерКредитногоДоговора</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ChoiceButton>true</ChoiceButton>
+			<ContextMenu name="НомерКредитногоДоговораКонтекстноеМеню" id="17"/>
+			<ExtendedTooltip name="НомерКредитногоДоговораРасширеннаяПодсказка" id="18"/>
+			<Events>
+				<Event name="StartChoice">НомерКредитногоДоговораНачалоВыбора</Event>
+				<Event name="ChoiceProcessing">НомерКредитногоДоговораОбработкаВыбора</Event>
+			</Events>
+		</InputField>
+		<InputField name="ДатаКредитногоДоговора" id="19">
+			<DataPath>Объект.ДатаКредитногоДоговора</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ДатаКредитногоДоговораКонтекстноеМеню" id="20"/>
+			<ExtendedTooltip name="ДатаКредитногоДоговораРасширеннаяПодсказка" id="21"/>
+		</InputField>
+		<InputField name="АдресРегистрацииДолжника" id="22">
+			<DataPath>Объект.АдресРегистрацииДолжника</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="АдресРегистрацииДолжникаКонтекстноеМеню" id="23"/>
+			<ExtendedTooltip name="АдресРегистрацииДолжникаРасширеннаяПодсказка" id="24"/>
+		</InputField>
+		<InputField name="НомерДоговораЦессии" id="25">
+			<DataPath>Объект.НомерДоговораЦессии</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="НомерДоговораЦессииКонтекстноеМеню" id="26"/>
+			<ExtendedTooltip name="НомерДоговораЦессииРасширеннаяПодсказка" id="27"/>
+		</InputField>
+		<InputField name="ДатаДоговораЦессии" id="28">
+			<DataPath>Объект.ДатаДоговораЦессии</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ДатаДоговораЦессииКонтекстноеМеню" id="29"/>
+			<ExtendedTooltip name="ДатаДоговораЦессииРасширеннаяПодсказка" id="30"/>
+		</InputField>
+		<InputField name="Выписка" id="31">
+			<DataPath>Объект.Выписка</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ВыпискаКонтекстноеМеню" id="32"/>
+			<ExtendedTooltip name="ВыпискаРасширеннаяПодсказка" id="33"/>
+		</InputField>
+		<InputField name="ИнформацияОДолге" id="34">
+			<DataPath>Объект.ИнформацияОДолге</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ИнформацияОДолгеКонтекстноеМеню" id="35"/>
+			<ExtendedTooltip name="ИнформацияОДолгеРасширеннаяПодсказка" id="36"/>
+		</InputField>
+		<InputField name="ДатаПодачиДокумента" id="37">
+			<DataPath>Объект.ДатаПодачиДокумента</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ДатаПодачиДокументаКонтекстноеМеню" id="38"/>
+			<ExtendedTooltip name="ДатаПодачиДокументаРасширеннаяПодсказка" id="39"/>
+		</InputField>
+		<InputField name="ДатаОтветаНаЗаявление" id="40">
+			<DataPath>Объект.ДатаОтветаНаЗаявление</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ДатаОтветаНаЗаявлениеКонтекстноеМеню" id="41"/>
+			<ExtendedTooltip name="ДатаОтветаНаЗаявлениеРасширеннаяПодсказка" id="42"/>
+		</InputField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.ЗаявлениеВПФР</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>

@@ -1,0 +1,4831 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.9">
+	<Width>600</Width>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="NotificationProcessing">ОбработкаОповещения</Event>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<Pages name="ГруппаСтраницы" id="140">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа страницы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа страницы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ExtendedTooltip name="ГруппаСтраницыРасширеннаяПодсказка" id="141"/>
+			<Events>
+				<Event name="OnCurrentPageChange">ГруппаСтраницыПриСменеСтраницы</Event>
+			</Events>
+			<ChildItems>
+				<Page name="СтраницаГлавная" id="142">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Список договоров</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница главная</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="СтраницаГлавнаяРасширеннаяПодсказка" id="143"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаШапка" id="23">
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа шапка</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ExtendedTooltip name="ГруппаШапкаРасширеннаяПодсказка" id="24"/>
+							<ChildItems>
+								<Button name="Фильтр" id="131">
+									<Type>UsualButton</Type>
+									<Visible>false</Visible>
+									<CommandName>Form.Command.Фильтр</CommandName>
+									<ExtendedTooltip name="ФильтрРасширеннаяПодсказка" id="132"/>
+								</Button>
+								<Button name="СброситьФильтр" id="133">
+									<Type>UsualButton</Type>
+									<Visible>false</Visible>
+									<CommandName>Form.Command.СброситьФильтр</CommandName>
+									<ExtendedTooltip name="СброситьФильтрРасширеннаяПодсказка" id="134"/>
+								</Button>
+								<CheckBoxField name="ПоискПоВсейБазе" id="135">
+									<DataPath>ПоискПоВсейБазе</DataPath>
+									<Visible>false</Visible>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ПоискПоВсейБазеКонтекстноеМеню" id="136"/>
+									<ExtendedTooltip name="ПоискПоВсейБазеРасширеннаяПодсказка" id="137"/>
+								</CheckBoxField>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаЗагрузкаИзФайла" id="662">
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа загрузка из файла</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ExtendedTooltip name="ГруппаЗагрузкаИзФайлаРасширеннаяПодсказка" id="663"/>
+							<ChildItems>
+								<Button name="ЗагрузитьИзФайла" id="664">
+									<Type>UsualButton</Type>
+									<CommandName>Form.Command.ЗагрузитьИзФайла</CommandName>
+									<ExtendedTooltip name="ЗагрузитьИзФайлаРасширеннаяПодсказка" id="665"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+						<Table name="ТЗ" id="25">
+							<Representation>List</Representation>
+							<Visible>false</Visible>
+							<CommandBarLocation>Top</CommandBarLocation>
+							<ReadOnly>true</ReadOnly>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>ТЗ</DataPath>
+							<CommandSet>
+								<ExcludedCommand>Add</ExcludedCommand>
+								<ExcludedCommand>CancelSearch</ExcludedCommand>
+								<ExcludedCommand>Change</ExcludedCommand>
+								<ExcludedCommand>Copy</ExcludedCommand>
+								<ExcludedCommand>CopyToClipboard</ExcludedCommand>
+								<ExcludedCommand>Delete</ExcludedCommand>
+								<ExcludedCommand>EndEdit</ExcludedCommand>
+								<ExcludedCommand>MoveDown</ExcludedCommand>
+								<ExcludedCommand>MoveUp</ExcludedCommand>
+								<ExcludedCommand>OutputList</ExcludedCommand>
+								<ExcludedCommand>SelectAll</ExcludedCommand>
+								<ExcludedCommand>ShowMultipleSelection</ExcludedCommand>
+								<ExcludedCommand>ShowRowRearrangement</ExcludedCommand>
+								<ExcludedCommand>SortListAsc</ExcludedCommand>
+								<ExcludedCommand>SortListDesc</ExcludedCommand>
+							</CommandSet>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ТЗКонтекстноеМеню" id="26"/>
+							<AutoCommandBar name="ТЗКоманднаяПанель" id="27">
+								<ChildItems>
+									<ButtonGroup name="ТЗГруппа1" id="244">
+										<ExtendedTooltip name="ТЗГруппа1РасширеннаяПодсказка" id="245"/>
+										<ChildItems>
+											<Button name="ТЗТест" id="246">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Command.Тест</CommandName>
+												<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+												<ExtendedTooltip name="ТЗТестРасширеннаяПодсказка" id="247"/>
+											</Button>
+										</ChildItems>
+									</ButtonGroup>
+								</ChildItems>
+							</AutoCommandBar>
+							<ExtendedTooltip name="ТЗРасширеннаяПодсказка" id="28"/>
+							<SearchStringAddition name="ТЗСтрокаПоиска" id="29">
+								<AdditionSource>
+									<Item>ТЗ</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ТЗСтрокаПоискаКонтекстноеМеню" id="30"/>
+								<ExtendedTooltip name="ТЗСтрокаПоискаРасширеннаяПодсказка" id="31"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ТЗСостояниеПросмотра" id="32">
+								<AdditionSource>
+									<Item>ТЗ</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ТЗСостояниеПросмотраКонтекстноеМеню" id="33"/>
+								<ExtendedTooltip name="ТЗСостояниеПросмотраРасширеннаяПодсказка" id="34"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ТЗУправлениеПоиском" id="35">
+								<AdditionSource>
+									<Item>ТЗ</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ТЗУправлениеПоискомКонтекстноеМеню" id="36"/>
+								<ExtendedTooltip name="ТЗУправлениеПоискомРасширеннаяПодсказка" id="37"/>
+							</SearchControlAddition>
+							<Events>
+								<Event name="Selection">ТЗВыбор</Event>
+							</Events>
+							<ChildItems>
+								<InputField name="ТЗНом" id="128">
+									<DataPath>ТЗ.Ном</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТЗНомКонтекстноеМеню" id="129"/>
+									<ExtendedTooltip name="ТЗНомРасширеннаяПодсказка" id="130"/>
+								</InputField>
+								<InputField name="ТЗДатаЗагрузки" id="38">
+									<DataPath>ТЗ.ДатаЗагрузки</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТЗДатаЗагрузкиКонтекстноеМеню" id="39"/>
+									<ExtendedTooltip name="ТЗДатаЗагрузкиРасширеннаяПодсказка" id="40"/>
+								</InputField>
+								<InputField name="ТЗЦедент" id="41">
+									<DataPath>ТЗ.Цедент</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТЗЦедентКонтекстноеМеню" id="42"/>
+									<ExtendedTooltip name="ТЗЦедентРасширеннаяПодсказка" id="43"/>
+								</InputField>
+								<InputField name="ТЗНомерДоговораЦессии" id="44">
+									<DataPath>ТЗ.НомерДоговораЦессии</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТЗНомерДоговораЦессииКонтекстноеМеню" id="45"/>
+									<ExtendedTooltip name="ТЗНомерДоговораЦессииРасширеннаяПодсказка" id="46"/>
+								</InputField>
+								<InputField name="ТЗДатаЦессии" id="47">
+									<DataPath>ТЗ.ДатаЦессии</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТЗДатаЦессииКонтекстноеМеню" id="48"/>
+									<ExtendedTooltip name="ТЗДатаЦессииРасширеннаяПодсказка" id="49"/>
+								</InputField>
+								<InputField name="ТЗВидПродукта" id="50">
+									<DataPath>ТЗ.ВидПродукта</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТЗВидПродуктаКонтекстноеМеню" id="51"/>
+									<ExtendedTooltip name="ТЗВидПродуктаРасширеннаяПодсказка" id="52"/>
+								</InputField>
+								<InputField name="ТЗФИОДолжника" id="53">
+									<DataPath>ТЗ.ФИОДолжника</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТЗФИОДолжникаКонтекстноеМеню" id="54"/>
+									<ExtendedTooltip name="ТЗФИОДолжникаРасширеннаяПодсказка" id="55"/>
+								</InputField>
+								<InputField name="ТЗКрДоговор" id="56">
+									<DataPath>ТЗ.КрДоговор</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТЗКрДоговорКонтекстноеМеню" id="57"/>
+									<ExtendedTooltip name="ТЗКрДоговорРасширеннаяПодсказка" id="58"/>
+								</InputField>
+								<InputField name="ТЗНомерКредитногоДоговора" id="59">
+									<DataPath>ТЗ.НомерКредитногоДоговора</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТЗНомерКредитногоДоговораКонтекстноеМеню" id="60"/>
+									<ExtendedTooltip name="ТЗНомерКредитногоДоговораРасширеннаяПодсказка" id="61"/>
+								</InputField>
+								<InputField name="ТЗДатаКредитногоДоговора" id="62">
+									<DataPath>ТЗ.ДатаКредитногоДоговора</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТЗДатаКредитногоДоговораКонтекстноеМеню" id="63"/>
+									<ExtendedTooltip name="ТЗДатаКредитногоДоговораРасширеннаяПодсказка" id="64"/>
+								</InputField>
+								<InputField name="ТЗСуммаЗадолженностиПереданная" id="65">
+									<DataPath>ТЗ.СуммаЗадолженностиПереданная</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТЗСуммаЗадолженностиПереданнаяКонтекстноеМеню" id="66"/>
+									<ExtendedTooltip name="ТЗСуммаЗадолженностиПереданнаяРасширеннаяПодсказка" id="67"/>
+								</InputField>
+								<InputField name="ТЗСуммаЗадолженностиТекущая" id="68">
+									<DataPath>ТЗ.СуммаЗадолженностиТекущая</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТЗСуммаЗадолженностиТекущаяКонтекстноеМеню" id="69"/>
+									<ExtendedTooltip name="ТЗСуммаЗадолженностиТекущаяРасширеннаяПодсказка" id="70"/>
+								</InputField>
+								<InputField name="ТЗДатаУведомленияУступки" id="71">
+									<DataPath>ТЗ.ДатаУведомленияУступки</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТЗДатаУведомленияУступкиКонтекстноеМеню" id="72"/>
+									<ExtendedTooltip name="ТЗДатаУведомленияУступкиРасширеннаяПодсказка" id="73"/>
+								</InputField>
+								<InputField name="ТЗПроизводство" id="74">
+									<DataPath>ТЗ.Производство</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТЗПроизводствоКонтекстноеМеню" id="75"/>
+									<ExtendedTooltip name="ТЗПроизводствоРасширеннаяПодсказка" id="76"/>
+								</InputField>
+								<InputField name="ТЗДатаПоследнегоПлатежа" id="77">
+									<DataPath>ТЗ.ДатаПоследнегоПлатежа</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТЗДатаПоследнегоПлатежаКонтекстноеМеню" id="78"/>
+									<ExtendedTooltip name="ТЗДатаПоследнегоПлатежаРасширеннаяПодсказка" id="79"/>
+								</InputField>
+								<InputField name="ТЗДатаПолученияДосье" id="80">
+									<DataPath>ТЗ.ДатаПолученияДосье</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТЗДатаПолученияДосьеКонтекстноеМеню" id="81"/>
+									<ExtendedTooltip name="ТЗДатаПолученияДосьеРасширеннаяПодсказка" id="82"/>
+								</InputField>
+								<InputField name="ТЗДатаПоследнегоЗаседания" id="83">
+									<DataPath>ТЗ.ДатаПоследнегоЗаседания</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТЗДатаПоследнегоЗаседанияКонтекстноеМеню" id="84"/>
+									<ExtendedTooltip name="ТЗДатаПоследнегоЗаседанияРасширеннаяПодсказка" id="85"/>
+								</InputField>
+								<InputField name="ТЗДатаЗаявленияОПП" id="86">
+									<DataPath>ТЗ.ДатаЗаявленияОПП</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТЗДатаЗаявленияОППКонтекстноеМеню" id="87"/>
+									<ExtendedTooltip name="ТЗДатаЗаявленияОППРасширеннаяПодсказка" id="88"/>
+								</InputField>
+								<InputField name="ТЗДатаОпределенияОПП" id="89">
+									<DataPath>ТЗ.ДатаОпределенияОПП</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТЗДатаОпределенияОППКонтекстноеМеню" id="90"/>
+									<ExtendedTooltip name="ТЗДатаОпределенияОППРасширеннаяПодсказка" id="91"/>
+								</InputField>
+								<InputField name="ТЗДатаЗаявленияОВыдачеСП_ИсковоеЗаявление" id="92">
+									<DataPath>ТЗ.ДатаЗаявленияОВыдачеСП_ИсковоеЗаявление</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТЗДатаЗаявленияОВыдачеСП_ИсковоеЗаявлениеКонтекстноеМеню" id="93"/>
+									<ExtendedTooltip name="ТЗДатаЗаявленияОВыдачеСП_ИсковоеЗаявлениеРасширеннаяПодсказка" id="94"/>
+								</InputField>
+								<InputField name="ТЗДатаСудебногоПриказа_ИЛ" id="95">
+									<DataPath>ТЗ.ДатаСудебногоПриказа_ИЛ</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТЗДатаСудебногоПриказа_ИЛКонтекстноеМеню" id="96"/>
+									<ExtendedTooltip name="ТЗДатаСудебногоПриказа_ИЛРасширеннаяПодсказка" id="97"/>
+								</InputField>
+								<InputField name="ТЗДатаРешенияОПродаже" id="98">
+									<DataPath>ТЗ.ДатаРешенияОПродаже</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТЗДатаРешенияОПродажеКонтекстноеМеню" id="99"/>
+									<ExtendedTooltip name="ТЗДатаРешенияОПродажеРасширеннаяПодсказка" id="100"/>
+								</InputField>
+								<InputField name="ТЗДатаЗаявленияНаВыдачуДубликата" id="101">
+									<DataPath>ТЗ.ДатаЗаявленияНаВыдачуДубликата</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТЗДатаЗаявленияНаВыдачуДубликатаКонтекстноеМеню" id="102"/>
+									<ExtendedTooltip name="ТЗДатаЗаявленияНаВыдачуДубликатаРасширеннаяПодсказка" id="103"/>
+								</InputField>
+								<InputField name="ТЗДатаПолученияДубликата" id="104">
+									<DataPath>ТЗ.ДатаПолученияДубликата</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТЗДатаПолученияДубликатаКонтекстноеМеню" id="105"/>
+									<ExtendedTooltip name="ТЗДатаПолученияДубликатаРасширеннаяПодсказка" id="106"/>
+								</InputField>
+								<InputField name="ТЗДатаПолученияИсполнительногоДокумента" id="107">
+									<DataPath>ТЗ.ДатаПолученияИсполнительногоДокумента</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТЗДатаПолученияИсполнительногоДокументаКонтекстноеМеню" id="108"/>
+									<ExtendedTooltip name="ТЗДатаПолученияИсполнительногоДокументаРасширеннаяПодсказка" id="109"/>
+								</InputField>
+								<InputField name="ТЗДатаЗаявленияОЗаменеСтороныВИП" id="110">
+									<DataPath>ТЗ.ДатаЗаявленияОЗаменеСтороныВИП</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТЗДатаЗаявленияОЗаменеСтороныВИПКонтекстноеМеню" id="111"/>
+									<ExtendedTooltip name="ТЗДатаЗаявленияОЗаменеСтороныВИПРасширеннаяПодсказка" id="112"/>
+								</InputField>
+								<InputField name="ТЗДатаЗаявленияОВозбужденииИП" id="113">
+									<DataPath>ТЗ.ДатаЗаявленияОВозбужденииИП</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТЗДатаЗаявленияОВозбужденииИПКонтекстноеМеню" id="114"/>
+									<ExtendedTooltip name="ТЗДатаЗаявленияОВозбужденииИПРасширеннаяПодсказка" id="115"/>
+								</InputField>
+								<InputField name="ТЗДатаПостановленияОВозбужденииИП" id="116">
+									<DataPath>ТЗ.ДатаПостановленияОВозбужденииИП</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТЗДатаПостановленияОВозбужденииИПКонтекстноеМеню" id="117"/>
+									<ExtendedTooltip name="ТЗДатаПостановленияОВозбужденииИПРасширеннаяПодсказка" id="118"/>
+								</InputField>
+								<InputField name="ТЗДатаПостановленияОбОкончании" id="119">
+									<DataPath>ТЗ.ДатаПостановленияОбОкончании</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТЗДатаПостановленияОбОкончанииКонтекстноеМеню" id="120"/>
+									<ExtendedTooltip name="ТЗДатаПостановленияОбОкончанииРасширеннаяПодсказка" id="121"/>
+								</InputField>
+								<InputField name="ТЗОтветственныйСотрудник" id="122">
+									<DataPath>ТЗ.ОтветственныйСотрудник</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТЗОтветственныйСотрудникКонтекстноеМеню" id="123"/>
+									<ExtendedTooltip name="ТЗОтветственныйСотрудникРасширеннаяПодсказка" id="124"/>
+								</InputField>
+								<InputField name="ТЗДатаПринятияКИсполнению" id="125">
+									<DataPath>ТЗ.ДатаПринятияКИсполнению</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТЗДатаПринятияКИсполнениюКонтекстноеМеню" id="126"/>
+									<ExtendedTooltip name="ТЗДатаПринятияКИсполнениюРасширеннаяПодсказка" id="127"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+						<Button name="ЗаполнитьРегистрСведенийПоследнийДокумент" id="609">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.ЗаполнитьРегистрСведенийПоследнийДокумент</CommandName>
+							<ExtendedTooltip name="ЗаполнитьРегистрСведенийПоследнийДокументРасширеннаяПодсказка" id="610"/>
+						</Button>
+						<Table name="ДинСписок" id="248">
+							<UseAlternationRowColor>true</UseAlternationRowColor>
+							<EnableStartDrag>true</EnableStartDrag>
+							<DataPath>ДинСписок</DataPath>
+							<RowPictureDataPath>ДинСписок.DefaultPicture</RowPictureDataPath>
+							<CommandSet>
+								<ExcludedCommand>Change</ExcludedCommand>
+								<ExcludedCommand>ChangeHistory</ExcludedCommand>
+								<ExcludedCommand>Copy</ExcludedCommand>
+								<ExcludedCommand>CopyToClipboard</ExcludedCommand>
+								<ExcludedCommand>Create</ExcludedCommand>
+								<ExcludedCommand>Delete</ExcludedCommand>
+							</CommandSet>
+							<AutoRefresh>true</AutoRefresh>
+							<AutoRefreshPeriod>60</AutoRefreshPeriod>
+							<Period>
+								<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+								<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+								<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+							</Period>
+							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+							<RestoreCurrentRow>false</RestoreCurrentRow>
+							<TopLevelParent xsi:nil="true"/>
+							<ShowRoot>true</ShowRoot>
+							<AllowRootChoice>false</AllowRootChoice>
+							<UpdateOnDataChange>Auto</UpdateOnDataChange>
+							<ContextMenu name="ДинСписокКонтекстноеМеню" id="249">
+								<ChildItems>
+									<Button name="ДинСписокКонтекстноеМенюСоздатьГруппу" id="600">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.СоздатьГруппу</CommandName>
+										<ExtendedTooltip name="ДинСписокКонтекстноеМенюСоздатьГруппуРасширеннаяПодсказка" id="601"/>
+									</Button>
+								</ChildItems>
+							</ContextMenu>
+							<AutoCommandBar name="ДинСписокКоманднаяПанель" id="250"/>
+							<ExtendedTooltip name="ДинСписокРасширеннаяПодсказка" id="251"/>
+							<SearchStringAddition name="ДинСписокСтрокаПоиска" id="252">
+								<AdditionSource>
+									<Item>ДинСписок</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ДинСписокСтрокаПоискаКонтекстноеМеню" id="253"/>
+								<ExtendedTooltip name="ДинСписокСтрокаПоискаРасширеннаяПодсказка" id="254"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ДинСписокСостояниеПросмотра" id="255">
+								<AdditionSource>
+									<Item>ДинСписок</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ДинСписокСостояниеПросмотраКонтекстноеМеню" id="256"/>
+								<ExtendedTooltip name="ДинСписокСостояниеПросмотраРасширеннаяПодсказка" id="257"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ДинСписокУправлениеПоиском" id="258">
+								<AdditionSource>
+									<Item>ДинСписок</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ДинСписокУправлениеПоискомКонтекстноеМеню" id="259"/>
+								<ExtendedTooltip name="ДинСписокУправлениеПоискомРасширеннаяПодсказка" id="260"/>
+							</SearchControlAddition>
+							<Events>
+								<Event name="Selection">ДинСписокВыбор</Event>
+							</Events>
+							<ChildItems>
+								<LabelField name="ДинСписокДатаЗагрузки" id="264">
+									<DataPath>ДинСписок.ДатаЗагрузки</DataPath>
+									<ContextMenu name="ДинСписокДатаЗагрузкиКонтекстноеМеню" id="265"/>
+									<ExtendedTooltip name="ДинСписокДатаЗагрузкиРасширеннаяПодсказка" id="266"/>
+								</LabelField>
+								<LabelField name="ДинСписокДатаПодгрузки" id="773">
+									<DataPath>ДинСписок.ДатаПодгрузки</DataPath>
+									<ContextMenu name="ДинСписокДатаПодгрузкиКонтекстноеМеню" id="774"/>
+									<ExtendedTooltip name="ДинСписокДатаПодгрузкиРасширеннаяПодсказка" id="775"/>
+								</LabelField>
+								<LabelField name="ДинСписокСтадияДела" id="654">
+									<DataPath>ДинСписок.СтадияДела</DataPath>
+									<ContextMenu name="ДинСписокСтадияДелаКонтекстноеМеню" id="655"/>
+									<ExtendedTooltip name="ДинСписокСтадияДелаРасширеннаяПодсказка" id="656"/>
+								</LabelField>
+								<LabelField name="ДинСписокДатаРегистрации" id="611">
+									<DataPath>ДинСписок.ДатаРегистрации</DataPath>
+									<Width>15</Width>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<MaxWidth>15</MaxWidth>
+									<AutoMaxHeight>false</AutoMaxHeight>
+									<ContextMenu name="ДинСписокДатаРегистрацииКонтекстноеМеню" id="612"/>
+									<ExtendedTooltip name="ДинСписокДатаРегистрацииРасширеннаяПодсказка" id="613"/>
+								</LabelField>
+								<LabelField name="ДинСписокНазваниеДокумента" id="614">
+									<DataPath>ДинСписок.НазваниеДокумента</DataPath>
+									<Width>70</Width>
+									<ContextMenu name="ДинСписокНазваниеДокументаКонтекстноеМеню" id="615"/>
+									<ExtendedTooltip name="ДинСписокНазваниеДокументаРасширеннаяПодсказка" id="616"/>
+								</LabelField>
+								<LabelField name="ДинСписокТипДокумента" id="617">
+									<DataPath>ДинСписок.ТипДокумента</DataPath>
+									<ContextMenu name="ДинСписокТипДокументаКонтекстноеМеню" id="618"/>
+									<ExtendedTooltip name="ДинСписокТипДокументаРасширеннаяПодсказка" id="619"/>
+								</LabelField>
+								<LabelField name="ДинСписокШифрНазвания" id="620">
+									<DataPath>ДинСписок.ШифрНазвания</DataPath>
+									<ContextMenu name="ДинСписокШифрНазванияКонтекстноеМеню" id="621"/>
+									<ExtendedTooltip name="ДинСписокШифрНазванияРасширеннаяПодсказка" id="622"/>
+								</LabelField>
+								<LabelField name="ДинСписокСтадияДокумента" id="657">
+									<DataPath>ДинСписок.СтадияДокумента</DataPath>
+									<ContextMenu name="ДинСписокСтадияДокументаКонтекстноеМеню" id="658"/>
+									<ExtendedTooltip name="ДинСписокСтадияДокументаРасширеннаяПодсказка" id="659"/>
+								</LabelField>
+								<LabelField name="ДинСписокЦедент" id="348">
+									<DataPath>ДинСписок.Цедент</DataPath>
+									<ContextMenu name="ДинСписокЦедентКонтекстноеМеню" id="349"/>
+									<ExtendedTooltip name="ДинСписокЦедентРасширеннаяПодсказка" id="350"/>
+								</LabelField>
+								<LabelField name="ДинСписокНомерДоговораЦессии" id="327">
+									<DataPath>ДинСписок.НомерДоговораЦессии</DataPath>
+									<ContextMenu name="ДинСписокНомерДоговораЦессииКонтекстноеМеню" id="328"/>
+									<ExtendedTooltip name="ДинСписокНомерДоговораЦессииРасширеннаяПодсказка" id="329"/>
+								</LabelField>
+								<LabelField name="ДинСписокДатаЦессии" id="321">
+									<DataPath>ДинСписок.ДатаЦессии</DataPath>
+									<ContextMenu name="ДинСписокДатаЦессииКонтекстноеМеню" id="322"/>
+									<ExtendedTooltip name="ДинСписокДатаЦессииРасширеннаяПодсказка" id="323"/>
+								</LabelField>
+								<LabelField name="ДинСписокВидПродукта" id="261">
+									<DataPath>ДинСписок.ВидПродукта</DataPath>
+									<ContextMenu name="ДинСписокВидПродуктаКонтекстноеМеню" id="262"/>
+									<ExtendedTooltip name="ДинСписокВидПродуктаРасширеннаяПодсказка" id="263"/>
+								</LabelField>
+								<LabelField name="ДинСписокФИОДолжника" id="345">
+									<DataPath>ДинСписок.ФИОДолжника</DataPath>
+									<ContextMenu name="ДинСписокФИОДолжникаКонтекстноеМеню" id="346"/>
+									<ExtendedTooltip name="ДинСписокФИОДолжникаРасширеннаяПодсказка" id="347"/>
+								</LabelField>
+								<LabelField name="ДинСписокКрДоговор" id="324">
+									<DataPath>ДинСписок.КрДоговор</DataPath>
+									<ContextMenu name="ДинСписокКрДоговорКонтекстноеМеню" id="325"/>
+									<ExtendedTooltip name="ДинСписокКрДоговорРасширеннаяПодсказка" id="326"/>
+								</LabelField>
+								<LabelField name="ДинСписокНомерКредитногоДоговора" id="330">
+									<DataPath>ДинСписок.НомерКредитногоДоговора</DataPath>
+									<ContextMenu name="ДинСписокНомерКредитногоДоговораКонтекстноеМеню" id="331"/>
+									<ExtendedTooltip name="ДинСписокНомерКредитногоДоговораРасширеннаяПодсказка" id="332"/>
+								</LabelField>
+								<LabelField name="ДинСписокДатаКредитногоДоговора" id="282">
+									<DataPath>ДинСписок.ДатаКредитногоДоговора</DataPath>
+									<ContextMenu name="ДинСписокДатаКредитногоДоговораКонтекстноеМеню" id="283"/>
+									<ExtendedTooltip name="ДинСписокДатаКредитногоДоговораРасширеннаяПодсказка" id="284"/>
+								</LabelField>
+								<LabelField name="ДинСписокСуммаЗадолженностиПереданная" id="339">
+									<DataPath>ДинСписок.СуммаЗадолженностиПереданная</DataPath>
+									<ContextMenu name="ДинСписокСуммаЗадолженностиПереданнаяКонтекстноеМеню" id="340"/>
+									<ExtendedTooltip name="ДинСписокСуммаЗадолженностиПереданнаяРасширеннаяПодсказка" id="341"/>
+								</LabelField>
+								<LabelField name="ДинСписокРегистрационныйНомер" id="623">
+									<DataPath>ДинСписок.РегистрационныйНомер</DataPath>
+									<Width>20</Width>
+									<MaxWidth>5</MaxWidth>
+									<HorizontalStretch>false</HorizontalStretch>
+									<ContextMenu name="ДинСписокРегистрационныйНомерКонтекстноеМеню" id="624"/>
+									<ExtendedTooltip name="ДинСписокРегистрационныйНомерРасширеннаяПодсказка" id="625"/>
+								</LabelField>
+								<LabelField name="ДинСписокСуммаЗадолженностиТекущая" id="342">
+									<DataPath>ДинСписок.СуммаЗадолженностиТекущая</DataPath>
+									<ContextMenu name="ДинСписокСуммаЗадолженностиТекущаяКонтекстноеМеню" id="343"/>
+									<ExtendedTooltip name="ДинСписокСуммаЗадолженностиТекущаяРасширеннаяПодсказка" id="344"/>
+								</LabelField>
+								<LabelField name="ДинСписокДатаЗаявленияНаВыдачуДубликата" id="267">
+									<DataPath>ДинСписок.ДатаЗаявленияНаВыдачуДубликата</DataPath>
+									<ContextMenu name="ДинСписокДатаЗаявленияНаВыдачуДубликатаКонтекстноеМеню" id="268"/>
+									<ExtendedTooltip name="ДинСписокДатаЗаявленияНаВыдачуДубликатаРасширеннаяПодсказка" id="269"/>
+								</LabelField>
+								<LabelField name="ДинСписокДатаЗаявленияОВозбужденииИП" id="270">
+									<DataPath>ДинСписок.ДатаЗаявленияОВозбужденииИП</DataPath>
+									<ContextMenu name="ДинСписокДатаЗаявленияОВозбужденииИПКонтекстноеМеню" id="271"/>
+									<ExtendedTooltip name="ДинСписокДатаЗаявленияОВозбужденииИПРасширеннаяПодсказка" id="272"/>
+								</LabelField>
+								<LabelField name="ДинСписокДатаЗаявленияОВыдачеСП_ИсковоеЗаявление" id="273">
+									<DataPath>ДинСписок.ДатаЗаявленияОВыдачеСП_ИсковоеЗаявление</DataPath>
+									<ContextMenu name="ДинСписокДатаЗаявленияОВыдачеСП_ИсковоеЗаявлениеКонтекстноеМеню" id="274"/>
+									<ExtendedTooltip name="ДинСписокДатаЗаявленияОВыдачеСП_ИсковоеЗаявлениеРасширеннаяПодсказка" id="275"/>
+								</LabelField>
+								<LabelField name="ДинСписокДатаЗаявленияОЗаменеСтороныВИП" id="276">
+									<DataPath>ДинСписок.ДатаЗаявленияОЗаменеСтороныВИП</DataPath>
+									<ContextMenu name="ДинСписокДатаЗаявленияОЗаменеСтороныВИПКонтекстноеМеню" id="277"/>
+									<ExtendedTooltip name="ДинСписокДатаЗаявленияОЗаменеСтороныВИПРасширеннаяПодсказка" id="278"/>
+								</LabelField>
+								<LabelField name="ДинСписокДатаЗаявленияОПП" id="279">
+									<DataPath>ДинСписок.ДатаЗаявленияОПП</DataPath>
+									<ContextMenu name="ДинСписокДатаЗаявленияОППКонтекстноеМеню" id="280"/>
+									<ExtendedTooltip name="ДинСписокДатаЗаявленияОППРасширеннаяПодсказка" id="281"/>
+								</LabelField>
+								<LabelField name="ДинСписокДатаОпределенияОПП" id="285">
+									<DataPath>ДинСписок.ДатаОпределенияОПП</DataPath>
+									<ContextMenu name="ДинСписокДатаОпределенияОППКонтекстноеМеню" id="286"/>
+									<ExtendedTooltip name="ДинСписокДатаОпределенияОППРасширеннаяПодсказка" id="287"/>
+								</LabelField>
+								<LabelField name="ДинСписокДатаПолученияДосье" id="288">
+									<DataPath>ДинСписок.ДатаПолученияДосье</DataPath>
+									<ContextMenu name="ДинСписокДатаПолученияДосьеКонтекстноеМеню" id="289"/>
+									<ExtendedTooltip name="ДинСписокДатаПолученияДосьеРасширеннаяПодсказка" id="290"/>
+								</LabelField>
+								<LabelField name="ДинСписокДатаПолученияДубликата" id="291">
+									<DataPath>ДинСписок.ДатаПолученияДубликата</DataPath>
+									<ContextMenu name="ДинСписокДатаПолученияДубликатаКонтекстноеМеню" id="292"/>
+									<ExtendedTooltip name="ДинСписокДатаПолученияДубликатаРасширеннаяПодсказка" id="293"/>
+								</LabelField>
+								<LabelField name="ДинСписокДатаПолученияИсполнительногоДокумента" id="294">
+									<DataPath>ДинСписок.ДатаПолученияИсполнительногоДокумента</DataPath>
+									<ContextMenu name="ДинСписокДатаПолученияИсполнительногоДокументаКонтекстноеМеню" id="295"/>
+									<ExtendedTooltip name="ДинСписокДатаПолученияИсполнительногоДокументаРасширеннаяПодсказка" id="296"/>
+								</LabelField>
+								<LabelField name="ДинСписокДатаПоследнегоЗаседания" id="297">
+									<DataPath>ДинСписок.ДатаПоследнегоЗаседания</DataPath>
+									<ContextMenu name="ДинСписокДатаПоследнегоЗаседанияКонтекстноеМеню" id="298"/>
+									<ExtendedTooltip name="ДинСписокДатаПоследнегоЗаседанияРасширеннаяПодсказка" id="299"/>
+								</LabelField>
+								<LabelField name="ДинСписокДатаПоследнегоПлатежа" id="300">
+									<DataPath>ДинСписок.ДатаПоследнегоПлатежа</DataPath>
+									<ContextMenu name="ДинСписокДатаПоследнегоПлатежаКонтекстноеМеню" id="301"/>
+									<ExtendedTooltip name="ДинСписокДатаПоследнегоПлатежаРасширеннаяПодсказка" id="302"/>
+								</LabelField>
+								<LabelField name="ДинСписокДатаПостановленияОбОкончании" id="303">
+									<DataPath>ДинСписок.ДатаПостановленияОбОкончании</DataPath>
+									<ContextMenu name="ДинСписокДатаПостановленияОбОкончанииКонтекстноеМеню" id="304"/>
+									<ExtendedTooltip name="ДинСписокДатаПостановленияОбОкончанииРасширеннаяПодсказка" id="305"/>
+								</LabelField>
+								<LabelField name="ДинСписокДатаПостановленияОВозбужденииИП" id="306">
+									<DataPath>ДинСписок.ДатаПостановленияОВозбужденииИП</DataPath>
+									<ContextMenu name="ДинСписокДатаПостановленияОВозбужденииИПКонтекстноеМеню" id="307"/>
+									<ExtendedTooltip name="ДинСписокДатаПостановленияОВозбужденииИПРасширеннаяПодсказка" id="308"/>
+								</LabelField>
+								<LabelField name="ДинСписокДатаПринятияКИсполнению" id="309">
+									<DataPath>ДинСписок.ДатаПринятияКИсполнению</DataPath>
+									<ContextMenu name="ДинСписокДатаПринятияКИсполнениюКонтекстноеМеню" id="310"/>
+									<ExtendedTooltip name="ДинСписокДатаПринятияКИсполнениюРасширеннаяПодсказка" id="311"/>
+								</LabelField>
+								<LabelField name="ДинСписокДатаРешенияОПродаже" id="312">
+									<DataPath>ДинСписок.ДатаРешенияОПродаже</DataPath>
+									<ContextMenu name="ДинСписокДатаРешенияОПродажеКонтекстноеМеню" id="313"/>
+									<ExtendedTooltip name="ДинСписокДатаРешенияОПродажеРасширеннаяПодсказка" id="314"/>
+								</LabelField>
+								<LabelField name="ДинСписокДатаСудебногоПриказа_ИЛ" id="315">
+									<DataPath>ДинСписок.ДатаСудебногоПриказа_ИЛ</DataPath>
+									<ContextMenu name="ДинСписокДатаСудебногоПриказа_ИЛКонтекстноеМеню" id="316"/>
+									<ExtendedTooltip name="ДинСписокДатаСудебногоПриказа_ИЛРасширеннаяПодсказка" id="317"/>
+								</LabelField>
+								<LabelField name="ДинСписокДатаУведомленияУступки" id="318">
+									<DataPath>ДинСписок.ДатаУведомленияУступки</DataPath>
+									<ContextMenu name="ДинСписокДатаУведомленияУступкиКонтекстноеМеню" id="319"/>
+									<ExtendedTooltip name="ДинСписокДатаУведомленияУступкиРасширеннаяПодсказка" id="320"/>
+								</LabelField>
+								<LabelField name="ДинСписокОтветственныйСотрудник" id="333">
+									<DataPath>ДинСписок.ОтветственныйСотрудник</DataPath>
+									<ContextMenu name="ДинСписокОтветственныйСотрудникКонтекстноеМеню" id="334"/>
+									<ExtendedTooltip name="ДинСписокОтветственныйСотрудникРасширеннаяПодсказка" id="335"/>
+								</LabelField>
+								<LabelField name="ДинСписокПроизводство" id="336">
+									<DataPath>ДинСписок.Производство</DataPath>
+									<ContextMenu name="ДинСписокПроизводствоКонтекстноеМеню" id="337"/>
+									<ExtendedTooltip name="ДинСписокПроизводствоРасширеннаяПодсказка" id="338"/>
+								</LabelField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="СтраницаСервис" id="144">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Cервис</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница сервис</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="СтраницаСервисРасширеннаяПодсказка" id="145"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаОтправка" id="189">
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа отправка</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
+							<ExtendedTooltip name="ГруппаОтправкаРасширеннаяПодсказка" id="190"/>
+							<ChildItems>
+								<UsualGroup name="СервисШапка" id="240">
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Сервис шапка</v8:content>
+										</v8:item>
+									</ToolTip>
+									<HorizontalStretch>true</HorizontalStretch>
+									<Group>AlwaysHorizontal</Group>
+									<ExtendedTooltip name="СервисШапкаРасширеннаяПодсказка" id="241"/>
+									<ChildItems>
+										<Button name="СформироватьExcelФайлДляРеестра" id="191">
+											<Type>UsualButton</Type>
+											<CommandName>Form.Command.СформироватьExcelФайлДляРеестра</CommandName>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Сформировать реестр для ЛК Почты</v8:content>
+												</v8:item>
+											</Title>
+											<ExtendedTooltip name="СформироватьExcelФайлДляРеестраРасширеннаяПодсказка" id="192"/>
+										</Button>
+										<UsualGroup name="ГруппаПечатьПакета" id="353">
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа печать пакета</v8:content>
+												</v8:item>
+											</ToolTip>
+											<VerticalStretch>true</VerticalStretch>
+											<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+											<GroupVerticalAlign>Top</GroupVerticalAlign>
+											<Group>AlwaysHorizontal</Group>
+											<ExtendedTooltip name="ГруппаПечатьПакетаРасширеннаяПодсказка" id="354"/>
+											<ChildItems>
+												<Button name="ДокументыВПакете" id="361">
+													<Type>UsualButton</Type>
+													<CommandName>Form.Command.ДокументыВПакете</CommandName>
+													<ExtendedTooltip name="ДокументыВПакетеРасширеннаяПодсказка" id="362"/>
+												</Button>
+												<Button name="НастройкаПечатиПакета" id="351">
+													<Type>UsualButton</Type>
+													<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+													<GroupVerticalAlign>Top</GroupVerticalAlign>
+													<CommandName>Form.Command.НастройкаПечатиПакета</CommandName>
+													<ExtendedTooltip name="НастройкаПечатиПакетаРасширеннаяПодсказка" id="352"/>
+												</Button>
+												<Button name="ПечатьПакетаСервис" id="242">
+													<Type>UsualButton</Type>
+													<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+													<GroupVerticalAlign>Top</GroupVerticalAlign>
+													<CommandName>Form.Command.ПечатьПакетаСервис</CommandName>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Печать</v8:content>
+														</v8:item>
+													</Title>
+													<ExtendedTooltip name="ПечатьПакетаСервисРасширеннаяПодсказка" id="243"/>
+												</Button>
+												<Button name="СохранитьВпапку" id="765">
+													<Type>UsualButton</Type>
+													<CommandName>Form.Command.СохранитьВпапку</CommandName>
+													<ExtendedTooltip name="СохранитьВпапкуРасширеннаяПодсказка" id="766"/>
+												</Button>
+												<Button name="ДокументыДляГАС" id="776">
+													<Type>UsualButton</Type>
+													<CommandName>Form.Command.ДокументыДляГАС</CommandName>
+													<ExtendedTooltip name="ДокументыДляГАСРасширеннаяПодсказка" id="777"/>
+												</Button>
+											</ChildItems>
+										</UsualGroup>
+									</ChildItems>
+								</UsualGroup>
+								<Table name="ТБРеестрДляОтправки" id="146">
+									<Representation>List</Representation>
+									<ReadOnly>true</ReadOnly>
+									<MultipleChoice>true</MultipleChoice>
+									<AutoInsertNewRow>true</AutoInsertNewRow>
+									<EnableStartDrag>true</EnableStartDrag>
+									<EnableDrag>true</EnableDrag>
+									<DataPath>ТБРеестрДляОтправки</DataPath>
+									<RowFilter xsi:nil="true"/>
+									<ContextMenu name="ТБРеестрДляОтправкиКонтекстноеМеню" id="147">
+										<ChildItems>
+											<Button name="ТБРеестрДляОтправкиКонтекстноеМенюКомандаПрисоединенныеФайлы" id="626">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Command.КомандаПрисоединенныеФайлы</CommandName>
+												<ExtendedTooltip name="ТБРеестрДляОтправкиКонтекстноеМенюКомандаПрисоединенныеФайлыРасширеннаяПодсказка" id="627"/>
+											</Button>
+											<Button name="ТБРеестрДляОтправкиКонтекстноеМенюПеренестиВРеестрДляОтправкиАрхив" id="771">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Command.ПеренестиВРеестрДляОтправкиАрхив</CommandName>
+												<ExtendedTooltip name="ТБРеестрДляОтправкиКонтекстноеМенюПеренестиВРеестрДляОтправкиАрхивРасширеннаяПодсказка" id="772"/>
+											</Button>
+											<Button name="ТБРеестрДляОтправкиКонтекстноеМенюУдалитьИзТВРеестрДляОтпр" id="767">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Command.УдалитьИзТВРеестрДляОтпр</CommandName>
+												<ExtendedTooltip name="ТБРеестрДляОтправкиКонтекстноеМенюУдалитьИзТВРеестрДляОтпрРасширеннаяПодсказка" id="768"/>
+											</Button>
+										</ChildItems>
+									</ContextMenu>
+									<AutoCommandBar name="ТБРеестрДляОтправкиКоманднаяПанель" id="148">
+										<Autofill>false</Autofill>
+									</AutoCommandBar>
+									<ExtendedTooltip name="ТБРеестрДляОтправкиРасширеннаяПодсказка" id="149"/>
+									<SearchStringAddition name="ТБРеестрДляОтправкиСтрокаПоиска" id="150">
+										<AdditionSource>
+											<Item>ТБРеестрДляОтправки</Item>
+											<Type>SearchStringRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="ТБРеестрДляОтправкиСтрокаПоискаКонтекстноеМеню" id="151"/>
+										<ExtendedTooltip name="ТБРеестрДляОтправкиСтрокаПоискаРасширеннаяПодсказка" id="152"/>
+									</SearchStringAddition>
+									<ViewStatusAddition name="ТБРеестрДляОтправкиСостояниеПросмотра" id="153">
+										<AdditionSource>
+											<Item>ТБРеестрДляОтправки</Item>
+											<Type>ViewStatusRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="ТБРеестрДляОтправкиСостояниеПросмотраКонтекстноеМеню" id="154"/>
+										<ExtendedTooltip name="ТБРеестрДляОтправкиСостояниеПросмотраРасширеннаяПодсказка" id="155"/>
+									</ViewStatusAddition>
+									<SearchControlAddition name="ТБРеестрДляОтправкиУправлениеПоиском" id="156">
+										<AdditionSource>
+											<Item>ТБРеестрДляОтправки</Item>
+											<Type>SearchControl</Type>
+										</AdditionSource>
+										<ContextMenu name="ТБРеестрДляОтправкиУправлениеПоискомКонтекстноеМеню" id="157"/>
+										<ExtendedTooltip name="ТБРеестрДляОтправкиУправлениеПоискомРасширеннаяПодсказка" id="158"/>
+									</SearchControlAddition>
+									<ChildItems>
+										<InputField name="ТБРеестрДляОтправкиКредитныйДоговор" id="159">
+											<DataPath>ТБРеестрДляОтправки.КредитныйДоговор</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ТБРеестрДляОтправкиКредитныйДоговорКонтекстноеМеню" id="160"/>
+											<ExtendedTooltip name="ТБРеестрДляОтправкиКредитныйДоговорРасширеннаяПодсказка" id="161"/>
+										</InputField>
+										<InputField name="ТБРеестрДляОтправкиФИОДолжника" id="162">
+											<DataPath>ТБРеестрДляОтправки.ФИОДолжника</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ТБРеестрДляОтправкиФИОДолжникаКонтекстноеМеню" id="163"/>
+											<ExtendedTooltip name="ТБРеестрДляОтправкиФИОДолжникаРасширеннаяПодсказка" id="164"/>
+										</InputField>
+										<InputField name="ТБРеестрДляОтправкиТипДокумента" id="165">
+											<DataPath>ТБРеестрДляОтправки.ТипДокумента</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ТБРеестрДляОтправкиТипДокументаКонтекстноеМеню" id="166"/>
+											<ExtendedTooltip name="ТБРеестрДляОтправкиТипДокументаРасширеннаяПодсказка" id="167"/>
+										</InputField>
+										<InputField name="ТБРеестрДляОтправкиСтадия" id="168">
+											<DataPath>ТБРеестрДляОтправки.Стадия</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ТБРеестрДляОтправкиСтадияКонтекстноеМеню" id="169"/>
+											<ExtendedTooltip name="ТБРеестрДляОтправкиСтадияРасширеннаяПодсказка" id="170"/>
+										</InputField>
+										<InputField name="ТБРеестрДляОтправкиНазваниеДокумента" id="171">
+											<DataPath>ТБРеестрДляОтправки.НазваниеДокумента</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ТБРеестрДляОтправкиНазваниеДокументаКонтекстноеМеню" id="172"/>
+											<ExtendedTooltip name="ТБРеестрДляОтправкиНазваниеДокументаРасширеннаяПодсказка" id="173"/>
+										</InputField>
+										<InputField name="ТБРеестрДляОтправкиGUID" id="174">
+											<DataPath>ТБРеестрДляОтправки.GUID</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ТБРеестрДляОтправкиGUIDКонтекстноеМеню" id="175"/>
+											<ExtendedTooltip name="ТБРеестрДляОтправкиGUIDРасширеннаяПодсказка" id="176"/>
+										</InputField>
+										<InputField name="ТБРеестрДляОтправкиНаименованиеСуда" id="177">
+											<DataPath>ТБРеестрДляОтправки.НаименованиеСуда</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ТБРеестрДляОтправкиНаименованиеСудаКонтекстноеМеню" id="178"/>
+											<ExtendedTooltip name="ТБРеестрДляОтправкиНаименованиеСудаРасширеннаяПодсказка" id="179"/>
+										</InputField>
+										<InputField name="ТБРеестрДляОтправкиАдресСуда" id="180">
+											<DataPath>ТБРеестрДляОтправки.АдресСуда</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ТБРеестрДляОтправкиАдресСудаКонтекстноеМеню" id="181"/>
+											<ExtendedTooltip name="ТБРеестрДляОтправкиАдресСудаРасширеннаяПодсказка" id="182"/>
+										</InputField>
+										<InputField name="ТБРеестрДляОтправкиДокументСсылка" id="183">
+											<DataPath>ТБРеестрДляОтправки.ДокументСсылка</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ТБРеестрДляОтправкиДокументСсылкаКонтекстноеМеню" id="184"/>
+											<ExtendedTooltip name="ТБРеестрДляОтправкиДокументСсылкаРасширеннаяПодсказка" id="185"/>
+										</InputField>
+										<InputField name="ТБРеестрДляОтправкиИсполнитель" id="186">
+											<DataPath>ТБРеестрДляОтправки.Исполнитель</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ТБРеестрДляОтправкиИсполнительКонтекстноеМеню" id="187"/>
+											<ExtendedTooltip name="ТБРеестрДляОтправкиИсполнительРасширеннаяПодсказка" id="188"/>
+										</InputField>
+										<InputField name="ТБРеестрДляОтправкиНомерЦессии" id="355">
+											<DataPath>ТБРеестрДляОтправки.НомерЦессии</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ТБРеестрДляОтправкиНомерЦессииКонтекстноеМеню" id="356"/>
+											<ExtendedTooltip name="ТБРеестрДляОтправкиНомерЦессииРасширеннаяПодсказка" id="357"/>
+										</InputField>
+									</ChildItems>
+								</Table>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаОтправкаАрхив" id="193">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Архив</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа отправка архив</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
+							<ExtendedTooltip name="ГруппаОтправкаАрхивРасширеннаяПодсказка" id="194"/>
+							<ChildItems>
+								<Table name="ТБРеестрДляОтправкиАрхив" id="195">
+									<Representation>List</Representation>
+									<ReadOnly>true</ReadOnly>
+									<AutoInsertNewRow>true</AutoInsertNewRow>
+									<EnableStartDrag>true</EnableStartDrag>
+									<EnableDrag>true</EnableDrag>
+									<DataPath>ТБРеестрДляОтправкиАрхив</DataPath>
+									<RowFilter xsi:nil="true"/>
+									<ContextMenu name="ТБРеестрДляОтправкиАрхивКонтекстноеМеню" id="196"/>
+									<AutoCommandBar name="ТБРеестрДляОтправкиАрхивКоманднаяПанель" id="197">
+										<Autofill>false</Autofill>
+									</AutoCommandBar>
+									<ExtendedTooltip name="ТБРеестрДляОтправкиАрхивРасширеннаяПодсказка" id="198"/>
+									<SearchStringAddition name="ТБРеестрДляОтправкиАрхивСтрокаПоиска" id="199">
+										<AdditionSource>
+											<Item>ТБРеестрДляОтправкиАрхив</Item>
+											<Type>SearchStringRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="ТБРеестрДляОтправкиАрхивСтрокаПоискаКонтекстноеМеню" id="200"/>
+										<ExtendedTooltip name="ТБРеестрДляОтправкиАрхивСтрокаПоискаРасширеннаяПодсказка" id="201"/>
+									</SearchStringAddition>
+									<ViewStatusAddition name="ТБРеестрДляОтправкиАрхивСостояниеПросмотра" id="202">
+										<AdditionSource>
+											<Item>ТБРеестрДляОтправкиАрхив</Item>
+											<Type>ViewStatusRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="ТБРеестрДляОтправкиАрхивСостояниеПросмотраКонтекстноеМеню" id="203"/>
+										<ExtendedTooltip name="ТБРеестрДляОтправкиАрхивСостояниеПросмотраРасширеннаяПодсказка" id="204"/>
+									</ViewStatusAddition>
+									<SearchControlAddition name="ТБРеестрДляОтправкиАрхивУправлениеПоиском" id="205">
+										<AdditionSource>
+											<Item>ТБРеестрДляОтправкиАрхив</Item>
+											<Type>SearchControl</Type>
+										</AdditionSource>
+										<ContextMenu name="ТБРеестрДляОтправкиАрхивУправлениеПоискомКонтекстноеМеню" id="206"/>
+										<ExtendedTooltip name="ТБРеестрДляОтправкиАрхивУправлениеПоискомРасширеннаяПодсказка" id="207"/>
+									</SearchControlAddition>
+									<ChildItems>
+										<InputField name="ТБРеестрДляОтправкиАрхивКредитныйДоговор" id="208">
+											<DataPath>ТБРеестрДляОтправкиАрхив.КредитныйДоговор</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ТБРеестрДляОтправкиАрхивКредитныйДоговорКонтекстноеМеню" id="209"/>
+											<ExtendedTooltip name="ТБРеестрДляОтправкиАрхивКредитныйДоговорРасширеннаяПодсказка" id="210"/>
+										</InputField>
+										<InputField name="ТБРеестрДляОтправкиАрхивФИОДолжника" id="211">
+											<DataPath>ТБРеестрДляОтправкиАрхив.ФИОДолжника</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ТБРеестрДляОтправкиАрхивФИОДолжникаКонтекстноеМеню" id="212"/>
+											<ExtendedTooltip name="ТБРеестрДляОтправкиАрхивФИОДолжникаРасширеннаяПодсказка" id="213"/>
+										</InputField>
+										<InputField name="ТБРеестрДляОтправкиАрхивТипДокумента" id="214">
+											<DataPath>ТБРеестрДляОтправкиАрхив.ТипДокумента</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ТБРеестрДляОтправкиАрхивТипДокументаКонтекстноеМеню" id="215"/>
+											<ExtendedTooltip name="ТБРеестрДляОтправкиАрхивТипДокументаРасширеннаяПодсказка" id="216"/>
+										</InputField>
+										<InputField name="ТБРеестрДляОтправкиАрхивСтадия" id="217">
+											<DataPath>ТБРеестрДляОтправкиАрхив.Стадия</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ТБРеестрДляОтправкиАрхивСтадияКонтекстноеМеню" id="218"/>
+											<ExtendedTooltip name="ТБРеестрДляОтправкиАрхивСтадияРасширеннаяПодсказка" id="219"/>
+										</InputField>
+										<InputField name="ТБРеестрДляОтправкиАрхивНазваниеДокумента" id="220">
+											<DataPath>ТБРеестрДляОтправкиАрхив.НазваниеДокумента</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ТБРеестрДляОтправкиАрхивНазваниеДокументаКонтекстноеМеню" id="221"/>
+											<ExtendedTooltip name="ТБРеестрДляОтправкиАрхивНазваниеДокументаРасширеннаяПодсказка" id="222"/>
+										</InputField>
+										<InputField name="ТБРеестрДляОтправкиАрхивGUID" id="223">
+											<DataPath>ТБРеестрДляОтправкиАрхив.GUID</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ТБРеестрДляОтправкиАрхивGUIDКонтекстноеМеню" id="224"/>
+											<ExtendedTooltip name="ТБРеестрДляОтправкиАрхивGUIDРасширеннаяПодсказка" id="225"/>
+										</InputField>
+										<InputField name="ТБРеестрДляОтправкиАрхивНаименованиеСуда" id="226">
+											<DataPath>ТБРеестрДляОтправкиАрхив.НаименованиеСуда</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ТБРеестрДляОтправкиАрхивНаименованиеСудаКонтекстноеМеню" id="227"/>
+											<ExtendedTooltip name="ТБРеестрДляОтправкиАрхивНаименованиеСудаРасширеннаяПодсказка" id="228"/>
+										</InputField>
+										<InputField name="ТБРеестрДляОтправкиАрхивАдресСуда" id="229">
+											<DataPath>ТБРеестрДляОтправкиАрхив.АдресСуда</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ТБРеестрДляОтправкиАрхивАдресСудаКонтекстноеМеню" id="230"/>
+											<ExtendedTooltip name="ТБРеестрДляОтправкиАрхивАдресСудаРасширеннаяПодсказка" id="231"/>
+										</InputField>
+										<InputField name="ТБРеестрДляОтправкиАрхивДокументСсылка" id="232">
+											<DataPath>ТБРеестрДляОтправкиАрхив.ДокументСсылка</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ТБРеестрДляОтправкиАрхивДокументСсылкаКонтекстноеМеню" id="233"/>
+											<ExtendedTooltip name="ТБРеестрДляОтправкиАрхивДокументСсылкаРасширеннаяПодсказка" id="234"/>
+										</InputField>
+										<InputField name="ТБРеестрДляОтправкиАрхивИсполнитель" id="235">
+											<DataPath>ТБРеестрДляОтправкиАрхив.Исполнитель</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ТБРеестрДляОтправкиАрхивИсполнительКонтекстноеМеню" id="236"/>
+											<ExtendedTooltip name="ТБРеестрДляОтправкиАрхивИсполнительРасширеннаяПодсказка" id="237"/>
+										</InputField>
+										<InputField name="ТБРеестрДляОтправкиАрхивНомерЦессии" id="358">
+											<DataPath>ТБРеестрДляОтправкиАрхив.НомерЦессии</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ТБРеестрДляОтправкиАрхивНомерЦессииКонтекстноеМеню" id="359"/>
+											<ExtendedTooltip name="ТБРеестрДляОтправкиАрхивНомерЦессииРасширеннаяПодсказка" id="360"/>
+										</InputField>
+									</ChildItems>
+								</Table>
+								<Button name="СформироватьExcelФайлДляРеестраАрхив" id="238">
+									<Type>UsualButton</Type>
+									<CommandName>Form.Command.СформироватьExcelФайлДляРеестраАрхив</CommandName>
+									<ExtendedTooltip name="СформироватьExcelФайлДляРеестраАрхивРасширеннаяПодсказка" id="239"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+				<Page name="СтраницаПоиск" id="363">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница поиск</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница поиск</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="СтраницаПоискРасширеннаяПодсказка" id="364"/>
+					<ChildItems>
+						<Button name="Фильтр1" id="471">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.Фильтр</CommandName>
+							<ExtendedTooltip name="Фильтр1РасширеннаяПодсказка" id="472"/>
+						</Button>
+						<Table name="ТЗПоиск" id="473">
+							<Representation>List</Representation>
+							<MultipleChoice>true</MultipleChoice>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>ТЗПоиск</DataPath>
+							<CommandSet>
+								<ExcludedCommand>Add</ExcludedCommand>
+								<ExcludedCommand>Change</ExcludedCommand>
+								<ExcludedCommand>Copy</ExcludedCommand>
+								<ExcludedCommand>Delete</ExcludedCommand>
+								<ExcludedCommand>EndEdit</ExcludedCommand>
+								<ExcludedCommand>ShowRowRearrangement</ExcludedCommand>
+							</CommandSet>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ТЗПоискКонтекстноеМеню" id="474">
+								<ChildItems>
+									<Button name="ТЗПоискКонтекстноеМенюСоздатьГруппуТЗПоиск" id="607">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.СоздатьГруппуТЗПоиск</CommandName>
+										<ExtendedTooltip name="ТЗПоискКонтекстноеМенюСоздатьГруппуТЗПоискРасширеннаяПодсказка" id="608"/>
+									</Button>
+								</ChildItems>
+							</ContextMenu>
+							<AutoCommandBar name="ТЗПоискКоманднаяПанель" id="475"/>
+							<ExtendedTooltip name="ТЗПоискРасширеннаяПодсказка" id="476"/>
+							<SearchStringAddition name="ТЗПоискСтрокаПоиска" id="477">
+								<AdditionSource>
+									<Item>ТЗПоиск</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ТЗПоискСтрокаПоискаКонтекстноеМеню" id="478"/>
+								<ExtendedTooltip name="ТЗПоискСтрокаПоискаРасширеннаяПодсказка" id="479"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ТЗПоискСостояниеПросмотра" id="480">
+								<AdditionSource>
+									<Item>ТЗПоиск</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ТЗПоискСостояниеПросмотраКонтекстноеМеню" id="481"/>
+								<ExtendedTooltip name="ТЗПоискСостояниеПросмотраРасширеннаяПодсказка" id="482"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ТЗПоискУправлениеПоиском" id="483">
+								<AdditionSource>
+									<Item>ТЗПоиск</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ТЗПоискУправлениеПоискомКонтекстноеМеню" id="484"/>
+								<ExtendedTooltip name="ТЗПоискУправлениеПоискомРасширеннаяПодсказка" id="485"/>
+							</SearchControlAddition>
+							<Events>
+								<Event name="Selection">ТЗПоискВыбор</Event>
+							</Events>
+							<ChildItems>
+								<InputField name="ТЗПоискДатаЗагрузки" id="486">
+									<DataPath>ТЗПоиск.ДатаЗагрузки</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТЗПоискДатаЗагрузкиКонтекстноеМеню" id="487"/>
+									<ExtendedTooltip name="ТЗПоискДатаЗагрузкиРасширеннаяПодсказка" id="488"/>
+								</InputField>
+								<InputField name="ТЗПоискЦедент" id="489">
+									<DataPath>ТЗПоиск.Цедент</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТЗПоискЦедентКонтекстноеМеню" id="490"/>
+									<ExtendedTooltip name="ТЗПоискЦедентРасширеннаяПодсказка" id="491"/>
+								</InputField>
+								<InputField name="ТЗПоискНомерДоговораЦессии" id="492">
+									<DataPath>ТЗПоиск.НомерДоговораЦессии</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТЗПоискНомерДоговораЦессииКонтекстноеМеню" id="493"/>
+									<ExtendedTooltip name="ТЗПоискНомерДоговораЦессииРасширеннаяПодсказка" id="494"/>
+								</InputField>
+								<InputField name="ТЗПоискДатаЦессии" id="495">
+									<DataPath>ТЗПоиск.ДатаЦессии</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТЗПоискДатаЦессииКонтекстноеМеню" id="496"/>
+									<ExtendedTooltip name="ТЗПоискДатаЦессииРасширеннаяПодсказка" id="497"/>
+								</InputField>
+								<InputField name="ТЗПоискВидПродукта" id="498">
+									<DataPath>ТЗПоиск.ВидПродукта</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТЗПоискВидПродуктаКонтекстноеМеню" id="499"/>
+									<ExtendedTooltip name="ТЗПоискВидПродуктаРасширеннаяПодсказка" id="500"/>
+								</InputField>
+								<InputField name="ТЗПоискФИОДолжника" id="501">
+									<DataPath>ТЗПоиск.ФИОДолжника</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТЗПоискФИОДолжникаКонтекстноеМеню" id="502"/>
+									<ExtendedTooltip name="ТЗПоискФИОДолжникаРасширеннаяПодсказка" id="503"/>
+								</InputField>
+								<InputField name="ТЗПоискКрДоговор" id="504">
+									<DataPath>ТЗПоиск.КрДоговор</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТЗПоискКрДоговорКонтекстноеМеню" id="505"/>
+									<ExtendedTooltip name="ТЗПоискКрДоговорРасширеннаяПодсказка" id="506"/>
+								</InputField>
+								<InputField name="ТЗПоискНомерКредитногоДоговора" id="507">
+									<DataPath>ТЗПоиск.НомерКредитногоДоговора</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТЗПоискНомерКредитногоДоговораКонтекстноеМеню" id="508"/>
+									<ExtendedTooltip name="ТЗПоискНомерКредитногоДоговораРасширеннаяПодсказка" id="509"/>
+								</InputField>
+								<InputField name="ТЗПоискДатаКредитногоДоговора" id="510">
+									<DataPath>ТЗПоиск.ДатаКредитногоДоговора</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТЗПоискДатаКредитногоДоговораКонтекстноеМеню" id="511"/>
+									<ExtendedTooltip name="ТЗПоискДатаКредитногоДоговораРасширеннаяПодсказка" id="512"/>
+								</InputField>
+								<InputField name="ТЗПоискСуммаЗадолженностиПереданная" id="513">
+									<DataPath>ТЗПоиск.СуммаЗадолженностиПереданная</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТЗПоискСуммаЗадолженностиПереданнаяКонтекстноеМеню" id="514"/>
+									<ExtendedTooltip name="ТЗПоискСуммаЗадолженностиПереданнаяРасширеннаяПодсказка" id="515"/>
+								</InputField>
+								<InputField name="ТЗПоискДатаУведомленияУступки" id="519">
+									<DataPath>ТЗПоиск.ДатаУведомленияУступки</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТЗПоискДатаУведомленияУступкиКонтекстноеМеню" id="520"/>
+									<ExtendedTooltip name="ТЗПоискДатаУведомленияУступкиРасширеннаяПодсказка" id="521"/>
+								</InputField>
+								<InputField name="ТЗПоискПроизводство" id="522">
+									<DataPath>ТЗПоиск.Производство</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТЗПоискПроизводствоКонтекстноеМеню" id="523"/>
+									<ExtendedTooltip name="ТЗПоискПроизводствоРасширеннаяПодсказка" id="524"/>
+								</InputField>
+								<InputField name="ТЗПоискДатаПолученияДосье" id="528">
+									<DataPath>ТЗПоиск.ДатаПолученияДосье</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТЗПоискДатаПолученияДосьеКонтекстноеМеню" id="529"/>
+									<ExtendedTooltip name="ТЗПоискДатаПолученияДосьеРасширеннаяПодсказка" id="530"/>
+								</InputField>
+								<InputField name="ТЗПоискДатаПоследнегоЗаседания" id="531">
+									<DataPath>ТЗПоиск.ДатаПоследнегоЗаседания</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТЗПоискДатаПоследнегоЗаседанияКонтекстноеМеню" id="532"/>
+									<ExtendedTooltip name="ТЗПоискДатаПоследнегоЗаседанияРасширеннаяПодсказка" id="533"/>
+								</InputField>
+								<InputField name="ТЗПоискДатаЗаявленияОПП" id="534">
+									<DataPath>ТЗПоиск.ДатаЗаявленияОПП</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТЗПоискДатаЗаявленияОППКонтекстноеМеню" id="535"/>
+									<ExtendedTooltip name="ТЗПоискДатаЗаявленияОППРасширеннаяПодсказка" id="536"/>
+								</InputField>
+								<InputField name="ТЗПоискДатаОпределенияОПП" id="537">
+									<DataPath>ТЗПоиск.ДатаОпределенияОПП</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТЗПоискДатаОпределенияОППКонтекстноеМеню" id="538"/>
+									<ExtendedTooltip name="ТЗПоискДатаОпределенияОППРасширеннаяПодсказка" id="539"/>
+								</InputField>
+								<InputField name="ТЗПоискДатаЗаявленияОВыдачеСП_ИсковоеЗаявление" id="540">
+									<DataPath>ТЗПоиск.ДатаЗаявленияОВыдачеСП_ИсковоеЗаявление</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТЗПоискДатаЗаявленияОВыдачеСП_ИсковоеЗаявлениеКонтекстноеМеню" id="541"/>
+									<ExtendedTooltip name="ТЗПоискДатаЗаявленияОВыдачеСП_ИсковоеЗаявлениеРасширеннаяПодсказка" id="542"/>
+								</InputField>
+								<InputField name="ТЗПоискДатаСудебногоПриказа_ИЛ" id="543">
+									<DataPath>ТЗПоиск.ДатаСудебногоПриказа_ИЛ</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТЗПоискДатаСудебногоПриказа_ИЛКонтекстноеМеню" id="544"/>
+									<ExtendedTooltip name="ТЗПоискДатаСудебногоПриказа_ИЛРасширеннаяПодсказка" id="545"/>
+								</InputField>
+								<InputField name="ТЗПоискДатаРешенияОПродаже" id="546">
+									<DataPath>ТЗПоиск.ДатаРешенияОПродаже</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТЗПоискДатаРешенияОПродажеКонтекстноеМеню" id="547"/>
+									<ExtendedTooltip name="ТЗПоискДатаРешенияОПродажеРасширеннаяПодсказка" id="548"/>
+								</InputField>
+								<InputField name="ТЗПоискДатаЗаявленияНаВыдачуДубликата" id="549">
+									<DataPath>ТЗПоиск.ДатаЗаявленияНаВыдачуДубликата</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТЗПоискДатаЗаявленияНаВыдачуДубликатаКонтекстноеМеню" id="550"/>
+									<ExtendedTooltip name="ТЗПоискДатаЗаявленияНаВыдачуДубликатаРасширеннаяПодсказка" id="551"/>
+								</InputField>
+								<InputField name="ТЗПоискДатаПолученияДубликата" id="552">
+									<DataPath>ТЗПоиск.ДатаПолученияДубликата</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТЗПоискДатаПолученияДубликатаКонтекстноеМеню" id="553"/>
+									<ExtendedTooltip name="ТЗПоискДатаПолученияДубликатаРасширеннаяПодсказка" id="554"/>
+								</InputField>
+								<InputField name="ТЗПоискДатаПолученияИсполнительногоДокумента" id="555">
+									<DataPath>ТЗПоиск.ДатаПолученияИсполнительногоДокумента</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТЗПоискДатаПолученияИсполнительногоДокументаКонтекстноеМеню" id="556"/>
+									<ExtendedTooltip name="ТЗПоискДатаПолученияИсполнительногоДокументаРасширеннаяПодсказка" id="557"/>
+								</InputField>
+								<InputField name="ТЗПоискДатаЗаявленияОЗаменеСтороныВИП" id="558">
+									<DataPath>ТЗПоиск.ДатаЗаявленияОЗаменеСтороныВИП</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТЗПоискДатаЗаявленияОЗаменеСтороныВИПКонтекстноеМеню" id="559"/>
+									<ExtendedTooltip name="ТЗПоискДатаЗаявленияОЗаменеСтороныВИПРасширеннаяПодсказка" id="560"/>
+								</InputField>
+								<InputField name="ТЗПоискДатаЗаявленияОВозбужденииИП" id="561">
+									<DataPath>ТЗПоиск.ДатаЗаявленияОВозбужденииИП</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТЗПоискДатаЗаявленияОВозбужденииИПКонтекстноеМеню" id="562"/>
+									<ExtendedTooltip name="ТЗПоискДатаЗаявленияОВозбужденииИПРасширеннаяПодсказка" id="563"/>
+								</InputField>
+								<InputField name="ТЗПоискДатаПостановленияОВозбужденииИП" id="564">
+									<DataPath>ТЗПоиск.ДатаПостановленияОВозбужденииИП</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТЗПоискДатаПостановленияОВозбужденииИПКонтекстноеМеню" id="565"/>
+									<ExtendedTooltip name="ТЗПоискДатаПостановленияОВозбужденииИПРасширеннаяПодсказка" id="566"/>
+								</InputField>
+								<InputField name="ТЗПоискДатаПостановленияОбОкончании" id="567">
+									<DataPath>ТЗПоиск.ДатаПостановленияОбОкончании</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТЗПоискДатаПостановленияОбОкончанииКонтекстноеМеню" id="568"/>
+									<ExtendedTooltip name="ТЗПоискДатаПостановленияОбОкончанииРасширеннаяПодсказка" id="569"/>
+								</InputField>
+								<InputField name="ТЗПоискОтветственныйСотрудник" id="570">
+									<DataPath>ТЗПоиск.ОтветственныйСотрудник</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТЗПоискОтветственныйСотрудникКонтекстноеМеню" id="571"/>
+									<ExtendedTooltip name="ТЗПоискОтветственныйСотрудникРасширеннаяПодсказка" id="572"/>
+								</InputField>
+								<InputField name="ТЗПоискДатаПринятияКИсполнению" id="573">
+									<DataPath>ТЗПоиск.ДатаПринятияКИсполнению</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТЗПоискДатаПринятияКИсполнениюКонтекстноеМеню" id="574"/>
+									<ExtendedTooltip name="ТЗПоискДатаПринятияКИсполнениюРасширеннаяПодсказка" id="575"/>
+								</InputField>
+								<InputField name="ТЗПоискНом" id="576">
+									<DataPath>ТЗПоиск.Ном</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТЗПоискНомКонтекстноеМеню" id="577"/>
+									<ExtendedTooltip name="ТЗПоискНомРасширеннаяПодсказка" id="578"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="ГруппаДоговоров" id="579">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа договоров</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа договоров</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаДоговоровРасширеннаяПодсказка" id="580"/>
+					<ChildItems>
+						<Table name="ГруппаДоговоровЮрист" id="581">
+							<UseAlternationRowColor>true</UseAlternationRowColor>
+							<EnableStartDrag>true</EnableStartDrag>
+							<DataPath>ГруппаДоговоровЮрист</DataPath>
+							<RowPictureDataPath>ГруппаДоговоровЮрист.DefaultPicture</RowPictureDataPath>
+							<AutoRefresh>false</AutoRefresh>
+							<AutoRefreshPeriod>60</AutoRefreshPeriod>
+							<Period>
+								<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+								<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+								<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+							</Period>
+							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+							<RestoreCurrentRow>false</RestoreCurrentRow>
+							<TopLevelParent xsi:nil="true"/>
+							<ShowRoot>true</ShowRoot>
+							<AllowRootChoice>false</AllowRootChoice>
+							<UpdateOnDataChange>Auto</UpdateOnDataChange>
+							<ContextMenu name="ГруппаДоговоровЮристКонтекстноеМеню" id="582"/>
+							<AutoCommandBar name="ГруппаДоговоровЮристКоманднаяПанель" id="583">
+								<ChildItems>
+									<Button name="ГруппаДоговоровЮристУдалитьГруппу" id="602">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.УдалитьГруппу</CommandName>
+										<ExtendedTooltip name="ГруппаДоговоровЮристУдалитьГруппуРасширеннаяПодсказка" id="603"/>
+									</Button>
+								</ChildItems>
+							</AutoCommandBar>
+							<ExtendedTooltip name="ГруппаДоговоровЮристРасширеннаяПодсказка" id="584"/>
+							<SearchStringAddition name="ГруппаДоговоровЮристСтрокаПоиска" id="585">
+								<AdditionSource>
+									<Item>ГруппаДоговоровЮрист</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ГруппаДоговоровЮристСтрокаПоискаКонтекстноеМеню" id="586"/>
+								<ExtendedTooltip name="ГруппаДоговоровЮристСтрокаПоискаРасширеннаяПодсказка" id="587"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ГруппаДоговоровЮристСостояниеПросмотра" id="588">
+								<AdditionSource>
+									<Item>ГруппаДоговоровЮрист</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ГруппаДоговоровЮристСостояниеПросмотраКонтекстноеМеню" id="589"/>
+								<ExtendedTooltip name="ГруппаДоговоровЮристСостояниеПросмотраРасширеннаяПодсказка" id="590"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ГруппаДоговоровЮристУправлениеПоиском" id="591">
+								<AdditionSource>
+									<Item>ГруппаДоговоровЮрист</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ГруппаДоговоровЮристУправлениеПоискомКонтекстноеМеню" id="592"/>
+								<ExtendedTooltip name="ГруппаДоговоровЮристУправлениеПоискомРасширеннаяПодсказка" id="593"/>
+							</SearchControlAddition>
+							<Events>
+								<Event name="Selection">ГруппаДоговоровЮристВыбор</Event>
+							</Events>
+							<ChildItems>
+								<LabelField name="ГруппаДоговоровЮристКод" id="594">
+									<DataPath>ГруппаДоговоровЮрист.Код</DataPath>
+									<ContextMenu name="ГруппаДоговоровЮристКодКонтекстноеМеню" id="595"/>
+									<ExtendedTooltip name="ГруппаДоговоровЮристКодРасширеннаяПодсказка" id="596"/>
+								</LabelField>
+								<LabelField name="ГруппаДоговоровЮристНаименование" id="597">
+									<DataPath>ГруппаДоговоровЮрист.Наименование</DataPath>
+									<ContextMenu name="ГруппаДоговоровЮристНаименованиеКонтекстноеМеню" id="598"/>
+									<ExtendedTooltip name="ГруппаДоговоровЮристНаименованиеРасширеннаяПодсказка" id="599"/>
+								</LabelField>
+								<LabelField name="ГруппаДоговоровЮристСсылка" id="604">
+									<DataPath>ГруппаДоговоровЮрист.Ссылка</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>ИД</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="ГруппаДоговоровЮристСсылкаКонтекстноеМеню" id="605"/>
+									<ExtendedTooltip name="ГруппаДоговоровЮристСсылкаРасширеннаяПодсказка" id="606"/>
+								</LabelField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="СтраницаВходящие" id="628">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Входящие</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница входящие</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="СтраницаВходящиеРасширеннаяПодсказка" id="629"/>
+					<ChildItems>
+						<Table name="ТЗВходящие" id="632">
+							<Representation>List</Representation>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>ТЗВходящие</DataPath>
+							<CommandSet>
+								<ExcludedCommand>Add</ExcludedCommand>
+								<ExcludedCommand>Change</ExcludedCommand>
+								<ExcludedCommand>Copy</ExcludedCommand>
+								<ExcludedCommand>Delete</ExcludedCommand>
+							</CommandSet>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ТЗВходящиеКонтекстноеМеню" id="633">
+								<ChildItems>
+									<Button name="ТЗВходящиеКонтекстноеМенюСоздатьГруппуВходящие" id="660">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.СоздатьГруппуВходящие</CommandName>
+										<ExtendedTooltip name="ТЗВходящиеКонтекстноеМенюСоздатьГруппуВходящиеРасширеннаяПодсказка" id="661"/>
+									</Button>
+								</ChildItems>
+							</ContextMenu>
+							<AutoCommandBar name="ТЗВходящиеКоманднаяПанель" id="634">
+								<Autofill>false</Autofill>
+							</AutoCommandBar>
+							<ExtendedTooltip name="ТЗВходящиеРасширеннаяПодсказка" id="635"/>
+							<SearchStringAddition name="ТЗВходящиеСтрокаПоиска" id="636">
+								<AdditionSource>
+									<Item>ТЗВходящие</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ТЗВходящиеСтрокаПоискаКонтекстноеМеню" id="637"/>
+								<ExtendedTooltip name="ТЗВходящиеСтрокаПоискаРасширеннаяПодсказка" id="638"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ТЗВходящиеСостояниеПросмотра" id="639">
+								<AdditionSource>
+									<Item>ТЗВходящие</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ТЗВходящиеСостояниеПросмотраКонтекстноеМеню" id="640"/>
+								<ExtendedTooltip name="ТЗВходящиеСостояниеПросмотраРасширеннаяПодсказка" id="641"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ТЗВходящиеУправлениеПоиском" id="642">
+								<AdditionSource>
+									<Item>ТЗВходящие</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ТЗВходящиеУправлениеПоискомКонтекстноеМеню" id="643"/>
+								<ExtendedTooltip name="ТЗВходящиеУправлениеПоискомРасширеннаяПодсказка" id="644"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<InputField name="ТЗВходящиеНазваниеДокумента" id="645">
+									<DataPath>ТЗВходящие.НазваниеДокумента</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТЗВходящиеНазваниеДокументаКонтекстноеМеню" id="646"/>
+									<ExtendedTooltip name="ТЗВходящиеНазваниеДокументаРасширеннаяПодсказка" id="647"/>
+								</InputField>
+								<InputField name="ТЗВходящиеКоличество" id="648">
+									<DataPath>ТЗВходящие.Количество</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТЗВходящиеКоличествоКонтекстноеМеню" id="649"/>
+									<ExtendedTooltip name="ТЗВходящиеКоличествоРасширеннаяПодсказка" id="650"/>
+								</InputField>
+								<InputField name="ТЗВходящиеШифр" id="651">
+									<DataPath>ТЗВходящие.Шифр</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТЗВходящиеШифрКонтекстноеМеню" id="652"/>
+									<ExtendedTooltip name="ТЗВходящиеШифрРасширеннаяПодсказка" id="653"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="СтраницаИсходящие" id="630">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница исходящие</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница исходящие</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="СтраницаИсходящиеРасширеннаяПодсказка" id="631"/>
+				</Page>
+				<Page name="СтраницаШаблоны" id="666">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Шаблоны</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница шаблоны</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="СтраницаШаблоныРасширеннаяПодсказка" id="667"/>
+					<ChildItems>
+						<Button name="СкопироватьШаблон" id="684">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.СкопироватьШаблон</CommandName>
+							<ExtendedTooltip name="СкопироватьШаблонРасширеннаяПодсказка" id="685"/>
+						</Button>
+						<Table name="ТаблицаШаблоны" id="668">
+							<Representation>List</Representation>
+							<ReadOnly>true</ReadOnly>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>ТаблицаШаблоны</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ТаблицаШаблоныКонтекстноеМеню" id="669">
+								<ChildItems>
+									<Button name="ТаблицаШаблоныКонтекстноеМенюОткрытьШаблон" id="686">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.ОткрытьШаблон</CommandName>
+										<ExtendedTooltip name="ТаблицаШаблоныКонтекстноеМенюОткрытьШаблонРасширеннаяПодсказка" id="687"/>
+									</Button>
+								</ChildItems>
+							</ContextMenu>
+							<AutoCommandBar name="ТаблицаШаблоныКоманднаяПанель" id="670">
+								<Autofill>false</Autofill>
+							</AutoCommandBar>
+							<ExtendedTooltip name="ТаблицаШаблоныРасширеннаяПодсказка" id="671"/>
+							<SearchStringAddition name="ТаблицаШаблоныСтрокаПоиска" id="672">
+								<AdditionSource>
+									<Item>ТаблицаШаблоны</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ТаблицаШаблоныСтрокаПоискаКонтекстноеМеню" id="673"/>
+								<ExtendedTooltip name="ТаблицаШаблоныСтрокаПоискаРасширеннаяПодсказка" id="674"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ТаблицаШаблоныСостояниеПросмотра" id="675">
+								<AdditionSource>
+									<Item>ТаблицаШаблоны</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ТаблицаШаблоныСостояниеПросмотраКонтекстноеМеню" id="676"/>
+								<ExtendedTooltip name="ТаблицаШаблоныСостояниеПросмотраРасширеннаяПодсказка" id="677"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ТаблицаШаблоныУправлениеПоиском" id="678">
+								<AdditionSource>
+									<Item>ТаблицаШаблоны</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ТаблицаШаблоныУправлениеПоискомКонтекстноеМеню" id="679"/>
+								<ExtendedTooltip name="ТаблицаШаблоныУправлениеПоискомРасширеннаяПодсказка" id="680"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<InputField name="ТаблицаШаблоныНаименование" id="681">
+									<DataPath>ТаблицаШаблоны.Наименование</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТаблицаШаблоныНаименованиеКонтекстноеМеню" id="682"/>
+									<ExtendedTooltip name="ТаблицаШаблоныНаименованиеРасширеннаяПодсказка" id="683"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+						<Button name="СохранитьШаблон" id="688">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.СохранитьШаблон</CommandName>
+							<ExtendedTooltip name="СохранитьШаблонРасширеннаяПодсказка" id="689"/>
+						</Button>
+					</ChildItems>
+				</Page>
+				<Page name="СтраницаСостояниеДел" id="690">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>История Б-Д</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница состояние дел</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="СтраницаСостояниеДелРасширеннаяПодсказка" id="691"/>
+					<ChildItems>
+						<Table name="СостояниеДел" id="692">
+							<ReadOnly>true</ReadOnly>
+							<UseAlternationRowColor>true</UseAlternationRowColor>
+							<EnableStartDrag>true</EnableStartDrag>
+							<DataPath>СостояниеДел</DataPath>
+							<RowPictureDataPath>СостояниеДел.DefaultPicture</RowPictureDataPath>
+							<CommandSet>
+								<ExcludedCommand>Change</ExcludedCommand>
+								<ExcludedCommand>Copy</ExcludedCommand>
+								<ExcludedCommand>Create</ExcludedCommand>
+								<ExcludedCommand>Delete</ExcludedCommand>
+								<ExcludedCommand>SetDeletionMark</ExcludedCommand>
+							</CommandSet>
+							<AutoRefresh>false</AutoRefresh>
+							<AutoRefreshPeriod>60</AutoRefreshPeriod>
+							<Period>
+								<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+								<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+								<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+							</Period>
+							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+							<RestoreCurrentRow>false</RestoreCurrentRow>
+							<TopLevelParent xsi:nil="true"/>
+							<ShowRoot>true</ShowRoot>
+							<AllowRootChoice>false</AllowRootChoice>
+							<UpdateOnDataChange>Auto</UpdateOnDataChange>
+							<ContextMenu name="СостояниеДелКонтекстноеМеню" id="693">
+								<ChildItems>
+									<Button name="СостояниеДелКонтекстноеМенюСоздатьГруппуИзСостояниеДел" id="769">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.СоздатьГруппуИзСостояниеДел</CommandName>
+										<ExtendedTooltip name="СостояниеДелКонтекстноеМенюСоздатьГруппуИзСостояниеДелРасширеннаяПодсказка" id="770"/>
+									</Button>
+								</ChildItems>
+							</ContextMenu>
+							<AutoCommandBar name="СостояниеДелКоманднаяПанель" id="694"/>
+							<ExtendedTooltip name="СостояниеДелРасширеннаяПодсказка" id="695"/>
+							<SearchStringAddition name="СостояниеДелСтрокаПоиска" id="696">
+								<AdditionSource>
+									<Item>СостояниеДел</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="СостояниеДелСтрокаПоискаКонтекстноеМеню" id="697"/>
+								<ExtendedTooltip name="СостояниеДелСтрокаПоискаРасширеннаяПодсказка" id="698"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="СостояниеДелСостояниеПросмотра" id="699">
+								<AdditionSource>
+									<Item>СостояниеДел</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="СостояниеДелСостояниеПросмотраКонтекстноеМеню" id="700"/>
+								<ExtendedTooltip name="СостояниеДелСостояниеПросмотраРасширеннаяПодсказка" id="701"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="СостояниеДелУправлениеПоиском" id="702">
+								<AdditionSource>
+									<Item>СостояниеДел</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="СостояниеДелУправлениеПоискомКонтекстноеМеню" id="703"/>
+								<ExtendedTooltip name="СостояниеДелУправлениеПоискомРасширеннаяПодсказка" id="704"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<LabelField name="СостояниеДелДатаЗапроса" id="711">
+									<DataPath>СостояниеДел.ДатаЗапроса</DataPath>
+									<ContextMenu name="СостояниеДелДатаЗапросаКонтекстноеМеню" id="712"/>
+									<ExtendedTooltip name="СостояниеДелДатаЗапросаРасширеннаяПодсказка" id="713"/>
+								</LabelField>
+								<LabelField name="СостояниеДелНомерСудебногоДела" id="714">
+									<DataPath>СостояниеДел.НомерСудебногоДела</DataPath>
+									<ContextMenu name="СостояниеДелНомерСудебногоДелаКонтекстноеМеню" id="715"/>
+									<ExtendedTooltip name="СостояниеДелНомерСудебногоДелаРасширеннаяПодсказка" id="716"/>
+								</LabelField>
+								<LabelField name="СостояниеДелНомерИсполнительногоДокумента" id="717">
+									<DataPath>СостояниеДел.НомерИсполнительногоДокумента</DataPath>
+									<ContextMenu name="СостояниеДелНомерИсполнительногоДокументаКонтекстноеМеню" id="718"/>
+									<ExtendedTooltip name="СостояниеДелНомерИсполнительногоДокументаРасширеннаяПодсказка" id="719"/>
+								</LabelField>
+								<LabelField name="СостояниеДелСуд" id="720">
+									<DataPath>СостояниеДел.Суд</DataPath>
+									<ContextMenu name="СостояниеДелСудКонтекстноеМеню" id="721"/>
+									<ExtendedTooltip name="СостояниеДелСудРасширеннаяПодсказка" id="722"/>
+								</LabelField>
+								<LabelField name="СостояниеДелАдресСуда" id="723">
+									<DataPath>СостояниеДел.АдресСуда</DataPath>
+									<ContextMenu name="СостояниеДелАдресСудаКонтекстноеМеню" id="724"/>
+									<ExtendedTooltip name="СостояниеДелАдресСудаРасширеннаяПодсказка" id="725"/>
+								</LabelField>
+								<LabelField name="СостояниеДелГиперссылка_суд" id="726">
+									<DataPath>СостояниеДел.Гиперссылка_суд</DataPath>
+									<ContextMenu name="СостояниеДелГиперссылка_судКонтекстноеМеню" id="727"/>
+									<ExtendedTooltip name="СостояниеДелГиперссылка_судРасширеннаяПодсказка" id="728"/>
+								</LabelField>
+								<LabelField name="СостояниеДелНомерДоговора" id="729">
+									<DataPath>СостояниеДел.НомерДоговора</DataPath>
+									<ContextMenu name="СостояниеДелНомерДоговораКонтекстноеМеню" id="730"/>
+									<ExtendedTooltip name="СостояниеДелНомерДоговораРасширеннаяПодсказка" id="731"/>
+								</LabelField>
+								<LabelField name="СостояниеДелДоговор" id="732">
+									<DataPath>СостояниеДел.Договор</DataPath>
+									<ContextMenu name="СостояниеДелДоговорКонтекстноеМеню" id="733"/>
+									<ExtendedTooltip name="СостояниеДелДоговорРасширеннаяПодсказка" id="734"/>
+								</LabelField>
+								<LabelField name="СостояниеДелФИОДолжник" id="735">
+									<DataPath>СостояниеДел.ФИОДолжник</DataPath>
+									<ContextMenu name="СостояниеДелФИОДолжникКонтекстноеМеню" id="736"/>
+									<ExtendedTooltip name="СостояниеДелФИОДолжникРасширеннаяПодсказка" id="737"/>
+								</LabelField>
+								<LabelField name="СостояниеДелДатаРождения" id="738">
+									<DataPath>СостояниеДел.ДатаРождения</DataPath>
+									<ContextMenu name="СостояниеДелДатаРожденияКонтекстноеМеню" id="739"/>
+									<ExtendedTooltip name="СостояниеДелДатаРожденияРасширеннаяПодсказка" id="740"/>
+								</LabelField>
+								<LabelField name="СостояниеДелСтатусИП" id="741">
+									<DataPath>СостояниеДел.СтатусИП</DataPath>
+									<ContextMenu name="СостояниеДелСтатусИПКонтекстноеМеню" id="742"/>
+									<ExtendedTooltip name="СостояниеДелСтатусИПРасширеннаяПодсказка" id="743"/>
+								</LabelField>
+								<LabelField name="СостояниеДелДатаВозбужденияИП" id="744">
+									<DataPath>СостояниеДел.ДатаВозбужденияИП</DataPath>
+									<ContextMenu name="СостояниеДелДатаВозбужденияИПКонтекстноеМеню" id="745"/>
+									<ExtendedTooltip name="СостояниеДелДатаВозбужденияИПРасширеннаяПодсказка" id="746"/>
+								</LabelField>
+								<LabelField name="СостояниеДелНомерИП" id="747">
+									<DataPath>СостояниеДел.НомерИП</DataPath>
+									<ContextMenu name="СостояниеДелНомерИПКонтекстноеМеню" id="748"/>
+									<ExtendedTooltip name="СостояниеДелНомерИПРасширеннаяПодсказка" id="749"/>
+								</LabelField>
+								<LabelField name="СостояниеДелДатаОкончанияИП" id="750">
+									<DataPath>СостояниеДел.ДатаОкончанияИП</DataPath>
+									<ContextMenu name="СостояниеДелДатаОкончанияИПКонтекстноеМеню" id="751"/>
+									<ExtendedTooltip name="СостояниеДелДатаОкончанияИПРасширеннаяПодсказка" id="752"/>
+								</LabelField>
+								<LabelField name="СостояниеДелНаименованиеОСПНазваниеОСП" id="762">
+									<DataPath>СостояниеДел.НаименованиеОСПНазваниеОСП</DataPath>
+									<ContextMenu name="СостояниеДелНаименованиеОСПНазваниеОСПКонтекстноеМеню" id="763"/>
+									<ExtendedTooltip name="СостояниеДелНаименованиеОСПНазваниеОСПРасширеннаяПодсказка" id="764"/>
+								</LabelField>
+								<LabelField name="СостояниеДелАдресОСП" id="756">
+									<DataPath>СостояниеДел.АдресОСП</DataPath>
+									<ContextMenu name="СостояниеДелАдресОСПКонтекстноеМеню" id="757"/>
+									<ExtendedTooltip name="СостояниеДелАдресОСПРасширеннаяПодсказка" id="758"/>
+								</LabelField>
+								<LabelField name="СостояниеДелГиперссылкаФССП" id="759">
+									<DataPath>СостояниеДел.ГиперссылкаФССП</DataPath>
+									<ContextMenu name="СостояниеДелГиперссылкаФССПКонтекстноеМеню" id="760"/>
+									<ExtendedTooltip name="СостояниеДелГиперссылкаФССПРасширеннаяПодсказка" id="761"/>
+								</LabelField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.НачальнаяСтраницаЮристы</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="ТЗ" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ТЗ</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="ДатаЗагрузки" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата загрузки</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>Date</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="Цедент" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Цедент</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Банки</v8:Type>
+					</Type>
+				</Column>
+				<Column name="НомерДоговораЦессии" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Номер договора цессии</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>30</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ДатаЦессии" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата цессии</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>Date</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="ВидПродукта" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Вид продукта</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.ТипыКредитов</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ФИОДолжника" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ФИОДолжника</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Должники</v8:Type>
+					</Type>
+				</Column>
+				<Column name="КрДоговор" id="7">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Кр договор</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Договоры</v8:Type>
+					</Type>
+				</Column>
+				<Column name="НомерКредитногоДоговора" id="8">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Номер кредитного договора</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>50</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ДатаКредитногоДоговора" id="9">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата кредитного договора</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>Date</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="СуммаЗадолженностиПереданная" id="10">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Сумма задолженности переданная</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>2</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="СуммаЗадолженностиТекущая" id="11">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Сумма задолженности текущая</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>2</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="ДатаУведомленияУступки" id="12">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата уведомления уступки</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>Date</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="Производство" id="13">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Производство</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>15</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ДатаПоследнегоПлатежа" id="14">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата последнего платежа</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>Date</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="ДатаПолученияДосье" id="15">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата получения досье</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>Date</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="ДатаПоследнегоЗаседания" id="16">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата последнего заседания</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>Date</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="ДатаЗаявленияОПП" id="17">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата заявления ОПП</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>Date</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="ДатаОпределенияОПП" id="18">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата определения ОПП</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>Date</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="ДатаЗаявленияОВыдачеСП_ИсковоеЗаявление" id="19">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата заявления о выдаче с п исковое заявление</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>Date</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="ДатаСудебногоПриказа_ИЛ" id="20">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата судебного приказа ИЛ</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>Date</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="ДатаРешенияОПродаже" id="21">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата решения о продаже</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>Date</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="ДатаЗаявленияНаВыдачуДубликата" id="22">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата заявления на выдачу дубликата</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>Date</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="ДатаПолученияДубликата" id="23">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата получения дубликата</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>Date</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="ДатаПолученияИсполнительногоДокумента" id="24">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата получения исполнительного документа</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>Date</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="ДатаЗаявленияОЗаменеСтороныВИП" id="25">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата заявления о замене стороны ВИП</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>Date</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="ДатаЗаявленияОВозбужденииИП" id="26">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата заявления о возбуждении ИП</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>Date</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="ДатаПостановленияОВозбужденииИП" id="27">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата постановления о возбуждении ИП</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>Date</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="ДатаПостановленияОбОкончании" id="28">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата постановления об окончании</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>Date</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="ОтветственныйСотрудник" id="29">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ответственный сотрудник</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Сотрудники</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ДатаПринятияКИсполнению" id="30">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата принятия к исполнению</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>Date</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="Ном" id="31">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>№</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>15</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ДатаПодгрузки" id="32">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата подгрузки</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>Date</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="ТЗКопия" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ТЗКопия</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="ДатаЗагрузки" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата загрузки</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>Date</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="Цедент" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Цедент</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Банки</v8:Type>
+					</Type>
+				</Column>
+				<Column name="НомерДоговораЦессии" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Номер договора цессии</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>30</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ДатаЦессии" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата цессии</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>Date</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="ВидПродукта" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Вид продукта</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.ТипыКредитов</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ФИОДолжника" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ФИОДолжника</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Должники</v8:Type>
+					</Type>
+				</Column>
+				<Column name="КрДоговор" id="7">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Кр договор</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Договоры</v8:Type>
+					</Type>
+				</Column>
+				<Column name="НомерКредитногоДоговора" id="8">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Номер кредитного договора</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>50</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ДатаКредитногоДоговора" id="9">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата кредитного договора</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>Date</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="СуммаЗадолженностиПереданная" id="10">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Сумма задолженности переданная</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>2</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="СуммаЗадолженностиТекущая" id="11">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Сумма задолженности текущая</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>2</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="ДатаУведомленияУступки" id="12">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата уведомления уступки</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>Date</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="Производство" id="13">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Производство</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>15</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ДатаПоследнегоПлатежа" id="14">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата последнего платежа</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>Date</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="ДатаПолученияДосье" id="15">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата получения досье</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>Date</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="ДатаПоследнегоЗаседания" id="16">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата последнего заседания</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>Date</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="ДатаЗаявленияОПП" id="17">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата заявления ОПП</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>Date</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="ДатаОпределенияОПП" id="18">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата определения ОПП</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>Date</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="ДатаЗаявленияОВыдачеСП_ИсковоеЗаявление" id="19">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата заявления о выдаче с п исковое заявление</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>Date</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="ДатаСудебногоПриказа_ИЛ" id="20">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата судебного приказа ИЛ</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>Date</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="ДатаРешенияОПродаже" id="21">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата решения о продаже</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>Date</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="ДатаЗаявленияНаВыдачуДубликата" id="22">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата заявления на выдачу дубликата</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>Date</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="ДатаПолученияДубликата" id="23">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата получения дубликата</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>Date</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="ДатаПолученияИсполнительногоДокумента" id="24">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата получения исполнительного документа</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>Date</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="ДатаЗаявленияОЗаменеСтороныВИП" id="25">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата заявления о замене стороны ВИП</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>Date</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="ДатаЗаявленияОВозбужденииИП" id="26">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата заявления о возбуждении ИП</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>Date</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="ДатаПостановленияОВозбужденииИП" id="27">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата постановления о возбуждении ИП</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>Date</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="ДатаПостановленияОбОкончании" id="28">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата постановления об окончании</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>Date</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="ОтветственныйСотрудник" id="29">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ответственный сотрудник</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Сотрудники</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ДатаПринятияКИсполнению" id="30">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата принятия к исполнению</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>Date</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="Ном" id="31">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>№</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>4</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ДатаПодгрузки" id="32">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата подгрузки</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>Date</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="БанкПоиск" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Банк поиск</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Банки</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ДоговорЦессииПоиск" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Договор цессии поиск</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ТЗВсяБаза" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ТЗ</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="ДатаЗагрузки" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата загрузки</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>Date</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="Цедент" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Цедент</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Банки</v8:Type>
+					</Type>
+				</Column>
+				<Column name="НомерДоговораЦессии" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Номер договора цессии</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>30</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ДатаЦессии" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата цессии</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>Date</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="ВидПродукта" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Вид продукта</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.ТипыКредитов</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ФИОДолжника" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ФИОДолжника</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Должники</v8:Type>
+					</Type>
+				</Column>
+				<Column name="КрДоговор" id="7">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Кр договор</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Договоры</v8:Type>
+					</Type>
+				</Column>
+				<Column name="НомерКредитногоДоговора" id="8">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Номер кредитного договора</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>50</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ДатаКредитногоДоговора" id="9">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата кредитного договора</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>Date</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="СуммаЗадолженностиПереданная" id="10">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Сумма задолженности переданная</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>2</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="СуммаЗадолженностиТекущая" id="11">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Сумма задолженности текущая</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>2</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="ДатаУведомленияУступки" id="12">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата уведомления уступки</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>Date</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="Производство" id="13">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Производство</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>15</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ДатаПоследнегоПлатежа" id="14">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата последнего платежа</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>Date</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="ДатаПолученияДосье" id="15">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата получения досье</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>Date</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="ДатаПоследнегоЗаседания" id="16">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата последнего заседания</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>Date</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="ДатаЗаявленияОПП" id="17">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата заявления ОПП</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>Date</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="ДатаОпределенияОПП" id="18">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата определения ОПП</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>Date</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="ДатаЗаявленияОВыдачеСП_ИсковоеЗаявление" id="19">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата заявления о выдаче с п исковое заявление</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>Date</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="ДатаСудебногоПриказа_ИЛ" id="20">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата судебного приказа ИЛ</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>Date</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="ДатаРешенияОПродаже" id="21">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата решения о продаже</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>Date</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="ДатаЗаявленияНаВыдачуДубликата" id="22">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата заявления на выдачу дубликата</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>Date</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="ДатаПолученияДубликата" id="23">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата получения дубликата</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>Date</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="ДатаПолученияИсполнительногоДокумента" id="24">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата получения исполнительного документа</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>Date</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="ДатаЗаявленияОЗаменеСтороныВИП" id="25">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата заявления о замене стороны ВИП</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>Date</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="ДатаЗаявленияОВозбужденииИП" id="26">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата заявления о возбуждении ИП</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>Date</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="ДатаПостановленияОВозбужденииИП" id="27">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата постановления о возбуждении ИП</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>Date</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="ДатаПостановленияОбОкончании" id="28">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата постановления об окончании</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>Date</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="ОтветственныйСотрудник" id="29">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ответственный сотрудник</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Сотрудники</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ДатаПринятияКИсполнению" id="30">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата принятия к исполнению</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>Date</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="Ном" id="31">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>№</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>4</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="ПоискПоВсейБазе" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Поиск по всей базе</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ТБРеестрДляОтправки" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ТБРеестр для отправки</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="КредитныйДоговор" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Кредитный договор</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Договоры</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ФИОДолжника" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ФИОДолжника</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Должники</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ТипДокумента" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Тип документа</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:EnumRef.ТипДокумента</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Стадия" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Стадия</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:EnumRef.СтадияДокумента</v8:Type>
+					</Type>
+				</Column>
+				<Column name="НазваниеДокумента" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Название документа</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>100</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="GUID" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>GUID</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="НаименованиеСуда" id="7">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Наименование суда</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Суды</v8:Type>
+					</Type>
+				</Column>
+				<Column name="АдресСуда" id="8">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Адрес суда</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ДокументСсылка" id="9">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Документ ссылка</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:TypeSet>cfg:CatalogRef</v8:TypeSet>
+					</Type>
+				</Column>
+				<Column name="Исполнитель" id="10">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Исполнитель</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>50</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="НомерЦессии" id="11">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Номер цессии</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>60</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="ТБРеестрДляОтправкиАрхив" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ТБРеестр для отправки</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="КредитныйДоговор" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Кредитный договор</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Договоры</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ФИОДолжника" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ФИОДолжника</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Должники</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ТипДокумента" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Тип документа</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:EnumRef.ТипДокумента</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Стадия" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Стадия</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:EnumRef.СтадияДокумента</v8:Type>
+					</Type>
+				</Column>
+				<Column name="НазваниеДокумента" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Название документа</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>100</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="GUID" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>GUID</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="НаименованиеСуда" id="7">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Наименование суда</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Суды</v8:Type>
+					</Type>
+				</Column>
+				<Column name="АдресСуда" id="8">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Адрес суда</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ДокументСсылка" id="9">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Документ ссылка</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:TypeSet>cfg:CatalogRef</v8:TypeSet>
+					</Type>
+				</Column>
+				<Column name="Исполнитель" id="10">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Исполнитель</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>50</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="НомерЦессии" id="11">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Номер цессии</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="ПользовательТк" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пользователь тк</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Сотрудники</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ДоговораМного" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Договора много</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ДинСписок" id="13">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дин список</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>true</ManualQuery>
+				<DynamicDataRead>true</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ
+	РегистрСведенийРегистрСведенийДляНачальныйРабочийСтолЮристы.ДатаЗагрузки КАК ДатаЗагрузки,
+	РегистрСведенийРегистрСведенийДляНачальныйРабочийСтолЮристы.Цедент КАК Цедент,
+	РегистрСведенийРегистрСведенийДляНачальныйРабочийСтолЮристы.НомерДоговораЦессии КАК НомерДоговораЦессии,
+	РегистрСведенийРегистрСведенийДляНачальныйРабочийСтолЮристы.ДатаЦессии КАК ДатаЦессии,
+	РегистрСведенийРегистрСведенийДляНачальныйРабочийСтолЮристы.ВидПродукта КАК ВидПродукта,
+	РегистрСведенийРегистрСведенийДляНачальныйРабочийСтолЮристы.ФИОДолжника КАК ФИОДолжника,
+	РегистрСведенийРегистрСведенийДляНачальныйРабочийСтолЮристы.КрДоговор КАК КрДоговор,
+	РегистрСведенийРегистрСведенийДляНачальныйРабочийСтолЮристы.НомерКредитногоДоговора КАК НомерКредитногоДоговора,
+	РегистрСведенийРегистрСведенийДляНачальныйРабочийСтолЮристы.ДатаКредитногоДоговора КАК ДатаКредитногоДоговора,
+	РегистрСведенийРегистрСведенийДляНачальныйРабочийСтолЮристы.СуммаЗадолженностиПереданная КАК СуммаЗадолженностиПереданная,
+	РегистрСведенийРегистрСведенийДляНачальныйРабочийСтолЮристы.СуммаЗадолженностиТекущая КАК СуммаЗадолженностиТекущая,
+	РегистрСведенийРегистрСведенийДляНачальныйРабочийСтолЮристы.ДатаУведомленияУступки КАК ДатаУведомленияУступки,
+	РегистрСведенийРегистрСведенийДляНачальныйРабочийСтолЮристы.Производство КАК Производство,
+	РегистрСведенийРегистрСведенийДляНачальныйРабочийСтолЮристы.ДатаПоследнегоПлатежа КАК ДатаПоследнегоПлатежа,
+	РегистрСведенийРегистрСведенийДляНачальныйРабочийСтолЮристы.ДатаПолученияДосье КАК ДатаПолученияДосье,
+	РегистрСведенийРегистрСведенийДляНачальныйРабочийСтолЮристы.ДатаПоследнегоЗаседания КАК ДатаПоследнегоЗаседания,
+	РегистрСведенийРегистрСведенийДляНачальныйРабочийСтолЮристы.ДатаЗаявленияОПП КАК ДатаЗаявленияОПП,
+	РегистрСведенийРегистрСведенийДляНачальныйРабочийСтолЮристы.ДатаОпределенияОПП КАК ДатаОпределенияОПП,
+	РегистрСведенийРегистрСведенийДляНачальныйРабочийСтолЮристы.ДатаЗаявленияОВыдачеСП_ИсковоеЗаявление КАК ДатаЗаявленияОВыдачеСП_ИсковоеЗаявление,
+	РегистрСведенийРегистрСведенийДляНачальныйРабочийСтолЮристы.ДатаСудебногоПриказа_ИЛ КАК ДатаСудебногоПриказа_ИЛ,
+	РегистрСведенийРегистрСведенийДляНачальныйРабочийСтолЮристы.ДатаРешенияОПродаже КАК ДатаРешенияОПродаже,
+	РегистрСведенийРегистрСведенийДляНачальныйРабочийСтолЮристы.ДатаЗаявленияНаВыдачуДубликата КАК ДатаЗаявленияНаВыдачуДубликата,
+	РегистрСведенийРегистрСведенийДляНачальныйРабочийСтолЮристы.ДатаПолученияДубликата КАК ДатаПолученияДубликата,
+	РегистрСведенийРегистрСведенийДляНачальныйРабочийСтолЮристы.ДатаПолученияИсполнительногоДокумента КАК ДатаПолученияИсполнительногоДокумента,
+	РегистрСведенийРегистрСведенийДляНачальныйРабочийСтолЮристы.ДатаЗаявленияОЗаменеСтороныВИП КАК ДатаЗаявленияОЗаменеСтороныВИП,
+	РегистрСведенийРегистрСведенийДляНачальныйРабочийСтолЮристы.ДатаЗаявленияОВозбужденииИП КАК ДатаЗаявленияОВозбужденииИП,
+	РегистрСведенийРегистрСведенийДляНачальныйРабочийСтолЮристы.ДатаПостановленияОВозбужденииИП КАК ДатаПостановленияОВозбужденииИП,
+	РегистрСведенийРегистрСведенийДляНачальныйРабочийСтолЮристы.ДатаПостановленияОбОкончании КАК ДатаПостановленияОбОкончании,
+	РегистрСведенийРегистрСведенийДляНачальныйРабочийСтолЮристы.ОтветственныйСотрудник КАК ОтветственныйСотрудник,
+	РегистрСведенийРегистрСведенийДляНачальныйРабочийСтолЮристы.ДатаПринятияКИсполнению КАК ДатаПринятияКИсполнению,
+	РегистрСведенийПоследнийДокументКредитногоДоговора.ТипДокумента КАК ТипДокумента,
+	РегистрСведенийПоследнийДокументКредитногоДоговора.НазваниеДокумента КАК НазваниеДокумента,
+	РегистрСведенийПоследнийДокументКредитногоДоговора.ДатаРегистрации КАК ДатаРегистрации,
+	РегистрСведенийПоследнийДокументКредитногоДоговора.РегистрационныйНомер КАК РегистрационныйНомер,
+	РегистрСведенийПоследнийДокументКредитногоДоговора.ШифрНазвания КАК ШифрНазвания,
+	РегистрСведенийПоследнийДокументКредитногоДоговора.СтадияДела КАК СтадияДела,
+	РегистрСведенийПоследнийДокументКредитногоДоговора.СтадияДокумента КАК СтадияДокумента,
+	РегистрСведенийРегистрСведенийДляНачальныйРабочийСтолЮристы.ДатаПодгрузки КАК ДатаПодгрузки
+ИЗ
+	РегистрСведений.РегистрСведенийДляНачальныйРабочийСтолЮристы КАК РегистрСведенийРегистрСведенийДляНачальныйРабочийСтолЮристы
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.РегистрСведенийПоследнийДокументКредитногоДоговора КАК РегистрСведенийПоследнийДокументКредитногоДоговора
+		ПО РегистрСведенийРегистрСведенийДляНачальныйРабочийСтолЮристы.КрДоговор = РегистрСведенийПоследнийДокументКредитногоДоговора.КредитныйДоговор
+ГДЕ
+	РегистрСведенийРегистрСведенийДляНачальныйРабочийСтолЮристы.ОтветственныйСотрудник = &amp;ОтветственныйСотрудник</QueryText>
+				<MainTable>InformationRegister.РегистрСведенийДляНачальныйРабочийСтолЮристы</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+		<Attribute name="СписокФайлов" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список файлов</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="ИмяФайла" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Имя файла</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Путь" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Путь</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="НазваниеДокумента" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Название документа</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Договор" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Договор</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="НастройкаПечатиСписок" id="14">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настройка печати список</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ФильтрУстановлен" id="15">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Фильтр установлен</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ДоговорЦессииФильтр" id="16">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Договор цессии фильтр</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>60</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="НазваниеДокументаФильтр" id="17">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Название документа фильтр</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>250</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ПечататьКопияДоговораЦессии" id="18">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Печатать копия договора цессии</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ПечататьСвидетельстваОРегистрацииЮрЛица" id="19">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Печатать свидетельства о регистрации юр лица</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ПечатьВыпискаИзРеестра" id="20">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Печать выписка из реестра</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ПечатьДоверенностьПредставителя" id="21">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Печать доверенность представителя</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ПечатьДосьеКлиента" id="22">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Печать досье клиента</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ПечатьКопииУчредительныхДокументовКомпании" id="23">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Печать копии учредительных документов компании</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ПечатьКопияПлатежногоПорученияПодтверждающееОплатуПоДоговоруУступкиПрав" id="24">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Печать копия платежного поручения подтверждающее оплату по договору уступки прав</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ПечатьКопияРеестраУступаемыхПрав" id="25">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Печать копия реестра уступаемых прав</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ПечатьКопияУведомленияОбУступкеПраваТребования" id="26">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Печать копия уведомления об уступке права требования</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ПечатьНаименование" id="27">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Печать наименование</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ТЗПоиск" id="28">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ТЗ</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="ДатаЗагрузки" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата загрузки</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>Date</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="Цедент" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Цедент</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Банки</v8:Type>
+					</Type>
+				</Column>
+				<Column name="НомерДоговораЦессии" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Номер договора цессии</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>30</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ДатаЦессии" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата цессии</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>Date</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="ВидПродукта" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Вид продукта</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.ТипыКредитов</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ФИОДолжника" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ФИОДолжника</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Должники</v8:Type>
+					</Type>
+				</Column>
+				<Column name="КрДоговор" id="7">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Кр договор</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Договоры</v8:Type>
+					</Type>
+				</Column>
+				<Column name="НомерКредитногоДоговора" id="8">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Номер кредитного договора</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>50</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ДатаКредитногоДоговора" id="9">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата кредитного договора</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>Date</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="СуммаЗадолженностиПереданная" id="10">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Сумма задолженности переданная</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>2</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="СуммаЗадолженностиТекущая" id="11">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Сумма задолженности текущая</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>2</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="ДатаУведомленияУступки" id="12">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата уведомления уступки</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>Date</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="Производство" id="13">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Производство</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>15</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ДатаПоследнегоПлатежа" id="14">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата последнего платежа</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>Date</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="ДатаПолученияДосье" id="15">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата получения досье</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>Date</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="ДатаПоследнегоЗаседания" id="16">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата последнего заседания</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>Date</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="ДатаЗаявленияОПП" id="17">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата заявления ОПП</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>Date</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="ДатаОпределенияОПП" id="18">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата определения ОПП</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>Date</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="ДатаЗаявленияОВыдачеСП_ИсковоеЗаявление" id="19">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата заявления о выдаче с п исковое заявление</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>Date</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="ДатаСудебногоПриказа_ИЛ" id="20">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата судебного приказа ИЛ</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>Date</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="ДатаРешенияОПродаже" id="21">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата решения о продаже</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>Date</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="ДатаЗаявленияНаВыдачуДубликата" id="22">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата заявления на выдачу дубликата</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>Date</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="ДатаПолученияДубликата" id="23">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата получения дубликата</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>Date</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="ДатаПолученияИсполнительногоДокумента" id="24">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата получения исполнительного документа</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>Date</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="ДатаЗаявленияОЗаменеСтороныВИП" id="25">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата заявления о замене стороны ВИП</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>Date</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="ДатаЗаявленияОВозбужденииИП" id="26">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата заявления о возбуждении ИП</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>Date</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="ДатаПостановленияОВозбужденииИП" id="27">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата постановления о возбуждении ИП</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>Date</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="ДатаПостановленияОбОкончании" id="28">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата постановления об окончании</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>Date</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="ОтветственныйСотрудник" id="29">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ответственный сотрудник</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Сотрудники</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ДатаПринятияКИсполнению" id="30">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата принятия к исполнению</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>Date</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="Ном" id="31">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>№</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>15</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ДатаПодгрузки" id="32">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата подгрузки</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>Date</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="ГруппаДоговоровЮрист" id="29">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа договоров юрист</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>true</ManualQuery>
+				<DynamicDataRead>false</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ
+	ГруппыДоговоровЮрист.Код КАК Код,
+	ГруппыДоговоровЮрист.Наименование КАК Наименование,
+	ГруппыДоговоровЮрист.Ссылка КАК Ссылка
+ИЗ
+	Справочник.ГруппыДоговоровЮрист КАК ГруппыДоговоровЮрист
+ГДЕ
+	ГруппыДоговоровЮрист.Владелец = &amp;Владелец</QueryText>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+		<Attribute name="ТЗВходящие" id="30">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ТЗВходящие</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="НазваниеДокумента" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Название документа</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Количество" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Количество</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Шифр" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Шифр</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="ДоговораВходящие" id="31">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Договора входящие</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ТаблицаШаблоны" id="32">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Таблица шаблоны</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Наименование" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Наименование</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>150</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="СсылканаШаблон" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ссылкана шаблон</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.ШаблоныЮристы</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ШаблонИстина" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Шаблон истина</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="ИмяВременногоФайлаШаблона" id="33">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Имя временного файла шаблона</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>200</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ссылкаШаблонРедакируемый" id="34">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ссылка шаблон редакируемый</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.ШаблоныЮристы</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="МожноСохрнятьШаблон" id="35">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Можно сохрнять шаблон</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ШифрДокумента" id="36">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Шифр документа</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>10</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="СостояниеДел" id="37">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Состояние дел</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>true</ManualQuery>
+				<DynamicDataRead>false</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ
+	СправочникСостояниеДелБанкДолжник.Ссылка КАК Ссылка,
+	СправочникСостояниеДелБанкДолжник.ПометкаУдаления КАК ПометкаУдаления,
+	СправочникСостояниеДелБанкДолжник.Код КАК Код,
+	СправочникСостояниеДелБанкДолжник.Наименование КАК Наименование,
+	СправочникСостояниеДелБанкДолжник.ДатаЗапроса КАК ДатаЗапроса,
+	СправочникСостояниеДелБанкДолжник.НомерСудебногоДела КАК НомерСудебногоДела,
+	СправочникСостояниеДелБанкДолжник.НомерИсполнительногоДокумента КАК НомерИсполнительногоДокумента,
+	СправочникСостояниеДелБанкДолжник.Суд КАК Суд,
+	СправочникСостояниеДелБанкДолжник.АдресСуда КАК АдресСуда,
+	СправочникСостояниеДелБанкДолжник.Гиперссылка_суд КАК Гиперссылка_суд,
+	СправочникСостояниеДелБанкДолжник.НомерДоговора КАК НомерДоговора,
+	СправочникСостояниеДелБанкДолжник.Договор КАК Договор,
+	СправочникСостояниеДелБанкДолжник.ФИОДолжник КАК ФИОДолжник,
+	СправочникСостояниеДелБанкДолжник.ДатаРождения КАК ДатаРождения,
+	СправочникСостояниеДелБанкДолжник.СтатусИП КАК СтатусИП,
+	СправочникСостояниеДелБанкДолжник.ДатаВозбужденияИП КАК ДатаВозбужденияИП,
+	СправочникСостояниеДелБанкДолжник.НомерИП КАК НомерИП,
+	СправочникСостояниеДелБанкДолжник.ДатаОкончанияИП КАК ДатаОкончанияИП,
+	СправочникСостояниеДелБанкДолжник.НаименованиеОСП КАК НаименованиеОСП,
+	СправочникСостояниеДелБанкДолжник.НаименованиеОСП.НазваниеОСП КАК НаименованиеОСПНазваниеОСП,
+	СправочникСостояниеДелБанкДолжник.АдресОСП КАК АдресОСП,
+	СправочникСостояниеДелБанкДолжник.ГиперссылкаФССП КАК ГиперссылкаФССП,
+	СправочникСостояниеДелБанкДолжник.Предопределенный КАК Предопределенный,
+	СправочникСостояниеДелБанкДолжник.ИмяПредопределенныхДанных КАК ИмяПредопределенныхДанных
+ИЗ
+	Справочник.СостояниеДелБанкДолжник КАК СправочникСостояниеДелБанкДолжник</QueryText>
+				<MainTable>Catalog.СостояниеДелБанкДолжник</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+		<Attribute name="АдресатБанк" id="38">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Адресат банк</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="АдресатДолжник" id="39">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Адресат должник</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="АдресатСуд" id="40">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Адресат суд</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="Фильтр" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Фильтр</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Фильтр</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Поиск</Action>
+		</Command>
+		<Command name="СброситьФильтр" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сбросить фильтр</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сбросить фильтр</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СброситьФильтр</Action>
+		</Command>
+		<Command name="СформироватьExcelФайлДляРеестра" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сформировать excel файл для реестра</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сформировать excel файл для реестра</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СформироватьExcelФайлДляРеестра</Action>
+		</Command>
+		<Command name="СформироватьExcelФайлДляРеестраАрхив" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сформировать excel файл для реестра архив</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сформировать excel файл для реестра архив</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СформироватьExcelФайлДляРеестраАрхив</Action>
+		</Command>
+		<Command name="ПечатьПакетаСервис" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Печать пакета сервис</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Печать пакета сервис</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПечатьПакетаСервис</Action>
+		</Command>
+		<Command name="Тест" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сортировать</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Тест</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Тест</Action>
+		</Command>
+		<Command name="НастройкаПечатиПакета" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настройка печати пакета</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настройка печати пакета</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>НастройкаПечатиПакета</Action>
+		</Command>
+		<Command name="ДокументыВПакете" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Документы в пакете</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Документы в пакете</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ДокументыВПакете</Action>
+			<FunctionalOptions>
+				<Item>FunctionalOption.ИмеетПравоНаФСП</Item>
+			</FunctionalOptions>
+		</Command>
+		<Command name="СоздатьГруппу" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать группу</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать группу</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СоздатьГруппу</Action>
+		</Command>
+		<Command name="УдалитьГруппу" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Удалить группу</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Удалить группу</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>УдалитьГруппу</Action>
+		</Command>
+		<Command name="СоздатьГруппуТЗПоиск" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать группу</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать группу ТЗПоиск</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СоздатьГруппуТЗПоиск</Action>
+		</Command>
+		<Command name="ЗаполнитьРегистрСведенийПоследнийДокумент" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить регистр сведений последний документ</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить регистр сведений последний документ</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗаполнитьРегистрСведенийПоследнийДокумент</Action>
+			<FunctionalOptions>
+				<Item>FunctionalOption.ИмеетПравоНаФСП</Item>
+			</FunctionalOptions>
+		</Command>
+		<Command name="КомандаПрисоединенныеФайлы" id="13">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Присоединенные файлы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команда присоединенные файлы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>КомандаПрисоединенныеФайлы</Action>
+		</Command>
+		<Command name="СоздатьГруппуВходящие" id="14">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать группу входящие</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать группу входящие</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СоздатьГруппуВходящие</Action>
+		</Command>
+		<Command name="ЗагрузитьИзФайла" id="15">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить из файла</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить из файла</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗагрузитьИзФайла</Action>
+		</Command>
+		<Command name="СкопироватьШаблон" id="16">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Скопировать шаблон</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Скопировать шаблон</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СкопироватьШаблон</Action>
+		</Command>
+		<Command name="ОткрытьШаблон" id="17">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть шаблон</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть шаблон</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОткрытьШаблон</Action>
+		</Command>
+		<Command name="СохранитьШаблон" id="18">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сохранить шаблон</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сохранить шаблон</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СохранитьШаблон</Action>
+		</Command>
+		<Command name="СохранитьВпапку" id="19">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сохранить в папку</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сохранить впапку</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СохранитьВпапку</Action>
+		</Command>
+		<Command name="УдалитьИзТВРеестрДляОтпр" id="20">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Удалить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Удалить из ТВРеестр для отпр</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>УдалитьИзТВРеестрДляОтпр</Action>
+		</Command>
+		<Command name="СоздатьГруппуИзСостояниеДел" id="21">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать группу</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать группу из состояние дел</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СоздатьГруппуИзСостояниеДел</Action>
+		</Command>
+		<Command name="ПеренестиВРеестрДляОтправкиАрхив" id="22">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Перенести в реестр для отправки архив</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Перенести в реестр для отправки архив</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПеренестиВРеестрДляОтправкиАрхив</Action>
+		</Command>
+		<Command name="ДокументыДляГАС" id="23">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Документы для ГАС</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Документы для ГАС</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ДокументыДляГАС</Action>
+		</Command>
+	</Commands>
+</Form>

@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.9">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<InputField name="Наименование" id="1">
+			<DataPath>Объект.Description</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="НаименованиеКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<InputField name="НомерЦессии" id="4">
+			<DataPath>Объект.НомерЦессии</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ChoiceButton>true</ChoiceButton>
+			<ContextMenu name="НомерЦессииКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="НомерЦессииРасширеннаяПодсказка" id="6"/>
+			<Events>
+				<Event name="StartChoice">НомерЦессииНачалоВыбора</Event>
+			</Events>
+		</InputField>
+		<InputField name="ДоговорЦессииДокумент" id="7">
+			<DataPath>ДоговорЦессииДокумент</DataPath>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Копия договора цессии</v8:content>
+				</v8:item>
+			</Title>
+			<ChoiceButton>true</ChoiceButton>
+			<ContextMenu name="ДоговорЦессииДокументКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="ДоговорЦессииДокументРасширеннаяПодсказка" id="9"/>
+			<Events>
+				<Event name="StartChoice">ДоговорЦессииДокументНачалоВыбора</Event>
+			</Events>
+		</InputField>
+		<InputField name="КопияПлатежногоПоручения" id="10">
+			<DataPath>КопияПлатежногоПоручения</DataPath>
+			<ChoiceButton>true</ChoiceButton>
+			<ContextMenu name="КопияПлатежногоПорученияКонтекстноеМеню" id="11"/>
+			<ExtendedTooltip name="КопияПлатежногоПорученияРасширеннаяПодсказка" id="12"/>
+			<Events>
+				<Event name="StartChoice">КопияПлатежногоПорученияНачалоВыбора</Event>
+			</Events>
+		</InputField>
+		<InputField name="КопияРеестраУступаемыхПрав" id="13">
+			<DataPath>КопияРеестраУступаемыхПрав</DataPath>
+			<ChoiceButton>true</ChoiceButton>
+			<ContextMenu name="КопияРеестраУступаемыхПравКонтекстноеМеню" id="14"/>
+			<ExtendedTooltip name="КопияРеестраУступаемыхПравРасширеннаяПодсказка" id="15"/>
+			<Events>
+				<Event name="StartChoice">КопияРеестраУступаемыхПравНачалоВыбора</Event>
+			</Events>
+		</InputField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.ДокументыЦессии</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="ДоговорЦессииДокумент" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Договор цессии документ</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="КопияПлатежногоПоручения" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Копия платежного поручения</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="КопияРеестраУступаемыхПрав" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Копия реестра уступаемых прав</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
+</Form>

@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.9">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="" id="-1"/>
+	<ChildItems>
+		<InputField name="Наименование" id="1">
+			<DataPath>Объект.Description</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="НаименованиеКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<InputField name="ИННПолучатель" id="4">
+			<DataPath>Объект.ИННПолучатель</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ИННПолучательКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="ИННПолучательРасширеннаяПодсказка" id="6"/>
+		</InputField>
+		<InputField name="КПППолучатель" id="7">
+			<DataPath>Объект.КПППолучатель</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="КПППолучательКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="КПППолучательРасширеннаяПодсказка" id="9"/>
+		</InputField>
+		<InputField name="БИКПолучатель" id="10">
+			<DataPath>Объект.БИКПолучатель</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="БИКПолучательКонтекстноеМеню" id="11"/>
+			<ExtendedTooltip name="БИКПолучательРасширеннаяПодсказка" id="12"/>
+		</InputField>
+		<InputField name="ОКАТОПолучатель" id="13">
+			<DataPath>Объект.ОКАТОПолучатель</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ОКАТОПолучательКонтекстноеМеню" id="14"/>
+			<ExtendedTooltip name="ОКАТОПолучательРасширеннаяПодсказка" id="15"/>
+		</InputField>
+		<InputField name="РасчСчетПолучатель" id="16">
+			<DataPath>Объект.РасчСчетПолучатель</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="РасчСчетПолучательКонтекстноеМеню" id="17"/>
+			<ExtendedTooltip name="РасчСчетПолучательРасширеннаяПодсказка" id="18"/>
+		</InputField>
+		<InputField name="КорСчетПолучатель" id="19">
+			<DataPath>Объект.КорСчетПолучатель</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="КорСчетПолучательКонтекстноеМеню" id="20"/>
+			<ExtendedTooltip name="КорСчетПолучательРасширеннаяПодсказка" id="21"/>
+		</InputField>
+		<InputField name="БанкПолучатель" id="22">
+			<DataPath>Объект.БанкПолучатель</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="БанкПолучательКонтекстноеМеню" id="23"/>
+			<ExtendedTooltip name="БанкПолучательРасширеннаяПодсказка" id="24"/>
+		</InputField>
+		<InputField name="КБКПолучатель" id="25">
+			<DataPath>Объект.КБКПолучатель</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="КБКПолучательКонтекстноеМеню" id="26"/>
+			<ExtendedTooltip name="КБКПолучательРасширеннаяПодсказка" id="27"/>
+		</InputField>
+		<InputField name="ЮридическийАдрес" id="28">
+			<DataPath>Объект.ЮридическийАдрес</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ЮридическийАдресКонтекстноеМеню" id="29"/>
+			<ExtendedTooltip name="ЮридическийАдресРасширеннаяПодсказка" id="30"/>
+		</InputField>
+		<InputField name="ЭлектронныйАдрес" id="31">
+			<DataPath>Объект.ЭлектронныйАдрес</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ЭлектронныйАдресКонтекстноеМеню" id="32"/>
+			<ExtendedTooltip name="ЭлектронныйАдресРасширеннаяПодсказка" id="33"/>
+		</InputField>
+		<InputField name="Телефон" id="34">
+			<DataPath>Объект.Телефон</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ТелефонКонтекстноеМеню" id="35"/>
+			<ExtendedTooltip name="ТелефонРасширеннаяПодсказка" id="36"/>
+		</InputField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.ЮридическиеЛица</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>

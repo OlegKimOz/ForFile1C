@@ -1,0 +1,227 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.9">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="Группа1" id="20">
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="21"/>
+			<ChildItems>
+				<CheckBoxField name="Запущенно" id="22">
+					<DataPath>Запущенно</DataPath>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ЗапущенноКонтекстноеМеню" id="23"/>
+					<ExtendedTooltip name="ЗапущенноРасширеннаяПодсказка" id="24"/>
+					<Events>
+						<Event name="OnChange">ЗапущенноПриИзменении</Event>
+					</Events>
+				</CheckBoxField>
+			</ChildItems>
+		</UsualGroup>
+		<Button name="ПослатьЗапросВФССП" id="1">
+			<Type>UsualButton</Type>
+			<CommandName>Form.Command.Старт</CommandName>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Послать Запрос В ФССП</v8:content>
+				</v8:item>
+			</Title>
+			<ExtendedTooltip name="ПослатьЗапросВФССПРасширеннаяПодсказка" id="2"/>
+		</Button>
+		<Button name="ПолучитьКтоЗапросилЕстьЛиФайл" id="9">
+			<Type>UsualButton</Type>
+			<CommandName>Form.Command.ПолучитьКтоЗапросилЕстьЛиФайлКоманда</CommandName>
+			<ExtendedTooltip name="ПолучитьКтоЗапросилЕстьЛиФайлРасширеннаяПодсказка" id="10"/>
+		</Button>
+		<Button name="ПроверитьОтветнаЗапрос" id="3">
+			<Type>UsualButton</Type>
+			<CommandName>Form.Command.ПроверитьОтветНазапрос</CommandName>
+			<ExtendedTooltip name="ПроверитьОтветнаЗапросРасширеннаяПодсказка" id="4"/>
+		</Button>
+		<UsualGroup name="Группа_ЗапросНаРезультат" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Запрос на результат</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа запрос на результат</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ExtendedTooltip name="Группа_ЗапросНаРезультатРасширеннаяПодсказка" id="12"/>
+			<ChildItems>
+				<Button name="ПослатьЗапросНаРезультат" id="5">
+					<Type>UsualButton</Type>
+					<CommandName>Form.Command.ПослатьЗапросНаРезультат</CommandName>
+					<ExtendedTooltip name="ПослатьЗапросНаРезультатРасширеннаяПодсказка" id="6"/>
+				</Button>
+				<CheckBoxField name="НетЗапросНаРезультат" id="13">
+					<DataPath>НетЗапросНаРезультат</DataPath>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="НетЗапросНаРезультатКонтекстноеМеню" id="14"/>
+					<ExtendedTooltip name="НетЗапросНаРезультатРасширеннаяПодсказка" id="15"/>
+					<Events>
+						<Event name="OnChange">НетЗапросНаРезультатПриИзменении</Event>
+					</Events>
+				</CheckBoxField>
+			</ChildItems>
+		</UsualGroup>
+		<Button name="ОбработатьРезультат" id="7">
+			<Type>UsualButton</Type>
+			<CommandName>Form.Command.ОбработатьРезультат</CommandName>
+			<ExtendedTooltip name="ОбработатьРезультатРасширеннаяПодсказка" id="8"/>
+		</Button>
+		<Button name="УдалитьБольше24часов" id="16">
+			<Type>UsualButton</Type>
+			<CommandName>Form.Command.УдалитьБольше24</CommandName>
+			<ExtendedTooltip name="УдалитьБольше24часовРасширеннаяПодсказка" id="17"/>
+		</Button>
+		<Button name="ОбработатьОтветРуками" id="25">
+			<Type>UsualButton</Type>
+			<CommandName>Form.Command.ОбработатьОтветРуками</CommandName>
+			<ExtendedTooltip name="ОбработатьОтветРукамиРасширеннаяПодсказка" id="26"/>
+		</Button>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.ТестЗапросяВФССП</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="НетЗапросНаРезультат" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Нет запрос на результат</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="Запущенно" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Запущенно</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="Старт" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Старт</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Старт</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Старт</Action>
+		</Command>
+		<Command name="ПроверитьОтветНазапрос" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проверить ответ назапрос</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проверить ответ назапрос</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПроверитьОтветНазапрос</Action>
+		</Command>
+		<Command name="ПослатьЗапросНаРезультат" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Послать запрос на результат</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Послать запрос на результат</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПослатьЗапросНаРезультат</Action>
+		</Command>
+		<Command name="ОбработатьРезультат" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обработать результат</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обработать результат</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОбработатьРезультатКл</Action>
+		</Command>
+		<Command name="ПолучитьКтоЗапросилЕстьЛиФайлКоманда" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Получить кто запросил есть ли файл команда</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Получить кто запросил есть ли файл команда</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПолучитьКтоЗапросилЕстьЛиФайлКоманда</Action>
+		</Command>
+		<Command name="УдалитьБольше24" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Удалить больше24</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Удалить больше24</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>УдалитьБольше24</Action>
+		</Command>
+		<Command name="ОбработатьОтветРуками" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обработать ответ руками</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обработать ответ руками</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОбработатьОтветРуками</Action>
+		</Command>
+	</Commands>
+</Form>

@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.9">
+	<Item id="6868555b-f003-46dd-aa76-8333e5b579e1">
+		<Name>Выезд</Name>
+		<Code>000000002</Code>
+		<Description>Выезд</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="f1ad70cb-5192-4606-b6b0-c68345b2bdfd">
+		<Name>ЗвонокВходящий</Name>
+		<Code>000000001</Code>
+		<Description>Звонок входящий</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="7d095444-2a37-4ca3-9f98-f80229e3c443">
+		<Name>ЗвонокИсходящий</Name>
+		<Code>000000003</Code>
+		<Description>Звонок исходящий</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+</PredefinedData>

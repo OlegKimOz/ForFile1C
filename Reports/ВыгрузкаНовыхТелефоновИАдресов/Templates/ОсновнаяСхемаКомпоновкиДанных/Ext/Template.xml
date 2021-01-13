@@ -1,0 +1,410 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>ИсточникДанных1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetQuery">
+		<name>НаборДанных1</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Фамилия</dataPath>
+			<field>Фамилия</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Фамилия</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Должник</dataPath>
+			<field>Должник</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>IDДолжника</dataPath>
+			<field>IDДолжника</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>IDДолжника</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Имя</dataPath>
+			<field>Имя</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Имя</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>НомерДоговора</dataPath>
+			<field>НомерДоговора</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Номер договора</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>НомерПаспорта</dataPath>
+			<field>НомерПаспорта</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Номер паспорта</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Отчество</dataPath>
+			<field>Отчество</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отчество</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Номер</dataPath>
+			<field>Номер</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Тип</dataPath>
+			<field>Тип</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Сотрудник</dataPath>
+			<field>Сотрудник</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДопРеквизит</dataPath>
+			<field>ДопРеквизит</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Доп реквизит</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Реквизит</dataPath>
+			<field>Реквизит</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Подтверждение</dataPath>
+			<field>Подтверждение</field>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ
+	РеестрДолжники.Должник КАК Должник,
+	РеестрДолжники.Должник.Фамилия КАК Фамилия,
+	РеестрДолжники.Должник.Имя КАК Имя,
+	РеестрДолжники.Должник.Отчество КАК Отчество,
+	РеестрДолжники.Должник.IDДолжника КАК IDДолжника,
+	РеестрДолжники.Договор.НомерДоговора КАК НомерДоговора,
+	РеестрДолжники.Должник.НомерПаспорта КАК НомерПаспорта
+ПОМЕСТИТЬ ВТ_РеестрДолжники
+ИЗ
+	Документ.Реестр.Должники КАК РеестрДолжники
+ГДЕ
+	РеестрДолжники.Ссылка = &amp;Ссылка
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	РеестрДолжники.Должник,
+	РеестрДолжники.Должник.Фамилия,
+	РеестрДолжники.Должник.Имя,
+	РеестрДолжники.Должник.Отчество,
+	РеестрДолжники.Должник.IDДолжника,
+	РеестрДолжники.Договор.НомерДоговора,
+	РеестрДолжники.Должник.НомерПаспорта
+ИЗ
+	Документ.Платежи.Должники КАК РеестрДолжники
+ГДЕ
+	РеестрДолжники.Ссылка = &amp;Ссылка
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	СтатусыДолжниковСрезПоследних.Должник КАК Должник,
+	СтатусыДолжниковСрезПоследних.Статус КАК Статус
+ПОМЕСТИТЬ ВТ_Статусы
+ИЗ
+	РегистрСведений.СтатусыДолжников.СрезПоследних(
+			,
+			Должник В
+				(ВЫБРАТЬ
+					РеестрДолжники.Должник
+				ИЗ
+					ВТ_РеестрДолжники КАК РеестрДолжники)) КАК СтатусыДолжниковСрезПоследних
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ПривязкаСотрудникСрезПоследних.Должник КАК Должник,
+	ПривязкаСотрудникСрезПоследних.Сотрудник КАК Сотрудник
+ПОМЕСТИТЬ ВТ_Сотрудники
+ИЗ
+	РегистрСведений.ПривязкаСотрудник.СрезПоследних(
+			,
+			Должник В
+				(ВЫБРАТЬ
+					РеестрДолжники.Должник
+				ИЗ
+					ВТ_РеестрДолжники КАК РеестрДолжники)) КАК ПривязкаСотрудникСрезПоследних
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	Телефоны.Подтверждение КАК Подтверждение,
+	Телефоны.ЭтоНовый КАК ЭтоНовый,
+	Телефоны.Владелец КАК Владелец,
+	Телефоны.Номер КАК Номер,
+	Телефоны.Тип КАК Тип,
+	Телефоны.ПометкаУдаления КАК ПометкаУдаления
+ПОМЕСТИТЬ ВТ_ТелефоныИАдреса
+ИЗ
+	Справочник.Телефоны КАК Телефоны
+ГДЕ
+	Телефоны.Владелец В
+			(ВЫБРАТЬ
+				РеестрДолжники.Должник
+			ИЗ
+				ВТ_РеестрДолжники КАК РеестрДолжники)
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	Адреса.Подтверждение,
+	Адреса.ЭтоНовый,
+	Адреса.Владелец,
+	Адреса.Адрес,
+	Адреса.Тип,
+	NULL
+ИЗ
+	Справочник.Адреса КАК Адреса
+ГДЕ
+	Адреса.Владелец В
+			(ВЫБРАТЬ
+				РеестрДолжники.Должник
+			ИЗ
+				ВТ_РеестрДолжники КАК РеестрДолжники)
+	И &amp;ВыводитьАдреса
+{ГДЕ
+	Адреса.Подтверждение.*}
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ДополнительныеДанные.Ссылка КАК Ссылка,
+	ДополнительныеДанные.Представление КАК Представление,
+	ДополнительныеДанные.Владелец КАК Владелец
+ПОМЕСТИТЬ ВТ_Реквизит
+ИЗ
+	Справочник.ДополнительныеДанные КАК ДополнительныеДанные
+{ГДЕ
+	ДополнительныеДанные.Реквизит.*}
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗЛИЧНЫЕ
+	РеестрДолжники.Фамилия КАК Фамилия,
+	РеестрДолжники.Имя КАК Имя,
+	РеестрДолжники.Отчество КАК Отчество,
+	РеестрДолжники.IDДолжника КАК IDДолжника,
+	РеестрДолжники.НомерДоговора КАК НомерДоговора,
+	РеестрДолжники.НомерПаспорта КАК НомерПаспорта,
+	Телефоны.Номер КАК Номер,
+	Телефоны.Тип КАК Тип,
+	ПРЕДСТАВЛЕНИЕ(Телефоны.Тип) КАК ТипПредставление,
+	ВложенныйЗапрос.Ссылка КАК ДопРеквизит,
+	ПривязкаСотрудникСрезПоследних.Сотрудник КАК Сотрудник
+ИЗ
+	ВТ_РеестрДолжники КАК РеестрДолжники
+		ЛЕВОЕ СОЕДИНЕНИЕ ВТ_ТелефоныИАдреса КАК Телефоны
+		ПО РеестрДолжники.Должник = Телефоны.Владелец
+		ЛЕВОЕ СОЕДИНЕНИЕ ВТ_Реквизит КАК ВложенныйЗапрос
+		ПО РеестрДолжники.Должник = ВложенныйЗапрос.Владелец
+		ЛЕВОЕ СОЕДИНЕНИЕ ВТ_Статусы КАК СтатусыДолжниковСрезПоследних
+		ПО РеестрДолжники.Должник = СтатусыДолжниковСрезПоследних.Должник
+		ЛЕВОЕ СОЕДИНЕНИЕ ВТ_Сотрудники КАК ПривязкаСотрудникСрезПоследних
+		ПО РеестрДолжники.Должник = ПривязкаСотрудникСрезПоследних.Должник
+
+УПОРЯДОЧИТЬ ПО
+	Фамилия,
+	Имя,
+	Отчество</query>
+	</dataSet>
+	<parameter>
+		<name>Период</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Период</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>true</useRestriction>
+	</parameter>
+	<parameter>
+		<name>Ссылка</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Реестр / Платежи</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:DocumentRef.Реестр</v8:Type>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:DocumentRef.Платежи</v8:Type>
+		</valueType>
+		<value xsi:nil="true"/>
+		<useRestriction>false</useRestriction>
+		<denyIncompleteValues>true</denyIncompleteValues>
+	</parameter>
+	<parameter>
+		<name>Подтверждение</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Подтверждение</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:EnumRef.ПодтверждениеДанных</v8:Type>
+		</valueType>
+		<value xsi:nil="true"/>
+		<useRestriction>false</useRestriction>
+	</parameter>
+	<parameter>
+		<name>ВыводитьАдреса</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Выводить адреса</v8:content>
+			</v8:item>
+		</title>
+		<value xsi:nil="true"/>
+		<useRestriction>false</useRestriction>
+		<denyIncompleteValues>true</denyIncompleteValues>
+	</parameter>
+	<settingsVariant>
+		<dcsset:name>Основной</dcsset:name>
+		<dcsset:presentation xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Выгрузка новых телефонов и адресов</v8:content>
+			</v8:item>
+		</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:selection>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Фамилия</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Имя</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Отчество</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>IDДолжника</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>НомерДоговора</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>НомерПаспорта</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Сотрудник</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Номер</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Тип</dcsset:field>
+				</dcsset:item>
+			</dcsset:selection>
+			<dcsset:filter>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">Сотрудник</dcsset:left>
+					<dcsset:comparisonType>Equal</dcsset:comparisonType>
+					<dcsset:userSettingID>b604ea3d-6fab-4184-85c8-5ec3657ff09f</dcsset:userSettingID>
+				</dcsset:item>
+			</dcsset:filter>
+			<dcsset:dataParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>Ссылка</dcscor:parameter>
+					<dcscor:value xsi:nil="true"/>
+					<dcsset:userSettingID>bf2df2ff-f06a-4853-a3b3-2fff3bee7e25</dcsset:userSettingID>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>Подтверждение</dcscor:parameter>
+					<dcscor:value xsi:nil="true"/>
+					<dcsset:userSettingID>136c4bd7-b956-4849-b551-2d55425b08c2</dcsset:userSettingID>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ВыводитьАдреса</dcscor:parameter>
+					<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+					<dcsset:userSettingID>6f1864a6-bca2-4f6c-ab7f-ec33ac961389</dcsset:userSettingID>
+				</dcscor:item>
+			</dcsset:dataParameters>
+			<dcsset:order>
+				<dcsset:item xsi:type="dcsset:OrderItemField">
+					<dcsset:field>Фамилия</dcsset:field>
+					<dcsset:orderType>Asc</dcsset:orderType>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:OrderItemField">
+					<dcsset:field>Имя</dcsset:field>
+					<dcsset:orderType>Asc</dcsset:orderType>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:OrderItemField">
+					<dcsset:field>Отчество</dcsset:field>
+					<dcsset:orderType>Asc</dcsset:orderType>
+				</dcsset:item>
+			</dcsset:order>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:groupItems>
+					<dcsset:item xsi:type="dcsset:GroupItemField">
+						<dcsset:field>Сотрудник</dcsset:field>
+						<dcsset:groupType>Items</dcsset:groupType>
+						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+						<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+						<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+					</dcsset:item>
+				</dcsset:groupItems>
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+				</dcsset:selection>
+				<dcsset:item xsi:type="dcsset:StructureItemGroup">
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+					</dcsset:order>
+					<dcsset:selection>
+						<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+					</dcsset:selection>
+				</dcsset:item>
+			</dcsset:item>
+		</dcsset:settings>
+	</settingsVariant>
+</DataCompositionSchema>
