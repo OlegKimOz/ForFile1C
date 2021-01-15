@@ -4451,8 +4451,8 @@
 		<Metadata name="DataProcessor.НастройкиПользователей.Template.МакетОтчета" id="d5d11480-d5c7-4569-80c1-f872655ff084" configVersion="80f3f04b37f8b246954714fc1bf2852400000000"/>
 		<Metadata name="DataProcessor.НастройкиПользователей.Template.МакетОтчета.Template" id="d5d11480-d5c7-4569-80c1-f872655ff084.0" configVersion="0d30cc68ba51e64f8bae869c2a46a6d300000000"/>
 		<Metadata name="DataProcessor.НачальнаяСтраницаЮристы" id="34cb92bf-9af4-41ad-b3eb-202c09a29048" configVersion="61b66f5a59910449afe75c2f6d0eb05700000000"/>
-		<Metadata name="DataProcessor.НачальнаяСтраницаЮристы.Form.Форма" id="02705b24-db74-4db8-ae16-c0ac0bad8c21" configVersion="7db2bc3410fe4148bbd526cae1fa4c1900000000"/>
-		<Metadata name="DataProcessor.НачальнаяСтраницаЮристы.Form.Форма.Form" id="02705b24-db74-4db8-ae16-c0ac0bad8c21.0" configVersion="696a5fbeb999fd45bedc1f81d42ac12500000000"/>
+		<Metadata name="DataProcessor.НачальнаяСтраницаЮристы.Form.Форма" id="02705b24-db74-4db8-ae16-c0ac0bad8c21" configVersion="eed2be36c3b3e940807c53869785bad600000000"/>
+		<Metadata name="DataProcessor.НачальнаяСтраницаЮристы.Form.Форма.Form" id="02705b24-db74-4db8-ae16-c0ac0bad8c21.0" configVersion="ceb193d8dafe17459a4cb8339abdc17f00000000"/>
 		<Metadata name="DataProcessor.НачальнаяСтраницаЮристы.Form.ФормаГенерацияДокументовГруппы" id="3027c459-0fa9-4d2f-b2bc-6be29d17750d" configVersion="457b75676bf37f41b90a613cb59f069b00000000"/>
 		<Metadata name="DataProcessor.НачальнаяСтраницаЮристы.Form.ФормаГенерацияДокументовГруппы.Form" id="3027c459-0fa9-4d2f-b2bc-6be29d17750d.0" configVersion="67253508d57e1542a33f6692d1969a2200000000"/>
 		<Metadata name="DataProcessor.НачальнаяСтраницаЮристы.Form.ФормаДоговораГруппы" id="960a1abc-65d2-4675-a82d-82516b28ebfd" configVersion="e2d007f8e8169042b80fa9b02a651fea00000000"/>
@@ -4471,8 +4471,8 @@
 		<Metadata name="DataProcessor.НачальнаяСтраницаЮристы.Form.ФормаПоиск.Form" id="97d1e94b-25a8-46f2-8e2a-2b38167ec0eb.0" configVersion="08abd7fead4d6d4aa0d0db88352da31200000000"/>
 		<Metadata name="DataProcessor.НачальнаяСтраницаЮристы.Form.ФормаСоздатьГруппу" id="3130d44e-d819-4919-9c39-ca2d900095fe" configVersion="8cd143e30e66fe4588f4c10a9b45c38800000000"/>
 		<Metadata name="DataProcessor.НачальнаяСтраницаЮристы.Form.ФормаСоздатьГруппу.Form" id="3130d44e-d819-4919-9c39-ca2d900095fe.0" configVersion="8cdd3e781aa5bc4ea44121aac0e43d2900000000"/>
-		<Metadata name="DataProcessor.НачальнаяСтраницаЮристы.Form.ФормаСоздатьГруппуИзПоиск" id="aacb06ce-33de-4183-9b31-564afc4b385d" configVersion="531ef63e49f9104a8c7d96f081c83ef000000000"/>
-		<Metadata name="DataProcessor.НачальнаяСтраницаЮристы.Form.ФормаСоздатьГруппуИзПоиск.Form" id="aacb06ce-33de-4183-9b31-564afc4b385d.0" configVersion="15d2c9954fd5904699bbcd351d8aeb7100000000"/>
+		<Metadata name="DataProcessor.НачальнаяСтраницаЮристы.Form.ФормаСоздатьГруппуИзПоиск" id="aacb06ce-33de-4183-9b31-564afc4b385d" configVersion="270170d3fcc7e346b0ca20e7f125d1dc00000000"/>
+		<Metadata name="DataProcessor.НачальнаяСтраницаЮристы.Form.ФормаСоздатьГруппуИзПоиск.Form" id="aacb06ce-33de-4183-9b31-564afc4b385d.0" configVersion="de90445c4140a94f94e120a8032a5f9900000000"/>
 		<Metadata name="DataProcessor.НачальнаяСтраницаЮристы.Template.МакетПакетПечать" id="d0ec4c37-7ec0-4dfb-83d3-365a272cf03c" configVersion="6a6ede2ce0b78848b4badeb4b1b0cc8600000000"/>
 		<Metadata name="DataProcessor.НачальнаяСтраницаЮристы.Template.МакетПакетПечать.Template" id="d0ec4c37-7ec0-4dfb-83d3-365a272cf03c.0" configVersion="05b2a61be323024b88dcd5288fdb352500000000"/>
 		<Metadata name="DataProcessor.НерекомендуемаяВерсияПлатформы" id="1b63cbbb-77b1-4e78-a4c7-ddea8ea7294d" configVersion="39dbb00fe3507e479f5282c3524d6c3b00000000"/>

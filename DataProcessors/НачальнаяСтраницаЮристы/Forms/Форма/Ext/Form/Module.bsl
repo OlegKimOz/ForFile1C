@@ -9560,7 +9560,7 @@
 						    MSWordDoc.Application.Selection.TypeText(дат);
 
 					   
-					    MSWordDoc.Application.Selection.TypeText(дат);
+						//MSWordDoc.Application.Selection.TypeText(дат);
 					 КонецЕсли;  
 					
 					 
