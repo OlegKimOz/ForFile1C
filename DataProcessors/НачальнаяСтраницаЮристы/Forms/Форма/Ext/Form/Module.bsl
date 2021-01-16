@@ -10103,7 +10103,13 @@
 					 Если  MSWordDoc.Bookmarks.Exists("ПодписьПр")  Тогда
 					   MSWordDoc.Bookmarks("ПодписьПр").Select();
 					   //MSWordDoc.Application.Selection.Font.Color = 1;
-					   MSWordDoc.Application.Selection.InlineShapes.AddPicture(ИмяФайлаКартинка);
+					   
+					   Picture =  MSWordDoc.Application.Selection.InlineShapes.AddPicture(ИмяФайлаКартинка);
+					   
+					   Shape = Picture.ConvertToShape();
+                       Shape.WrapFormat.Type = 0;					   
+						
+					   
 					 КонецЕсли;
 
 					 

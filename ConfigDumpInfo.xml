@@ -889,8 +889,8 @@
 			<Metadata name="Catalog.ДокументыФорвард.TabularSection.ПодписьПредставителя.Attribute.ИмяФайла" id="eb329b73-750f-403f-a34b-529308474c50"/>
 			<Metadata name="Catalog.ДокументыФорвард.TabularSection.ДоверенностьПредставителя.Attribute.Записан" id="ebd3787d-b45a-4e48-990c-552168cf263e"/>
 		</Metadata>
-		<Metadata name="Catalog.ДокументыФорвард.Form.ФормаЭлемента" id="3d5044e1-4aa6-4443-9a22-7a71cae12fc4" configVersion="cf2dc0c80a99684c9d2b8e34cf6f236600000000"/>
-		<Metadata name="Catalog.ДокументыФорвард.Form.ФормаЭлемента.Form" id="3d5044e1-4aa6-4443-9a22-7a71cae12fc4.0" configVersion="d5e93ba85cd2c146939552e79d118e2e00000000"/>
+		<Metadata name="Catalog.ДокументыФорвард.Form.ФормаЭлемента" id="3d5044e1-4aa6-4443-9a22-7a71cae12fc4" configVersion="421e06950d9d184fbb5492fdcca1727900000000"/>
+		<Metadata name="Catalog.ДокументыФорвард.Form.ФормаЭлемента.Form" id="3d5044e1-4aa6-4443-9a22-7a71cae12fc4.0" configVersion="c640062ca13c0a439e16ee31866bc78a00000000"/>
 		<Metadata name="Catalog.ДокументыЦессии" id="90485b05-a6af-4561-9a70-83a25fe8daf0" configVersion="9c3ba450f5a81942bb93f2e21105772400000000">
 			<Metadata name="Catalog.ДокументыЦессии.Attribute.КопияРеестраУступаемыхПрав" id="29167bb6-5e11-4725-835d-5814c504bced"/>
 			<Metadata name="Catalog.ДокументыЦессии.Attribute.КопияПлатежногоПоручения" id="2dc2387e-32a9-4646-896f-31a8348a3e00"/>
@@ -4451,8 +4451,8 @@
 		<Metadata name="DataProcessor.НастройкиПользователей.Template.МакетОтчета" id="d5d11480-d5c7-4569-80c1-f872655ff084" configVersion="80f3f04b37f8b246954714fc1bf2852400000000"/>
 		<Metadata name="DataProcessor.НастройкиПользователей.Template.МакетОтчета.Template" id="d5d11480-d5c7-4569-80c1-f872655ff084.0" configVersion="0d30cc68ba51e64f8bae869c2a46a6d300000000"/>
 		<Metadata name="DataProcessor.НачальнаяСтраницаЮристы" id="34cb92bf-9af4-41ad-b3eb-202c09a29048" configVersion="61b66f5a59910449afe75c2f6d0eb05700000000"/>
-		<Metadata name="DataProcessor.НачальнаяСтраницаЮристы.Form.Форма" id="02705b24-db74-4db8-ae16-c0ac0bad8c21" configVersion="eed2be36c3b3e940807c53869785bad600000000"/>
-		<Metadata name="DataProcessor.НачальнаяСтраницаЮристы.Form.Форма.Form" id="02705b24-db74-4db8-ae16-c0ac0bad8c21.0" configVersion="ceb193d8dafe17459a4cb8339abdc17f00000000"/>
+		<Metadata name="DataProcessor.НачальнаяСтраницаЮристы.Form.Форма" id="02705b24-db74-4db8-ae16-c0ac0bad8c21" configVersion="9d31eb430516764984d7dd7fb1a5bec200000000"/>
+		<Metadata name="DataProcessor.НачальнаяСтраницаЮристы.Form.Форма.Form" id="02705b24-db74-4db8-ae16-c0ac0bad8c21.0" configVersion="7a920940fe0d244eb25cb56b7283827300000000"/>
 		<Metadata name="DataProcessor.НачальнаяСтраницаЮристы.Form.ФормаГенерацияДокументовГруппы" id="3027c459-0fa9-4d2f-b2bc-6be29d17750d" configVersion="457b75676bf37f41b90a613cb59f069b00000000"/>
 		<Metadata name="DataProcessor.НачальнаяСтраницаЮристы.Form.ФормаГенерацияДокументовГруппы.Form" id="3027c459-0fa9-4d2f-b2bc-6be29d17750d.0" configVersion="67253508d57e1542a33f6692d1969a2200000000"/>
 		<Metadata name="DataProcessor.НачальнаяСтраницаЮристы.Form.ФормаДоговораГруппы" id="960a1abc-65d2-4675-a82d-82516b28ebfd" configVersion="e2d007f8e8169042b80fa9b02a651fea00000000"/>
