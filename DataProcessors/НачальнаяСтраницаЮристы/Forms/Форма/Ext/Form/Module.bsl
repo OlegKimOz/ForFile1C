@@ -9445,6 +9445,7 @@
 				
 				 имяД=Строка(ПользовательТк)+"_ЗаявлениеОПроцессуальномПравопреемстве";
 
+				
 				 
 				 
 			   ИмяФайла=Строка(КаталогВременныхФайлов())+имяД+".pdf";
@@ -9658,14 +9659,7 @@
 
 					 
 					   
-					 //  Тест - вставить файл
-					 
-					 Если  MSWordDoc.Bookmarks.Exists("ПодписьПр")  Тогда
-					   MSWordDoc.Bookmarks("ПодписьПр").Select();
-					   MSWordDoc.Application.Selection.Font.Color = 1;
-					   MSWordDoc.Application.Selection.InlineShapes.AddPicture(ИмяФайлаКартинка);
-					 КонецЕсли;
-
+				
 					 
 
 					 
@@ -9936,6 +9930,38 @@
 				   //КонецЕсли;
 
 				   
+				   	 //  Тест - вставить файл
+					 
+					 Если  MSWordDoc.Bookmarks.Exists("ПодписьПр")  Тогда
+					   MSWordDoc.Bookmarks("ПодписьПр").Select();
+					   MSWordDoc.Application.Selection.Font.Color = 1;
+					   
+					   Picture =  MSWordDoc.Application.Selection.InlineShapes.AddPicture(ИмяФайлаКартинка);
+					   
+					   
+					  leftPosition = MSWordDoc.Application.Selection.Information(10);
+
+					  topPosition = MSWordDoc.Application.Selection.Information(8);
+					   
+					 
+										   
+					   Shape = Picture.ConvertToShape();
+					   
+					   
+					   Shape.Top=topPosition;
+					   
+					   Shape.Left=leftPosition+180;
+					   //Shape.Left=leftPosition+150;
+
+
+					   
+                       Shape.WrapFormat.Type = 5;		
+					  					   
+					   
+					 КонецЕсли;
+
+				   
+				   
 				    MSWord.Visible=0;
 						
 						//MSWord.Activate();
@@ -9943,7 +9969,7 @@
 					//ИмяФайла=Строка(КаталогВременныхФайлов())+имяД+".pdf";
 					
 					
-				      имяД=Строка(ПользовательТк)+"_ЗаявлениеОПроцессуальномПравопреемстве";
+				      имяД="Заявление О Процессуальном Правопреемстве";
 
 				 
 				      ИмяФайла=стрПуть+"\"+имяД+".pdf";
@@ -10088,26 +10114,48 @@
 				 
 
 				
-				 MSWordDoc = MSWord.Documents.Add(строкаПуть);
+				 //MSWordDoc = MSWord.Documents.Add(строкаПуть);
 				 
 				
 				 
 			  //Передаем текущие параметры форм в MSWord
 				 //MSWord.Documents.Open(строкаПуть);
-				 //
-				 //MSWordDoc = MSWord.ActiveDocument();
-
 				 
+				
+
+				 MSWordDoc = MSWord.Documents.Add(строкаПуть,Истина);
+
+				   //MSWordDoc.Activate();
+				   
+				   
 				 
 					 //ПодписьПр
-					 Если  MSWordDoc.Bookmarks.Exists("ПодписьПр")  Тогда
+				 Если  MSWordDoc.Bookmarks.Exists("ПодписьПр")  Тогда
 					   MSWordDoc.Bookmarks("ПодписьПр").Select();
 					   //MSWordDoc.Application.Selection.Font.Color = 1;
 					   
 					   Picture =  MSWordDoc.Application.Selection.InlineShapes.AddPicture(ИмяФайлаКартинка);
 					   
+					   
+					   
+					     leftPosition = MSWordDoc.Application.Selection.Information(10);
+
+					  topPosition = MSWordDoc.Application.Selection.Information(8);
+					   
+					 
+										   
 					   Shape = Picture.ConvertToShape();
-                       Shape.WrapFormat.Type = 0;					   
+					   
+					   
+					   Shape.Top=topPosition;
+					   
+					   Shape.Left=leftPosition+350;
+					   //Shape.Left=leftPosition+150;
+
+					   
+					   
+					   
+                       Shape.WrapFormat.Type = 5;					   
 						
 					   
 					 КонецЕсли;
@@ -10120,14 +10168,14 @@
 					 
 					    MSWord.Visible=0;
 						
-						//MSWord.Activate();
 						
-					//ИмяФайла=Строка(КаталогВременныхФайлов())+имяД+".pdf";
+						
 					
-					
-				      имяД=Строка(ПользовательТк)+"_ВыпискаИзРеестра";
+					  //имяД=Строка(ПользовательТк)+"_ВыпискаИзРеестра";
 
-				 
+					  имяД="Выписка Из Реестра";
+
+					  
 				      ИмяФайла=стрПодкаталогПакета+"\"+имяД+".pdf";
 				     	
 				    	ВыбранныйФайл = Новый Файл(ИмяФайла);
@@ -11576,7 +11624,7 @@
 		    		    			  
 		    		    			  КонецЦикла;
 
-								СоздатьPDFфайлСПодписью(срДляПечати.ссылкаДокПечати,стрПодкаталогПакета);		   
+						СоздатьPDFфайлСПодписью(срДляПечати.ссылкаДокПечати,стрПодкаталогПакета);		   
 												  
 				  
 			  КонецЕсли;
