@@ -716,7 +716,7 @@
 		<Metadata name="Catalog.ДоговорЦессии.Form.ФормаВыбора.Form" id="77d0a41d-3dbd-4ec6-8920-7a6f76e50753.0" configVersion="0bdd6731457496428346acb01e9fb4f700000000"/>
 		<Metadata name="Catalog.ДоговорЦессии.Form.ФормаВыбораРазличные" id="ca23ee14-28fd-4bb6-a9fa-7fcf15aedac5" configVersion="5c206779084f22458d0dab6e1bcbd81000000000"/>
 		<Metadata name="Catalog.ДоговорЦессии.Form.ФормаВыбораРазличные.Form" id="ca23ee14-28fd-4bb6-a9fa-7fcf15aedac5.0" configVersion="e4ac9cd9d8c0c849985c0905326bce7700000000"/>
-		<Metadata name="Catalog.Договоры" id="d1277b93-8087-4ec0-836a-39c5c1ca80ec" configVersion="0d2ee88e38403d468975925696287a4d00000000">
+		<Metadata name="Catalog.Договоры" id="d1277b93-8087-4ec0-836a-39c5c1ca80ec" configVersion="05bb2321b33dbb4bb04afe7de3ad271a00000000">
 			<Metadata name="Catalog.Договоры.Attribute.СуммаКредита" id="0590fbd5-8c6f-42c6-8687-9b5dd7524fd0"/>
 			<Metadata name="Catalog.Договоры.Attribute.НомерДоговора" id="0bcfdff9-0560-4f9e-b9f5-4ed8a2822c89"/>
 			<Metadata name="Catalog.Договоры.Attribute.ДатаВозникновенияДолга" id="0ee2f57f-4a0c-4b42-84b7-a87650c3b682"/>
@@ -1295,7 +1295,7 @@
 		<Metadata name="Catalog.ЗаявлениеОПредоставленииКопииСудебногоАкта.Form.ФормаСписка.Form" id="ff568bca-efd2-407f-b9ea-6def038f78aa.0" configVersion="d5955a1d9ee48d4e9a9764dcb0a464c600000000"/>
 		<Metadata name="Catalog.ЗаявлениеОПредоставленииКопииСудебногоАкта.Form.ФормаЭлемента" id="d3ba9556-cab2-490f-a4b2-e90084a5b0dd" configVersion="59bac417fcf5914f98aa13993c7ec35100000000"/>
 		<Metadata name="Catalog.ЗаявлениеОПредоставленииКопииСудебногоАкта.Form.ФормаЭлемента.Form" id="d3ba9556-cab2-490f-a4b2-e90084a5b0dd.0" configVersion="5e67725c10b04843ae9d8cf14d2ff77400000000"/>
-		<Metadata name="Catalog.ЗаявлениеОПроцессуальномПравопреемстве" id="3f995e49-f48e-436c-966a-f2f85fd2288a" configVersion="3edd11d676587046921601d5b2d609ca00000000">
+		<Metadata name="Catalog.ЗаявлениеОПроцессуальномПравопреемстве" id="3f995e49-f48e-436c-966a-f2f85fd2288a" configVersion="fe7d315d80f46e46a0241e93920075b100000000">
 			<Metadata name="Catalog.ЗаявлениеОПроцессуальномПравопреемстве.Attribute.АдресСуда" id="03272554-d12d-4243-ab8c-2f64e44920c2"/>
 			<Metadata name="Catalog.ЗаявлениеОПроцессуальномПравопреемстве.Attribute.ПаспортДатаВыдачи" id="120858a2-0b96-4fe6-9afd-eff9ed343eed"/>
 			<Metadata name="Catalog.ЗаявлениеОПроцессуальномПравопреемстве.Attribute.ДатаРегистрации" id="1b59bb15-5c74-4c02-8079-86ee5d79f049"/>
@@ -1303,6 +1303,7 @@
 			<Metadata name="Catalog.ЗаявлениеОПроцессуальномПравопреемстве.Attribute.ДатаСудебногоДела" id="4200e314-ca5e-417b-bacd-f2f3cfa1a259"/>
 			<Metadata name="Catalog.ЗаявлениеОПроцессуальномПравопреемстве.Attribute.ТипДокумента" id="4a3cc196-2434-472c-b995-f1b590a3d9ff"/>
 			<Metadata name="Catalog.ЗаявлениеОПроцессуальномПравопреемстве.Attribute.НазваниеЗаявителя" id="5ca83c22-1e38-4198-9872-b2105a944625"/>
+			<Metadata name="Catalog.ЗаявлениеОПроцессуальномПравопреемстве.Attribute.ПервоначальныйНомерКредитДоговора" id="64867df3-5cb4-4285-a3c7-11faf958aebf"/>
 			<Metadata name="Catalog.ЗаявлениеОПроцессуальномПравопреемстве.Attribute.ШаблонДляПечати" id="6703fdcc-776b-467d-9805-58ba0f2fdfa5"/>
 			<Metadata name="Catalog.ЗаявлениеОПроцессуальномПравопреемстве.Attribute.ДатаКредитногоДоговора" id="6b051a96-d55c-4322-bd17-56914f2880d6"/>
 			<Metadata name="Catalog.ЗаявлениеОПроцессуальномПравопреемстве.Attribute.СтадияДокумента" id="6d2ce150-8f96-4426-bb93-394cbbb1f1ab"/>
@@ -1325,8 +1326,8 @@
 		</Metadata>
 		<Metadata name="Catalog.ЗаявлениеОПроцессуальномПравопреемстве.Form.ФормаСписка" id="6d75f06c-f27c-47a4-97bf-3ab346b92ea9" configVersion="9d17d810696c7740ab3d796bf0931fc700000000"/>
 		<Metadata name="Catalog.ЗаявлениеОПроцессуальномПравопреемстве.Form.ФормаСписка.Form" id="6d75f06c-f27c-47a4-97bf-3ab346b92ea9.0" configVersion="7b751383098a7a42ac7321198d12d57a00000000"/>
-		<Metadata name="Catalog.ЗаявлениеОПроцессуальномПравопреемстве.Form.ФормаЭлемента" id="7c62c0e1-3fca-4249-bdb0-9b94ba244c84" configVersion="8dfa4ad958dce3478f6dfb1c86e428fc00000000"/>
-		<Metadata name="Catalog.ЗаявлениеОПроцессуальномПравопреемстве.Form.ФормаЭлемента.Form" id="7c62c0e1-3fca-4249-bdb0-9b94ba244c84.0" configVersion="4630e877b30ab74eba197cf8b42a3a8500000000"/>
+		<Metadata name="Catalog.ЗаявлениеОПроцессуальномПравопреемстве.Form.ФормаЭлемента" id="7c62c0e1-3fca-4249-bdb0-9b94ba244c84" configVersion="b882cd1a5ee1004eaaee3c4d3ec7e28600000000"/>
+		<Metadata name="Catalog.ЗаявлениеОПроцессуальномПравопреемстве.Form.ФормаЭлемента.Form" id="7c62c0e1-3fca-4249-bdb0-9b94ba244c84.0" configVersion="7aec4fe7a716514aabb4ee81565c627100000000"/>
 		<Metadata name="Catalog.ЗаявленияВУФССП" id="f9885f63-32f2-4e1e-b57d-8b8f6e09650e" configVersion="041a8cbde0d70742b209a3e4b1fa3c8700000000">
 			<Metadata name="Catalog.ЗаявленияВУФССП.Attribute.АдресСуда" id="188c2d23-72e0-4f60-8393-9f9b2c17b08b"/>
 			<Metadata name="Catalog.ЗаявленияВУФССП.Attribute.НомерДоговораЦессии" id="1dc5427c-f577-40ee-bad6-4d6cc2b4213e"/>
@@ -4458,8 +4459,8 @@
 		<Metadata name="DataProcessor.НачальнаяСтраницаЮристы" id="34cb92bf-9af4-41ad-b3eb-202c09a29048" configVersion="61b66f5a59910449afe75c2f6d0eb05700000000"/>
 		<Metadata name="DataProcessor.НачальнаяСтраницаЮристы.Form.Форма" id="02705b24-db74-4db8-ae16-c0ac0bad8c21" configVersion="5521788a96a79b42be19d7885fafbb1b00000000"/>
 		<Metadata name="DataProcessor.НачальнаяСтраницаЮристы.Form.Форма.Form" id="02705b24-db74-4db8-ae16-c0ac0bad8c21.0" configVersion="ebc8626518039d459148e622f518dd2f00000000"/>
-		<Metadata name="DataProcessor.НачальнаяСтраницаЮристы.Form.ФормаГенерацияДокументовГруппы" id="3027c459-0fa9-4d2f-b2bc-6be29d17750d" configVersion="457b75676bf37f41b90a613cb59f069b00000000"/>
-		<Metadata name="DataProcessor.НачальнаяСтраницаЮристы.Form.ФормаГенерацияДокументовГруппы.Form" id="3027c459-0fa9-4d2f-b2bc-6be29d17750d.0" configVersion="67253508d57e1542a33f6692d1969a2200000000"/>
+		<Metadata name="DataProcessor.НачальнаяСтраницаЮристы.Form.ФормаГенерацияДокументовГруппы" id="3027c459-0fa9-4d2f-b2bc-6be29d17750d" configVersion="c59be995d34dfb409df5adba8798c65e00000000"/>
+		<Metadata name="DataProcessor.НачальнаяСтраницаЮристы.Form.ФормаГенерацияДокументовГруппы.Form" id="3027c459-0fa9-4d2f-b2bc-6be29d17750d.0" configVersion="daaec7b127f97e4fac3fb60b32fef48900000000"/>
 		<Metadata name="DataProcessor.НачальнаяСтраницаЮристы.Form.ФормаДоговораГруппы" id="960a1abc-65d2-4675-a82d-82516b28ebfd" configVersion="e2d007f8e8169042b80fa9b02a651fea00000000"/>
 		<Metadata name="DataProcessor.НачальнаяСтраницаЮристы.Form.ФормаДоговораГруппы.Form" id="960a1abc-65d2-4675-a82d-82516b28ebfd.0" configVersion="92e127d3a7ecfb4c94bebdfe0ccafde600000000"/>
 		<Metadata name="DataProcessor.НачальнаяСтраницаЮристы.Form.ФормаЗагрузитьИзФайла" id="649f81e8-3f4a-4491-8d43-280f14c316a1" configVersion="6d500e5edcf8bd4a840a2e4853da64a500000000"/>
@@ -5020,8 +5021,8 @@
 		</Metadata>
 		<Metadata name="DataProcessor.СудебнаяСтадия.Form.Форма" id="c0c69738-7f77-42cb-b839-7de5142f5d65" configVersion="1e099ddc3751d248b4d510280dc7b70700000000"/>
 		<Metadata name="DataProcessor.СудебнаяСтадия.Form.Форма.Form" id="c0c69738-7f77-42cb-b839-7de5142f5d65.0" configVersion="977163825449c140b481cbe94dfa169700000000"/>
-		<Metadata name="DataProcessor.СудебнаяСтадия.Form.ФормаВыборДокумента" id="c3769f50-38c9-4d98-9a1d-9ded0e18bc98" configVersion="c1ccdff5be6ab14696de62f11036978500000000"/>
-		<Metadata name="DataProcessor.СудебнаяСтадия.Form.ФормаВыборДокумента.Form" id="c3769f50-38c9-4d98-9a1d-9ded0e18bc98.0" configVersion="93a84243929ea0438debf14b53b5c29200000000"/>
+		<Metadata name="DataProcessor.СудебнаяСтадия.Form.ФормаВыборДокумента" id="c3769f50-38c9-4d98-9a1d-9ded0e18bc98" configVersion="03af163bb70c984e9bf91b1e800c4b8300000000"/>
+		<Metadata name="DataProcessor.СудебнаяСтадия.Form.ФормаВыборДокумента.Form" id="c3769f50-38c9-4d98-9a1d-9ded0e18bc98.0" configVersion="f729f96d4eae5347ad6aee12173e598300000000"/>
 		<Metadata name="DataProcessor.СудебнаяСтадия.Form.ФормаГоспошлина" id="bbf25f2e-2e44-4b91-8b52-c150eeaf71fb" configVersion="f38ca00664d02b4bb38ba14904016daf00000000"/>
 		<Metadata name="DataProcessor.СудебнаяСтадия.Form.ФормаГоспошлина.Form" id="bbf25f2e-2e44-4b91-8b52-c150eeaf71fb.0" configVersion="6943da52e7f2634ba209518c1a276a3800000000"/>
 		<Metadata name="DataProcessor.СудебнаяСтадия.Form.ФормаНомерОбращения" id="380e16a9-59ac-4608-8943-903d9c6fdd82" configVersion="8fcaf329da406442b54c18e455de221d00000000"/>

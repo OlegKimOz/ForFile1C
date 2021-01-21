@@ -70,6 +70,8 @@
 		     ФИОИсполнителя=Параметры.Исполнитель.ФИО;
 
 			 
+			 Объект.ПервоначальныйНомерКредитДоговора=Параметры.ПервоначальныйНомерКредитДоговора;
+
 			 			 
 			 
 			 
@@ -1368,21 +1370,18 @@
 					   Для каждого  обвк Из  MSWordDoc.Application.Selection.Bookmarks Цикл
 						   
 						   обвк.Range.Text= Строка(ФИОИсполнителя);
-							  
 					   
 					   КонецЦикла;
-					   
-					   
-						//ПодписьПр
-					   
-					 
 					   
 					   
 					 КонецЕсли;
 
 					 
-					 //
-									 
+					 
+					 
+					 
+					 
+					 
 					 
 					 
 					//ДолжникАдрес
@@ -1427,7 +1426,65 @@
 					   MSWordDoc.Application.Selection.Font.Color = 1;
 	                   MSWordDoc.Application.Selection.TypeText(Объект.НомерКредитногоДоговора);
 					КонецЕсли;   
-					   
+					
+					
+					
+		////////////
+					
+					
+					//ПервоначальныйНомерКредитногоДоговора
+					Если  MSWordDoc.Bookmarks.Exists("ПервоначальныйНомерКредитногоДоговора")  Тогда
+					   MSWordDoc.Bookmarks("ПервоначальныйНомерКредитногоДоговора").Select();
+					   MSWordDoc.Application.Selection.Font.Color = 1;
+	                   MSWordDoc.Application.Selection.TypeText(Объект.ПервоначальныйНомерКредитДоговора);
+					КонецЕсли;   
+					
+					//Номер0КредитногоДоговора_Прошу
+					 Если  MSWordDoc.Bookmarks.Exists("Номер0КредитногоДоговора_Прошу")  Тогда
+					   MSWordDoc.Bookmarks("Номер0КредитногоДоговора_Прошу").Select();
+					   MSWordDoc.Application.Selection.Font.Color = 1;
+	                   MSWordDoc.Application.Selection.TypeText(Объект.ПервоначальныйНомерКредитДоговора);
+					КонецЕсли;   
+
+					
+					
+					
+					
+					//ПервоначальныйКредитор_былиизм
+					
+				    Если  MSWordDoc.Bookmarks.Exists("ПервоначальныйКредитор_былиизм")  Тогда
+					   MSWordDoc.Bookmarks("ПервоначальныйКредитор_былиизм").Select();
+					   MSWordDoc.Application.Selection.Font.Color = 1;
+					   MSWordDoc.Application.Selection.TypeText(Объект.НаименованиеПервоначальногоКредитора+" ");
+					КонецЕсли;   
+
+					
+					//НомерКредитногоДоговора_былизм
+					Если  MSWordDoc.Bookmarks.Exists("НомерКредитногоДоговора_былизм")  Тогда
+					   MSWordDoc.Bookmarks("НомерКредитногоДоговора_былизм").Select();
+					   MSWordDoc.Application.Selection.Font.Color = 1;
+	                   MSWordDoc.Application.Selection.TypeText(Объект.НомерКредитногоДоговора);
+					КонецЕсли;   
+					
+			            		
+					//ДатаКредитногоДоговора_былиз
+					Если  MSWordDoc.Bookmarks.Exists("ДатаКредитногоДоговора_былиз")  Тогда
+					   MSWordDoc.Bookmarks("ДатаКредитногоДоговора_былиз").Select();
+					   MSWordDoc.Application.Selection.Font.Color = 1;
+					   датРож=Объект.ДатаКредитногоДоговора;
+					   дат= Формат(датРож, "ДЛФ=ДД");
+					   MSWordDoc.Application.Selection.TypeText(дат);
+				    КонецЕсли;
+
+					
+					
+					
+					
+					
+	 ////////////
+					
+					
+					
 				   //ДатаКредитногоДоговора
 				   Если  MSWordDoc.Bookmarks.Exists("ДатаКредитногоДоговора")  Тогда
 					   MSWordDoc.Bookmarks("ДатаКредитногоДоговора").Select();
