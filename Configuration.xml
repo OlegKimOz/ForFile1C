@@ -1276,6 +1276,7 @@
 			<Catalog>НастройкиОтображенияДокументов</Catalog>
 			<Catalog>СостояниеДелБанкДолжник</Catalog>
 			<Catalog>ОбращенияВГАС</Catalog>
+			<Catalog>ЗаменыДляПоиска</Catalog>
 			<Document>Реестр</Document>
 			<Document>Контакт</Document>
 			<Document>ПередачаДолжников</Document>
