@@ -3968,7 +3968,7 @@
 		<Metadata name="CommonTemplate.СтруктураПодчиненности.Template" id="7a62d031-c340-4b1e-90af-fff697a2e979.0" configVersion="53cf6b8db5f6c847a4ad418fc288f8d900000000"/>
 		<Metadata name="CommonTemplate.УведомлениеИсполнителейОНовыхЗадачах" id="f1a5d1a3-c787-485d-a441-827950b526db" configVersion="cfc78403ba9ebe4cb2cc0d72309ee89200000000"/>
 		<Metadata name="CommonTemplate.УдалениеУстаревшихПараметровРаботыВерсийРасширений" id="6125c7fb-2107-4f32-97c9-a51c6ef0d54a" configVersion="44a0ce1709ea0b47ba1a328f082af70b00000000"/>
-		<Metadata name="Configuration.Коллектор" id="d00b9f38-3591-426a-b5fd-4cd7c7e173c7" configVersion="9b9413be0fd2834f80c1ef31c2d62fab00000000"/>
+		<Metadata name="Configuration.Коллектор" id="d00b9f38-3591-426a-b5fd-4cd7c7e173c7" configVersion="d4264fac61191a4ba566578efde64b5600000000"/>
 		<Metadata name="Configuration.Коллектор.ClientApplicationInterface" id="5202643a-b88b-4a88-b9d9-e0a9ae061b7c.b" configVersion="d14bf383a87aad46995095ec2549ee1a00000000"/>
 		<Metadata name="Configuration.Коллектор.CommandInterface" id="5202643a-b88b-4a88-b9d9-e0a9ae061b7c.a" configVersion="28d53cd656c0e54dbdb77e3b4118603600000000"/>
 		<Metadata name="Configuration.Коллектор.ExternalConnectionModule" id="5202643a-b88b-4a88-b9d9-e0a9ae061b7c.5" configVersion="6ab18a66350e1b44a097e9edc67e80a900000000"/>
@@ -4547,6 +4547,25 @@
 		<Metadata name="DataProcessor.ОбработкаИсправитьРегионыНазвание" id="a968bd0d-ab9b-4e6e-a785-f9a0319238db" configVersion="f2bbfc15db0b1046b9a07fd842295ff900000000"/>
 		<Metadata name="DataProcessor.ОбработкаИсправитьРегионыНазвание.Form.Форма" id="bb081368-9c19-48af-83d8-164b2bc1d6bf" configVersion="6168fbae0aa13f48b2c02a020f408cee00000000"/>
 		<Metadata name="DataProcessor.ОбработкаИсправитьРегионыНазвание.Form.Форма.Form" id="bb081368-9c19-48af-83d8-164b2bc1d6bf.0" configVersion="1770326e1544404694b4711f03e864b200000000"/>
+		<Metadata name="DataProcessor.ОбработкаПлатежки" id="71cc1af2-27bd-46c8-947d-a98f36a683d3" configVersion="ec9511132d9378469e1b48a0b58ddd0400000000">
+			<Metadata name="DataProcessor.ОбработкаПлатежки.TabularSection.ТаблицаДолжники.Attribute.Имя" id="02e9679d-77d3-4850-a9bd-b38f939b0389"/>
+			<Metadata name="DataProcessor.ОбработкаПлатежки.TabularSection.ТаблицаДолжники.Attribute.Реестр" id="14a7ff9b-e061-4e90-ae5e-1734813e32bc"/>
+			<Metadata name="DataProcessor.ОбработкаПлатежки.TabularSection.ТаблицаДолжники" id="16439447-6437-4594-b311-6019d7f13805"/>
+			<Metadata name="DataProcessor.ОбработкаПлатежки.TabularSection.ТаблицаДолжники.Attribute.Должник" id="2926b597-f8de-4798-8359-026c66d8a022"/>
+			<Metadata name="DataProcessor.ОбработкаПлатежки.TabularSection.ТаблицаДолжники.Attribute.Отчество" id="426aaaf3-245f-4f1e-93d7-225aa3149aa6"/>
+			<Metadata name="DataProcessor.ОбработкаПлатежки.TabularSection.ТаблицаДолжники.Attribute.Фамилия" id="5b8bf882-2c8b-496d-bf25-bf7f84cd71bc"/>
+			<Metadata name="DataProcessor.ОбработкаПлатежки.TabularSection.ТаблицаДолжники.Attribute.НомерРеестра" id="64ffb3a8-5eb1-4c5c-94bb-a8ebc9afb3c4"/>
+			<Metadata name="DataProcessor.ОбработкаПлатежки.TabularSection.ТаблицаДолжники.Attribute.НомерДоговора" id="8f16d9d0-4ecb-477d-91c8-71e2871636a8"/>
+			<Metadata name="DataProcessor.ОбработкаПлатежки.TabularSection.ТаблицаДолжники.Attribute.Статус" id="a036cbc8-2a62-4e5c-be4c-3c8493b0da0d"/>
+			<Metadata name="DataProcessor.ОбработкаПлатежки.TabularSection.ТаблицаДолжники.Attribute.Договор" id="a35b1e41-7c7e-4e67-8e88-f6c4fdaedcdb"/>
+			<Metadata name="DataProcessor.ОбработкаПлатежки.TabularSection.ТаблицаДолжники.Attribute.ДолжникФИО" id="f41a4738-1afc-49cf-9768-f1a786e34b8b"/>
+			<Metadata name="DataProcessor.ОбработкаПлатежки.TabularSection.ТаблицаДолжники.Attribute.СуммаКредита" id="fc237f30-3066-4560-a8a7-7d8f9b2d43f7"/>
+		</Metadata>
+		<Metadata name="DataProcessor.ОбработкаПлатежки.Form.Форма" id="3c687bf9-ebcf-4097-b437-f5882c8cf8d8" configVersion="b6a3e946ebd89d4c9e65dc6d927eef9100000000"/>
+		<Metadata name="DataProcessor.ОбработкаПлатежки.Form.Форма.Form" id="3c687bf9-ebcf-4097-b437-f5882c8cf8d8.0" configVersion="5a56a1e2baea3f48a88205b5a3113ae700000000"/>
+		<Metadata name="DataProcessor.ОбработкаПлатежки.ObjectModule" id="71cc1af2-27bd-46c8-947d-a98f36a683d3.0" configVersion="cd1584e4fe11fe47bb6464903a0784e100000000"/>
+		<Metadata name="DataProcessor.ОбработкаПлатежки.Template.МакетЕсть" id="3abf695e-f62d-4fdf-8275-00d063e4f530" configVersion="a071461b9da5b6438826a76a1dddd59500000000"/>
+		<Metadata name="DataProcessor.ОбработкаПлатежки.Template.МакетЕсть.Template" id="3abf695e-f62d-4fdf-8275-00d063e4f530.0" configVersion="05d7c528521a8b479a0fc16372bfa12700000000"/>
 		<Metadata name="DataProcessor.ОбработкаПривязатьДоговорКДолжнику" id="043c7d8e-6726-4e9a-9b52-9a4a404a3d17" configVersion="bddd30de6f328240aa3c8335e189ad5d00000000"/>
 		<Metadata name="DataProcessor.ОбработкаПривязатьДоговорКДолжнику.Form.Форма" id="d36c77d9-d57e-450d-8654-919dd7f975a8" configVersion="aaae04a206fe2841a9aa890c7826e2de00000000"/>
 		<Metadata name="DataProcessor.ОбработкаПривязатьДоговорКДолжнику.Form.Форма.Form" id="d36c77d9-d57e-450d-8654-919dd7f975a8.0" configVersion="d616eb1832585c46b7bc377c58e54e0600000000"/>
@@ -7646,7 +7665,7 @@
 		<Metadata name="Subsystem.Документооборот.Subsystem.Настройки" id="cc86e8ae-b13a-439c-8633-e24df7780330" configVersion="ca3f7aff8c49e142a9c1584d4c152f9300000000"/>
 		<Metadata name="Subsystem.Документооборот.Subsystem.Настройки.CommandInterface" id="cc86e8ae-b13a-439c-8633-e24df7780330.1" configVersion="b33d9d2ab228e94eac757d70a7ac785300000000"/>
 		<Metadata name="Subsystem.Документооборот.Subsystem.Отчеты" id="e4bad3af-3dfa-4bf1-baf8-118625753bd8" configVersion="e4d3e94e1fc6e149aeeaf2d2ff0ce3fb00000000"/>
-		<Metadata name="Subsystem.ЗагрузкаДанных" id="799cb10e-4d09-4cd7-8e7a-d1711d2cf278" configVersion="279bcc1d9ec0064daea8b6e1bef9362a00000000"/>
+		<Metadata name="Subsystem.ЗагрузкаДанных" id="799cb10e-4d09-4cd7-8e7a-d1711d2cf278" configVersion="ea448a846beba04aaac2cffa3f800e7900000000"/>
 		<Metadata name="Subsystem.ЗагрузкаДанных.CommandInterface" id="799cb10e-4d09-4cd7-8e7a-d1711d2cf278.1" configVersion="35300df50cd8574bb7c690ad14a0b56000000000"/>
 		<Metadata name="Subsystem.НСИ" id="ecda4374-fe75-46f2-9038-9e1eed78c732" configVersion="ef8de81939aaa84abe1755079d0fe47800000000"/>
 		<Metadata name="Subsystem.НСИ.CommandInterface" id="ecda4374-fe75-46f2-9038-9e1eed78c732.1" configVersion="218e612540a22944b44a84dfdc9406a700000000"/>

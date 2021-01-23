@@ -25,6 +25,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Document.Контакт</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ЗагрузкаДанных</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ОбработкаЗагрузитьИнформациюОСостояниеДел</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ОбработкаПлатежки</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>
