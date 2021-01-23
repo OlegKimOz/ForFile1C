@@ -4475,10 +4475,10 @@
 		<Metadata name="DataProcessor.НачальнаяСтраницаЮристы.Form.ФормаНастройкиПечати.Form" id="26485d0a-150e-431d-ad11-6f4e325c4b29.0" configVersion="dc95ea5a23c4124582c1357d8b378b2f00000000"/>
 		<Metadata name="DataProcessor.НачальнаяСтраницаЮристы.Form.ФормаПоиск" id="97d1e94b-25a8-46f2-8e2a-2b38167ec0eb" configVersion="9719019da84f914496fb792ca02dbe4e00000000"/>
 		<Metadata name="DataProcessor.НачальнаяСтраницаЮристы.Form.ФормаПоиск.Form" id="97d1e94b-25a8-46f2-8e2a-2b38167ec0eb.0" configVersion="08abd7fead4d6d4aa0d0db88352da31200000000"/>
-		<Metadata name="DataProcessor.НачальнаяСтраницаЮристы.Form.ФормаСоздатьГруппу" id="3130d44e-d819-4919-9c39-ca2d900095fe" configVersion="8cd143e30e66fe4588f4c10a9b45c38800000000"/>
-		<Metadata name="DataProcessor.НачальнаяСтраницаЮристы.Form.ФормаСоздатьГруппу.Form" id="3130d44e-d819-4919-9c39-ca2d900095fe.0" configVersion="8cdd3e781aa5bc4ea44121aac0e43d2900000000"/>
-		<Metadata name="DataProcessor.НачальнаяСтраницаЮристы.Form.ФормаСоздатьГруппуИзПоиск" id="aacb06ce-33de-4183-9b31-564afc4b385d" configVersion="270170d3fcc7e346b0ca20e7f125d1dc00000000"/>
-		<Metadata name="DataProcessor.НачальнаяСтраницаЮристы.Form.ФормаСоздатьГруппуИзПоиск.Form" id="aacb06ce-33de-4183-9b31-564afc4b385d.0" configVersion="de90445c4140a94f94e120a8032a5f9900000000"/>
+		<Metadata name="DataProcessor.НачальнаяСтраницаЮристы.Form.ФормаСоздатьГруппу" id="3130d44e-d819-4919-9c39-ca2d900095fe" configVersion="5f55782075342b468451b349fa71a93700000000"/>
+		<Metadata name="DataProcessor.НачальнаяСтраницаЮристы.Form.ФормаСоздатьГруппу.Form" id="3130d44e-d819-4919-9c39-ca2d900095fe.0" configVersion="f46adbd73618754f809bae3fb9ebe06100000000"/>
+		<Metadata name="DataProcessor.НачальнаяСтраницаЮристы.Form.ФормаСоздатьГруппуИзПоиск" id="aacb06ce-33de-4183-9b31-564afc4b385d" configVersion="bef17b12f6e1fd4ab3584dac580807f100000000"/>
+		<Metadata name="DataProcessor.НачальнаяСтраницаЮристы.Form.ФормаСоздатьГруппуИзПоиск.Form" id="aacb06ce-33de-4183-9b31-564afc4b385d.0" configVersion="d473dd290614d84a9e5d797c1b4fa2dc00000000"/>
 		<Metadata name="DataProcessor.НачальнаяСтраницаЮристы.Template.МакетПакетПечать" id="d0ec4c37-7ec0-4dfb-83d3-365a272cf03c" configVersion="6a6ede2ce0b78848b4badeb4b1b0cc8600000000"/>
 		<Metadata name="DataProcessor.НачальнаяСтраницаЮристы.Template.МакетПакетПечать.Template" id="d0ec4c37-7ec0-4dfb-83d3-365a272cf03c.0" configVersion="05b2a61be323024b88dcd5288fdb352500000000"/>
 		<Metadata name="DataProcessor.НерекомендуемаяВерсияПлатформы" id="1b63cbbb-77b1-4e78-a4c7-ddea8ea7294d" configVersion="39dbb00fe3507e479f5282c3524d6c3b00000000"/>
@@ -7445,8 +7445,8 @@
 		<Metadata name="Role.КарточкиДокументовДобавлениеИзменение.Rights" id="59289f7a-592f-4677-be8b-c6e9bd15b0da.0" configVersion="8aa0ebd34c00294ca3711813ba1ca25900000000"/>
 		<Metadata name="Role.КарточкиДокументовПросмотр" id="d61b824e-89fc-4ece-ab5b-b4a60360b7be" configVersion="5a9baf81ded84d479abe2dc5ee4b188400000000"/>
 		<Metadata name="Role.КарточкиДокументовПросмотр.Rights" id="d61b824e-89fc-4ece-ab5b-b4a60360b7be.0" configVersion="6fc54204edf9fe4495df5644e81d99d100000000"/>
-		<Metadata name="Role.Коллектор" id="dedf157b-259e-4157-b64b-7e71071ad257" configVersion="75241d77c2859048863908c8a93089d300000000"/>
-		<Metadata name="Role.Коллектор.Rights" id="dedf157b-259e-4157-b64b-7e71071ad257.0" configVersion="53f510e19ea1c246bce93ae254f94b5400000000"/>
+		<Metadata name="Role.Коллектор" id="dedf157b-259e-4157-b64b-7e71071ad257" configVersion="59d7635525b8f049a2c59423cc35f54b00000000"/>
+		<Metadata name="Role.Коллектор.Rights" id="dedf157b-259e-4157-b64b-7e71071ad257.0" configVersion="6de21ffeb8cfdc478aa11cdb197301ee00000000"/>
 		<Metadata name="Role.НастройкаСинхронизацииФайлов" id="cd74d617-8ebe-4a7d-b011-38c98d856d8c" configVersion="d8518037fc248b4cba2af42043a828a300000000"/>
 		<Metadata name="Role.НастройкаСинхронизацииФайлов.Rights" id="cd74d617-8ebe-4a7d-b011-38c98d856d8c.0" configVersion="af0cd861fa2db842a2c2ad783407dee600000000"/>
 		<Metadata name="Role.ОбновлениеКонфигурацииБазыДанных" id="f4cff4ff-68e9-4072-971e-1b359d3aa980" configVersion="0e5c50e8c7da5c4a9f17b574492d4dbc00000000"/>

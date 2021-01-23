@@ -688,6 +688,13 @@
 		</right>
 	</object>
 	<object>
+		<name>Catalog.ВкладкаСудСудебнаяСтадияСписокДел</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
 		<name>Constant.Штраф</name>
 		<right>
 			<name>Read</name>
