@@ -26,6 +26,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ЗагрузкаДанных</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ОбработкаЗагрузитьИнформациюОСостояниеДел</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ОбработкаПлатежки</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ЗагрузкаОбращениеВГАС</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>

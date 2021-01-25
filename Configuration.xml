@@ -1516,6 +1516,7 @@
 			<DataProcessor>ВыполнениеРегламентныхЗаданийНаКлиенте</DataProcessor>
 			<DataProcessor>ОбработкаУдалитьЗадвойВСостояниеДел</DataProcessor>
 			<DataProcessor>ОбработкаПлатежки</DataProcessor>
+			<DataProcessor>ЗагрузкаОбращениеВГАС</DataProcessor>
 			<InformationRegister>АдресныеОбъекты</InformationRegister>
 			<InformationRegister>ПроцентыВознаграждения</InformationRegister>
 			<InformationRegister>ФильтрЗаданий</InformationRegister>
