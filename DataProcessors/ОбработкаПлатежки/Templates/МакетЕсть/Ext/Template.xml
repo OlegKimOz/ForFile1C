@@ -208,14 +208,14 @@
 			</c>
 			<c>
 				<c>
-					<f>17</f>
+					<f>20</f>
 					<parameter>ОтметкаФССП</parameter>
 				</c>
 			</c>
 		</row>
 	</rowsItem>
 	<templateMode>true</templateMode>
-	<defaultFormatIndex>20</defaultFormatIndex>
+	<defaultFormatIndex>21</defaultFormatIndex>
 	<height>5</height>
 	<vgRows>5</vgRows>
 	<namedItem xsi:type="NamedItemCells">
@@ -314,6 +314,12 @@
 		<horizontalAlignment>Right</horizontalAlignment>
 		<verticalAlignment>Top</verticalAlignment>
 		<fillType>Parameter</fillType>
+		<format>
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>ДФ=dd.MM.yyyy</v8:content>
+			</v8:item>
+		</format>
 	</format>
 	<format>
 		<border>0</border>
@@ -331,6 +337,12 @@
 		<border>0</border>
 		<verticalAlignment>Top</verticalAlignment>
 		<textPlacement>Wrap</textPlacement>
+		<fillType>Parameter</fillType>
+	</format>
+	<format>
+		<border>0</border>
+		<horizontalAlignment>Right</horizontalAlignment>
+		<verticalAlignment>Top</verticalAlignment>
 		<fillType>Parameter</fillType>
 	</format>
 	<format>
