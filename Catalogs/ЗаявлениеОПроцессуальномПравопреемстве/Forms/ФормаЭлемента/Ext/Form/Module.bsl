@@ -1627,7 +1627,7 @@
 				  КонецЕсли;	   
 					   
 				 
-				   //ДатаКредитногоДоговора_Прошу
+				   //ДатаКредитногоДоговора_Прошу     --- год букву оставил
 				   Если  MSWordDoc.Bookmarks.Exists("ДатаКредитногоДоговора_Прошу")  Тогда
 					      MSWordDoc.Bookmarks("ДатаКредитногоДоговора_Прошу").Select();
 					   MSWordDoc.Application.Selection.Font.Color = 1;
@@ -1656,7 +1656,7 @@
 					КонецЕсли;   
 
 				   
-				   //ДатаЦессии_Приложение
+				   //ДатаЦессии_Приложение --  год букву оставил
 				   Если  MSWordDoc.Bookmarks.Exists("ДатаЦессии_Приложение")  Тогда
 					        MSWordDoc.Bookmarks("ДатаЦессии_Приложение").Select();
 					   MSWordDoc.Application.Selection.Font.Color = 1;
